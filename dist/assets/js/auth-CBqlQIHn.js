@@ -1,1 +1,0 @@
-var e=`growlimo_admin_token`,t=()=>localStorage.getItem(e),n=t=>{localStorage.setItem(e,t)},r=()=>{localStorage.removeItem(e)},i=()=>!!t(),a=()=>{let e=t();return{...e&&{Authorization:`Bearer ${e}`}}};export{n as i,i as n,r,a as t};

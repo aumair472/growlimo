@@ -1,1 +1,0 @@
-import{x as e}from"./blog-list-DF8GIh22.js";import{t}from"./markdown-core-DixsGYIj.js";import{n,t as r}from"./markdown-plugins-2OOPmocS.js";var i=e();function a({children:e,className:a,components:o}){return(0,i.jsx)(t,{className:a,remarkPlugins:[n],rehypePlugins:[r],components:o,children:e})}export{a as default};
