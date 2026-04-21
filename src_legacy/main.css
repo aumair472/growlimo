@@ -1,0 +1,321 @@
+@import "tailwindcss";
+@config "../tailwind.config.cjs";
+
+@layer base {
+  body {
+    /* CWV: Prevent text from shifting when web fonts load */
+    background-color: #0b1b29;
+    color: #ffffff;
+    font-family:
+      Poppins,
+      Poppins-Fallback,
+      Inter,
+      -apple-system,
+      BlinkMacSystemFont,
+      "Segoe UI",
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeSpeed;
+  }
+
+  /* CWV CLS: Font fallback metrics — matches Poppins to prevent layout shift on swap */
+  @font-face {
+    font-family: 'Poppins-Fallback';
+    src: local('Arial');
+    size-adjust: 110%;
+    ascent-override: 95%;
+    descent-override: 22%;
+    line-gap-override: 0%;
+  }
+
+  /* CWV INP: Reduce paint areas on below-the-fold sections */
+  section:not(:first-of-type) {
+    content-visibility: auto;
+    contain-intrinsic-size: auto 600px;
+  }
+
+  /* Accessibility: Focus styles for keyboard navigation */
+  *:focus-visible {
+    outline: none;
+    box-shadow:
+      0 0 0 2px #00c68a,
+      0 0 0 4px #0b1b29;
+  }
+
+  /* Ensure focus is visible for interactive elements */
+  a:focus-visible,
+  button:focus-visible,
+  input:focus-visible,
+  textarea:focus-visible,
+  select:focus-visible {
+    box-shadow:
+      0 0 0 2px #00c68a,
+      0 0 0 4px #0b1b29;
+  }
+
+  /* Fix for mobile select dropdown background */
+  select option,
+  select optgroup {
+    background-color: #1e293b;
+    color: #ffffff;
+  }
+
+  /* Skip link animation */
+  @keyframes slide-up {
+    from {
+      transform: translateY(100%);
+      opacity: 0;
+    }
+
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  .animate-slide-up {
+    animation: slide-up 0.3s ease-out;
+  }
+}
+
+@layer components {
+  /* Hero Overlay Gradient */
+  .hero-overlay {
+    background: linear-gradient(
+      135deg,
+      rgba(11, 27, 41, 0.9) 0%,
+      rgba(11, 27, 41, 0.7) 50%,
+      rgba(0, 198, 138, 0.3) 100%
+    );
+  }
+
+  /* Glass Card Effect - Dark Theme */
+  /* CWV INP: backdrop-filter is GPU-expensive on mobile; disable on small screens */
+  .glass-card {
+    background: rgba(30, 41, 59, 0.8);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+    border-radius: 16px;
+    border: 1px solid rgba(148, 163, 184, 0.2);
+    transition: all 0.3s ease;
+    will-change: transform;
+  }
+
+  @media (min-width: 768px) {
+    .glass-card {
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+    }
+  }
+
+  .glass-card:hover {
+    box-shadow: 0 12px 40px 0 rgba(0, 198, 138, 0.2);
+    border-color: rgba(0, 198, 138, 0.3);
+  }
+
+  /* Custom Border Radius */
+  .rounded-16 {
+    border-radius: 16px;
+  }
+
+  /* Blog Image Container - Fixed aspect ratio for all breakpoints */
+  .blog-image-container {
+    /* Container uses aspect-ratio to maintain consistent sizing */
+    aspect-ratio: 16 / 9;
+    /* Hide overflow to prevent image from spilling */
+    overflow: hidden;
+    /* Ensure container is positioned relatively for absolute children */
+    position: relative;
+  }
+
+  /* Mobile: Use fixed height instead of aspect-ratio to match existing design */
+  @media (max-width: 767px) {
+    .blog-image-container {
+      aspect-ratio: auto;
+      height: 12rem;
+      /* h-48 = 192px */
+    }
+  }
+
+  /* Override OptimizedImage wrapper to fill container completely */
+  .blog-image-container .optimized-image-wrapper {
+    position: absolute;
+    inset: 0;
+    width: 100% !important;
+    height: 100% !important;
+  }
+
+  /* Ensure image fills wrapper completely */
+  .blog-image-container .optimized-image-wrapper img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover;
+  }
+
+  /* Blog Hero Image Container - Optimized aspect ratio for detail pages */
+  .blog-hero-image-container {
+    /* Container uses aspect-ratio to maintain consistent sizing */
+    aspect-ratio: 16 / 9;
+    /* Responsive max-height to prevent oversized containers */
+    max-height: 28rem;
+    /* 448px on desktop */
+    /* Hide overflow to prevent image from spilling */
+    overflow: hidden;
+    /* Ensure container is positioned relatively for absolute children */
+    position: relative;
+  }
+
+  @media (max-width: 767px) {
+    .blog-hero-image-container {
+      max-height: 20rem;
+      /* 320px on mobile */
+    }
+  }
+
+  /* Override OptimizedImage wrapper to fill hero container completely */
+  .blog-hero-image-container .optimized-image-wrapper {
+    position: absolute;
+    inset: 0;
+    width: 100% !important;
+    height: 100% !important;
+  }
+
+  /* Ensure image fills wrapper completely */
+  .blog-hero-image-container .optimized-image-wrapper img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover;
+  }
+}
+
+@layer utilities {
+  /* Screen Reader Only */
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+  }
+
+  .focus\:not-sr-only:focus {
+    position: static;
+    width: auto;
+    height: auto;
+    padding: inherit;
+    margin: inherit;
+    overflow: visible;
+    clip: auto;
+    white-space: normal;
+  }
+
+  /* Spacing Scale Extensions */
+  .space-scale-1 {
+    margin: 0.25rem;
+  }
+
+  .space-scale-2 {
+    margin: 0.5rem;
+  }
+
+  .space-scale-3 {
+    margin: 0.75rem;
+  }
+
+  .space-scale-4 {
+    margin: 1rem;
+  }
+
+  .space-scale-6 {
+    margin: 1.5rem;
+  }
+
+  .space-scale-8 {
+    margin: 2rem;
+  }
+
+  .space-scale-12 {
+    margin: 3rem;
+  }
+
+  .space-scale-16 {
+    margin: 4rem;
+  }
+
+  /* Call Us Floating Button Position */
+  .floating-button {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    z-index: 50;
+    transition:
+      transform 0.3s ease,
+      box-shadow 0.3s ease;
+  }
+
+  .floating-button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 25px rgba(0, 198, 138, 0.4);
+  }
+
+  /* WhatsApp Floating Button Position */
+  .floating-whatsapp {
+    position: fixed;
+    bottom: 6rem;
+    right: 2rem;
+    z-index: 50;
+    transition:
+      transform 0.3s ease,
+      box-shadow 0.3s ease;
+  }
+
+  .floating-whatsapp:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 25px rgba(37, 211, 102, 0.4);
+  }
+
+  @media (max-width: 768px) {
+    .floating-button {
+      bottom: 1rem;
+      right: 1rem;
+    }
+
+    .floating-whatsapp {
+      bottom: 5rem;
+      right: 1rem;
+    }
+  }
+
+  /* Optimized Image Skeleton Animation */
+  @keyframes shimmer {
+    0% {
+      background-position: -200% 0;
+    }
+
+    100% {
+      background-position: 200% 0;
+    }
+  }
+
+  .skeleton-placeholder {
+    animation: shimmer 1.5s infinite;
+  }
+
+  /* Blog Image Responsiveness */
+  .blog-img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 1.5rem 0;
+    border-radius: 8px;
+  }
+
+  /* Optimized Image Wrapper */
+  .optimized-image-wrapper {
+    display: block;
+  }
+}
