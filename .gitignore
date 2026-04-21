@@ -9,7 +9,7 @@ build/
 
 # Environment variables
 .env*
-!.env.example
+.env.example
 
 # Caches and logs
 .blog-cache*
