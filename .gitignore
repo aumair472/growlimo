@@ -1,5 +1,6 @@
 # Dependencies
 node_modules/
+.pnpm-store/
 
 # Next.js build output
 .next/
@@ -8,9 +9,12 @@ build/
 
 # Environment variables
 .env*
+!.env.example
 
 # Caches and logs
 .blog-cache*
+.blog-slug-cache.json
+*.log
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
@@ -18,3 +22,14 @@ yarn-error.log*
 # IDEs
 .vscode/
 .idea/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Test/Audit reports
+lighthouse-*.json
+coverage/
+.nyc_output/
