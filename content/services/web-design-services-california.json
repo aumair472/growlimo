@@ -1,0 +1,120 @@
+{
+  "metaTitle": "Web Design Services California | Website Design - Call Now",
+  "metaDescription": "Web Design Services California - Professional web design services in California creating responsive, user-friendly and SEO-optimized websites. Get Free Quote!",
+  "h1": "Web Design Services California – High-Converting Websites",
+  "subheadline": "First impressions translate directly to revenue. We design stunning digital experiences that effortlessly guide users toward a purchase or phone call.",
+  "heroBullets": [
+    "✅ Conversion-Centric UI/UX Methodologies",
+    "✅ Modern, Trust-Inducing Aesthetics",
+    "✅ Flawlessly Responsive Layouts"
+  ],
+  "whyChooseUs": [
+    {
+      "title": "Conversion-Led UI/UX",
+      "description": "We do not just make things pretty. Every pixel, button, and visual hierarchy is arranged with the singular goal of generating leads."
+    },
+    {
+      "title": "Modern Brand Aesthetics",
+      "description": "Clean, contemporary, and bold designs that build immediate credibility and brand authority in seconds."
+    },
+    {
+      "title": "Mobile-First Mentality",
+      "description": "We prioritize the smartphone experience, ensuring the vast majority of your traffic navigates without friction."
+    }
+  ],
+  "servicesBreakdown": [
+    {
+      "title": "Holistic UI/UX Design",
+      "description": "Mapping deep user journeys to eliminate friction and maximize engagement metrics."
+    },
+    {
+      "title": "Landing Page Design",
+      "description": "Architecting ultra-high-converting single pages built specifically to maximize paid ad traffic."
+    },
+    {
+      "title": "Brand Identity Strategy",
+      "description": "Crafting comprehensive visual systems including logos, color palettes, and typography guidelines."
+    },
+    {
+      "title": "Website Redesign & Modernization",
+      "description": "Taking outdated, low-performing sites and transforming them into modern sales engines."
+    }
+  ],
+  "process": [
+    {
+      "title": "Strategic Creative Brief",
+      "description": "Uncovering your aesthetic preferences, core demographic, and primary business objectives."
+    },
+    {
+      "title": "Wireframing & Prototyping",
+      "description": "Mapping the skeletal structure of the site before committing to full high-fidelity coloring."
+    },
+    {
+      "title": "Design Handoff & Animation",
+      "description": "Presenting visual drafts, micro-animations, and hover states for your strict approval."
+    },
+    {
+      "title": "Post-Launch QA Review",
+      "description": "Ensuring the final coded environment perfectly matches the pixel-perfect Figma designs."
+    }
+  ],
+  "benefits": [
+    "Drastically improved user engagement, plummeting bounce rates, and extended time-on-site.",
+    "Higher conversion yields from your existing, expensive marketing traffic.",
+    "A premium, polished brand perception that empowers you to command premium prices."
+  ],
+  "industries": "Boutique Retailers, Medical Spas, High-End Law Firms, Luxury Real Estate, and Creative Agencies.",
+  "faqs": [
+    {
+      "question": "What is the difference between web design and development?",
+      "answer": "Web design focuses exclusively on the visual aesthetics, layout, and user experience (UI/UX). Web development is the backend engineering and coding that makes that design function online."
+    },
+    {
+      "question": "Will my new design hurt my current SEO?",
+      "answer": "No. Our redesign process involves meticulous 301 redirection maps and URL preservation to immediately protect and enhance your SEO."
+    },
+    {
+      "question": "Can we utilize our current logo and branding?",
+      "answer": "Absolutely. We specialize in elevating existing brand guidelines into a modern digital context."
+    },
+    {
+      "question": "Do you provide professional copywriting?",
+      "answer": "Yes, we offer elite, conversion-focused copywriting services to ensure the words are as persuasive as the design."
+    },
+    {
+      "question": "How involved will my team be in the design process?",
+      "answer": "Intimately involved. We present iterative wireframes and mockups at multiple strategic stages for your feedback before development begins."
+    }
+  ],
+  "ctaHeadline": "Impress your customers and multiply your conversions.",
+  "ctaButtonText": "Get a Free Web Design Proposal",
+  "internalLinks": [
+    {
+      "to": "/web-design-services-texas",
+      "anchor": "Web Design Services in Texas"
+    },
+    {
+      "to": "/web-developer-california",
+      "anchor": "Expert web development"
+    },
+    {
+      "to": "/email-marketing-services-california",
+      "anchor": "Email automation for leads"
+    }
+  ],
+  "schema": {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "serviceType": "Web Design",
+    "provider": {
+      "@type": "Organization",
+      "name": "Growlimo",
+      "url": "https://growlimo.com"
+    },
+    "areaServed": {
+      "@type": "State",
+      "name": "California"
+    },
+    "description": "Professional web design services in California creating responsive, user-friendly and SEO-optimized websites."
+  }
+}

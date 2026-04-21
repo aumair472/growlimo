@@ -1,0 +1,116 @@
+{
+  "metaTitle": "Web Developer California | Website Development - Call Now",
+  "metaDescription": "Web Developer California - Professional web developer in California delivering custom website design & development that boosts conversions and user experience.",
+  "h1": "Web Development California – Scalable Web Solutions",
+  "subheadline": "Stop losing customers to slow, outdated websites. We build robust, high-performance digital storefronts engineered for speed and conversions.",
+  "heroBullets": [
+    "✅ Custom Code & CMS Frameworks",
+    "✅ Flawless Mobile-First Functionality",
+    "✅ Lightning-Fast Load Times"
+  ],
+  "whyChooseUs": [
+    {
+      "title": "Custom Code & Frameworks",
+      "description": "Built to spec using modern frameworks like React, Vue, or Next.js, ensuring total flexibility and scalability."
+    },
+    {
+      "title": "Technical SEO Foundation",
+      "description": "Sites strictly coded from the ground up to pass Core Web Vitals and rank highly on Google."
+    },
+    {
+      "title": "Uncompromising Security",
+      "description": "Advanced data protection methodologies defending against vulnerabilities and database breaches."
+    }
+  ],
+  "servicesBreakdown": [
+    {
+      "title": "Custom CMS Development",
+      "description": "Headless WordPress, Webflow, and bespoke content management systems tailored to your workflow."
+    },
+    {
+      "title": "E-Commerce Development",
+      "description": "High-converting, globally scalable Shopify Plus and WooCommerce builds."
+    },
+    {
+      "title": "Complex API Integrations",
+      "description": "Connecting your front-facing website seamlessly with internal CRMs, ERPs, and marketing automation tools."
+    },
+    {
+      "title": "Site Speed Optimization",
+      "description": "Rewriting legacy code and aggressively compressing assets for sub-one-second load times."
+    }
+  ],
+  "process": [
+    {
+      "title": "Technical Architecture",
+      "description": "Mapping database relationships, server requirements, and the fundamental tech stack."
+    },
+    {
+      "title": "Interactive Prototyping",
+      "description": "Building high-fidelity, clickable models of the application flow."
+    },
+    {
+      "title": "Full-Stack Development",
+      "description": "Writing clean, documented code using agile methodologies and constant collaboration."
+    },
+    {
+      "title": "QA Testing & Deployment",
+      "description": "Rigorous cross-browser, cross-device testing before a zero-downtime server launch."
+    }
+  ],
+  "benefits": [
+    "A website that loads instantly, drastically reducing bounce rates and saving PPC budget.",
+    "A scalable technological foundation that grows smoothly as your California business expands.",
+    "Frictionless user experiences that guide visitors effortlessly through complex data or checkout flows."
+  ],
+  "industries": "Tech Startups, Enterprise SaaS, Large-scale E-commerce, and Advanced Manufacturing.",
+  "faqs": [
+    {
+      "question": "Do you build custom websites or use templates?",
+      "answer": "We focus entirely on custom development. Heavy templates ruin site speed and limit functional scalability."
+    },
+    {
+      "question": "Will my website be mobile-friendly?",
+      "answer": "Absolutely. Every application we engineer utilizes a rigorous mobile-first development approach."
+    },
+    {
+      "question": "How long does it take to develop a new web application?",
+      "answer": "A standard marketing site requires 4 to 6 weeks, while complex E-commerce builds or custom SaaS portals take 8 to 14 weeks."
+    },
+    {
+      "question": "Will I be able to update the website myself?",
+      "answer": "Yes, we build intuitive, headless CMS architectures and provide training so your marketing team can deploy content instantly without code."
+    },
+    {
+      "question": "Do you provide website maintenance and hosting after launch?",
+      "answer": "Yes, we offer ongoing SLA support, automated security patching, and premium dedicated hosting options."
+    }
+  ],
+  "ctaHeadline": "Upgrade your digital foundation with a high-performance website.",
+  "ctaButtonText": "Consult with a California Web Developer",
+  "internalLinks": [
+    {
+      "to": "/web-developer-texas",
+      "anchor": "Web Development in Texas"
+    },
+    {
+      "to": "/web-design-services-california",
+      "anchor": "Custom web design services"
+    }
+  ],
+  "schema": {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "serviceType": "Web Development",
+    "provider": {
+      "@type": "Organization",
+      "name": "Growlimo",
+      "url": "https://growlimo.com"
+    },
+    "areaServed": {
+      "@type": "State",
+      "name": "California"
+    },
+    "description": "Professional web developer in California delivering custom website design & development that boosts conversions and user experience."
+  }
+}

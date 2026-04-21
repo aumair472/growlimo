@@ -1,0 +1,101 @@
+{
+  "id": "physiotherapy-google-ads-san-francisco",
+  "slug": "physiotherapy-google-ads-san-francisco",
+  "title": "Scaling a San Francisco Physio Clinic: 670 Leads & 17x ROAS in 90 Days",
+  "client": "San Francisco Physio & Rehab Clinic",
+  "industry": "Physiotherapy / Sports Rehab",
+  "location": "San Francisco, CA",
+  "services": "Google Ads, Landing Page Optimization",
+  "timeline": "90 Days",
+  "image": "/san-francisco-physio-results.webp",
+  "summary": "A San Francisco Physio & Rehab clinic partnered with Growlimo to restructure their patient acquisition system. We deployed a high-intent Google Search campaign that generated 670 leads at a 12.90% conversion rate, turning a $7,850 budget into over $140,000 in new patient revenue.",
+  "stats": [
+    {
+      "value": "670",
+      "label": "Leads Generated"
+    },
+    {
+      "value": "12.9%",
+      "label": "Conversion Rate"
+    },
+    {
+      "value": "17x",
+      "label": "ROAS"
+    }
+  ],
+  "seo": {
+    "title": "Physiotherapy Google Ads Case Study | 17x ROAS | Growlimo",
+    "description": "See how Growlimo helped a San Francisco Physio & Rehab clinic generate 670 leads, achieve a 12.90% conversion rate, and drive over $140,000 in revenue in 90 days."
+  },
+  "metricsBox": {
+    "title": "📊 AT A GLANCE: THE ROI METRICS",
+    "items": [
+      {
+        "label": "Total Leads Generated",
+        "value": "669.94"
+      },
+      {
+        "label": "Qualified Lead Rate",
+        "value": "~70%"
+      },
+      {
+        "label": "Front-Desk Booking Rate",
+        "value": "~60%"
+      },
+      {
+        "label": "Average Patient Value (APV)",
+        "value": "$500"
+      },
+      {
+        "label": "Total Gross Revenue",
+        "value": "$140,500+"
+      }
+    ]
+  },
+  "sections": [
+    {
+      "heading": "The Overview",
+      "paragraphs": [
+        "A prominent Physiotherapy and Sports Rehab clinic in San Francisco partnered with Growlimo to restructure their patient acquisition system. Operating in one of the most competitive healthcare markets in the US, they had a strong clinical reputation but struggled to capture high-intent patients searching online. They needed a data-driven Google Ads strategy to lower their Cost Per Acquisition (CPA) and fill their schedules."
+      ]
+    },
+    {
+      "heading": "The Challenge",
+      "paragraphs": [
+        "Before Growlimo, the clinic faced three primary roadblocks:"
+      ],
+      "bullets": [
+        "Wasted Ad Spend: Previous campaigns were bidding on broad, educational terms rather than bottom-funnel, transactional queries.",
+        "Low Conversion Rates: Traffic was being sent to a generic homepage instead of specialized, conversion-optimized landing pages.",
+        "Poor Lead Quality: Too many clicks came from users looking for free advice, not professional medical treatment."
+      ]
+    },
+    {
+      "heading": "The Growlimo Strategy",
+      "paragraphs": [
+        "We deployed a high-intent Google Search campaign engineered specifically for the physical therapy niche."
+      ],
+      "bullets": [
+        "Hyper-Targeted Keywords: We shifted the budget strictly to transactional queries such as 'sports rehab clinic San Francisco,' 'sciatica physical therapy,' and 'post-surgery physio.'",
+        "E-E-A-T Landing Pages: We built fast-loading, HIPAA-compliant landing pages featuring real patient testimonials and immediate online booking options. Our California Healthcare Google Ads experts ensured every click was maximized."
+      ]
+    },
+    {
+      "heading": "The Results (90-Day Sprint)",
+      "paragraphs": [
+        "Within a 90-day window, the new campaign architecture completely transformed the clinic's patient pipeline. View similar rehab case studies to see more result."
+      ],
+      "bullets": [
+        "Total Ad Spend: $7,850",
+        "Conversion Rate: 12.90% (Industry average is typically ~4-5%)",
+        "Cost Per Lead (CPL): $11.71"
+      ],
+      "closing": "By aligning search intent with conversion-optimized digital architecture, Growlimo turned a $7,850 marketing budget into over $140,000 in new patient revenue."
+    }
+  ],
+  "cta": {
+    "text": "Get Your Free Physiotherapy Marketing Audit",
+    "link": "/contact"
+  },
+  "publishedAt": "2026-02-20"
+}
