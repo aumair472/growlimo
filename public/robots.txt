@@ -1,6 +1,11 @@
+# *
 User-agent: *
 Allow: /
 Disallow: /admin
 Disallow: /thank-you
 
+# Host
+Host: https://www.growlimo.com
+
+# Sitemaps
 Sitemap: https://www.growlimo.com/sitemap.xml
