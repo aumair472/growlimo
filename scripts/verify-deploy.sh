@@ -12,7 +12,7 @@ NC='\033[0m' # No Color
 
 # Configuration
 API_URL="${VITE_API_URL:-https://api.growlimo.com}"
-FRONTEND_URL="${VITE_SITE_URL:-https://growlimo.com}"
+FRONTEND_URL="${VITE_SITE_URL:-https://www.growlimo.com}"
 
 echo "========================================="
 echo "Frontend Deployment Verification"

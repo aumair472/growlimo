@@ -202,42 +202,42 @@ export default function Home() {
               icon={<svg className="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>}
               title="SEO Services"
               description="Nationwide SEO to dominate Google search and beat your local and national competitors."
-              link="/contact"
+              link="/contact/"
               ctaText="See How We Help"
             />
             <SpecialtyCard
               icon={<svg className="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 15l-2 5L9 9l11 4-5 2zm0 0l5 5" /></svg>}
               title="Google Ads Management"
               description="High-ROI PPC campaigns that target your most profitable keywords with surgical precision."
-              link="/contact"
+              link="/contact/"
               ctaText="See How We Help"
             />
             <SpecialtyCard
               icon={<svg className="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a1.994 1.994 0 01-1.414-.586m0 0L11 14h4a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2v4l.586-.586z" /></svg>}
               title="Social Media Marketing"
               description="Engaging content and growth strategies for Instagram, Facebook, and LinkedIn."
-              link="/contact"
+              link="/contact/"
               ctaText="See How We Help"
             />
             <SpecialtyCard
               icon={<svg className="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" /></svg>}
               title="Meta Ads Agency"
               description="Scale fast with high-converting Facebook and Instagram ads targeted to your ideal customers."
-              link="/contact"
+              link="/contact/"
               ctaText="See How We Help"
             />
             <SpecialtyCard
               icon={<svg className="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>}
               title="Web Design & Dev"
               description="Beautiful, high-speed websites designed to convert visitors into loyal, paying customers."
-              link="/contact"
+              link="/contact/"
               ctaText="See How We Help"
             />
             <SpecialtyCard
               icon={<svg className="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>}
               title="Email Marketing"
               description="Nurture your leads and increase customer lifetime value with automated email sequences."
-              link="/contact"
+              link="/contact/"
               ctaText="See How We Help"
             />
           </div>
@@ -325,7 +325,7 @@ export default function Home() {
                 </div>
               ))}
             </div>
-            <Link href="/contact" className="group relative inline-flex items-center justify-center bg-primary hover:bg-accent text-slate-950 font-bold py-4 px-10 rounded-xl transition-all duration-300 transform hover:scale-105 hover:shadow-2xl hover:shadow-primary/50 text-lg shadow-lg shadow-primary/30 mb-10">
+            <Link href="/contact/" className="group relative inline-flex items-center justify-center bg-primary hover:bg-accent text-slate-950 font-bold py-4 px-10 rounded-xl transition-all duration-300 transform hover:scale-105 hover:shadow-2xl hover:shadow-primary/50 text-lg shadow-lg shadow-primary/30 mb-10">
               Schedule Your Free 30-Minute Strategy Session
             </Link>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-6 text-sm text-slate-300">

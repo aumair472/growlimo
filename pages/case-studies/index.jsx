@@ -9,7 +9,7 @@ export default function CaseStudiesIndex({ caseStudies }) {
       <SEO
         title="Marketing Case Studies | Proven Results & ROI | GrowLimo"
         description="Real digital marketing success stories showing proven ROI and lead generation results for businesses across the United States."
-        url="https://growlimo.com/case-studies/"
+        url="https://www.growlimo.com/case-studies/"
       />
 
       <section className="bg-dark text-white py-16 md:py-24 relative overflow-hidden">

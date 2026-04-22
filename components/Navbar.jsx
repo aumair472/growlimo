@@ -106,35 +106,35 @@ export default function Navbar() {
                 Home
               </Link>
               <Link
-                href="/case-studies"
+                href="/case-studies/"
                 className={`text-slate-300 hover:text-primary transition font-medium ${isActive('/case-studies') ? 'text-primary' : ''}`}
                 onClick={handleLinkClick}
               >
                 Case Studies
               </Link>
               <Link
-                href="/blog"
+                href="/blog/"
                 className={`text-slate-300 hover:text-primary transition font-medium ${isActive('/blog') ? 'text-primary' : ''}`}
                 onClick={handleLinkClick}
               >
                 Blog
               </Link>
               <Link
-                href="/about"
+                href="/about/"
                 className={`text-slate-300 hover:text-primary transition font-medium ${isActive('/about') ? 'text-primary' : ''}`}
                 onClick={handleLinkClick}
               >
                 About
               </Link>
               <Link
-                href="/contact"
+                href="/contact/"
                 className={`text-slate-300 hover:text-primary transition font-medium ${isActive('/contact') ? 'text-primary' : ''}`}
                 onClick={handleLinkClick}
               >
                 Contact
               </Link>
               <Link
-                href="/contact"
+                href="/contact/"
                 className="bg-primary hover:bg-accent text-slate-950 font-semibold py-2 px-6 rounded-lg transition transform hover:scale-105"
                 onClick={handleLinkClick}
               >
@@ -204,35 +204,35 @@ export default function Navbar() {
               Home
             </Link>
             <Link
-              href="/about"
+              href="/about/"
               className={`block px-4 py-3 text-lg text-slate-300 hover:text-primary hover:bg-slate-800/50 rounded-lg transition font-medium ${isActive('/about') ? 'text-primary bg-slate-800/50' : ''}`}
               onClick={handleLinkClick}
             >
               About
             </Link>
             <Link
-              href="/case-studies"
+              href="/case-studies/"
               className={`block px-4 py-3 text-lg text-slate-300 hover:text-primary hover:bg-slate-800/50 rounded-lg transition font-medium ${isActive('/case-studies') ? 'text-primary bg-slate-800/50' : ''}`}
               onClick={handleLinkClick}
             >
               Case Studies
             </Link>
             <Link
-              href="/blog"
+              href="/blog/"
               className={`block px-4 py-3 text-lg text-slate-300 hover:text-primary hover:bg-slate-800/50 rounded-lg transition font-medium ${isActive('/blog') ? 'text-primary bg-slate-800/50' : ''}`}
               onClick={handleLinkClick}
             >
               Blog
             </Link>
             <Link
-              href="/contact"
+              href="/contact/"
               className={`block px-4 py-3 text-lg text-slate-300 hover:text-primary hover:bg-slate-800/50 rounded-lg transition font-medium ${isActive('/contact') ? 'text-primary bg-slate-800/50' : ''}`}
               onClick={handleLinkClick}
             >
               Contact
             </Link>
             <Link
-              href="/contact"
+              href="/contact/"
               className="block mt-4 bg-primary hover:bg-accent text-slate-950 font-semibold py-3 px-6 rounded-lg transition text-center"
               onClick={handleLinkClick}
             >

@@ -116,7 +116,7 @@ export default function Contact() {
       <SEO
         title={seo.title}
         description={seo.description}
-        url="https://growlimo.com/contact/"
+        url="https://www.growlimo.com/contact/"
       />
 
       <div className="bg-dark text-white">

@@ -45,6 +45,7 @@ export default function ServiceDetail({ service, slug }) {
         title={metaTitle}
         description={metaDescription}
         url={`https://growlimo.com/${slug}/`}
+        schema={service.schema}
       />
       
       <div className="flex-grow">

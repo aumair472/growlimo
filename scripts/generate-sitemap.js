@@ -32,7 +32,7 @@ const ensureDir = (dirPath) => {
   fs.mkdirSync(dirPath, { recursive: true });
 };
 
-const trailingSlash = (url) => (url === SITE_URL ? url : url.replace(/\/?$/, '/'));
+const trailingSlash = (url) => url.replace(/\/?$/, '/');
 
 const xmlEncode = (value) =>
   String(value)

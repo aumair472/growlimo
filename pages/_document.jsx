@@ -18,54 +18,6 @@ export default function Document() {
         <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
         <link rel="dns-prefetch" href="https://www.google-analytics.com" />
         <link rel="dns-prefetch" href="https://connect.facebook.net" />
-
-        {/* Global Schema */}
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": ["Organization", "ProfessionalService", "MarketingAgency"],
-              "@id": "https://growlimo.com/#organization",
-              "name": "Growlimo Digital Marketing Agency",
-              "alternateName": "GrowLimo",
-              "url": "https://growlimo.com",
-              "logo": "https://growlimo.com/logo.png",
-              "image": "https://growlimo.com/og-image.png",
-              "telephone": "+1-724-750-6935",
-              "email": "info@growlimo.com",
-              "address": {
-                "@type": "PostalAddress",
-                "streetAddress": "7917 Mountain Rd NE",
-                "addressLocality": "Albuquerque",
-                "addressRegion": "NM",
-                "postalCode": "87110",
-                "addressCountry": "US"
-              },
-              "sameAs": [
-                "https://www.linkedin.com/company/growlimo",
-                "https://www.facebook.com/people/GrowLimo/61581846653070/",
-                "https://www.instagram.com/growlimo/",
-                "https://www.tiktok.com/@growlimo"
-              ]
-            })
-          }}
-        />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "WebSite",
-              "@id": "https://growlimo.com/#website",
-              "url": "https://growlimo.com",
-              "name": "GrowLimo",
-              "publisher": {
-                "@id": "https://growlimo.com/#organization"
-              }
-            })
-          }}
-        />
       </Head>
       <body>
         <Main />
