@@ -104,7 +104,9 @@ export default function Home() {
       <SEO
         title={seo.title}
         description={seo.description}
-        url="https://growlimo.com/"
+        url="https://www.growlimo.com/"
+        isHomepage={true}
+        disableSuffix={true}
       />
 
       {/* Hero Section */}

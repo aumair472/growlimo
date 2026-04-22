@@ -30,7 +30,7 @@ export function ServiceHero({ h1, subheadline, heroContent, isCustomLayout, slug
             <div className="glass-card p-6 md:p-8">
                <h2 className="text-2xl font-bold text-white mb-6">Request Free Consultation</h2>
                <p className="text-slate-300 mb-6">Book your 30-minute lead mapping session with our specialists.</p>
-               <Link href="/contact" className="btn-primary w-full text-center py-4 rounded-xl font-bold text-lg block">
+               <Link href="/contact/" className="btn-primary w-full text-center py-4 rounded-xl font-bold text-lg block">
                  Schedule My Session →
                </Link>
             </div>

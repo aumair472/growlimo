@@ -44,7 +44,8 @@ export default function ServiceDetail({ service, slug }) {
       <SEO
         title={metaTitle}
         description={metaDescription}
-        url={`https://growlimo.com/${slug}/`}
+        url={`https://www.growlimo.com/${slug}/`}
+        disableSuffix={true}
         schema={service.schema}
       />
       

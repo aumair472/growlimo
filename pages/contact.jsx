@@ -1,4 +1,4 @@
-import { useState } from 'react';
+﻿import { useState } from 'react';
 import Link from 'next/link';
 import SEO from '../components/SEO';
 import { getSEOConfig } from '../lib/config';
@@ -131,11 +131,11 @@ export default function Contact() {
                 Whether you need a complete digital audit, high-ROI paid media
                 strategy, or custom lead acquisition plan, our digital
                 marketing specialists are ready to help.{' '}
-                <Link href="/about" className="text-primary hover:underline">
+                <Link href="/about/" className="text-primary hover:underline">
                   Learn more about Growlimo
                 </Link>{' '}
                 or see{' '}
-                <Link href="/case-studies" className="text-primary hover:underline">
+                <Link href="/case-studies/" className="text-primary hover:underline">
                   real results from real clients
                 </Link>{' '}
                 to understand our impact.

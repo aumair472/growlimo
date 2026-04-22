@@ -1,16 +1,9 @@
-import { useState, useEffect } from 'react';
+import React from 'react';
 import testimonialsData from '../content/data/testimonials.json';
 
 function Testimonials({ limit = null, showTitle = true }) {
-  const [testimonials, setTestimonials] = useState([]);
-
-  useEffect(() => {
-    let data = testimonialsData.testimonials;
-    if (limit) {
-      data = data.slice(0, limit);
-    }
-    setTestimonials(data);
-  }, [limit]);
+  const allTestimonials = testimonialsData.testimonials;
+  const testimonials = limit ? allTestimonials.slice(0, limit) : allTestimonials;
 
   const getInitials = (name) => {
     return name

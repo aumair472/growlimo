@@ -83,7 +83,7 @@ function Hero({ h1Text }) {
               className={`flex flex-col sm:flex-row gap-4 md:gap-5 mb-10 md:mb-12 justify-center items-stretch sm:items-center px-2 transition-opacity duration-1000 delay-400 ${isLoaded ? 'opacity-100' : 'opacity-0'}`}
             >
               <Link
-                href="/contact"
+                href="/contact/"
                 className="group relative bg-primary hover:bg-accent text-slate-950 font-bold py-4 md:py-4 px-8 md:px-10 rounded-xl transition-all duration-300 transform hover:scale-105 active:scale-95 md:hover:scale-110 hover:shadow-2xl hover:shadow-primary/50 text-center w-full sm:min-w-[280px] sm:w-auto flex items-center justify-center text-base md:text-lg shadow-lg shadow-primary/30"
               >
                 <span className="relative z-10">

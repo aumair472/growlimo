@@ -1,4 +1,4 @@
-import { getSEOConfig } from '../lib/config';
+﻿import { getSEOConfig } from '../lib/config';
 import Link from 'next/link';
 import SEO from '../components/SEO';
 
@@ -79,7 +79,7 @@ export default function About() {
               we eliminate the guesswork from digital growth. Our team utilizes
               proprietary intent-mapping and data analytics to ensure your brand
               dominates search results and attracts your ideal customers.{' '}
-              <Link href="/contact" className="text-primary hover:underline">
+              <Link href="/contact/" className="text-primary hover:underline">
                 Talk to our experts
               </Link>{' '}
               today to start your journey.
@@ -88,7 +88,7 @@ export default function About() {
               Based in the USA and serving clients across all 50 states, we
               pride ourselves on being a partner in your long-term success,
               adapting our strategies to the ever-evolving digital world.{' '}
-              <Link href="/case-studies" className="text-primary hover:underline">
+              <Link href="/case-studies/" className="text-primary hover:underline">
                 View our performance results
               </Link>{' '}
               to see how we scale businesses like yours.
@@ -193,13 +193,13 @@ export default function About() {
           </h2>
           <div className="flex flex-col md:flex-row gap-6 justify-center">
             <Link
-              href="/contact"
+              href="/contact/"
               className="bg-primary hover:bg-accent text-slate-950 font-bold py-4 px-10 rounded-xl transition transform hover:scale-105 shadow-lg shadow-primary/30 inline-block"
             >
               Get Your Free Audit
             </Link>
             <Link
-              href="/case-studies"
+              href="/case-studies/"
               className="bg-slate-800 hover:bg-slate-700 text-white font-bold py-4 px-10 rounded-xl transition border border-slate-600 inline-block"
             >
               View Case Studies

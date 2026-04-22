@@ -1,16 +1,37 @@
 import { useState } from 'react';
+import Head from 'next/head';
 
 export default function ServiceFAQSection({ faqs }) {
   const [openFaq, setOpenFaq] = useState(null);
 
   if (!faqs || faqs.length === 0) return null;
 
+  const faqSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: faqs.map((faq) => ({
+      '@type': 'Question',
+      name: faq.question,
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: faq.answer,
+      },
+    })),
+  };
+
   const toggleFaq = (index) => {
     setOpenFaq(openFaq === index ? null : index);
   };
 
   return (
-    <section className="bg-dark py-16 md:py-24">
+    <>
+      <Head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+        />
+      </Head>
+      <section className="bg-dark py-16 md:py-24">
       <div className="container mx-auto px-4">
         <div className="max-w-3xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-center text-white mb-12">
@@ -47,5 +68,6 @@ export default function ServiceFAQSection({ faqs }) {
         </div>
       </div>
     </section>
+    </>
   );
 }

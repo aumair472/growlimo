@@ -2,58 +2,114 @@ import { NextSeo } from 'next-seo';
 import Head from 'next/head';
 import { siteConfig } from '../lib/config';
 
-export default function SEO({ title, description, url, schema, image, type = 'website', disableSuffix = false }) {
-  const siteName = siteConfig.siteName || 'GrowLimo';
-  const fullTitle = (title && !disableSuffix) ? `${title} | ${siteName}` : (title || siteName);
+export default function SEO({
+  title,
+  description,
+  url,
+  schema,
+  image,
+  type = 'website',
+  disableSuffix = false,
+  noindex = false,
+  isHomepage = false,
+}) {
+  const siteName = siteConfig.siteName;
 
-  // Ensure URL has a trailing slash for consistency
-  const canonicalUrl = url ? (url.endsWith('/') ? url : `${url}/`) : undefined;
+  // ✅ FIX: Don't append suffix if title already contains brand name or pipe
+  const alreadyHasBrand = title && (title.includes('| GrowLimo') || title.includes('| Growlimo'));
+  const fullTitle =
+    title && (disableSuffix || alreadyHasBrand)
+      ? title
+      : title
+      ? `${title} | ${siteName}`
+      : siteName;
 
+  // ✅ FIX: Enforce www canonical — normalize any non-www URL passed in
+  const normalizeUrl = (rawUrl) => {
+    if (!rawUrl) return undefined;
+    const withSlash = rawUrl.endsWith('/') ? rawUrl : `${rawUrl}/`;
+    return withSlash.replace('https://growlimo.com', 'https://www.growlimo.com');
+  };
+  const canonicalUrl = normalizeUrl(url);
+
+  // ✅ FIX: Use @graph instead of root array for valid schema
   const organizationSchema = {
-    '@context': 'https://schema.org',
     '@type': 'Organization',
     '@id': `${siteConfig.siteUrl}/#organization`,
-    'name': siteConfig.siteName,
-    'url': siteConfig.siteUrl,
-    'logo': siteConfig.logoUrl,
-    'contactPoint': {
+    name: siteConfig.siteName,
+    url: siteConfig.siteUrl,
+    logo: {
+      '@type': 'ImageObject',
+      url: siteConfig.logoUrl,
+      width: 200,
+      height: 60,
+    },
+    contactPoint: {
       '@type': 'ContactPoint',
-      'telephone': siteConfig.phone,
-      'contactType': 'customer service',
-      'email': siteConfig.email,
-      'areaServed': 'US',
-      'availableLanguage': 'en'
+      telephone: siteConfig.phone,
+      contactType: 'customer service',
+      email: siteConfig.email,
+      areaServed: 'US',
+      availableLanguage: 'en',
     },
-    'address': {
+    address: {
       '@type': 'PostalAddress',
-      'streetAddress': siteConfig.address.streetAddress,
-      'addressLocality': siteConfig.address.addressLocality,
-      'addressRegion': siteConfig.address.addressRegion,
-      'postalCode': siteConfig.address.postalCode,
-      'addressCountry': siteConfig.address.addressCountry
+      streetAddress: siteConfig.address.streetAddress,
+      addressLocality: siteConfig.address.addressLocality,
+      addressRegion: siteConfig.address.addressRegion,
+      postalCode: siteConfig.address.postalCode,
+      addressCountry: siteConfig.address.addressCountry,
     },
-    'sameAs': siteConfig.sameAs
+    sameAs: siteConfig.sameAs,
   };
 
   const websiteSchema = {
-    '@context': 'https://schema.org',
     '@type': 'WebSite',
     '@id': `${siteConfig.siteUrl}/#website`,
-    'url': siteConfig.siteUrl,
-    'name': siteConfig.siteName,
-    'description': description,
-    'publisher': { '@id': `${siteConfig.siteUrl}/#organization` }
+    url: siteConfig.siteUrl,
+    name: siteConfig.siteName,
+    description: description,
+    publisher: { '@id': `${siteConfig.siteUrl}/#organization` },
   };
 
-  // Combine schemas
-  const schemas = [organizationSchema, websiteSchema];
+  // ✅ FIX: LocalBusiness schema — only inject on homepage
+  const localBusinessSchema = isHomepage
+    ? {
+        '@type': 'ProfessionalService',
+        '@id': `${siteConfig.siteUrl}/#localbusiness`,
+        name: siteConfig.siteName,
+        url: siteConfig.siteUrl,
+        telephone: siteConfig.phone,
+        email: siteConfig.email,
+        address: {
+          '@type': 'PostalAddress',
+          ...siteConfig.address,
+        },
+        geo: {
+          '@type': 'GeoCoordinates',
+          latitude: siteConfig.geo.latitude,
+          longitude: siteConfig.geo.longitude,
+        },
+        hasMap: siteConfig.hasMap,
+        sameAs: siteConfig.sameAs,
+        priceRange: '$$',
+        areaServed: { '@type': 'Country', name: 'United States' },
+        image: siteConfig.defaultImage,
+      }
+    : null;
+
+  // Build @graph array
+  const graphItems = [organizationSchema, websiteSchema];
+  if (localBusinessSchema) graphItems.push(localBusinessSchema);
   if (schema) {
-    if (Array.isArray(schema)) {
-      schemas.push(...schema);
-    } else {
-      schemas.push(schema);
-    }
+    if (Array.isArray(schema)) graphItems.push(...schema);
+    else graphItems.push(schema);
   }
+
+  const schemaGraph = {
+    '@context': 'https://schema.org',
+    '@graph': graphItems,
+  };
 
   return (
     <>
@@ -61,6 +117,8 @@ export default function SEO({ title, description, url, schema, image, type = 'we
         title={fullTitle}
         description={description}
         canonical={canonicalUrl}
+        noindex={noindex}
+        nofollow={noindex}
         openGraph={{
           url: canonicalUrl,
           title: fullTitle,
@@ -71,7 +129,7 @@ export default function SEO({ title, description, url, schema, image, type = 'we
               url: image || siteConfig.defaultImage,
               width: 1200,
               height: 630,
-              alt: title,
+              alt: title || siteName,
             },
           ],
           site_name: siteName,
@@ -85,7 +143,7 @@ export default function SEO({ title, description, url, schema, image, type = 'we
       <Head>
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(schemas) }}
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaGraph) }}
         />
       </Head>
     </>

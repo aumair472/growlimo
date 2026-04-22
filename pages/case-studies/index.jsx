@@ -1,6 +1,7 @@
 import fs from 'fs';
 import path from 'path';
 import Link from 'next/link';
+import Image from 'next/image';
 import SEO from '../../components/SEO';
 
 export default function CaseStudiesIndex({ caseStudies }) {
@@ -35,10 +36,13 @@ export default function CaseStudiesIndex({ caseStudies }) {
                 className="glass-card overflow-hidden group hover:scale-[1.02] transition-all duration-300 flex flex-col"
               >
                 <div className="aspect-video relative overflow-hidden">
-                  <img
+                  {/* ✅ FIX: next/image instead of raw <img> for LCP optimization */}
+                  <Image
                     src={cs.image}
                     alt={cs.title}
-                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                    fill
+                    sizes="(max-width: 768px) 100vw, 50vw"
+                    className="object-cover group-hover:scale-110 transition-transform duration-500"
                   />
                   <div className="absolute top-4 left-4">
                      <span className="bg-primary text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-widest">
@@ -47,9 +51,10 @@ export default function CaseStudiesIndex({ caseStudies }) {
                   </div>
                 </div>
                 <div className="p-8 flex-grow flex flex-col">
-                  <h2 className="text-2xl font-bold text-white mb-4 group-hover:text-primary transition-colors">
+                  {/* ✅ FIX: h3 not h2 — card titles are not page sections */}
+                  <h3 className="text-2xl font-bold text-white mb-4 group-hover:text-primary transition-colors">
                     {cs.title}
-                  </h2>
+                  </h3>
                   <p className="text-slate-400 mb-8 line-clamp-3 flex-grow">
                     {cs.summary}
                   </p>

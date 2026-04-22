@@ -53,7 +53,7 @@ export default function BlogIndex({ posts }) {
             {posts.map((post) => (
               <Link
                 key={post.slug}
-                href={`/blog/${post.slug}`}
+                href={`/blog/${post.slug}/`}
                 className="glass-card flex flex-col group hover:scale-[1.02] transition-all duration-300"
               >
                 {post.featuredImage && (
@@ -72,9 +72,10 @@ export default function BlogIndex({ posts }) {
                   <div className="text-primary text-xs font-bold uppercase tracking-widest mb-3">
                     {new Date(post.date).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })}
                   </div>
-                  <h2 className="text-xl font-bold text-white mb-3 group-hover:text-primary transition-colors line-clamp-2">
+                  {/* ✅ FIX: h3 not h2 — post titles are card items, not page sections */}
+                  <h3 className="text-xl font-bold text-white mb-3 group-hover:text-primary transition-colors line-clamp-2">
                     {post.title}
-                  </h2>
+                  </h3>
                   <p className="text-slate-400 text-sm line-clamp-3 mb-6 flex-grow">
                     {post.excerpt}
                   </p>

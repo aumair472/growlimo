@@ -25,7 +25,7 @@ export default function ServiceCTASection({ ctaSection, ctaButtonText }) {
             </p>
           )}
           <Link
-            href="/contact"
+            href="/contact/"
             className="inline-flex items-center justify-center bg-primary hover:bg-accent text-slate-950 font-bold py-4 px-10 rounded-xl transition-all duration-300 transform hover:scale-105 hover:shadow-2xl hover:shadow-primary/50 text-xl shadow-lg shadow-primary/30"
           >
             {ctaButtonText || 'Get Started'}

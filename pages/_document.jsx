@@ -9,15 +9,16 @@ export default function Document() {
         <meta name="language" content="English" />
         <meta name="theme-color" content="#00C68A" />
         <meta name="msapplication-TileColor" content="#00C68A" />
-        
-        {/* CWV LCP: Font preloading is now handled by next/font in _app.jsx */}
-        
+
         <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
         <link rel="icon" type="image/png" href="/logo.png" />
-        
-        <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
+
+        {/* ✅ FIX: preconnect > dns-prefetch for critical third parties */}
+        <link rel="preconnect" href="https://www.googletagmanager.com" crossOrigin="anonymous" />
+        <link rel="preconnect" href="https://connect.facebook.net" crossOrigin="anonymous" />
+        {/* dns-prefetch as fallback for browsers that don't support preconnect */}
         <link rel="dns-prefetch" href="https://www.google-analytics.com" />
-        <link rel="dns-prefetch" href="https://connect.facebook.net" />
+        <link rel="dns-prefetch" href="https://fonts.gstatic.com" />
       </Head>
       <body>
         <Main />

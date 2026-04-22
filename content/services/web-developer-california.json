@@ -90,11 +90,11 @@
   "ctaButtonText": "Consult with a California Web Developer",
   "internalLinks": [
     {
-      "to": "/web-developer-texas",
+      "to": "/web-developer-texas/",
       "anchor": "Web Development in Texas"
     },
     {
-      "to": "/web-design-services-california",
+      "to": "/web-design-services-california/",
       "anchor": "Custom web design services"
     }
   ],
