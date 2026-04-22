@@ -7,6 +7,8 @@ import SEO from '../../components/SEO';
 import Link from 'next/link';
 import Image from 'next/image';
 
+import remarkGfm from 'remark-gfm';
+
 const components = {
   h2: (props) => <h2 className="text-3xl font-bold text-white mt-10 mb-4" {...props} />,
   h3: (props) => <h3 className="text-2xl font-bold text-white mt-8 mb-3" {...props} />,
@@ -20,6 +22,14 @@ const components = {
       {...props} 
     />
   ),
+  table: (props) => (
+    <div className="overflow-x-auto mb-8">
+      <table className="w-full text-left border-collapse border border-slate-700" {...props} />
+    </div>
+  ),
+  thead: (props) => <thead className="bg-slate-800" {...props} />,
+  th: (props) => <th className="p-4 border border-slate-700 font-bold text-white" {...props} />,
+  td: (props) => <td className="p-4 border border-slate-700 text-slate-300" {...props} />,
 };
 
 export default function BlogPost({ source, frontMatter, slug }) {
@@ -175,7 +185,11 @@ export async function getStaticProps({ params }) {
   const fileContent = fs.readFileSync(filePath, 'utf8');
   
   const { content, data } = matter(fileContent);
-  const mdxSource = await serialize(content);
+  const mdxSource = await serialize(content, {
+    mdxOptions: {
+      remarkPlugins: [remarkGfm],
+    },
+  });
 
   return {
     props: {
