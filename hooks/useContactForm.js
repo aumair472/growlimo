@@ -44,8 +44,14 @@ export const useContactForm = (slug, variant = 'service') => {
 
   const validateForm = useCallback(() => {
     const e = {};
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
     if (!formData.name.trim()) e.name = 'Name is required';
-    if (!formData.email.trim()) e.email = 'Email is required';
+    if (!formData.email.trim()) {
+      e.email = 'Email is required';
+    } else if (!emailRegex.test(formData.email.trim())) {
+      e.email = 'Please enter a valid email address';
+    }
     if (!formData.phone.trim()) e.phone = 'Phone is required';
     if (!formData.service) e.service = 'Please select a service';
     if (!formData.message.trim()) e.message = 'Message is required';
@@ -73,7 +79,7 @@ export const useContactForm = (slug, variant = 'service') => {
       // 1. Honeypot check (Bot protection)
       if (formData._hp) {
         console.warn('Spam detected');
-        router.push('/thank-you'); // Silently redirect bots
+        router.push('/thank-you'); 
         return;
       }
 
@@ -81,55 +87,70 @@ export const useContactForm = (slug, variant = 'service') => {
 
       setFormLoading(true);
 
-      // 2. Prepare & Trim Data
+      // 2. Prepare Submission Data
       const submissionData = {
         name: formData.name.trim(),
         email: formData.email.trim(),
         phone: formData.phone.trim(),
-        company: formData.company.trim(),
+        company: formData.company.trim() || "N/A",
         service: formData.service,
         message: formData.message.trim(),
-        pageSource: formData.pageSource,
-        utm_source: formData.utmSource,
+        page: formData.pageSource,
+        variant: variant,
+        utm_source: formData.utmSource || "direct",
+        utm_medium: formData.utmMedium || "none",
+        utm_campaign: formData.utmCampaign || "organic",
         reply_to: formData.email.trim(),
       };
 
-      try {
-        // 3. Send to Pageclip
-        const PAGECLIP_KEY = process.env.NEXT_PUBLIC_PAGECLIP_KEY || 'YOUR_KEY';
-        const response = await fetch(`https://send.pageclip.co/${PAGECLIP_KEY}`, {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-          },
-          body: JSON.stringify(submissionData),
-        });
+      let adminSuccess = false;
 
-        if (!response.ok) {
-          console.error('Pageclip error:', response.statusText);
+      try {
+        // 3. EmailJS Integration
+        const SERVICE_ID = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID;
+        const PUBLIC_KEY = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY;
+        const ADMIN_TEMPLATE_ID = process.env.NEXT_PUBLIC_EMAILJS_ADMIN_TEMPLATE_ID || process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID;
+        const USER_TEMPLATE_ID = process.env.NEXT_PUBLIC_EMAILJS_USER_TEMPLATE_ID;
+
+        if (!SERVICE_ID || !PUBLIC_KEY) {
+          throw new Error('EmailJS configuration missing (Service ID or Public Key)');
         }
 
-        // 4. Send via EmailJS
-        const SERVICE_ID = 'service_qc4h9bv';
-        const TEMPLATE_ID = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID || 'YOUR_TEMPLATE_ID';
-        const PUBLIC_KEY = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY || 'YOUR_PUBLIC_KEY';
+        // 4a. Trigger Admin Notification (Critical)
+        try {
+          if (ADMIN_TEMPLATE_ID) {
+            await emailjs.send(SERVICE_ID, ADMIN_TEMPLATE_ID, submissionData, PUBLIC_KEY);
+            adminSuccess = true;
+          } else {
+            console.warn('Admin Template ID is missing');
+          }
+        } catch (adminErr) {
+          console.error('Admin lead notification failed:', adminErr?.text || adminErr || 'Unknown error');
+        }
 
-        await emailjs.send(
-          SERVICE_ID,
-          TEMPLATE_ID,
-          submissionData,
-          PUBLIC_KEY
-        );
+        // 4b. Trigger User Auto-reply (Non-critical)
+        try {
+          if (USER_TEMPLATE_ID) {
+            await emailjs.send(SERVICE_ID, USER_TEMPLATE_ID, submissionData, PUBLIC_KEY);
+          }
+        } catch (userErr) {
+          console.error('User auto-reply failed:', userErr?.text || userErr || 'Unknown error');
+        }
 
-        router.push('/thank-you');
+        if (adminSuccess) {
+          router.push('/thank-you');
+        } else {
+          throw new Error('Failed to send lead notification');
+        }
+
       } catch (err) {
         console.error('Submission Error:', err);
-        setSubmitError('Failed to send. Please try again or call us directly.');
+        setSubmitError('Failed to send. Please try again or call us directly at info@growlimo.com');
       } finally {
         setFormLoading(false);
       }
     },
-    [formData, validateForm, router]
+    [formData, validateForm, router, variant]
   );
 
   return {
