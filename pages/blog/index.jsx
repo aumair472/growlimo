@@ -11,7 +11,7 @@ export default function BlogIndex({ posts }) {
       <SEO
         title="Digital Marketing Blog | Expert SEO & Lead Acquisition Tips | GrowLimo"
         description="Expert digital marketing insights, SEO strategies, and lead acquisition tips from Growlimo. Learn from proven case studies and industry best practices."
-        url="https://www.growlimo.com/blog/"
+        url="https://growlimo.com/blog/"
       />
 
       <script
@@ -25,13 +25,13 @@ export default function BlogIndex({ posts }) {
                 "@type": "ListItem",
                 "position": 1,
                 "name": "Home",
-                "item": "https://www.growlimo.com"
+                "item": "https://growlimo.com"
               },
               {
                 "@type": "ListItem",
                 "position": 2,
                 "name": "Blog",
-                "item": "https://www.growlimo.com/blog/"
+                "item": "https://growlimo.com/blog/"
               }
             ]
           })

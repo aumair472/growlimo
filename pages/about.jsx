@@ -1,4 +1,4 @@
-﻿import { getSEOConfig } from '../lib/config';
+import { getSEOConfig } from '../lib/config';
 import Link from 'next/link';
 import SEO from '../components/SEO';
 
@@ -10,7 +10,7 @@ export default function About() {
       <SEO
         title={seo.title}
         description={seo.description}
-        url="https://www.growlimo.com/about/"
+        url="https://growlimo.com/about/"
       />
 
       {/* Hero Section */}

@@ -1,4 +1,4 @@
-﻿import { useState } from 'react';
+import { useState } from 'react';
 import Link from 'next/link';
 import SEO from '../components/SEO';
 import { getSEOConfig } from '../lib/config';
@@ -116,7 +116,7 @@ export default function Contact() {
       <SEO
         title={seo.title}
         description={seo.description}
-        url="https://www.growlimo.com/contact/"
+        url="https://growlimo.com/contact/"
       />
 
       <div className="bg-dark text-white">

@@ -6,7 +6,7 @@ export default function ThankYou() {
       <SEO
         title="Thank You | GrowLimo"
         description="Your message has been received. We'll be in touch shortly."
-        url="https://www.growlimo.com/thank-you/"
+        url="https://growlimo.com/thank-you/"
         noindex={true}
       />
 

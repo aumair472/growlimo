@@ -266,7 +266,7 @@ const generalServices = {
       provider: {
         '@type': 'Organization',
         name: 'Growlimo',
-        url: 'https://www.growlimo.com',
+        url: 'https://growlimo.com',
       },
       areaServed: {
         '@type': 'State',
@@ -527,7 +527,7 @@ const generalServices = {
       provider: {
         '@type': 'Organization',
         name: 'Growlimo',
-        url: 'https://www.growlimo.com',
+        url: 'https://growlimo.com',
       },
       areaServed: {
         '@type': 'State',
@@ -751,7 +751,7 @@ const generalServices = {
       provider: {
         '@type': 'Organization',
         name: 'Growlimo',
-        url: 'https://www.growlimo.com',
+        url: 'https://growlimo.com',
       },
       areaServed: {
         '@type': 'State',
@@ -978,7 +978,7 @@ const generalServices = {
       provider: {
         '@type': 'Organization',
         name: 'Growlimo',
-        url: 'https://www.growlimo.com',
+        url: 'https://growlimo.com',
       },
       areaServed: {
         '@type': 'State',
@@ -1098,7 +1098,7 @@ const generalServices = {
       provider: {
         '@type': 'Organization',
         name: 'Growlimo',
-        url: 'https://www.growlimo.com',
+        url: 'https://growlimo.com',
       },
       areaServed: {
         '@type': 'State',
@@ -1324,7 +1324,7 @@ const generalServices = {
       provider: {
         '@type': 'Organization',
         name: 'Growlimo',
-        url: 'https://www.growlimo.com',
+        url: 'https://growlimo.com',
       },
       areaServed: {
         '@type': 'State',
@@ -1535,7 +1535,7 @@ const generalServices = {
       provider: {
         '@type': 'Organization',
         name: 'Growlimo',
-        url: 'https://www.growlimo.com',
+        url: 'https://growlimo.com',
       },
       areaServed: {
         '@type': 'State',
@@ -1655,7 +1655,7 @@ const generalServices = {
       provider: {
         '@type': 'Organization',
         name: 'Growlimo',
-        url: 'https://www.growlimo.com',
+        url: 'https://growlimo.com',
       },
       areaServed: {
         '@type': 'State',
@@ -1775,7 +1775,7 @@ const generalServices = {
       provider: {
         '@type': 'Organization',
         name: 'Growlimo',
-        url: 'https://www.growlimo.com',
+        url: 'https://growlimo.com',
       },
       areaServed: {
         '@type': 'State',
@@ -1895,7 +1895,7 @@ const generalServices = {
       provider: {
         '@type': 'Organization',
         name: 'Growlimo',
-        url: 'https://www.growlimo.com',
+        url: 'https://growlimo.com',
       },
       areaServed: {
         '@type': 'State',

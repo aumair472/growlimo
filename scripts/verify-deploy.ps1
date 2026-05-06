@@ -1,11 +1,11 @@
-# Frontend Deployment Verification Script (PowerShell)
+﻿# Frontend Deployment Verification Script (PowerShell)
 # Verifies that the frontend can correctly communicate with the API
 
 $ErrorActionPreference = "Stop"
 
 # Configuration
 $API_URL = if ($env:VITE_API_URL) { $env:VITE_API_URL } else { "https://api.growlimo.com" }
-$FRONTEND_URL = if ($env:VITE_SITE_URL) { $env:VITE_SITE_URL } else { "https://www.growlimo.com" }
+$FRONTEND_URL = if ($env:VITE_SITE_URL) { $env:VITE_SITE_URL } else { "https://growlimo.com" }
 
 Write-Host "=========================================" -ForegroundColor Cyan
 Write-Host "Frontend Deployment Verification" -ForegroundColor Cyan

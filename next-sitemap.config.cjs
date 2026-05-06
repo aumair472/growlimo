@@ -1,6 +1,6 @@
 /** @type {import('next-sitemap').IConfig} */
 module.exports = {
-  siteUrl: 'https://www.growlimo.com',
+  siteUrl: 'https://growlimo.com',
   generateRobotsTxt: true,
   generateIndexSitemap: false,
   exclude: ['/admin*', '/thank-you'],

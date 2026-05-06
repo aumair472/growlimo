@@ -4,7 +4,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import SEO from '../../components/SEO';
 
-const WWW = 'https://www.growlimo.com';
+const WWW = 'https://growlimo.com';
 
 export default function CaseStudyDetail({ caseStudy, slug }) {
   if (!caseStudy) return null;

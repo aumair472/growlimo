@@ -23,6 +23,8 @@ const nextConfig = {
           { key: 'X-Frame-Options', value: 'SAMEORIGIN' },
           { key: 'Referrer-Policy', value: 'strict-origin-when-cross-origin' },
           { key: 'Permissions-Policy', value: 'camera=(), microphone=(), geolocation=(self)' },
+          // ✅ HSTS: enforce HTTPS for 1 year, include subdomains
+          { key: 'Strict-Transport-Security', value: 'max-age=31536000; includeSubDomains; preload' },
         ],
       },
       // ✅ FIX 3: Long-term cache for static blog images
@@ -35,14 +37,16 @@ const nextConfig = {
     ];
   },
 
-  // ✅ FIX 4: Redirect non-www → www (canonical domain enforcement)
+  // ✅ FIX 4: Redirect www → non-www (canonical: https://growlimo.com)
+  // This enforces the primary canonical domain is NON-WWW.
   async redirects() {
     return [
       {
+        // Redirect www.growlimo.com/* → growlimo.com/*
         source: '/:path*',
-        has: [{ type: 'host', value: 'growlimo.com' }],
-        destination: 'https://www.growlimo.com/:path*',
-        permanent: true, // 308 in Next.js
+        has: [{ type: 'host', value: 'www.growlimo.com' }],
+        destination: 'https://growlimo.com/:path*',
+        permanent: true, // 308 in Next.js (treated as 301 by crawlers)
       },
     ];
   },

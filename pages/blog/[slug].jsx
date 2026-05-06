@@ -9,7 +9,7 @@ import Image from 'next/image';
 import Head from 'next/head';
 import remarkGfm from 'remark-gfm';
 
-const WWW = 'https://www.growlimo.com';
+const WWW = 'https://growlimo.com';
 
 const components = {
   h2: (props) => <h2 className="text-3xl font-bold text-white mt-10 mb-4" {...props} />,

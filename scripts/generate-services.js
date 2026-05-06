@@ -1,4 +1,4 @@
-const fs = require('fs');
+﻿const fs = require('fs');
 const path = require('path');
 
 const californiaGeneralPath = path.join(__dirname, 'src/data/services/states/california/general.js');
@@ -132,7 +132,7 @@ const getHealthcareData = (state, State) => `const healthcareServices = {
       provider: {
         '@type': 'Organization',
         name: 'Growlimo',
-        url: 'https://www.growlimo.com',
+        url: 'https://growlimo.com',
       },
       areaServed: {
         '@type': 'State',
@@ -248,7 +248,7 @@ const getHealthcareData = (state, State) => `const healthcareServices = {
       provider: {
         '@type': 'Organization',
         name: 'Growlimo',
-        url: 'https://www.growlimo.com',
+        url: 'https://growlimo.com',
       },
       areaServed: {
         '@type': 'State',
@@ -364,7 +364,7 @@ const getHealthcareData = (state, State) => `const healthcareServices = {
       provider: {
         '@type': 'Organization',
         name: 'Growlimo',
-        url: 'https://www.growlimo.com',
+        url: 'https://growlimo.com',
       },
       areaServed: {
         '@type': 'State',
@@ -480,7 +480,7 @@ const getHealthcareData = (state, State) => `const healthcareServices = {
       provider: {
         '@type': 'Organization',
         name: 'Growlimo',
-        url: 'https://www.growlimo.com',
+        url: 'https://growlimo.com',
       },
       areaServed: {
         '@type': 'State',
@@ -596,7 +596,7 @@ const getHealthcareData = (state, State) => `const healthcareServices = {
       provider: {
         '@type': 'Organization',
         name: 'Growlimo',
-        url: 'https://www.growlimo.com',
+        url: 'https://growlimo.com',
       },
       areaServed: {
         '@type': 'State',
@@ -712,7 +712,7 @@ const getHealthcareData = (state, State) => `const healthcareServices = {
       provider: {
         '@type': 'Organization',
         name: 'Growlimo',
-        url: 'https://www.growlimo.com',
+        url: 'https://growlimo.com',
       },
       areaServed: {
         '@type': 'State',

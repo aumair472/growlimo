@@ -24,11 +24,12 @@ export default function SEO({
       ? `${title} | ${siteName}`
       : siteName;
 
-  // ✅ FIX: Enforce www canonical — normalize any non-www URL passed in
+  // ✅ FIX: Enforce non-www canonical — normalize any www URL passed in
   const normalizeUrl = (rawUrl) => {
     if (!rawUrl) return undefined;
     const withSlash = rawUrl.endsWith('/') ? rawUrl : `${rawUrl}/`;
-    return withSlash.replace('https://growlimo.com', 'https://www.growlimo.com');
+    // Strip www. prefix so canonical is always https://growlimo.com/...
+    return withSlash.replace('https://www.growlimo.com', 'https://growlimo.com');
   };
   const canonicalUrl = normalizeUrl(url);
 

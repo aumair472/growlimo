@@ -28,8 +28,8 @@
       "provider": {
         "@type": "ProfessionalService",
         "name": "Growlimo",
-        "url": "https://www.growlimo.com",
-        "image": "https://www.growlimo.com/logo.png",
+        "url": "https://growlimo.com",
+        "image": "https://growlimo.com/logo.png",
         "telephone": "+1-724-750-6935",
         "address": {
           "@type": "PostalAddress",
@@ -48,7 +48,7 @@
       },
       "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "https://www.growlimo.com/pt-chiropractic-marketing"
+        "@id": "https://growlimo.com/pt-chiropractic-marketing"
       }
     }
   },
@@ -81,8 +81,8 @@
       "provider": {
         "@type": "ProfessionalService",
         "name": "Growlimo",
-        "url": "https://www.growlimo.com",
-        "image": "https://www.growlimo.com/logo.png",
+        "url": "https://growlimo.com",
+        "image": "https://growlimo.com/logo.png",
         "telephone": "+1-724-750-6935",
         "address": {
           "@type": "PostalAddress",
@@ -101,7 +101,7 @@
       },
       "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "https://www.growlimo.com/home-health-care-marketing"
+        "@id": "https://growlimo.com/home-health-care-marketing"
       }
     }
   },
@@ -134,8 +134,8 @@
       "provider": {
         "@type": "ProfessionalService",
         "name": "Growlimo",
-        "url": "https://www.growlimo.com",
-        "image": "https://www.growlimo.com/logo.png",
+        "url": "https://growlimo.com",
+        "image": "https://growlimo.com/logo.png",
         "telephone": "+1-724-750-6935",
         "address": {
           "@type": "PostalAddress",
@@ -154,7 +154,7 @@
       },
       "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "https://www.growlimo.com/medical-lab-marketing"
+        "@id": "https://growlimo.com/medical-lab-marketing"
       }
     }
   },
@@ -187,8 +187,8 @@
       "provider": {
         "@type": "ProfessionalService",
         "name": "Growlimo",
-        "url": "https://www.growlimo.com",
-        "image": "https://www.growlimo.com/logo.png",
+        "url": "https://growlimo.com",
+        "image": "https://growlimo.com/logo.png",
         "telephone": "+1-724-750-6935",
         "address": {
           "@type": "PostalAddress",
@@ -207,7 +207,7 @@
       },
       "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "https://www.growlimo.com/std-testing-marketing"
+        "@id": "https://growlimo.com/std-testing-marketing"
       }
     }
   },
@@ -240,8 +240,8 @@
       "provider": {
         "@type": "ProfessionalService",
         "name": "Growlimo",
-        "url": "https://www.growlimo.com",
-        "image": "https://www.growlimo.com/logo.png",
+        "url": "https://growlimo.com",
+        "image": "https://growlimo.com/logo.png",
         "telephone": "+1-724-750-6935",
         "address": {
           "@type": "PostalAddress",
@@ -260,7 +260,7 @@
       },
       "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "https://www.growlimo.com/dental-marketing"
+        "@id": "https://growlimo.com/dental-marketing"
       }
     }
   },
@@ -297,8 +297,8 @@
       "provider": {
         "@type": "ProfessionalService",
         "name": "Growlimo",
-        "url": "https://www.growlimo.com",
-        "image": "https://www.growlimo.com/logo.png",
+        "url": "https://growlimo.com",
+        "image": "https://growlimo.com/logo.png",
         "telephone": "+1-724-750-6935",
         "address": {
           "@type": "PostalAddress",
@@ -317,7 +317,7 @@
       },
       "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "https://www.growlimo.com/urgent-care-marketing"
+        "@id": "https://growlimo.com/urgent-care-marketing"
       }
     }
   },
@@ -354,8 +354,8 @@
       "provider": {
         "@type": "ProfessionalService",
         "name": "Growlimo",
-        "url": "https://www.growlimo.com",
-        "image": "https://www.growlimo.com/logo.png",
+        "url": "https://growlimo.com",
+        "image": "https://growlimo.com/logo.png",
         "telephone": "+1-724-750-6935",
         "address": {
           "@type": "PostalAddress",
@@ -374,7 +374,7 @@
       },
       "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "https://www.growlimo.com/cardiology-marketing"
+        "@id": "https://growlimo.com/cardiology-marketing"
       }
     }
   }
