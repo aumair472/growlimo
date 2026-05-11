@@ -67,7 +67,7 @@ function FAQ({ limit = null, showTitle = true }) {
               return (
                 <div
                   key={faq.id}
-                  className="border border-slate-700 rounded-lg overflow-hidden glass-card"
+                  className="border border-slate-700 rounded-lg glass-card"
                 >
                   <dt>
                     <button

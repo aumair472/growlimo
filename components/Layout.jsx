@@ -3,9 +3,9 @@ import Footer from './Footer';
 
 export default function Layout({ children }) {
   return (
-    <div className="flex flex-col bg-dark">
+    <div className="flex flex-col bg-dark overflow-x-hidden">
       <Navbar />
-      <main className="flex-grow pt-20">
+      <main className="flex-grow pt-20 min-w-0">
         {children}
       </main>
       <Footer />

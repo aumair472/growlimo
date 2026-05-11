@@ -275,8 +275,8 @@ export default function Home() {
       {/* ── 10. FINAL CTA ── */}
       <section className="bg-dark text-white py-10 md:py-14 relative overflow-hidden" aria-labelledby="cta-heading">
         <div className="absolute inset-0 pointer-events-none">
-          <div className="absolute top-10 right-10 w-64 h-64 bg-primary/10 rounded-full blur-3xl"></div>
-          <div className="absolute bottom-10 left-10 w-48 h-48 bg-primary/5 rounded-full blur-3xl"></div>
+          <div className="absolute top-10 right-10 w-64 h-64 bg-primary/10 rounded-full blur-xl opacity-50"></div>
+          <div className="absolute bottom-10 left-10 w-48 h-48 bg-primary/5 rounded-full blur-xl opacity-30"></div>
         </div>
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-3xl mx-auto text-center">

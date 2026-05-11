@@ -40,7 +40,7 @@ export default function ServiceDetail({ service, slug }) {
   const isCustomLayout = !!contentSections;
 
   return (
-    <div className="bg-slate-900 font-sans selection:bg-primary/30 selection:text-white flex flex-col">
+    <div className="bg-slate-900 font-sans selection:bg-primary/30 selection:text-white overflow-x-hidden">
       <SEO
         title={metaTitle}
         description={metaDescription}
@@ -49,7 +49,7 @@ export default function ServiceDetail({ service, slug }) {
         schema={service.schema}
       />
       
-      <div className="flex-grow">
+      <div>
         <ServiceHero
           h1={h1}
           subheadline={subheadline}
@@ -93,7 +93,7 @@ export default function ServiceDetail({ service, slug }) {
                   {whyChooseUs?.map((item, index) => (
                     <div
                       key={index}
-                      className="glass-card p-8 hover:scale-[1.02] transition-transform duration-300 h-full flex flex-col text-center"
+                      className="glass-card p-8 h-full flex flex-col text-center"
                     >
                       <div className="w-14 h-14 rounded-full bg-primary/20 flex items-center justify-center text-primary mb-6 mx-auto">
                         <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -124,7 +124,7 @@ export default function ServiceDetail({ service, slug }) {
                   {servicesBreakdown?.map((item, index) => (
                     <div
                       key={index}
-                      className="glass-card p-6 hover:scale-[1.02] transition-transform duration-300 h-full flex flex-col"
+                      className="glass-card p-6 h-full flex flex-col"
                     >
                       <div className="w-12 h-12 rounded-xl bg-primary/20 flex items-center justify-center text-primary mb-5">
                         <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">

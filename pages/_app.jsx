@@ -65,7 +65,7 @@ export default function App({ Component, pageProps }) {
   }, [router.events]);
 
   return (
-    <div className={`${poppins.variable} font-sans`}>
+    <div className={`${poppins.variable} font-sans overflow-x-hidden`}>
       <Layout>
         <Component {...pageProps} />
       </Layout>

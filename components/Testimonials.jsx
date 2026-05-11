@@ -50,7 +50,7 @@ function Testimonials({ limit = null, showTitle = true }) {
           {testimonials.map((testimonial) => (
             <div
               key={testimonial.id}
-              className="glass-card p-6 hover:scale-105 transition-transform duration-300"
+              className="glass-card p-6 transition-all duration-300"
               role="article"
               aria-labelledby={`testimonial-${testimonial.id}`}
             >

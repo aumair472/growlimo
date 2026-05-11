@@ -18,9 +18,9 @@ export default function ServiceProcessSection({ processSection }) {
             {steps.map((step, index) => (
               <div key={index} className="relative text-center max-w-xs mx-auto w-full">
                 {index < steps.length - 1 && (
-                  <div className="hidden lg:block absolute top-8 left-[calc(50%+2rem)] right-[calc(-50%+2rem)] h-0.5 bg-gradient-to-r from-primary/40 to-primary/10"></div>
+                  <div className="hidden lg:block absolute top-8 left-[60%] w-full h-0.5 bg-primary/20"></div>
                 )}
-                <div className="w-16 h-16 rounded-full bg-primary text-white font-bold text-2xl flex items-center justify-center mx-auto mb-5 shadow-lg shadow-primary/30 relative z-10">
+                <div className="w-16 h-16 rounded-full bg-primary text-white font-bold text-2xl flex items-center justify-center mx-auto mb-5 relative z-10">
                   {index + 1}
                 </div>
                 <h3 className="text-lg font-bold text-white mb-3">

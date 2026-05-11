@@ -6,7 +6,7 @@ export default function About() {
   const seo = getSEOConfig('/about');
 
   return (
-    <div className="bg-dark pt-8 pb-12 text-white overflow-hidden">
+    <div className="bg-dark pt-8 pb-12 text-white overflow-x-hidden">
       <SEO
         title={seo.title}
         description={seo.description}
@@ -14,13 +14,10 @@ export default function About() {
       />
 
       {/* Hero Section */}
-      <section className="relative py-14 px-4">
+      <section className="relative py-14 px-4 overflow-hidden">
         <div className="absolute inset-0 pointer-events-none">
-          <div className="absolute top-20 right-10 w-64 h-64 md:w-96 md:h-96 bg-primary/10 rounded-full blur-3xl animate-pulse"></div>
-          <div
-            className="absolute bottom-20 left-10 w-48 h-48 md:w-80 md:h-80 bg-primary/5 rounded-full blur-3xl animate-pulse"
-            style={{ animationDelay: '1s' }}
-          ></div>
+          <div className="absolute top-20 right-10 w-48 h-48 md:w-72 md:h-72 bg-primary/8 rounded-full blur-lg opacity-40"></div>
+          <div className="absolute bottom-20 left-10 w-36 h-36 md:w-56 md:h-56 bg-primary/5 rounded-full blur-lg opacity-30"></div>
         </div>
 
         <div className="container mx-auto max-w-6xl text-center relative z-10">

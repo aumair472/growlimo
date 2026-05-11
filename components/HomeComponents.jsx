@@ -10,9 +10,9 @@ export function StatCard({ value, suffix, prefix, label }) {
   return (
     <div
       ref={ref}
-      className="glass-card p-6 text-center group hover:scale-105 transition-transform duration-300"
+      className="glass-card p-6 text-center group transition-all duration-300"
     >
-      <div className="text-3xl md:text-4xl font-extrabold text-primary mb-2 group-hover:scale-110 transition-transform duration-300">
+      <div className="text-3xl md:text-4xl font-extrabold text-primary mb-2 transition-all duration-300">
         {prefix}
         {count}
         {suffix}
@@ -27,7 +27,7 @@ export function SpecialtyCard({ icon, title, description, link, ctaText }) {
   return (
     <Link
       href={link}
-      className="glass-card p-5 md:p-6 group hover:scale-105 transition-all duration-300 cursor-pointer block h-full"
+      className="glass-card p-5 md:p-6 group transition-all duration-300 cursor-pointer block h-full"
     >
       <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center mb-3">
         {icon}
@@ -36,7 +36,7 @@ export function SpecialtyCard({ icon, title, description, link, ctaText }) {
         {title}
       </h3>
       <p className="text-slate-300 text-sm mb-3">{description}</p>
-      <span className="text-primary text-sm font-semibold group-hover:translate-x-1 inline-block transition-transform">
+      <span className="text-primary text-sm font-semibold inline-block transition-transform">
         {ctaText || 'Learn More'} →
       </span>
     </Link>
@@ -48,7 +48,7 @@ export function ProcessStep({ number, title, description, isLast }) {
   return (
     <div className="flex gap-4">
       <div className="flex flex-col items-center">
-        <div className="w-12 h-12 rounded-full bg-primary flex items-center justify-center text-white font-bold text-lg flex-shrink-0 shadow-lg shadow-primary/30">
+        <div className="w-12 h-12 rounded-full bg-primary flex items-center justify-center text-white font-bold text-lg flex-shrink-0">
           {number}
         </div>
         {!isLast && <div className="w-0.5 h-full bg-primary/30 mt-2"></div>}

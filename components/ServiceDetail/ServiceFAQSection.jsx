@@ -39,7 +39,7 @@ export default function ServiceFAQSection({ faqs }) {
           </h2>
           <div className="space-y-3">
             {faqs.map((faq, index) => (
-              <div key={index} className="glass-card overflow-hidden transition-all duration-300">
+              <div key={index} className="glass-card transition-all duration-300">
                 <button
                   onClick={() => toggleFaq(index)}
                   className="w-full px-6 py-5 text-left flex items-center justify-between gap-4 hover:bg-white/5 transition-colors"

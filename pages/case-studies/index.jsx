@@ -13,10 +13,10 @@ export default function CaseStudiesIndex({ caseStudies }) {
         url="https://growlimo.com/case-studies/"
       />
 
-      <section className="bg-dark text-white py-16 md:py-24 relative overflow-hidden">
+      <section className="bg-dark text-white py-10 md:py-14 relative">
         <div className="absolute inset-0 pointer-events-none">
-          <div className="absolute top-20 right-10 w-64 h-64 md:w-96 md:h-96 bg-primary/10 rounded-full blur-3xl"></div>
-          <div className="absolute bottom-20 left-10 w-48 h-48 md:w-80 md:h-80 bg-primary/5 rounded-full blur-3xl"></div>
+          <div className="absolute top-20 right-10 w-48 h-48 md:w-72 md:h-72 bg-primary/8 rounded-full blur-lg opacity-40"></div>
+          <div className="absolute bottom-20 left-10 w-36 h-36 md:w-56 md:h-56 bg-primary/5 rounded-full blur-lg opacity-30"></div>
         </div>
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center mb-16">

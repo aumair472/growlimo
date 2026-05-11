@@ -228,7 +228,7 @@ export default function Contact() {
         </section>
 
         {/* ── FAQ ── */}
-        <section className="py-16 border-t border-slate-800">
+        <section className="py-10 md:py-14 border-t border-slate-800">
           <div className="container mx-auto px-4">
             <div className="max-w-3xl mx-auto">
               <h2 className="text-2xl md:text-3xl font-bold text-white text-center mb-10">
@@ -236,7 +236,7 @@ export default function Contact() {
               </h2>
               <div className="space-y-3">
                 {faqData.map((faq, i) => (
-                  <div key={i} className="glass-card overflow-hidden">
+                  <div key={i} className="glass-card">
                     <button
                       onClick={() => setOpenFaq(openFaq === i ? null : i)}
                       className="w-full flex items-center justify-between p-5 text-left"

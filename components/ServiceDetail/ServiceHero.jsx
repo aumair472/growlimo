@@ -3,9 +3,9 @@ import Form from '../common/Form';
 export default function ServiceHero({ h1, subheadline, heroContent, isCustomLayout, slug }) {
   return (
     <section className="bg-dark text-white py-16 md:py-12 relative overflow-hidden">
-      <div className="absolute inset-0 pointer-events-none">
-        <div className="absolute -top-20 -right-20 w-64 h-64 md:w-96 md:h-96 bg-primary/5 rounded-full blur-3xl"></div>
-        <div className="absolute bottom-0 left-0 w-48 h-48 md:w-80 md:h-80 bg-primary/3 rounded-full blur-3xl"></div>
+      <div className="absolute inset-0 pointer-events-none" aria-hidden="true">
+        <div className="absolute top-0 right-0 w-48 h-48 md:w-72 md:h-72 bg-primary/5 rounded-full blur-lg opacity-40"></div>
+        <div className="absolute bottom-0 left-0 w-36 h-36 md:w-56 md:h-56 bg-primary/3 rounded-full blur-lg opacity-30"></div>
       </div>
       <div className="container mx-auto px-4 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center max-w-7xl mx-auto">

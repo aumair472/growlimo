@@ -6,8 +6,8 @@ export default function ServiceCTASection({ ctaSection, ctaButtonText }) {
   return (
     <section className="bg-dark py-10 md:py-14 relative overflow-hidden">
       <div className="absolute inset-0 pointer-events-none">
-        <div className="absolute top-10 right-10 w-64 h-64 bg-primary/10 rounded-full blur-3xl"></div>
-        <div className="absolute bottom-10 left-10 w-48 h-48 bg-primary/5 rounded-full blur-3xl"></div>
+        <div className="absolute top-10 right-10 w-64 h-64 bg-primary/10 rounded-full blur-xl opacity-50"></div>
+        <div className="absolute bottom-10 left-10 w-48 h-48 bg-primary/5 rounded-full blur-xl opacity-30"></div>
       </div>
       <div className="container mx-auto px-4 relative z-10 text-center">
         <div className="max-w-3xl mx-auto">
@@ -26,7 +26,7 @@ export default function ServiceCTASection({ ctaSection, ctaButtonText }) {
           )}
           <Link
             href="/contact/"
-            className="inline-flex items-center justify-center bg-primary hover:bg-accent text-slate-950 font-bold py-4 px-10 rounded-xl transition-all duration-300 transform hover:scale-105 hover:shadow-2xl hover:shadow-primary/50 text-xl shadow-lg shadow-primary/30"
+            className="inline-flex items-center justify-center bg-primary hover:bg-accent text-slate-950 font-bold py-4 px-10 rounded-xl transition-colors duration-300 text-xl"
           >
             {ctaButtonText || 'Get Started'}
             <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">

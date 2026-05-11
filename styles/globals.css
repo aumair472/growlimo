@@ -2,8 +2,15 @@
 @config "../tailwind.config.cjs";
 
 @layer base {
+  html {
+    overflow-x: hidden;
+    width: 100%;
+  }
+
   body {
     /* CWV: Prevent text from shifting when web fonts load */
+    overflow-x: hidden;
+    width: 100%;
     background-color: #0b1b29;
     color: #ffffff;
     font-family:
@@ -27,12 +34,6 @@
     ascent-override: 95%;
     descent-override: 22%;
     line-gap-override: 0%;
-  }
-
-  /* CWV INP: Reduce paint areas on below-the-fold sections */
-  section:not(:first-of-type) {
-    content-visibility: auto;
-    contain-intrinsic-size: auto 400px;
   }
 
   /* Accessibility: Focus styles for keyboard navigation */
@@ -91,21 +92,12 @@
   }
 
   /* Glass Card Effect - Dark Theme */
-  /* CWV INP: backdrop-filter is GPU-expensive on mobile; disable on small screens */
   .glass-card {
-    background: rgba(30, 41, 59, 0.8);
+    background: rgba(30, 41, 59, 0.95);
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
     border-radius: 16px;
     border: 1px solid rgba(148, 163, 184, 0.2);
-    transition: all 0.3s ease;
-    will-change: transform;
-  }
-
-  @media (min-width: 768px) {
-    .glass-card {
-      backdrop-filter: blur(10px);
-      -webkit-backdrop-filter: blur(10px);
-    }
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
   }
 
   .glass-card:hover {

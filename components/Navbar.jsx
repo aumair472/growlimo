@@ -79,7 +79,7 @@ export default function Navbar() {
       <nav
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
           isScrolled
-            ? 'bg-dark/95 backdrop-blur-md shadow-lg border-b border-slate-800'
+            ? 'bg-dark/98 shadow-lg border-b border-slate-800'
             : 'bg-dark border-b border-slate-800'
         }`}
         role="navigation"
@@ -162,7 +162,7 @@ export default function Navbar() {
 
       {isOpen && (
         <div
-          className="lg:hidden fixed inset-0 bg-black/60 backdrop-blur-sm z-40 transition-opacity duration-300"
+          className="lg:hidden fixed inset-0 bg-black/80 z-40 transition-opacity duration-300"
           onClick={handleMenuClose}
           aria-hidden="true"
         />
