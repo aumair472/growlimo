@@ -4,7 +4,7 @@ function Hero({ h1Text }) {
 
   return (
     <section
-      className="bg-dark text-white pt-8 md:pt-8 lg:pt-10 pb-8  md:pb-8 lg:pb-10 relative overflow-hidden min-h-[100vh] md:min-h-[90vh] flex items-center"
+      className="bg-dark text-white pt-20 pb-16 md:pt-24 md:pb-20 relative overflow-hidden flex items-center"
       aria-labelledby="hero-heading"
     >
       <div className="absolute inset-0 z-0 overflow-hidden" aria-hidden="true">

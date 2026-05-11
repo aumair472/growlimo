@@ -6,7 +6,7 @@ export default function About() {
   const seo = getSEOConfig('/about');
 
   return (
-    <div className="bg-dark min-h-screen pt-8 pb-16 text-white overflow-hidden">
+    <div className="bg-dark pt-8 pb-12 text-white overflow-hidden">
       <SEO
         title={seo.title}
         description={seo.description}
@@ -14,7 +14,7 @@ export default function About() {
       />
 
       {/* Hero Section */}
-      <section className="relative py-20 px-4">
+      <section className="relative py-14 px-4">
         <div className="absolute inset-0 pointer-events-none">
           <div className="absolute top-20 right-10 w-64 h-64 md:w-96 md:h-96 bg-primary/10 rounded-full blur-3xl animate-pulse"></div>
           <div
@@ -36,7 +36,7 @@ export default function About() {
       </section>
 
       {/* Stats Grid */}
-      <section className="container mx-auto max-w-7xl px-4 py-12">
+      <section className="container mx-auto max-w-7xl px-4 py-8">
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
           {[
             { label: 'Revenue Growth', value: '210%', color: 'text-primary' },
@@ -62,8 +62,8 @@ export default function About() {
       </section>
 
       {/* Mission Section */}
-      <section className="container mx-auto max-w-5xl px-4 py-20">
-        <div className="glass-card p-10 md:p-16 border border-slate-700/50">
+      <section className="container mx-auto max-w-5xl px-4 py-10">
+        <div className="glass-card p-8 md:p-12 border border-slate-700/50">
           <h2 className="text-3xl md:text-5xl font-bold mb-8 text-white">
             Our Mission
           </h2>
@@ -98,7 +98,7 @@ export default function About() {
       </section>
 
       {/* Expertise Section */}
-      <section className="container mx-auto max-w-7xl px-4 py-20 border-t border-slate-800/50">
+      <section className="container mx-auto max-w-7xl px-4 py-10 border-t border-slate-800/50">
         <h2 className="text-3xl md:text-5xl font-bold mb-12 text-center text-white">
           Our Expertise
         </h2>
@@ -186,8 +186,8 @@ export default function About() {
       </section>
 
       {/* CTA Section */}
-      <section className="container mx-auto max-w-7xl px-4 py-20">
-        <div className="glass-card p-12 md:p-20 text-center border-primary/20">
+      <section className="container mx-auto max-w-7xl px-4 py-10">
+        <div className="glass-card p-8 md:p-12 text-center border-primary/20">
           <h2 className="text-3xl md:text-5xl font-bold mb-8 text-white">
             Ready to Dominate Your Market?
           </h2>

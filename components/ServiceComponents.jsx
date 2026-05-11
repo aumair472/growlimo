@@ -45,7 +45,7 @@ export function ServiceHero({ h1, subheadline, heroContent, isCustomLayout, slug
 export function ServiceContentSection({ section, sectionIndex }) {
   const isEven = sectionIndex % 2 === 0;
   return (
-    <section className={`py-16 md:py-24 ${isEven ? 'bg-slate-900/50' : 'bg-dark'}`}>
+    <section className={`py-10 md:py-14 ${isEven ? 'bg-slate-900/50' : 'bg-dark'}`}>
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-8">{section.heading}</h2>
@@ -77,7 +77,7 @@ export function ServiceContentSection({ section, sectionIndex }) {
 export function ServiceProcessSection({ processSection }) {
   if (!processSection) return null;
   return (
-    <section className="bg-dark py-16 md:py-24">
+    <section className="bg-dark py-10 md:py-14">
       <div className="container mx-auto px-4">
         <h2 className="text-3xl md:text-4xl font-bold text-center text-white mb-12">Our Proven Process</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">

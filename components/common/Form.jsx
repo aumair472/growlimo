@@ -82,7 +82,7 @@ export default function Form({
     } rounded-xl text-white placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all`;
 
   return (
-    <section id="contact-form" className={compact ? '' : 'bg-slate-900/50 py-16 md:py-24'}>
+    <section id="contact-form" className={compact ? '' : 'bg-slate-900/50 py-10 md:py-14'}>
       <div className="container mx-auto px-4">
         <div className={compact ? 'max-w-2xl' : 'max-w-5xl mx-auto grid lg:grid-cols-5 gap-12'}>
           {!compact && (

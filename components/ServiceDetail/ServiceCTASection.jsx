@@ -4,7 +4,7 @@ export default function ServiceCTASection({ ctaSection, ctaButtonText }) {
   if (!ctaSection) return null;
 
   return (
-    <section className="bg-dark py-16 md:py-24 relative overflow-hidden">
+    <section className="bg-dark py-10 md:py-14 relative overflow-hidden">
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute top-10 right-10 w-64 h-64 bg-primary/10 rounded-full blur-3xl"></div>
         <div className="absolute bottom-10 left-10 w-48 h-48 bg-primary/5 rounded-full blur-3xl"></div>

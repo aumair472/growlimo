@@ -40,7 +40,7 @@ export default function ServiceDetail({ service, slug }) {
   const isCustomLayout = !!contentSections;
 
   return (
-    <div className="min-h-screen bg-slate-900 font-sans selection:bg-primary/30 selection:text-white flex flex-col">
+    <div className="bg-slate-900 font-sans selection:bg-primary/30 selection:text-white flex flex-col">
       <SEO
         title={metaTitle}
         description={metaDescription}
@@ -81,7 +81,7 @@ export default function ServiceDetail({ service, slug }) {
           </>
         ) : (
           <>
-            <section className="bg-slate-900/50 py-16 md:py-24">
+            <section className="bg-slate-900/50 py-10 md:py-14">
               <div className="container mx-auto px-4">
                 <h2 className="text-3xl md:text-4xl font-bold text-center text-white mb-4">
                   Why Choose Us
@@ -112,7 +112,7 @@ export default function ServiceDetail({ service, slug }) {
               </div>
             </section>
 
-            <section className="bg-dark py-16 md:py-24">
+            <section className="bg-dark py-10 md:py-14">
               <div className="container mx-auto px-4">
                 <h2 className="text-3xl md:text-4xl font-bold text-center text-white mb-4">
                   Our Services

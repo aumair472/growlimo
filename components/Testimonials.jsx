@@ -33,7 +33,7 @@ function Testimonials({ limit = null, showTitle = true }) {
   };
 
   return (
-    <section className="bg-dark text-white py-12 md:py-16" aria-labelledby="testimonials-heading">
+    <section className="bg-dark text-white py-10 md:py-14" aria-labelledby="testimonials-heading">
       <div className="container mx-auto px-4">
         {showTitle && (
           <div className="text-center mb-12">

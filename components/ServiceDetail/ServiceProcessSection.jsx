@@ -5,13 +5,13 @@ export default function ServiceProcessSection({ processSection }) {
   const intro = processSection.intro || processSection.description || 'A clear, repeatable framework for delivering results.';
 
   return (
-    <section className="bg-slate-900/50 py-16 md:py-24">
+    <section className="bg-slate-900/50 py-10 md:py-14">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-center text-white mb-4">
             {heading}
           </h2>
-          <p className="text-slate-400 text-center mb-12 max-w-2xl mx-auto">
+          <p className="text-slate-400 text-center mb-8 max-w-2xl mx-auto">
             {intro}
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">

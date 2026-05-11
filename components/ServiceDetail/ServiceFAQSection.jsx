@@ -31,10 +31,10 @@ export default function ServiceFAQSection({ faqs }) {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
         />
       </Head>
-      <section className="bg-dark py-16 md:py-24">
+      <section className="bg-dark py-10 md:py-14">
       <div className="container mx-auto px-4">
         <div className="max-w-3xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold text-center text-white mb-12">
+          <h2 className="text-3xl md:text-4xl font-bold text-center text-white mb-8">
             Frequently Asked Questions
           </h2>
           <div className="space-y-3">

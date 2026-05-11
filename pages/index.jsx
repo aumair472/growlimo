@@ -85,7 +85,7 @@ export default function Home() {
       <Hero h1Text={seo.h1} />
 
       {/* ── 2. TRUST INDICATORS ── */}
-      <section className="bg-dark text-white py-12 md:py-16" aria-labelledby="trust-heading">
+      <section className="bg-dark text-white py-10 md:py-14" aria-labelledby="trust-heading">
         <div className="container mx-auto px-4">
           <h2 id="trust-heading" className="text-3xl md:text-4xl font-bold text-center text-white mb-4">
             Industry Expertise That Drives Results
@@ -103,7 +103,7 @@ export default function Home() {
       </section>
 
       {/* ── 3. PROBLEM VS SOLUTION ── */}
-      <section className="bg-slate-900/50 text-white py-12 md:py-16" aria-labelledby="problem-heading">
+      <section className="bg-slate-900/50 text-white py-10 md:py-14" aria-labelledby="problem-heading">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <div className="mb-16">
@@ -163,12 +163,12 @@ export default function Home() {
       </section>
 
       {/* ── 5. SPECIALTY MARKETING ── */}
-      <section className="bg-slate-900/50 text-white py-16 md:py-24" aria-labelledby="specialty-heading">
+      <section className="bg-slate-900/50 text-white py-10 md:py-14" aria-labelledby="specialty-heading">
         <div className="container mx-auto px-4">
           <h2 id="specialty-heading" className="text-3xl md:text-4xl font-bold text-center text-white mb-4">
             Digital Marketing Services
           </h2>
-          <p className="text-slate-300 text-lg text-center mb-12 max-w-2xl mx-auto">
+          <p className="text-slate-300 text-lg text-center mb-8 max-w-2xl mx-auto">
             Comprehensive Growth Solutions
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 md:gap-6 max-w-5xl mx-auto">
@@ -251,12 +251,12 @@ export default function Home() {
       </section>
 
       {/* ── 8. PROCESS ── */}
-      <section className="bg-slate-900/50 text-white py-16 md:py-24" aria-labelledby="process-heading">
+      <section className="bg-slate-900/50 text-white py-10 md:py-14" aria-labelledby="process-heading">
         <div className="container mx-auto px-4">
           <h2 id="process-heading" className="text-3xl md:text-4xl font-bold text-center text-white mb-4">
             Our Growth Marketing Process
           </h2>
-          <p className="text-slate-300 text-lg text-center mb-12 max-w-2xl mx-auto">
+          <p className="text-slate-300 text-lg text-center mb-8 max-w-2xl mx-auto">
             How We Grow Your Business
           </p>
           <div className="max-w-2xl mx-auto">
@@ -273,7 +273,7 @@ export default function Home() {
       <FAQ limit={6} />
 
       {/* ── 10. FINAL CTA ── */}
-      <section className="bg-dark text-white py-16 md:py-24 relative overflow-hidden" aria-labelledby="cta-heading">
+      <section className="bg-dark text-white py-10 md:py-14 relative overflow-hidden" aria-labelledby="cta-heading">
         <div className="absolute inset-0 pointer-events-none">
           <div className="absolute top-10 right-10 w-64 h-64 bg-primary/10 rounded-full blur-3xl"></div>
           <div className="absolute bottom-10 left-10 w-48 h-48 bg-primary/5 rounded-full blur-3xl"></div>
