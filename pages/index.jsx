@@ -4,39 +4,11 @@ import dynamic from 'next/dynamic';
 import SEO from '../components/SEO';
 import Hero from '../components/Hero';
 
-const Testimonials = dynamic(() => import('../components/Testimonials'), { ssr: true });
-const FAQ = dynamic(() => import('../components/FAQ'), { ssr: true });
+import Testimonials from '../components/Testimonials';
+import FAQ from '../components/FAQ';
 import { getSEOConfig } from '../lib/config';
+import { useCountUp } from '../hooks/useCountUp';
 
-/* ─── Animated Counter Hook ─── */
-function useCountUp(target, duration = 2000) {
-  const [count, setCount] = useState(0);
-  const ref = useRef(null);
-  const hasAnimated = useRef(false);
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting && !hasAnimated.current) {
-          hasAnimated.current = true;
-          const start = performance.now();
-          const step = (now) => {
-            const progress = Math.min((now - start) / duration, 1);
-            const eased = 1 - Math.pow(1 - progress, 3);
-            setCount(Math.floor(eased * target));
-            if (progress < 1) requestAnimationFrame(step);
-          };
-          requestAnimationFrame(step);
-        }
-      },
-      { threshold: 0.3 }
-    );
-    if (ref.current) observer.observe(ref.current);
-    return () => observer.disconnect();
-  }, [target, duration]);
-
-  return [count, ref];
-}
 
 /* ─── Trust Indicator Stat Card ─── */
 function StatCard({ value, suffix, prefix, label }) {

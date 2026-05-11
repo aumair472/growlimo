@@ -258,13 +258,15 @@ export default function Contact() {
                         />
                       </svg>
                     </button>
-                    {openFaq === i && (
-                      <div className="px-5 pb-5">
-                        <p className="text-sm text-slate-400 leading-relaxed">
-                          {faq.a}
-                        </p>
-                      </div>
-                    )}
+                    <div
+                      className={`px-5 pb-5 transition-all duration-300 ease-in-out ${
+                        openFaq === i ? 'max-h-[500px] opacity-100' : 'max-h-0 opacity-0 overflow-hidden'
+                      }`}
+                    >
+                      <p className="text-sm text-slate-400 leading-relaxed">
+                        {faq.a}
+                      </p>
+                    </div>
                   </div>
                 ))}
               </div>

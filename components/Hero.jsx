@@ -1,20 +1,6 @@
 import Link from 'next/link';
-import { useEffect, useState } from 'react';
 
 function Hero({ h1Text }) {
-  const [isLoaded, setIsLoaded] = useState(false);
-
-  useEffect(() => {
-    const raf = requestAnimationFrame(() => {
-      const triggerAnimations = () => setIsLoaded(true);
-      if ('requestIdleCallback' in window) {
-        requestIdleCallback(triggerAnimations, { timeout: 200 });
-      } else {
-        setTimeout(triggerAnimations, 50);
-      }
-    });
-    return () => cancelAnimationFrame(raf);
-  }, []);
 
   return (
     <section
@@ -36,7 +22,7 @@ function Hero({ h1Text }) {
         <div className="container mx-auto px-4 sm:px-6">
           <div className="max-w-5xl mx-auto">
             <div
-              className={`inline-flex items-center px-4 py-2 md:px-5 md:py-2.5 rounded-full bg-slate-900/90 md:bg-slate-900/80 backdrop-blur-md border border-primary/40 md:border-primary/30 mb-6 md:mb-8 mx-auto block text-center shadow-lg transition-opacity duration-700 delay-100 ${isLoaded ? 'opacity-100' : 'opacity-0'}`}
+              className="inline-flex items-center px-4 py-2 md:px-5 md:py-2.5 rounded-full bg-slate-900/90 md:bg-slate-900/80 backdrop-blur-md border border-primary/40 md:border-primary/30 mb-6 md:mb-8 mx-auto block text-center shadow-lg animate-fade-in"
             >
               <span className="text-xs md:text-sm font-semibold text-primary">
                 Digital Marketing Specialists
@@ -46,11 +32,6 @@ function Hero({ h1Text }) {
             <h1
               id="hero-heading"
               className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold mb-6 md:mb-8 leading-[1.1] md:leading-tight text-center"
-              style={{
-                opacity: 1,
-                transform: 'none',
-                contentVisibility: 'auto',
-              }}
             >
               {h1Text ? (
                 <span className="text-white drop-shadow-2xl block">
@@ -72,7 +53,8 @@ function Hero({ h1Text }) {
             </h1>
 
             <p
-              className={`text-base sm:text-lg md:text-xl lg:text-2xl text-white md:text-slate-100 mb-8 md:mb-10 leading-relaxed text-center max-w-3xl mx-auto drop-shadow-lg px-2 transition-opacity duration-1000 delay-300 ${isLoaded ? 'opacity-100' : 'opacity-0'}`}
+              className="text-base sm:text-lg md:text-xl lg:text-2xl text-white md:text-slate-100 mb-8 md:mb-10 leading-relaxed text-center max-w-3xl mx-auto drop-shadow-lg px-2 animate-fade-in"
+              style={{ animationDelay: '200ms' }}
             >
               Specialized digital marketing for local businesses, startups, and
               growing companies nationwide. Dominate local search, run high-ROI
@@ -80,7 +62,8 @@ function Hero({ h1Text }) {
             </p>
 
             <div
-              className={`flex flex-col sm:flex-row gap-4 md:gap-5 mb-10 md:mb-12 justify-center items-stretch sm:items-center px-2 transition-opacity duration-1000 delay-400 ${isLoaded ? 'opacity-100' : 'opacity-0'}`}
+              className="flex flex-col sm:flex-row gap-4 md:gap-5 mb-10 md:mb-12 justify-center items-stretch sm:items-center px-2 animate-fade-in"
+              style={{ animationDelay: '300ms' }}
             >
               <Link
                 href="/contact/"
@@ -94,13 +77,15 @@ function Hero({ h1Text }) {
             </div>
 
             <p
-              className={`text-sm sm:text-base text-slate-300 text-center max-w-2xl mx-auto mb-10 transition-opacity duration-1000 delay-500 ${isLoaded ? 'opacity-100' : 'opacity-0'}`}
+              className="text-sm sm:text-base text-slate-300 text-center max-w-2xl mx-auto mb-10 animate-fade-in"
+              style={{ animationDelay: '400ms' }}
             >
               Trusted by 500+ businesses across the United States
             </p>
 
             <div
-              className={`flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-6 md:gap-8 text-sm sm:text-base text-white md:text-slate-200 justify-center px-2 transition-opacity duration-1000 delay-500 ${isLoaded ? 'opacity-100' : 'opacity-0'}`}
+              className="flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-6 md:gap-8 text-sm sm:text-base text-white md:text-slate-200 justify-center px-2 animate-fade-in"
+              style={{ animationDelay: '400ms' }}
             >
               <div className="group flex items-center justify-center sm:justify-start gap-2.5 sm:gap-3 px-3 sm:px-4 py-2 rounded-lg hover:bg-slate-800/60 transition-all duration-300 cursor-default">
                 <div className="p-1.5 rounded-full bg-primary/30 md:bg-primary/20 group-hover:bg-primary/40 transition-colors duration-300 flex-shrink-0">
