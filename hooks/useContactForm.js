@@ -55,7 +55,7 @@ export const useContactForm = (slug, variant = 'service') => {
     if (!formData.phone.trim()) e.phone = 'Phone is required';
     if (!formData.service) e.service = 'Please select a service';
     if (!formData.message.trim()) e.message = 'Message is required';
-    
+
     setFormErrors(e);
     return Object.keys(e).length === 0;
   }, [formData]);
@@ -79,7 +79,7 @@ export const useContactForm = (slug, variant = 'service') => {
       // 1. Honeypot check (Bot protection)
       if (formData._hp) {
         console.warn('Spam detected');
-        router.push('/thank-you'); 
+        router.push('/thank-you');
         return;
       }
 
@@ -160,5 +160,6 @@ export const useContactForm = (slug, variant = 'service') => {
     submitError,
     handleChange,
     handleSubmit,
+    setFormData,
   };
 };

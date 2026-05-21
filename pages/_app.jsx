@@ -1,15 +1,22 @@
 import { useEffect } from 'react';
 import { useRouter } from 'next/router';
-import { Poppins } from 'next/font/google';
+import { Sora, Inter } from 'next/font/google';
 import '../styles/globals.css';
 import Layout from '../components/Layout';
 import ga4 from '../lib/analytics/ga4';
 import fbPixel from '../lib/analytics/fbPixel';
 
-const poppins = Poppins({
+const sora = Sora({
   subsets: ['latin'],
-  weight: ['400', '500', '600', '700', '800'],
-  variable: '--font-poppins',
+  weight: ['800'],
+  variable: '--font-sora',
+  display: 'swap',
+});
+
+const inter = Inter({
+  subsets: ['latin'],
+  weight: ['400', '500'],
+  variable: '--font-inter',
   display: 'swap',
 });
 
@@ -65,7 +72,7 @@ export default function App({ Component, pageProps }) {
   }, [router.events]);
 
   return (
-    <div className={`${poppins.variable} font-sans overflow-x-hidden`}>
+    <div className={`${sora.variable} ${inter.variable} font-sans overflow-x-hidden`}>
       <Layout>
         <Component {...pageProps} />
       </Layout>

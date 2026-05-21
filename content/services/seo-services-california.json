@@ -270,6 +270,13 @@
       "anchor": "Conversion-optimized web design"
     }
   ],
+  "images": [
+    "/images/services/hero-seo-california.webp",
+    "/images/services/strategy-planning.webp",
+    "/images/services/keyword-research.webp",
+    "/images/services/link-building.webp",
+    "/images/services/california-results-banner.webp"
+  ],
   "schema": {
     "@context": "https://schema.org",
     "@type": "ProfessionalService",

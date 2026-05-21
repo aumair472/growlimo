@@ -1,7 +1,7 @@
 import React from 'react';
 import testimonialsData from '../content/data/testimonials.json';
 
-function Testimonials({ limit = null, showTitle = true }) {
+function Testimonials({ limit = null, showTitle = true, lightTheme = true }) {
   const allTestimonials = testimonialsData.testimonials;
   const testimonials = limit ? allTestimonials.slice(0, limit) : allTestimonials;
 
@@ -14,13 +14,21 @@ function Testimonials({ limit = null, showTitle = true }) {
       .slice(0, 2);
   };
 
+  const getIndustryTag = (company) => {
+    if (company.toLowerCase().includes('medical')) return 'Healthcare Marketing';
+    if (company.toLowerCase().includes('law') || company.toLowerCase().includes('legal')) return 'Legal Marketing';
+    if (company.toLowerCase().includes('home')) return 'Home Services';
+    if (company.toLowerCase().includes('lifestyle') || company.toLowerCase().includes('brand')) return 'eCommerce Marketing';
+    return 'Digital Marketing';
+  };
+
   const StarRating = ({ rating }) => {
     return (
       <div className="flex gap-1" role="img" aria-label={`${rating} out of 5 stars`}>
         {[...Array(5)].map((_, i) => (
           <svg
             key={i}
-            className={`w-5 h-5 ${i < rating ? 'text-yellow-400' : 'text-slate-600'}`}
+            className={`w-4 h-4 flex-shrink-0 ${i < rating ? 'text-[#DD6613]' : 'text-slate-200'}`}
             fill="currentColor"
             viewBox="0 0 20 20"
             aria-hidden="true"
@@ -33,51 +41,78 @@ function Testimonials({ limit = null, showTitle = true }) {
   };
 
   return (
-    <section className="bg-dark text-white py-10 md:py-14" aria-labelledby="testimonials-heading">
+    <section 
+      className={`${lightTheme ? 'bg-[#FFFFFF] text-[#0B1829]' : 'bg-[#080D18] text-white'} py-[96px] relative`} 
+      aria-labelledby="testimonials-heading"
+    >
       <div className="container mx-auto px-4">
         {showTitle && (
-          <div className="text-center mb-12">
-            <h2 id="testimonials-heading" className="text-3xl md:text-4xl font-bold text-white mb-4">
+          <div className="text-center mb-16">
+            <span className="uppercase text-[11px] font-bold tracking-[2.5px] text-[#00C68A] block mb-3 font-sans">
+              Testimonials
+            </span>
+            <h2 
+              id="testimonials-heading" 
+              className={`text-[38px] font-extrabold font-sora ${lightTheme ? 'text-[#0B1829]' : 'text-[#F0F4FF]'} mb-4 tracking-tight`}
+            >
               Trusted By Industry Leaders
             </h2>
-            <p className="text-slate-300 text-lg">
+            <p className={`text-[16px] font-sans ${lightTheme ? 'text-[#3D5A73]' : 'text-[#8FA8C8]'} max-w-2xl mx-auto`}>
               Real results from real businesses in your industry
             </p>
           </div>
         )}
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8 max-w-6xl mx-auto">
           {testimonials.map((testimonial) => (
             <div
               key={testimonial.id}
-              className="glass-card p-6 transition-all duration-300"
+              className={`p-[28px] rounded-[16px] border flex flex-col justify-between transition-all duration-200 ease-in-out ${
+                lightTheme 
+                  ? 'bg-white border-[#E3EEF7] hover:border-[#00C68A] shadow-[0_4px_24px_rgba(0,0,0,0.06)] hover:shadow-[0_8px_32px_rgba(0,198,138,0.10)]' 
+                  : 'bg-[#1A2438] border-white/7 hover:border-[#00C68A]/35 shadow-lg'
+              }`}
               role="article"
               aria-labelledby={`testimonial-${testimonial.id}`}
             >
-              <div className="mb-4">
-                <StarRating rating={testimonial.rating} />
+              <div>
+                <div className="flex justify-between items-start mb-6">
+                  <StarRating rating={testimonial.rating} />
+                  
+                  {/* Industry Badge */}
+                  <span className="px-3 py-1 rounded-full text-[11px] font-bold uppercase tracking-wider bg-[#00C68A]/10 border border-[#00C68A]/25 text-[#00C68A] font-sans">
+                    {getIndustryTag(testimonial.company)}
+                  </span>
+                </div>
+
+                <blockquote className="mb-8">
+                  <p
+                    id={`testimonial-${testimonial.id}`}
+                    className={`text-[15px] leading-[1.75] italic ${
+                      lightTheme ? 'text-[#3D5A73]' : 'text-[#8FA8C8]'
+                    }`}
+                  >
+                    "{testimonial.content}"
+                  </p>
+                </blockquote>
               </div>
 
-              <blockquote className="mb-6">
-                <p
-                  id={`testimonial-${testimonial.id}`}
-                  className="text-slate-300 text-lg leading-relaxed italic"
-                >
-                  "{testimonial.content}"
-                </p>
-              </blockquote>
-
-              <div className="flex items-center gap-4 border-t border-slate-700 pt-4">
+              <div className={`flex items-center gap-4 border-t pt-6 ${
+                lightTheme ? 'border-[#E3EEF7]' : 'border-white/7'
+              }`}>
+                {/* Avatar Initials Circle */}
                 <div
-                  className="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center text-primary font-semibold text-lg flex-shrink-0"
+                  className={`w-[44px] h-[44px] rounded-full flex items-center justify-center font-bold text-sm flex-shrink-0 ${
+                    lightTheme ? 'bg-[#0B1829] text-[#00C68A]' : 'bg-[#00C68A]/20 text-[#00C68A]'
+                  }`}
                   aria-hidden="true"
                 >
                   {testimonial.initials || getInitials(testimonial.name)}
                 </div>
 
                 <div>
-                  <p className="font-semibold text-white">{testimonial.name}</p>
-                  <p className="text-sm text-slate-400">
+                  <p className={`text-[14px] font-bold ${lightTheme ? 'text-[#0B1829]' : 'text-white'}`}>{testimonial.name}</p>
+                  <p className={`text-[12px] font-medium ${lightTheme ? 'text-[#6B8499]' : 'text-[#4A6080]'}`}>
                     {testimonial.role} at {testimonial.company}
                   </p>
                 </div>

@@ -77,11 +77,10 @@ export default function Navbar() {
   return (
     <>
       <nav
-        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-          isScrolled
-            ? 'bg-dark/98 shadow-lg border-b border-slate-800'
-            : 'bg-dark border-b border-slate-800'
-        }`}
+        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled
+            ? 'bg-[#080D18]/85 backdrop-blur-[16px]'
+            : 'bg-[#080D18]'
+          }`}
         role="navigation"
         aria-label="Main navigation"
       >
@@ -89,53 +88,53 @@ export default function Navbar() {
           <div className="flex justify-between items-center py-4">
             <Link
               href="/"
-              className="text-2xl font-bold hover:opacity-80 transition"
+              className="text-2xl font-bold hover:opacity-90 transition font-sora tracking-tight"
               onClick={handleLinkClick}
               aria-label="GrowLimo Home"
             >
-              <span className="text-primary">Grow</span>
-              <span className="text-white">Limo</span>
+              <span className="text-white">Grow</span>
+              <span className="text-[#DD6613]">Limo</span>
             </Link>
 
             <div className="hidden lg:flex items-center space-x-8">
               <Link
                 href="/"
-                className={`text-slate-300 hover:text-primary transition font-medium ${isActive('/') ? 'text-primary' : ''}`}
+                className={`text-white/70 hover:text-white transition font-medium text-sm ${isActive('/') ? 'text-white font-semibold' : ''}`}
                 onClick={handleLinkClick}
               >
                 Home
               </Link>
               <Link
                 href="/case-studies/"
-                className={`text-slate-300 hover:text-primary transition font-medium ${isActive('/case-studies') ? 'text-primary' : ''}`}
+                className={`text-white/70 hover:text-white transition font-medium text-sm ${isActive('/case-studies') ? 'text-white font-semibold' : ''}`}
                 onClick={handleLinkClick}
               >
                 Case Studies
               </Link>
               <Link
                 href="/blog/"
-                className={`text-slate-300 hover:text-primary transition font-medium ${isActive('/blog') ? 'text-primary' : ''}`}
+                className={`text-white/70 hover:text-white transition font-medium text-sm ${isActive('/blog') ? 'text-white font-semibold' : ''}`}
                 onClick={handleLinkClick}
               >
                 Blog
               </Link>
               <Link
                 href="/about/"
-                className={`text-slate-300 hover:text-primary transition font-medium ${isActive('/about') ? 'text-primary' : ''}`}
+                className={`text-white/70 hover:text-white transition font-medium text-sm ${isActive('/about') ? 'text-white font-semibold' : ''}`}
                 onClick={handleLinkClick}
               >
                 About
               </Link>
               <Link
                 href="/contact/"
-                className={`text-slate-300 hover:text-primary transition font-medium ${isActive('/contact') ? 'text-primary' : ''}`}
+                className={`text-white/70 hover:text-white transition font-medium text-sm ${isActive('/contact') ? 'text-white font-semibold' : ''}`}
                 onClick={handleLinkClick}
               >
                 Contact
               </Link>
               <Link
                 href="/contact/"
-                className="bg-primary hover:bg-accent text-slate-950 font-semibold py-2 px-6 rounded-lg transition transform hover:scale-105"
+                className="bg-[#DD6613] hover:bg-[#FB923C] text-white font-bold py-[10px] px-[22px] rounded-lg transition-all duration-200 shadow-md hover:shadow-lg text-sm hover:scale-[1.02] transform"
                 onClick={handleLinkClick}
               >
                 Get Growth Plan
@@ -143,7 +142,7 @@ export default function Navbar() {
             </div>
 
             <button
-              className="lg:hidden p-2 text-slate-300 hover:text-primary focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 focus:ring-offset-dark rounded-lg transition"
+              className="lg:hidden p-2 text-white/70 hover:text-white focus:outline-none focus:ring-2 focus:ring-[#00C68A] rounded-lg transition"
               onClick={handleMenuToggle}
               aria-expanded={isOpen}
               aria-controls="mobile-menu"
@@ -170,22 +169,21 @@ export default function Navbar() {
 
       <div
         id="mobile-menu"
-        className={`lg:hidden fixed top-0 right-0 bottom-0 w-80 max-w-[85vw] bg-dark border-l border-slate-800 shadow-2xl z-50 transition-all duration-300 ease-in-out overflow-y-auto ${
-          isOpen ? 'translate-x-0 visible' : 'translate-x-full invisible'
-        }`}
+        className={`lg:hidden fixed top-0 right-0 bottom-0 w-80 max-w-[85vw] bg-[#05080F] border-l border-white/5 shadow-2xl z-50 transition-all duration-300 ease-in-out overflow-y-auto ${isOpen ? 'translate-x-0 visible' : 'translate-x-full invisible'
+          }`}
         aria-hidden={!isOpen}
         role="dialog"
         aria-modal="true"
         aria-label="Mobile navigation menu"
       >
-        <div className="sticky top-0 bg-dark border-b border-slate-800 px-4 py-4 flex justify-between items-center z-10">
-          <div className="text-2xl font-bold">
-            <span className="text-primary">Grow</span>
-            <span className="text-white">Limo</span>
+        <div className="sticky top-0 bg-[#05080F] border-b border-white/5 px-4 py-4 flex justify-between items-center z-10">
+          <div className="text-2xl font-bold font-sora tracking-tight">
+            <span className="text-white">Grow</span>
+            <span className="text-[#DD6613]">Limo</span>
           </div>
           <button
             onClick={handleMenuClose}
-            className="p-2 text-slate-300 hover:text-white hover:bg-slate-800 rounded-lg transition focus:outline-none focus:ring-2 focus:ring-primary"
+            className="p-2 text-white/70 hover:text-white hover:bg-white/5 rounded-lg transition focus:outline-none focus:ring-2 focus:ring-[#00C68A]"
             aria-label="Close mobile menu"
           >
             <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
@@ -198,42 +196,42 @@ export default function Navbar() {
           <nav className="flex flex-col space-y-1" aria-label="Mobile navigation">
             <Link
               href="/"
-              className={`block px-4 py-3 text-lg text-slate-300 hover:text-primary hover:bg-slate-800/50 rounded-lg transition font-medium ${isActive('/') ? 'text-primary bg-slate-800/50' : ''}`}
+              className={`block px-4 py-3 text-lg text-white/70 hover:text-white hover:bg-white/5 rounded-lg transition font-medium ${isActive('/') ? 'text-white bg-white/5 font-semibold' : ''}`}
               onClick={handleLinkClick}
             >
               Home
             </Link>
             <Link
               href="/about/"
-              className={`block px-4 py-3 text-lg text-slate-300 hover:text-primary hover:bg-slate-800/50 rounded-lg transition font-medium ${isActive('/about') ? 'text-primary bg-slate-800/50' : ''}`}
+              className={`block px-4 py-3 text-lg text-white/70 hover:text-white hover:bg-white/5 rounded-lg transition font-medium ${isActive('/about') ? 'text-white bg-white/5 font-semibold' : ''}`}
               onClick={handleLinkClick}
             >
               About
             </Link>
             <Link
               href="/case-studies/"
-              className={`block px-4 py-3 text-lg text-slate-300 hover:text-primary hover:bg-slate-800/50 rounded-lg transition font-medium ${isActive('/case-studies') ? 'text-primary bg-slate-800/50' : ''}`}
+              className={`block px-4 py-3 text-lg text-white/70 hover:text-white hover:bg-white/5 rounded-lg transition font-medium ${isActive('/case-studies') ? 'text-white bg-white/5 font-semibold' : ''}`}
               onClick={handleLinkClick}
             >
               Case Studies
             </Link>
             <Link
               href="/blog/"
-              className={`block px-4 py-3 text-lg text-slate-300 hover:text-primary hover:bg-slate-800/50 rounded-lg transition font-medium ${isActive('/blog') ? 'text-primary bg-slate-800/50' : ''}`}
+              className={`block px-4 py-3 text-lg text-white/70 hover:text-white hover:bg-white/5 rounded-lg transition font-medium ${isActive('/blog') ? 'text-white bg-white/5 font-semibold' : ''}`}
               onClick={handleLinkClick}
             >
               Blog
             </Link>
             <Link
               href="/contact/"
-              className={`block px-4 py-3 text-lg text-slate-300 hover:text-primary hover:bg-slate-800/50 rounded-lg transition font-medium ${isActive('/contact') ? 'text-primary bg-slate-800/50' : ''}`}
+              className={`block px-4 py-3 text-lg text-white/70 hover:text-white hover:bg-white/5 rounded-lg transition font-medium ${isActive('/contact') ? 'text-white bg-white/5 font-semibold' : ''}`}
               onClick={handleLinkClick}
             >
               Contact
             </Link>
             <Link
               href="/contact/"
-              className="block mt-4 bg-primary hover:bg-accent text-slate-950 font-semibold py-3 px-6 rounded-lg transition text-center"
+              className="block mt-4 bg-[#DD6613] hover:bg-[#FB923C] text-white font-bold py-3 px-6 rounded-lg transition text-center shadow-md hover:scale-[1.02] transform"
               onClick={handleLinkClick}
             >
               Get Growth Plan
@@ -260,7 +258,7 @@ export default function Navbar() {
       <div className="fixed bottom-6 right-6 z-50">
         <a
           href="tel:+17247506935"
-          className="bg-primary hover:bg-accent text-slate-950 rounded-full p-4 shadow-lg hover:shadow-xl transition-all duration-300 block"
+          className="bg-[#00C68A] hover:bg-[#00C68A]/80 text-[#05080F] rounded-full p-4 shadow-lg hover:shadow-xl transition-all duration-300 block"
           aria-label="Call us"
         >
           <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">

@@ -11,7 +11,7 @@ module.exports = {
         primary: {
           DEFAULT: '#00C68A',
         },
-        dark: '#0b1b29',
+        dark: '#0B1B29',
         accent: '#0fb786',
         slate: {
           50: '#f8fafc',
@@ -29,9 +29,16 @@ module.exports = {
       fontFamily: {
         // CWV CLS: Include size-matched fallback font to prevent layout shift during font swap
         sans: [
-          'var(--font-poppins)',
-          'Poppins-Fallback',
+          'var(--font-inter)',
           'Inter',
+          '-apple-system',
+          'BlinkMacSystemFont',
+          'Segoe UI',
+          'sans-serif',
+        ],
+        sora: [
+          'var(--font-sora)',
+          'Sora',
           '-apple-system',
           'BlinkMacSystemFont',
           'Segoe UI',

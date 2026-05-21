@@ -1,7 +1,10 @@
+import { useState } from 'react';
 import fs from 'fs';
 import path from 'path';
 import SEO from '../components/SEO';
 import ServiceHero from '../components/ServiceDetail/ServiceHero';
+import ServiceWhyChooseUs from '../components/ServiceDetail/ServiceWhyChooseUs';
+import ServiceBreakdown from '../components/ServiceDetail/ServiceBreakdown';
 import ServiceContentSection from '../components/ServiceDetail/ServiceContentSection';
 import ServiceProcessSection from '../components/ServiceDetail/ServiceProcessSection';
 import ServiceLocalSection from '../components/ServiceDetail/ServiceLocalSection';
@@ -10,9 +13,297 @@ import ServiceInvestSection from '../components/ServiceDetail/ServiceInvestSecti
 import ServiceCTASection from '../components/ServiceDetail/ServiceCTASection';
 import ServiceFAQSection from '../components/ServiceDetail/ServiceFAQSection';
 import ServiceInternalLinks from '../components/ServiceDetail/ServiceInternalLinks';
+import ServiceContentSectionEnhanced from '../components/ServiceDetail/ServiceContentSectionEnhanced';
+import ServiceContentSectionTX from '../components/ServiceDetail/ServiceContentSectionTX';
+import ServiceContentSectionFBCA from '../components/ServiceDetail/ServiceContentSectionFBCA';
+import ServiceContentSectionDDMC from '../components/ServiceDetail/ServiceContentSectionDDMC';
+import ServiceContentSectionDSCA from '../components/ServiceDetail/ServiceContentSectionDSCA';
+import ServiceContentSectionDMAC from '../components/ServiceDetail/ServiceContentSectionDMAC';
+import ServiceContentSectionGAMC from '../components/ServiceDetail/ServiceContentSectionGAMC';
+import ServiceContentSectionHDMCA from '../components/ServiceDetail/ServiceContentSectionHDMCA';
+import ServiceContentSectionHSCA from '../components/ServiceDetail/ServiceContentSectionHSCA';
+import ServiceContentSectionMACA from '../components/ServiceDetail/ServiceContentSectionMACA';
+import ServiceContentSectionPPCCA from '../components/ServiceDetail/ServiceContentSectionPPCCA';
+import ServiceContentSectionDMTX from '../components/ServiceDetail/ServiceContentSectionDMTX';
+import ServiceContentSectionGAMT from '../components/ServiceDetail/ServiceContentSectionGAMT';
+import FormModal from '../components/common/FormModal';
+
+
 
 export default function ServiceDetail({ service, slug }) {
   if (!service) return null;
+
+  const [modalOpen, setModalOpen] = useState(false);
+  const [selectedPlan, setSelectedPlan] = useState('');
+
+  const handleSelectPlan = (planName) => {
+    setSelectedPlan(planName);
+    setModalOpen(true);
+  };
+
+  const hasPricing = !!service.pricing ||
+    service.contentSections?.some(s =>
+      s.heading?.includes('Pricing'));
+
+  if (slug === 'seo-services-california') {
+    return (
+      <>
+        <ServiceContentSectionEnhanced
+          service={service}
+          slug={slug}
+          onSelectPlan={handleSelectPlan}
+        />
+        {hasPricing && (
+          <FormModal
+            isOpen={modalOpen}
+            onClose={() => setModalOpen(false)}
+            planName={selectedPlan}
+            slug={slug}
+          />
+        )}
+      </>
+    );
+  }
+
+  if (slug === 'seo-services-texas') {
+    return (
+      <>
+        <ServiceContentSectionTX
+          service={service}
+          slug={slug}
+          onSelectPlan={handleSelectPlan}
+        />
+        {hasPricing && (
+          <FormModal
+            isOpen={modalOpen}
+            onClose={() => setModalOpen(false)}
+            planName={selectedPlan}
+            slug={slug}
+          />
+        )}
+      </>
+    );
+  }
+
+  if (slug === 'facebook-ads-management-california') {
+    return (
+      <>
+        <ServiceContentSectionFBCA
+          service={service}
+          slug={slug}
+          onSelectPlan={handleSelectPlan}
+        />
+        {hasPricing && (
+          <FormModal
+            isOpen={modalOpen}
+            onClose={() => setModalOpen(false)}
+            planName={selectedPlan}
+            slug={slug}
+          />
+        )}
+      </>
+    );
+  }
+
+  if (slug === 'dentist-digital-marketing-agency-california') {
+    return (
+      <>
+        <ServiceContentSectionDDMC
+          service={service}
+          slug={slug}
+          onSelectPlan={handleSelectPlan}
+        />
+        {hasPricing && (
+          <FormModal
+            isOpen={modalOpen}
+            onClose={() => setModalOpen(false)}
+            planName={selectedPlan}
+            slug={slug}
+          />
+        )}
+      </>
+    );
+  }
+
+  if (slug === 'dentist-seo-services-california') {
+    return (
+      <>
+        <ServiceContentSectionDSCA
+          service={service}
+          slug={slug}
+          onSelectPlan={handleSelectPlan}
+        />
+        {hasPricing && (
+          <FormModal
+            isOpen={modalOpen}
+            onClose={() => setModalOpen(false)}
+            planName={selectedPlan}
+            slug={slug}
+          />
+        )}
+      </>
+    );
+  }
+
+  if (slug === 'digital-marketing-agency-california') {
+    return (
+      <>
+        <ServiceContentSectionDMAC
+          service={service}
+          slug={slug}
+          onSelectPlan={handleSelectPlan}
+        />
+        {hasPricing && (
+          <FormModal
+            isOpen={modalOpen}
+            onClose={() => setModalOpen(false)}
+            planName={selectedPlan}
+            slug={slug}
+          />
+        )}
+      </>
+    );
+  }
+
+  if (slug === 'google-ads-management-california') {
+    return (
+      <>
+        <ServiceContentSectionGAMC
+          service={service}
+          slug={slug}
+          onSelectPlan={handleSelectPlan}
+        />
+        {hasPricing && (
+          <FormModal
+            isOpen={modalOpen}
+            onClose={() => setModalOpen(false)}
+            planName={selectedPlan}
+            slug={slug}
+          />
+        )}
+      </>
+    );
+  }
+
+  if (slug === 'healthcare-digital-marketing-agency-california') {
+    return (
+      <>
+        <ServiceContentSectionHDMCA
+          service={service}
+          slug={slug}
+          onSelectPlan={handleSelectPlan}
+        />
+        {hasPricing && (
+          <FormModal
+            isOpen={modalOpen}
+            onClose={() => setModalOpen(false)}
+            planName={selectedPlan}
+            slug={slug}
+          />
+        )}
+      </>
+    );
+  }
+
+  if (slug === 'healthcare-seo-services-california') {
+    return (
+      <>
+        <ServiceContentSectionHSCA
+          service={service}
+          slug={slug}
+          onSelectPlan={handleSelectPlan}
+        />
+        {hasPricing && (
+          <FormModal
+            isOpen={modalOpen}
+            onClose={() => setModalOpen(false)}
+            planName={selectedPlan}
+            slug={slug}
+          />
+        )}
+      </>
+    );
+  }
+
+  if (slug === 'meta-ads-agency-california') {
+    return (
+      <>
+        <ServiceContentSectionMACA
+          service={service}
+          slug={slug}
+          onSelectPlan={handleSelectPlan}
+        />
+        {hasPricing && (
+          <FormModal
+            isOpen={modalOpen}
+            onClose={() => setModalOpen(false)}
+            planName={selectedPlan}
+            slug={slug}
+          />
+        )}
+      </>
+    );
+  }
+
+  if (slug === 'ppc-services-california') {
+    return (
+      <>
+        <ServiceContentSectionPPCCA
+          service={service}
+          slug={slug}
+          onSelectPlan={handleSelectPlan}
+        />
+        {hasPricing && (
+          <FormModal
+            isOpen={modalOpen}
+            onClose={() => setModalOpen(false)}
+            planName={selectedPlan}
+            slug={slug}
+          />
+        )}
+      </>
+    );
+  }
+
+  if (slug === 'digital-marketing-agency-texas') {
+    return (
+      <>
+        <ServiceContentSectionDMTX
+          service={service}
+          slug={slug}
+          onSelectPlan={handleSelectPlan}
+        />
+        {hasPricing && (
+          <FormModal
+            isOpen={modalOpen}
+            onClose={() => setModalOpen(false)}
+            planName={selectedPlan}
+            slug={slug}
+          />
+        )}
+      </>
+    );
+  }
+
+  if (slug === 'google-ads-management-texas') {
+    return (
+      <>
+        <ServiceContentSectionGAMT
+          service={service}
+          slug={slug}
+          onSelectPlan={handleSelectPlan}
+        />
+        {hasPricing && (
+          <FormModal
+            isOpen={modalOpen}
+            onClose={() => setModalOpen(false)}
+            planName={selectedPlan}
+            slug={slug}
+          />
+        )}
+      </>
+    );
+  }
 
   const {
     metaTitle,
@@ -23,7 +314,7 @@ export default function ServiceDetail({ service, slug }) {
     whyChooseUs,
     servicesBreakdown,
     process,
-    benefits,
+    benefits = [],
     industries,
     faqs,
     internalLinks,
@@ -34,13 +325,15 @@ export default function ServiceDetail({ service, slug }) {
     industriesSection,
     investSection,
     ctaSection,
-    ctaButtonText
+    ctaButtonText,
+    ctaHeadline
   } = service;
 
   const isCustomLayout = !!contentSections;
+  const areaServedName = service.areaServed?.name || '';
 
   return (
-    <div className="bg-slate-900 font-sans selection:bg-primary/30 selection:text-white overflow-x-hidden">
+    <div className="bg-[#080D18] font-sans selection:bg-[#00C68A]/30 selection:text-white overflow-x-hidden">
       <SEO
         title={metaTitle}
         description={metaDescription}
@@ -48,7 +341,7 @@ export default function ServiceDetail({ service, slug }) {
         disableSuffix={true}
         schema={service.schema}
       />
-      
+
       <div>
         <ServiceHero
           h1={h1}
@@ -56,16 +349,23 @@ export default function ServiceDetail({ service, slug }) {
           heroContent={heroContent}
           isCustomLayout={isCustomLayout}
           slug={slug}
+          benefits={benefits}
+          areaServedName={areaServedName}
+          ctaButtonText={ctaButtonText}
         />
 
         {isCustomLayout ? (
           <>
+            {/* Custom Layout Sequence */}
             {contentSections &&
               contentSections.map((section, index) => (
                 <ServiceContentSection
                   key={index}
                   section={section}
                   sectionIndex={index}
+                  images={service.images}
+                  contentSections={service.contentSections}
+                  slug={slug}
                 />
               ))}
             <ServiceProcessSection processSection={processSection} />
@@ -81,71 +381,13 @@ export default function ServiceDetail({ service, slug }) {
           </>
         ) : (
           <>
-            <section className="bg-slate-900/50 py-10 md:py-14">
-              <div className="container mx-auto px-4">
-                <h2 className="text-3xl md:text-4xl font-bold text-center text-white mb-4">
-                  Why Choose Us
-                </h2>
-                <p className="text-slate-400 text-center mb-12 max-w-2xl mx-auto">
-                  Here&apos;s what sets Growlimo apart from other agencies.
-                </p>
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-                  {whyChooseUs?.map((item, index) => (
-                    <div
-                      key={index}
-                      className="glass-card p-8 h-full flex flex-col text-center"
-                    >
-                      <div className="w-14 h-14 rounded-full bg-primary/20 flex items-center justify-center text-primary mb-6 mx-auto">
-                        <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                        </svg>
-                      </div>
-                      <h3 className="text-xl font-bold text-white mb-4">
-                        {item.title}
-                      </h3>
-                      <p className="text-slate-300 leading-relaxed flex-grow">
-                        {item.description}
-                      </p>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            </section>
-
-            <section className="bg-dark py-10 md:py-14">
-              <div className="container mx-auto px-4">
-                <h2 className="text-3xl md:text-4xl font-bold text-center text-white mb-4">
-                  Our Services
-                </h2>
-                <p className="text-slate-400 text-center mb-12 max-w-2xl mx-auto">
-                  A comprehensive breakdown of what we deliver.
-                </p>
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
-                  {servicesBreakdown?.map((item, index) => (
-                    <div
-                      key={index}
-                      className="glass-card p-6 h-full flex flex-col"
-                    >
-                      <div className="w-12 h-12 rounded-xl bg-primary/20 flex items-center justify-center text-primary mb-5">
-                        <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
-                        </svg>
-                      </div>
-                      <h3 className="text-lg font-bold text-white mb-3">
-                        {item.title}
-                      </h3>
-                      <p className="text-slate-300 leading-relaxed text-sm flex-grow">
-                        {item.description}
-                      </p>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            </section>
-
+            {/* Standard Fallback Layout Sequence */}
+            <ServiceWhyChooseUs whyChooseUs={whyChooseUs} />
+            <ServiceBreakdown servicesBreakdown={servicesBreakdown} />
             <ServiceProcessSection processSection={process} />
             <ServiceInvestSection investSection={benefits} />
             <ServiceIndustriesSection industriesSection={industries} />
+
             {additionalContent &&
               additionalContent.map((section, index) => (
                 <ServiceContentSection
@@ -154,11 +396,28 @@ export default function ServiceDetail({ service, slug }) {
                   sectionIndex={index}
                 />
               ))}
+
+            {/* Standard CTA Section addition */}
+            {(ctaHeadline || ctaButtonText) && (
+              <ServiceCTASection
+                ctaSection={{ heading: ctaHeadline }}
+                ctaButtonText={ctaButtonText}
+              />
+            )}
+
             <ServiceFAQSection faqs={faqs} />
             <ServiceInternalLinks internalLinks={internalLinks} />
           </>
         )}
       </div>
+      {hasPricing && (
+        <FormModal
+          isOpen={modalOpen}
+          onClose={() => setModalOpen(false)}
+          planName={selectedPlan}
+          slug={slug}
+        />
+      )}
     </div>
   );
 }

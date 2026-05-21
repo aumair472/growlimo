@@ -1,7 +1,6 @@
 import fs from 'fs';
 import path from 'path';
 import Link from 'next/link';
-import Image from 'next/image';
 import SEO from '../../components/SEO';
 
 export default function CaseStudiesIndex({ caseStudies }) {
@@ -13,65 +12,97 @@ export default function CaseStudiesIndex({ caseStudies }) {
         url="https://growlimo.com/case-studies/"
       />
 
-      <section className="bg-dark text-white py-10 md:py-14 relative">
-        <div className="absolute inset-0 pointer-events-none">
-          <div className="absolute top-20 right-10 w-48 h-48 md:w-72 md:h-72 bg-primary/8 rounded-full blur-lg opacity-40"></div>
-          <div className="absolute bottom-20 left-10 w-36 h-36 md:w-56 md:h-56 bg-primary/5 rounded-full blur-lg opacity-30"></div>
-        </div>
-        <div className="container mx-auto px-4 relative z-10">
-          <div className="max-w-4xl mx-auto text-center mb-16">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
+      <div className="bg-[#080D18] text-white">
+        
+        {/* 1. HERO SECTION (dark #080D18) */}
+        <section className="bg-[#080D18] pt-[140px] pb-16 relative overflow-hidden" aria-labelledby="case-heading">
+          <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-[500px] h-[300px] bg-[#00C68A]/5 rounded-full blur-3xl pointer-events-none z-0"></div>
+          
+          <div className="container mx-auto px-4 relative z-10 text-center">
+            <span className="uppercase text-[11px] font-bold tracking-[2.5px] text-[#00C68A] block mb-4 font-sans">
+              SUCCESS STORIES
+            </span>
+            <h1
+              id="case-heading"
+              className="text-4xl md:text-5xl lg:text-[56px] font-extrabold mb-5 leading-tight text-white font-sora tracking-tight max-w-4xl mx-auto"
+            >
               Proven Results for Real Businesses
             </h1>
-            <p className="text-xl text-slate-300 leading-relaxed max-w-3xl mx-auto">
+            <p className="text-[#8FA8C8] text-base md:text-[18px] max-w-2xl mx-auto font-sans leading-relaxed">
               See how we've helped clinics and businesses across the US achieve predictable revenue growth through data-driven digital marketing.
             </p>
           </div>
+        </section>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
-            {caseStudies.map((cs) => (
-              <Link
-                key={cs.slug}
-                href={`/case-studies/${cs.slug}`}
-                className="glass-card overflow-hidden group hover:scale-[1.02] transition-all duration-300 flex flex-col"
-              >
-                <div className="aspect-video relative overflow-hidden">
-                  {/* ✅ FIX: next/image instead of raw <img> for LCP optimization */}
-                  <Image
-                    src={cs.image}
-                    alt={cs.title}
-                    fill
-                    sizes="(max-width: 768px) 100vw, 50vw"
-                    className="object-cover group-hover:scale-110 transition-transform duration-500"
-                  />
-                  <div className="absolute top-4 left-4">
-                     <span className="bg-primary text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-widest">
-                       {cs.industry}
-                     </span>
+        {/* 2. CASE STUDIES GRID (dark #0C1220) */}
+        <section className="bg-[#0C1220] py-[96px] relative z-10 border-t border-b border-white/5" aria-labelledby="grid-heading">
+          <div className="container mx-auto px-4 max-w-6xl">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+              {caseStudies.map((cs) => (
+                <Link key={cs.slug} href={`/case-studies/${cs.slug}`} className="block h-full">
+                  <div className="bg-[#1A2438] border border-[rgba(255,255,255,0.07)] rounded-[16px] p-8 hover:border-[rgba(0,198,138,0.35)] transition-all duration-300 flex flex-col h-full shadow-lg group">
+                    
+                    {/* Result Metrics Strip */}
+                    <div className="flex items-baseline gap-1 text-[#00C68A] font-sora font-extrabold text-[28px] leading-tight mb-4">
+                      {cs.stats[2]?.value || cs.stats[0]?.value}
+                      <span className="text-xs text-[#8FA8C8] uppercase font-sans font-semibold tracking-wider ml-2">
+                        {cs.stats[2]?.label || cs.stats[0]?.label}
+                      </span>
+                    </div>
+
+                    {/* Client Name */}
+                    <h3 className="text-xl font-bold font-sora text-[#F0F4FF] mb-3 group-hover:text-[#00C68A] transition-colors leading-snug">
+                      {cs.client}
+                    </h3>
+
+                    {/* Description / Summary */}
+                    <p className="text-[14px] font-sans text-[#8FA8C8] leading-relaxed mb-6 flex-grow">
+                      {cs.summary}
+                    </p>
+
+                    {/* Mini Stat Grid at bottom */}
+                    <div className="grid grid-cols-3 gap-4 pt-5 border-t border-white/5 mt-auto">
+                      {cs.stats.map((stat, i) => (
+                        <div key={i} className="text-center">
+                          <div className="text-base font-bold font-sora text-white">{stat.value}</div>
+                          <div className="text-[10px] font-semibold text-[#4A6080] uppercase tracking-wider font-sans mt-0.5">{stat.label}</div>
+                        </div>
+                      ))}
+                    </div>
                   </div>
-                </div>
-                <div className="p-8 flex-grow flex flex-col">
-                  {/* ✅ FIX: h3 not h2 — card titles are not page sections */}
-                  <h3 className="text-2xl font-bold text-white mb-4 group-hover:text-primary transition-colors">
-                    {cs.title}
-                  </h3>
-                  <p className="text-slate-400 mb-8 line-clamp-3 flex-grow">
-                    {cs.summary}
-                  </p>
-                  <div className="grid grid-cols-3 gap-4 border-t border-slate-800 pt-6">
-                    {cs.stats.map((stat, i) => (
-                      <div key={i} className="text-center">
-                        <div className="text-xl font-bold text-primary">{stat.value}</div>
-                        <div className="text-[10px] text-slate-500 uppercase tracking-widest">{stat.label}</div>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-              </Link>
-            ))}
+                </Link>
+              ))}
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
+
+        {/* 3. CTA SECTION */}
+        <section className="bg-[#080D18] py-[96px] relative z-10">
+          <div className="container mx-auto px-4 max-w-4xl text-center">
+            <h2 className="text-3xl md:text-[44px] font-extrabold font-sora mb-5 text-white tracking-tight leading-tight">
+              Ready to Grow Your Business?
+            </h2>
+            <p className="text-[#8FA8C8] text-base md:text-lg max-w-xl mx-auto mb-10 font-sans leading-relaxed">
+              Stop losing customers to competitors. Start capturing high-intent searches and scaling your revenue predictably.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center items-stretch sm:items-center">
+              <Link
+                href="/contact/"
+                className="bg-[#DD6613] hover:bg-[#FB923C] text-white font-bold py-4 px-10 rounded-full transition-all duration-200 text-center shadow-lg shadow-[#DD6613]/20 transform hover:scale-[1.02]"
+              >
+                Schedule a Free Consultation
+              </Link>
+              <a
+                href="tel:+17247506935"
+                className="bg-transparent text-white border border-white/20 hover:border-white font-bold py-4 px-10 rounded-full transition-all duration-200 text-center transform hover:scale-[1.02]"
+              >
+                Call +1 (724) 750-6935
+              </a>
+            </div>
+          </div>
+        </section>
+
+      </div>
     </>
   );
 }

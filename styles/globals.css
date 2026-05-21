@@ -11,11 +11,10 @@
     /* CWV: Prevent text from shifting when web fonts load */
     overflow-x: hidden;
     width: 100%;
-    background-color: #0b1b29;
-    color: #ffffff;
+    background-color: #05080F;
+    color: #8FA8C8;
     font-family:
-      var(--font-poppins),
-      Poppins-Fallback,
+      var(--font-inter),
       Inter,
       -apple-system,
       BlinkMacSystemFont,
@@ -24,6 +23,24 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeSpeed;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family:
+      var(--font-sora),
+      Sora,
+      -apple-system,
+      BlinkMacSystemFont,
+      "Segoe UI",
+      sans-serif;
+    font-weight: 800;
+    letter-spacing: -0.025em;
+    /* tight tracking */
   }
 
   /* CWV CLS: Font fallback metrics — matches Poppins to prevent layout shift on swap */
@@ -81,14 +98,13 @@
 }
 
 @layer components {
+
   /* Hero Overlay Gradient */
   .hero-overlay {
-    background: linear-gradient(
-      135deg,
-      rgba(11, 27, 41, 0.9) 0%,
-      rgba(11, 27, 41, 0.7) 50%,
-      rgba(0, 198, 138, 0.3) 100%
-    );
+    background: linear-gradient(135deg,
+        rgba(11, 27, 41, 0.9) 0%,
+        rgba(11, 27, 41, 0.7) 50%,
+        rgba(0, 198, 138, 0.3) 100%);
   }
 
   /* Glass Card Effect - Dark Theme */
@@ -181,6 +197,7 @@
 }
 
 @layer utilities {
+
   /* Screen Reader Only */
   .sr-only {
     position: absolute;
@@ -310,4 +327,53 @@
   .optimized-image-wrapper {
     display: block;
   }
+
+  @keyframes badge-dot-pulse {
+    0% {
+      transform: scale(0.9);
+      opacity: 0.6;
+      box-shadow: 0 0 0 0 rgba(0, 198, 138, 0.7);
+    }
+
+    70% {
+      transform: scale(1.1);
+      opacity: 1;
+      box-shadow: 0 0 0 6px rgba(0, 198, 138, 0);
+    }
+
+    100% {
+      transform: scale(0.9);
+      opacity: 0.6;
+      box-shadow: 0 0 0 0 rgba(0, 198, 138, 0);
+    }
+  }
+
+  .animate-badge-pulse {
+    animation: badge-dot-pulse 2s infinite;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #080D18;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #00C68A;
+  border-radius: 100px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #0FB786;
+}
+
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #00C68A #080D18;
 }
