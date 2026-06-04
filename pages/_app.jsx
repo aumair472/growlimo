@@ -5,6 +5,7 @@ import '../styles/globals.css';
 import Layout from '../components/Layout';
 import ga4 from '../lib/analytics/ga4';
 import fbPixel from '../lib/analytics/fbPixel';
+import { Analytics } from '@vercel/analytics/react';
 
 const sora = Sora({
   subsets: ['latin'],
@@ -76,6 +77,7 @@ export default function App({ Component, pageProps }) {
       <Layout>
         <Component {...pageProps} />
       </Layout>
+      <Analytics />
     </div>
   );
 }
