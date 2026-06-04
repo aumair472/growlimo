@@ -17,6 +17,7 @@ import ServiceContentSectionEnhanced from '../components/ServiceDetail/ServiceCo
 import ServiceContentSectionTX from '../components/ServiceDetail/ServiceContentSectionTX';
 import ServiceContentSectionFBCA from '../components/ServiceDetail/ServiceContentSectionFBCA';
 import ServiceContentSectionDDMC from '../components/ServiceDetail/ServiceContentSectionDDMC';
+import ServiceContentSectionDDMATX from '../components/ServiceDetail/ServiceContentSectionDDMATX';
 import ServiceContentSectionDSCA from '../components/ServiceDetail/ServiceContentSectionDSCA';
 import ServiceContentSectionDMAC from '../components/ServiceDetail/ServiceContentSectionDMAC';
 import ServiceContentSectionGAMC from '../components/ServiceDetail/ServiceContentSectionGAMC';
@@ -26,6 +27,10 @@ import ServiceContentSectionMACA from '../components/ServiceDetail/ServiceConten
 import ServiceContentSectionPPCCA from '../components/ServiceDetail/ServiceContentSectionPPCCA';
 import ServiceContentSectionDMTX from '../components/ServiceDetail/ServiceContentSectionDMTX';
 import ServiceContentSectionGAMT from '../components/ServiceDetail/ServiceContentSectionGAMT';
+import ServiceContentSectionPPCTX from '../components/ServiceDetail/ServiceContentSectionPPCTX';
+import ServiceContentSectionHSEOTX from '../components/ServiceDetail/ServiceContentSectionHSEOTX';
+import ServiceContentSectionHDMATX from '../components/ServiceDetail/ServiceContentSectionHDMATX';
+import ServiceContentSectionDSTX from '../components/ServiceDetail/ServiceContentSectionDSTX';
 import FormModal from '../components/common/FormModal';
 
 
@@ -125,10 +130,50 @@ export default function ServiceDetail({ service, slug }) {
     );
   }
 
+  if (slug === 'dentist-digital-marketing-agency-texas') {
+    return (
+      <>
+        <ServiceContentSectionDDMATX
+          service={service}
+          slug={slug}
+          onSelectPlan={handleSelectPlan}
+        />
+        {hasPricing && (
+          <FormModal
+            isOpen={modalOpen}
+            onClose={() => setModalOpen(false)}
+            planName={selectedPlan}
+            slug={slug}
+          />
+        )}
+      </>
+    );
+  }
+
   if (slug === 'dentist-seo-services-california') {
     return (
       <>
         <ServiceContentSectionDSCA
+          service={service}
+          slug={slug}
+          onSelectPlan={handleSelectPlan}
+        />
+        {hasPricing && (
+          <FormModal
+            isOpen={modalOpen}
+            onClose={() => setModalOpen(false)}
+            planName={selectedPlan}
+            slug={slug}
+          />
+        )}
+      </>
+    );
+  }
+
+  if (slug === 'dentist-seo-services-texas') {
+    return (
+      <>
+        <ServiceContentSectionDSTX
           service={service}
           slug={slug}
           onSelectPlan={handleSelectPlan}
@@ -205,10 +250,50 @@ export default function ServiceDetail({ service, slug }) {
     );
   }
 
+  if (slug === 'healthcare-digital-marketing-agency-texas') {
+    return (
+      <>
+        <ServiceContentSectionHDMATX
+          service={service}
+          slug={slug}
+          onSelectPlan={handleSelectPlan}
+        />
+        {hasPricing && (
+          <FormModal
+            isOpen={modalOpen}
+            onClose={() => setModalOpen(false)}
+            planName={selectedPlan}
+            slug={slug}
+          />
+        )}
+      </>
+    );
+  }
+
   if (slug === 'healthcare-seo-services-california') {
     return (
       <>
         <ServiceContentSectionHSCA
+          service={service}
+          slug={slug}
+          onSelectPlan={handleSelectPlan}
+        />
+        {hasPricing && (
+          <FormModal
+            isOpen={modalOpen}
+            onClose={() => setModalOpen(false)}
+            planName={selectedPlan}
+            slug={slug}
+          />
+        )}
+      </>
+    );
+  }
+
+  if (slug === 'healthcare-seo-services-texas') {
+    return (
+      <>
+        <ServiceContentSectionHSEOTX
           service={service}
           slug={slug}
           onSelectPlan={handleSelectPlan}
@@ -249,6 +334,26 @@ export default function ServiceDetail({ service, slug }) {
     return (
       <>
         <ServiceContentSectionPPCCA
+          service={service}
+          slug={slug}
+          onSelectPlan={handleSelectPlan}
+        />
+        {hasPricing && (
+          <FormModal
+            isOpen={modalOpen}
+            onClose={() => setModalOpen(false)}
+            planName={selectedPlan}
+            slug={slug}
+          />
+        )}
+      </>
+    );
+  }
+
+  if (slug === 'ppc-services-texas') {
+    return (
+      <>
+        <ServiceContentSectionPPCTX
           service={service}
           slug={slug}
           onSelectPlan={handleSelectPlan}
