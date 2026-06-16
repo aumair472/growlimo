@@ -1,0 +1,1364 @@
+{
+  "services": [
+    {
+      "filename": "dentist-digital-marketing-agency-california.json",
+      "slug": "/dentist-digital-marketing-agency-california",
+      "title": "California's Dentist Digital Marketing Agency — Building Patient Acquisition Systems That Fill Schedules and Scale Practice Revenue",
+      "inferredTopic": "dentist digital marketing agency",
+      "geo": "California"
+    },
+    {
+      "filename": "dentist-digital-marketing-agency-texas.json",
+      "slug": "/dentist-digital-marketing-agency-texas",
+      "title": "Texas's Specialist Dentist Digital Marketing Agency — Integrated Patient Acquisition Systems for Dental Practices, DSOs & Orthodontists Across Dallas, Houston, Austin, San Antonio & Every Texas Market",
+      "inferredTopic": "dentist digital marketing agency",
+      "geo": "Texas"
+    },
+    {
+      "filename": "dentist-facebook-ads-management-california.json",
+      "slug": "/dentist-facebook-ads-management-california",
+      "title": "California Dentist Facebook Ads Management — HIPAA-Aware Patient Acquisition Systems for Dental Practices & Orthodontists",
+      "inferredTopic": "dentist facebook ads management",
+      "geo": "California"
+    },
+    {
+      "filename": "dentist-facebook-ads-management-texas.json",
+      "slug": "/dentist-facebook-ads-management-texas",
+      "title": "Texas Dentist Facebook Ads Management — HIPAA-Aware Patient Acquisition Systems for Dental Practices & Orthodontists",
+      "inferredTopic": "dentist facebook ads management",
+      "geo": "Texas"
+    },
+    {
+      "filename": "dentist-google-ads-management-california.json",
+      "slug": "/dentist-google-ads-management-california",
+      "title": "California Dentist Google Ads Management — HIPAA-Aware Patient Acquisition Systems for Dental Practices & Orthodontists",
+      "inferredTopic": "dentist google ads management",
+      "geo": "California"
+    },
+    {
+      "filename": "dentist-google-ads-management-texas.json",
+      "slug": "/dentist-google-ads-management-texas",
+      "title": "Texas Dentist Google Ads Management — HIPAA-Aware Patient Acquisition Systems for Dental Practices & Orthodontists",
+      "inferredTopic": "dentist google ads management",
+      "geo": "Texas"
+    },
+    {
+      "filename": "dentist-meta-ads-agency-california.json",
+      "slug": "/dentist-meta-ads-agency-california",
+      "title": "California Dentist Meta Ads Agency — HIPAA-Aware Patient Acquisition Systems for Dental Practices & Orthodontists",
+      "inferredTopic": "dentist meta ads agency",
+      "geo": "California"
+    },
+    {
+      "filename": "dentist-meta-ads-agency-texas.json",
+      "slug": "/dentist-meta-ads-agency-texas",
+      "title": "Texas Dentist Meta Ads Agency — HIPAA-Aware Patient Acquisition Systems for Dental Practices & Orthodontists",
+      "inferredTopic": "dentist meta ads agency",
+      "geo": "Texas"
+    },
+    {
+      "filename": "dentist-ppc-services-california.json",
+      "slug": "/dentist-ppc-services-california",
+      "title": "California Dentist PPC Services — HIPAA-Aware Patient Acquisition Systems for Dental Practices & Orthodontists",
+      "inferredTopic": "dentist ppc services",
+      "geo": "California"
+    },
+    {
+      "filename": "dentist-ppc-services-texas.json",
+      "slug": "/dentist-ppc-services-texas",
+      "title": "Texas Dentist PPC Services — HIPAA-Aware Patient Acquisition Systems for Dental Practices & Orthodontists",
+      "inferredTopic": "dentist ppc services",
+      "geo": "Texas"
+    },
+    {
+      "filename": "dentist-seo-services-california.json",
+      "slug": "/dentist-seo-services-california",
+      "title": "Dental SEO Services in California That Put Your Practice in Front of Patients Searching for a Dentist Right Now",
+      "inferredTopic": "dentist seo services",
+      "geo": "California"
+    },
+    {
+      "filename": "dentist-seo-services-texas.json",
+      "slug": "/dentist-seo-services-texas",
+      "title": "Dentist SEO Services in Texas — More New Patients, Higher-Value Cases, and Map Pack Dominance Across Dallas, Houston, Austin, San Antonio & Every Texas Dental Market",
+      "inferredTopic": "dentist seo services",
+      "geo": "Texas"
+    },
+    {
+      "filename": "digital-marketing-agency-california.json",
+      "slug": "/digital-marketing-agency-california",
+      "title": "California's Performance-Driven Digital Marketing Agency That Turns Online Presence Into Revenue",
+      "inferredTopic": "digital marketing agency",
+      "geo": "California"
+    },
+    {
+      "filename": "digital-marketing-agency-texas.json",
+      "slug": "/digital-marketing-agency-texas",
+      "title": "Texas's Full-Service Digital Marketing Agency — Integrated SEO, Paid Ads, Web Design & Reputation Management That Grows Texas Businesses",
+      "inferredTopic": "digital marketing agency",
+      "geo": "Texas"
+    },
+    {
+      "filename": "email-marketing-services-california.json",
+      "slug": "/email-marketing-services-california",
+      "title": "California Email Marketing Services — Performance-Driven Customer Acquisition & Growth for Regional Businesses",
+      "inferredTopic": "email marketing services",
+      "geo": "California"
+    },
+    {
+      "filename": "email-marketing-services-texas.json",
+      "slug": "/email-marketing-services-texas",
+      "title": "Texas Email Marketing Services — Performance-Driven Customer Acquisition & Growth for Regional Businesses",
+      "inferredTopic": "email marketing services",
+      "geo": "Texas"
+    },
+    {
+      "filename": "facebook-ads-management-california.json",
+      "slug": "/facebook-ads-management-california",
+      "title": "Facebook Ads Management in California That Builds Audiences, Generates Leads, and Scales Revenue",
+      "inferredTopic": "facebook ads management",
+      "geo": "California"
+    },
+    {
+      "filename": "facebook-ads-management-texas.json",
+      "slug": "/facebook-ads-management-texas",
+      "title": "Facebook Ads Management in Texas That Scales Lead Generation, Customer Acquisition, and Brand Revenue",
+      "inferredTopic": "facebook ads management",
+      "geo": "Texas"
+    },
+    {
+      "filename": "google-ads-management-california.json",
+      "slug": "/google-ads-management-california",
+      "title": "Google Ads Management in California That Turns Your Budget Into Measurable Revenue",
+      "inferredTopic": "google ads management",
+      "geo": "California"
+    },
+    {
+      "filename": "google-ads-management-texas.json",
+      "slug": "/google-ads-management-texas",
+      "title": "Google Ads Management in Texas That Generates Real Leads, Not Just Clicks — Certified PPC Management for Dallas, Houston, Austin, San Antonio & Beyond",
+      "inferredTopic": "google ads management",
+      "geo": "Texas"
+    },
+    {
+      "filename": "healthcare-digital-marketing-agency-california.json",
+      "slug": "/healthcare-digital-marketing-agency-california",
+      "title": "California's Specialist Healthcare Digital Marketing Agency — Built to Fill Your Patient Pipeline Across Every Channel",
+      "inferredTopic": "healthcare digital marketing agency",
+      "geo": "California"
+    },
+    {
+      "filename": "healthcare-digital-marketing-agency-texas.json",
+      "slug": "/healthcare-digital-marketing-agency-texas",
+      "title": "Texas's Specialist Healthcare Digital Marketing Agency — Integrated Patient Acquisition for Medical Practices, Dental Offices, DSOs & Health Systems Across Dallas, Houston, Austin, San Antonio & Beyond",
+      "inferredTopic": "healthcare digital marketing agency",
+      "geo": "Texas"
+    },
+    {
+      "filename": "healthcare-facebook-ads-management-california.json",
+      "slug": "/healthcare-facebook-ads-management-california",
+      "title": "California Healthcare Facebook Ads Management — HIPAA-Aware Patient Acquisition Systems for Medical Practices & Group Clinics",
+      "inferredTopic": "healthcare facebook ads management",
+      "geo": "California"
+    },
+    {
+      "filename": "healthcare-facebook-ads-management-texas.json",
+      "slug": "/healthcare-facebook-ads-management-texas",
+      "title": "Texas Healthcare Facebook Ads Management — HIPAA-Aware Patient Acquisition Systems for Medical Practices & Group Clinics",
+      "inferredTopic": "healthcare facebook ads management",
+      "geo": "Texas"
+    },
+    {
+      "filename": "healthcare-google-ads-management-california.json",
+      "slug": "/healthcare-google-ads-management-california",
+      "title": "California Healthcare Google Ads Management — HIPAA-Aware Patient Acquisition Systems for Medical Practices & Group Clinics",
+      "inferredTopic": "healthcare google ads management",
+      "geo": "California"
+    },
+    {
+      "filename": "healthcare-google-ads-management-texas.json",
+      "slug": "/healthcare-google-ads-management-texas",
+      "title": "Texas Healthcare Google Ads Management — HIPAA-Aware Patient Acquisition Systems for Medical Practices & Group Clinics",
+      "inferredTopic": "healthcare google ads management",
+      "geo": "Texas"
+    },
+    {
+      "filename": "healthcare-meta-ads-agency-california.json",
+      "slug": "/healthcare-meta-ads-agency-california",
+      "title": "California Healthcare Meta Ads Agency — HIPAA-Aware Patient Acquisition Systems for Medical Practices & Group Clinics",
+      "inferredTopic": "healthcare meta ads agency",
+      "geo": "California"
+    },
+    {
+      "filename": "healthcare-meta-ads-agency-texas.json",
+      "slug": "/healthcare-meta-ads-agency-texas",
+      "title": "Texas Healthcare Meta Ads Agency — HIPAA-Aware Patient Acquisition Systems for Medical Practices & Group Clinics",
+      "inferredTopic": "healthcare meta ads agency",
+      "geo": "Texas"
+    },
+    {
+      "filename": "healthcare-ppc-services-california.json",
+      "slug": "/healthcare-ppc-services-california",
+      "title": "California Healthcare PPC Services — HIPAA-Aware Patient Acquisition Systems for Medical Practices & Group Clinics",
+      "inferredTopic": "healthcare ppc services",
+      "geo": "California"
+    },
+    {
+      "filename": "healthcare-ppc-services-texas.json",
+      "slug": "/healthcare-ppc-services-texas",
+      "title": "Texas Healthcare PPC Services — HIPAA-Aware Patient Acquisition Systems for Medical Practices & Group Clinics",
+      "inferredTopic": "healthcare ppc services",
+      "geo": "Texas"
+    },
+    {
+      "filename": "healthcare-seo-services-california.json",
+      "slug": "/healthcare-seo-services-california",
+      "title": "Healthcare SEO Services in California That Fill Your Patient Pipeline — Not Just Your Analytics Dashboard",
+      "inferredTopic": "healthcare seo services",
+      "geo": "California"
+    },
+    {
+      "filename": "healthcare-seo-services-texas.json",
+      "slug": "/healthcare-seo-services-texas",
+      "title": "Healthcare SEO Services in Texas — Rank Higher, Attract More Patients, and Build the Clinical Authority Google Requires for Medical Websites",
+      "inferredTopic": "healthcare seo services",
+      "geo": "Texas"
+    },
+    {
+      "filename": "meta-ads-agency-california.json",
+      "slug": "/meta-ads-agency-california",
+      "title": "California's Meta Ads Agency That Builds Full-Funnel Facebook & Instagram Systems — Not Just Campaigns",
+      "inferredTopic": "meta ads agency",
+      "geo": "California"
+    },
+    {
+      "filename": "meta-ads-agency-texas.json",
+      "slug": "/meta-ads-agency-texas",
+      "title": "Texas's Meta Ads Agency That Builds Full-Funnel Facebook & Instagram Systems — Not Just Campaigns",
+      "inferredTopic": "meta ads agency",
+      "geo": "Texas"
+    },
+    {
+      "filename": "ppc-services-california.json",
+      "slug": "/ppc-services-california",
+      "title": "PPC Services in California That Maximize Every Dollar of Your Ad Budget",
+      "inferredTopic": "ppc services",
+      "geo": "California"
+    },
+    {
+      "filename": "ppc-services-texas.json",
+      "slug": "/ppc-services-texas",
+      "title": "PPC Services in Texas That Turn Ad Spend Into Qualified Leads and Measurable Revenue — Not Just Clicks and Impressions",
+      "inferredTopic": "ppc services",
+      "geo": "Texas"
+    },
+    {
+      "filename": "seo-services-california.json",
+      "slug": "/seo-services-california",
+      "title": "SEO Services California — Built to Rank, Designed to Convert",
+      "inferredTopic": "seo services",
+      "geo": "California"
+    },
+    {
+      "filename": "seo-services-texas.json",
+      "slug": "/seo-services-texas",
+      "title": "SEO Services in Texas That Drive Real Business Growth — From Dallas to Houston to Austin and Every Market In Between",
+      "inferredTopic": "seo services",
+      "geo": "Texas"
+    },
+    {
+      "filename": "social-media-marketing-services-california.json",
+      "slug": "/social-media-marketing-services-california",
+      "title": "California Social Media Marketing Services — Performance-Driven Customer Acquisition & Growth for Regional Businesses",
+      "inferredTopic": "social media marketing services",
+      "geo": "California"
+    },
+    {
+      "filename": "social-media-marketing-services-texas.json",
+      "slug": "/social-media-marketing-services-texas",
+      "title": "Texas Social Media Marketing Services — Performance-Driven Customer Acquisition & Growth for Regional Businesses",
+      "inferredTopic": "social media marketing services",
+      "geo": "Texas"
+    },
+    {
+      "filename": "web-design-services-california.json",
+      "slug": "/web-design-services-california",
+      "title": "California Web Design Services — Performance-Driven Customer Acquisition & Growth for Regional Businesses",
+      "inferredTopic": "web design services",
+      "geo": "California"
+    },
+    {
+      "filename": "web-design-services-texas.json",
+      "slug": "/web-design-services-texas",
+      "title": "Texas Web Design Services — Performance-Driven Customer Acquisition & Growth for Regional Businesses",
+      "inferredTopic": "web design services",
+      "geo": "Texas"
+    },
+    {
+      "filename": "web-developer-california.json",
+      "slug": "/web-developer-california",
+      "title": "California Web Development Services — Performance-Driven Customer Acquisition & Growth for Regional Businesses",
+      "inferredTopic": "web developer",
+      "geo": "California"
+    },
+    {
+      "filename": "web-developer-texas.json",
+      "slug": "/web-developer-texas",
+      "title": "Texas Web Development Services — Performance-Driven Customer Acquisition & Growth for Regional Businesses",
+      "inferredTopic": "web developer",
+      "geo": "Texas"
+    }
+  ],
+  "blogs": [
+    {
+      "filename": "ai-patient-chatbots-clinics-hospitals-triage-appointment-growth.mdx",
+      "slug": "/blog/ai-patient-chatbots-clinics-hospitals-triage-appointment-growth",
+      "title": "AI Patient Chatbots for Clinics: 24/7 Triage & Growth",
+      "tags": [
+        "chatbots for healthcare clinics",
+        "24/7 healthcare booking chatbot",
+        "HIPAA-compliant healthcare chatbot",
+        "healthcare chatbot API integration",
+        "chatbot lead generation healthcare",
+        "chatbot for symptom triage healthcare"
+      ],
+      "wordCount": 1330
+    },
+    {
+      "filename": "ai-search-optimization-local-businesses-2026.mdx",
+      "slug": "/blog/ai-search-optimization-local-businesses-2026",
+      "title": "Why Your Local Business Is Invisible on AI Search (And How to Fix It in 2026)",
+      "tags": [
+        "AI search optimization",
+        "local SEO 2026",
+        "Google Maps SEO",
+        "ChatGPT local search",
+        "digital marketing for local businesses",
+        "Google Business Profile optimization"
+      ],
+      "wordCount": 2684
+    },
+    {
+      "filename": "ai-tools-healthcare-marketing-scaling-clinics-hospitals.mdx",
+      "slug": "/blog/ai-tools-healthcare-marketing-scaling-clinics-hospitals",
+      "title": "Top AI Tools for Healthcare Marketing in 2026",
+      "tags": [
+        "healthcare marketing AI tools",
+        "AI for scaling clinics and hospitals",
+        "agentic AI in healthcare",
+        "AI healthcare marketing platforms",
+        "healthcare AI integration with EMR",
+        "healthcare AI lead generation"
+      ],
+      "wordCount": 1326
+    },
+    {
+      "filename": "building-strong-social-media-brand-healthcare-practices.mdx",
+      "slug": "/blog/building-strong-social-media-brand-healthcare-practices",
+      "title": "Social Media Branding Guide for Healthcare Practices",
+      "tags": [
+        "Healthcare Marketing",
+        "Medical Practice Branding",
+        "Social Media for Doctors",
+        "Patient Trust",
+        "Reputation Management",
+        "Healthcare SEO"
+      ],
+      "wordCount": 1059
+    },
+    {
+      "filename": "choose-right-ppc-agency-california.mdx",
+      "slug": "/blog/choose-right-ppc-agency-california",
+      "title": "How to Choose the Right PPC Agency in California Today",
+      "tags": [
+        "PPC agency California",
+        "choose PPC agency",
+        "PPC outsourcing",
+        "GrowLimo PPC",
+        "digital marketing agency"
+      ],
+      "wordCount": 640
+    },
+    {
+      "filename": "citation-building-strategies-healthcare-practices-clinics.mdx",
+      "slug": "/blog/citation-building-strategies-healthcare-practices-clinics",
+      "title": "Citation Building for Healthcare SEO & Google Maps Rankings",
+      "tags": [
+        "Healthcare SEO",
+        "Local SEO for Doctors",
+        "Medical Citations",
+        "Healthcare Directories",
+        "Clinic Growth",
+        "Reputation Management"
+      ],
+      "wordCount": 1210
+    },
+    {
+      "filename": "combining-social-media-google-ads-medical-bookings.mdx",
+      "slug": "/blog/combining-social-media-google-ads-medical-bookings",
+      "title": "Social Media & Google Ads Strategy for Healthcare Growth",
+      "tags": [
+        "Medical PPC",
+        "Healthcare Social Media",
+        "Patient Acquisition Funnel",
+        "Multi-Channel Marketing",
+        "Clinic Growth",
+        "Google Ads for Doctors"
+      ],
+      "wordCount": 1031
+    },
+    {
+      "filename": "common-google-ads-mistakes-healthcare-medical-practices.mdx",
+      "slug": "/blog/common-google-ads-mistakes-healthcare-medical-practices",
+      "title": "Google Ads Mistakes Healthcare Practices Must Avoid",
+      "tags": [
+        "Google Ads",
+        "Health Agency Marketing",
+        "Healthcare PPC",
+        "Dentist PPC Optimization",
+        "GrowLimo"
+      ],
+      "wordCount": 542
+    },
+    {
+      "filename": "competitive-pricing-strategies-medical-practices-usa.mdx",
+      "slug": "/blog/competitive-pricing-strategies-medical-practices-usa",
+      "title": "Medical Pricing Strategies USA to Attract More Patients",
+      "tags": [
+        "Healthcare Pricing Strategy",
+        "Medical Practice Growth",
+        "Patient Acquisition",
+        "US Healthcare Market",
+        "Clinic Revenue Management",
+        "Healthcare SEO"
+      ],
+      "wordCount": 545
+    },
+    {
+      "filename": "conversion-tracking-medical-practices-clinics.mdx",
+      "slug": "/blog/conversion-tracking-medical-practices-clinics",
+      "title": "Conversion Tracking for Medical Practices and Clinics",
+      "tags": [
+        "Healthcare Conversion Tracking",
+        "Medical Marketing ROI",
+        "Patient Acquisition",
+        "GA4 for Doctors",
+        "Clinic Analytics",
+        "Healthcare Digital Strategy"
+      ],
+      "wordCount": 982
+    },
+    {
+      "filename": "digital-marketing-budget-small-business-2026.mdx",
+      "slug": "/blog/digital-marketing-budget-small-business-2026",
+      "title": "How Much Should a US Small Business Actually Spend on Digital Marketing in 2026?",
+      "tags": [
+        "how much to spend on digital marketing",
+        "digital marketing budget small business 2026",
+        "marketing budget percentage revenue",
+        "how much does digital marketing cost",
+        "marketing ROI by channel",
+        "SEO budget",
+        "Google Ads budget"
+      ],
+      "wordCount": 3905
+    },
+    {
+      "filename": "email-marketing-medical-practices-patient-retention.mdx",
+      "slug": "/blog/email-marketing-medical-practices-patient-retention",
+      "title": "Email Marketing for Healthcare: Boost Patient Retention",
+      "tags": [
+        "Healthcare Email Marketing",
+        "Patient Retention",
+        "Clinic Automation",
+        "Medical Practice Growth",
+        "Healthcare SEO",
+        "Patient Engagement Strategies"
+      ],
+      "wordCount": 1047
+    },
+    {
+      "filename": "enhancing-patient-trust-seo-virtual-tours-transform-hospital-clinic-outreach.mdx",
+      "slug": "/blog/enhancing-patient-trust-seo-virtual-tours-transform-hospital-clinic-outreach",
+      "title": "Healthcare Virtual Tours: Boost Trust & Local SEO",
+      "tags": [
+        "Google 360° healthcare virtual tour",
+        "360° clinics virtual tour implementation",
+        "medical facilities virtual tour technology",
+        "healthcare outreach strategy",
+        "Google Maps healthcare listing",
+        "digital healthcare transformation",
+        "Patient trust & digital transparency"
+      ],
+      "wordCount": 584
+    },
+    {
+      "filename": "facebook-ads-agency-california-scale-business.mdx",
+      "slug": "/blog/facebook-ads-agency-california-scale-business",
+      "title": "Facebook Ads Agency California: Scale Your Business Fast Now",
+      "tags": [
+        "Facebook Ads agency California",
+        "Meta Ads services",
+        "paid social growth",
+        "PPC agency",
+        "GrowLimo ads strategy"
+      ],
+      "wordCount": 1963
+    },
+    {
+      "filename": "facebook-ads-generate-high-quality-leads.mdx",
+      "slug": "/blog/facebook-ads-generate-high-quality-leads",
+      "title": "How Facebook Ads Generate High-Quality Leads Fast Today",
+      "tags": [
+        "Facebook lead generation",
+        "Meta Ads leads",
+        "paid social ads"
+      ],
+      "wordCount": 516
+    },
+    {
+      "filename": "facebook-ads-not-working-california-fix.mdx",
+      "slug": "/blog/facebook-ads-not-working-california-fix",
+      "title": "Why Facebook Ads Fail in California and How to Fix Them Fast",
+      "tags": [
+        "Facebook Ads California",
+        "Meta Ads optimization",
+        "social ads strategy",
+        "lead generation ads",
+        "GrowLimo Meta Ads"
+      ],
+      "wordCount": 2690
+    },
+    {
+      "filename": "facebook-ads-services-california-guide.mdx",
+      "slug": "/blog/facebook-ads-services-california-guide",
+      "title": "Facebook Ads Services California: Complete Guide 2026",
+      "tags": [
+        "Facebook Ads California",
+        "Meta Ads strategy",
+        "social media ads"
+      ],
+      "wordCount": 517
+    },
+    {
+      "filename": "facebook-ads-vs-google-ads-california.mdx",
+      "slug": "/blog/facebook-ads-vs-google-ads-california",
+      "title": "Facebook Ads vs Google Ads: Best Choice for California Biz Now",
+      "tags": [
+        "Facebook Ads vs Google Ads",
+        "Meta Ads strategy",
+        "PPC comparison",
+        "paid ads California",
+        "GrowLimo marketing"
+      ],
+      "wordCount": 2112
+    },
+    {
+      "filename": "google-ads-agency-california-3x-leads.mdx",
+      "slug": "/blog/google-ads-agency-california-3x-leads",
+      "title": "Google Ads Agency California: 3X Leads With Expert Strategy!",
+      "tags": [
+        "Google Ads agency California",
+        "PPC agency services",
+        "paid ads lead generation",
+        "conversion optimization ads",
+        "GrowLimo ads strategy"
+      ],
+      "wordCount": 1720
+    },
+    {
+      "filename": "google-ads-california-maximize-roi-leads.mdx",
+      "slug": "/blog/google-ads-california-maximize-roi-leads",
+      "title": "Google Ads California: Maximize ROI and Leads in 2026 Guide!",
+      "tags": [
+        "Google Ads California",
+        "PPC campaign strategies",
+        "paid ads ROI optimization",
+        "lead generation Google Ads",
+        "GrowLimo ads management"
+      ],
+      "wordCount": 749
+    },
+    {
+      "filename": "google-ads-cost-california-guide.mdx",
+      "slug": "/blog/google-ads-cost-california-guide",
+      "title": "Google Ads Cost California: What Businesses Should Expect !!",
+      "tags": [
+        "Google Ads cost California",
+        "PPC pricing California",
+        "cost per click ads",
+        "ads budget optimization",
+        "GrowLimo PPC strategy"
+      ],
+      "wordCount": 1732
+    },
+    {
+      "filename": "google-ads-expert-vs-agency-california.mdx",
+      "slug": "/blog/google-ads-expert-vs-agency-california",
+      "title": "Google Ads Expert or Agency California: Which One to Hire !!",
+      "tags": [
+        "Google Ads expert vs agency",
+        "PPC management California",
+        "ads strategy comparison",
+        "paid ads consulting",
+        "GrowLimo marketing services"
+      ],
+      "wordCount": 1835
+    },
+    {
+      "filename": "google-ads-small-business-2026.mdx",
+      "slug": "/blog/google-ads-small-business-2026",
+      "title": "Google Ads in 2026: What's Actually Working for US Small Businesses",
+      "tags": [
+        "Google Ads",
+        "PPC",
+        "Small Business Marketing",
+        "Performance Max",
+        "Conversion Tracking"
+      ],
+      "wordCount": 4288
+    },
+    {
+      "filename": "google-ads-strategies-reduce-cpc-increase-conversions.mdx",
+      "slug": "/blog/google-ads-strategies-reduce-cpc-increase-conversions",
+      "title": "Google Ads Strategies: Reduce CPC and Boost Conversions Tips",
+      "tags": [
+        "Google Ads strategies",
+        "reduce CPC ads",
+        "conversion optimization PPC",
+        "paid ads performance",
+        "GrowLimo PPC strategy"
+      ],
+      "wordCount": 1976
+    },
+    {
+      "filename": "google-ads-strategy-healthcare-practices-2026.mdx",
+      "slug": "/blog/google-ads-strategy-healthcare-practices-2026",
+      "title": "Google Ads Strategy for Healthcare Practices 2026 Guide",
+      "tags": [
+        "Healthcare Marketing",
+        "Medical PPC",
+        "Google Ads for Doctors",
+        "Patient Acquisition",
+        "Dental Marketing Agency"
+      ],
+      "wordCount": 420
+    },
+    {
+      "filename": "google-analytics-tips-medical-practices.mdx",
+      "slug": "/blog/google-analytics-tips-medical-practices",
+      "title": "Google Analytics for Healthcare: Track Patients & ROI",
+      "tags": [
+        "Google Analytics for Doctors",
+        "Healthcare Data",
+        "Patient Conversion Tracking",
+        "Medical SEO Analytics",
+        "Clinic Marketing ROI",
+        "GA4 for Healthcare"
+      ],
+      "wordCount": 626
+    },
+    {
+      "filename": "healthcare-digital-marketing-trends-global-patient-growth-ai-strategy.mdx",
+      "slug": "/blog/healthcare-digital-marketing-trends-global-patient-growth-ai-strategy",
+      "title": "Healthcare Marketing Trends 2026: AI & Patient Growth",
+      "tags": [
+        "healthcare digital marketing future trends",
+        "AI-driven healthcare marketing",
+        "hyper-personalization in healthcare marketing",
+        "healthcare predictive marketing",
+        "omnichannel patient journey",
+        "healthcare content strategy"
+      ],
+      "wordCount": 540
+    },
+    {
+      "filename": "healthcare-landing-page-optimization-maximizing-patient-conversions-roi.mdx",
+      "slug": "/blog/healthcare-landing-page-optimization-maximizing-patient-conversions-roi",
+      "title": "Healthcare Landing Page Optimization for More Patients",
+      "tags": [
+        "healthcare landing page optimization",
+        "healthcare patient acquisition strategies",
+        "healthcare appointment booking optimization",
+        "mobile healthcare landing page optimization",
+        "healthcare conversion rate improvement strategies",
+        "CRO healthcare landing pages"
+      ],
+      "wordCount": 1084
+    },
+    {
+      "filename": "healthcare-marketing-maximizing-roi-with-google-ads.mdx",
+      "slug": "/blog/healthcare-marketing-maximizing-roi-with-google-ads",
+      "title": "Healthcare Marketing: Maximizing ROI with Google Ads",
+      "tags": [
+        "Healthcare marketing",
+        "ROI of Google Ads",
+        "Google Ads ROI",
+        "Healthcare services Google Ads",
+        "Google Ads for Clinics & Hospitals",
+        "Pharmacies & Labs marketing ROI",
+        "Patient Lifetime Value (LTV) in Healthcare Ads"
+      ],
+      "wordCount": 1054
+    },
+    {
+      "filename": "healthcare-practices-blogging-patient-lead-generation.mdx",
+      "slug": "/blog/healthcare-practices-blogging-patient-lead-generation",
+      "title": "Healthcare Blogging: Generate Qualified Patient Leads",
+      "tags": [
+        "Healthcare Content Strategy",
+        "Medical Blogging",
+        "Patient Lead Generation",
+        "Clinic SEO",
+        "Content Marketing for Doctors",
+        "Healthcare Marketing Agency"
+      ],
+      "wordCount": 1264
+    },
+    {
+      "filename": "healthcare-voice-search-seo-patient-acquisition-tips-clinics-hospitals.mdx",
+      "slug": "/blog/healthcare-voice-search-seo-patient-acquisition-tips-clinics-hospitals",
+      "title": "Healthcare Voice Search SEO: Patient Acquisition Tips",
+      "tags": [
+        "voice search SEO healthcare",
+        "conversational keywords healthcare",
+        "local SEO healthcare voice search",
+        "healthcare chatbot voice integration",
+        "Google Business Profile healthcare SEO",
+        "AEO healthcare voice search"
+      ],
+      "wordCount": 1106
+    },
+    {
+      "filename": "high-converting-facebook-ads-healthcare-medical-practices.mdx",
+      "slug": "/blog/high-converting-facebook-ads-healthcare-medical-practices",
+      "title": "10 High-Converting Facebook Ad Campaigns for Healthcare",
+      "tags": [
+        "Dentist Facebook Ads",
+        "Health Agency Marketing",
+        "Healthcare Agency Advertising",
+        "Health Social Media Ads",
+        "GrowLimo",
+        "PPC",
+        "Digital Marketing"
+      ],
+      "wordCount": 1188
+    },
+    {
+      "filename": "high-roi-google-ads-healthcare-marketing.mdx",
+      "slug": "/blog/high-roi-google-ads-healthcare-marketing",
+      "title": "High-ROI Google Ads Campaign for Healthcare Practices",
+      "tags": [
+        "Healthcare Marketing",
+        "Medical SEO",
+        "Google Ads for Doctors",
+        "Dental PPC",
+        "Patient Acquisition",
+        "Healthcare Marketing Agency"
+      ],
+      "wordCount": 433
+    },
+    {
+      "filename": "hipaa-compliant-google-ads-conversion-tracking-healthcare.mdx",
+      "slug": "/blog/hipaa-compliant-google-ads-conversion-tracking-healthcare",
+      "title": "HIPAA-Compliant Google Ads Conversion Tracking Guide",
+      "tags": [
+        "Medical PPC",
+        "Healthcare Marketing",
+        "HIPAA Compliance",
+        "Conversion Tracking",
+        "Patient Acquisition",
+        "Dental Marketing"
+      ],
+      "wordCount": 524
+    },
+    {
+      "filename": "hipaa-compliant-remarketing-strategies-healthcare-google-ads.mdx",
+      "slug": "/blog/hipaa-compliant-remarketing-strategies-healthcare-google-ads",
+      "title": "HIPAA-Compliant Remarketing for Healthcare Google Ads",
+      "tags": [
+        "Healthcare Marketing",
+        "Medical PPC",
+        "HIPAA Compliance",
+        "Google Ads for Doctors",
+        "Patient Acquisition",
+        "Dental Marketing"
+      ],
+      "wordCount": 1077
+    },
+    {
+      "filename": "how-expanding-medical-practice-multiple-locations.mdx",
+      "slug": "/blog/how-expanding-medical-practice-multiple-locations",
+      "title": "Expand Medical Practice to Multiple Locations Successfully",
+      "tags": [
+        "Medical Practice Scaling",
+        "Healthcare Expansion",
+        "Multi-location SEO",
+        "Clinic Growth Strategy",
+        "Healthcare Marketing",
+        "Patient Acquisition"
+      ],
+      "wordCount": 919
+    },
+    {
+      "filename": "how-paid-ads-and-seo-work-combining-medical-ppc-and-healthcare-seo.mdx",
+      "slug": "/blog/how-paid-ads-and-seo-work-combining-medical-ppc-and-healthcare-seo",
+      "title": "Paid Ads vs SEO for Healthcare: Best Strategy to Grow",
+      "tags": [
+        "Medical SEO",
+        "Healthcare PPC",
+        "Patient Acquisition",
+        "Google Ads for Doctors",
+        "Clinic Growth Strategy",
+        "Multi-Channel Marketing"
+      ],
+      "wordCount": 957
+    },
+    {
+      "filename": "how-patient-reviews-boost-local-seo-healthcare-practices.mdx",
+      "slug": "/blog/how-patient-reviews-boost-local-seo-healthcare-practices",
+      "title": "Patient Reviews Boost Local SEO for Healthcare Clinics",
+      "tags": [
+        "Healthcare SEO",
+        "Reputation Management",
+        "Patient Reviews",
+        "Local SEO for Doctors",
+        "Dental Marketing",
+        "Clinic Growth"
+      ],
+      "wordCount": 1395
+    },
+    {
+      "filename": "how-ppc-advertising-drives-instant-leads.mdx",
+      "slug": "/blog/how-ppc-advertising-drives-instant-leads",
+      "title": "How PPC Advertising Drives Instant Leads for Businesses",
+      "tags": [
+        "PPC lead generation",
+        "instant leads PPC",
+        "paid ads strategy",
+        "GrowLimo PPC",
+        "conversion ads"
+      ],
+      "wordCount": 780
+    },
+    {
+      "filename": "how-to-analyzing-improving-medical-ad-performance.mdx",
+      "slug": "/blog/how-to-analyzing-improving-medical-ad-performance",
+      "title": "Improve Medical Ad Performance & Maximize Patient ROI",
+      "tags": [
+        "Medical PPC",
+        "Healthcare Advertising",
+        "Google Ads for Doctors",
+        "Patient Acquisition Cost",
+        "Clinic Marketing ROI",
+        "Analyzing Ad Performance"
+      ],
+      "wordCount": 952
+    },
+    {
+      "filename": "how-to-attracting-corporate-clients-medical-practices.mdx",
+      "slug": "/blog/how-to-attracting-corporate-clients-medical-practices",
+      "title": "Attract Corporate Clients for Medical Practice Growth",
+      "tags": [
+        "Corporate Healthcare Marketing",
+        "B2B Medical Sales",
+        "Executive Wellness Programs",
+        "Clinic Growth Strategy",
+        "Occupational Health Marketing",
+        "Healthcare SEO"
+      ],
+      "wordCount": 1024
+    },
+    {
+      "filename": "how-to-launching-specialty-medical-packages-clinics.mdx",
+      "slug": "/blog/how-to-launching-specialty-medical-packages-clinics",
+      "title": "Specialty Medical Packages to Increase Patient Bookings",
+      "tags": [
+        "Medical Marketing Strategy",
+        "Healthcare Packages",
+        "Patient Acquisition",
+        "Clinic Revenue Growth",
+        "Specialized Medical Services",
+        "Healthcare SEO"
+      ],
+      "wordCount": 865
+    },
+    {
+      "filename": "how-to-use-utm-tags-healthcare-social-media-tracking.mdx",
+      "slug": "/blog/how-to-use-utm-tags-healthcare-social-media-tracking",
+      "title": "UTM Tracking for Healthcare: Measure Social Media ROI",
+      "tags": [
+        "Healthcare Social Media",
+        "UTM Tracking",
+        "Medical Marketing Analytics",
+        "Patient Acquisition",
+        "Clinic ROI",
+        "Digital Marketing for Doctors"
+      ],
+      "wordCount": 638
+    },
+    {
+      "filename": "how-to-write-seo-friendly-medical-blogs.mdx",
+      "slug": "/blog/how-to-write-seo-friendly-medical-blogs",
+      "title": "SEO-Friendly Medical Blogs to Rank & Attract Patients",
+      "tags": [
+        "Medical SEO",
+        "Healthcare Copywriting",
+        "Clinic Marketing",
+        "Patient Search Intent",
+        "Google Ranking for Doctors",
+        "Healthcare Digital Strategy"
+      ],
+      "wordCount": 950
+    },
+    {
+      "filename": "instagram-reels-ideas-high-ticket-patients-healthcare.mdx",
+      "slug": "/blog/instagram-reels-ideas-high-ticket-patients-healthcare",
+      "title": "Instagram Reels for High-Ticket Healthcare Patient Growth",
+      "tags": [
+        "Instagram Marketing",
+        "Social Media Strategy",
+        "Health Agency Marketing",
+        "Dentist Agency Advertising",
+        "Instagram Reels",
+        "GrowLimo",
+        "Healthcare Marketing",
+        "Instagram for Doctors",
+        "Medical Social Media",
+        "High-Ticket Patients",
+        "Dental Marketing",
+        "Reputation Management"
+      ],
+      "wordCount": 510
+    },
+    {
+      "filename": "keyword-research-tips-healthcare-medical-ppc-campaigns.mdx",
+      "slug": "/blog/keyword-research-tips-healthcare-medical-ppc-campaigns",
+      "title": "Keyword Research Tips for Healthcare PPC Campaigns",
+      "tags": [
+        "Healthcare Marketing",
+        "Google Ads",
+        "Keyword Research",
+        "Healthcare PPC",
+        "Digital Marketing",
+        "Paid Campaigns"
+      ],
+      "wordCount": 1163
+    },
+    {
+      "filename": "lead-magnet-ideas-healthcare-practices-clinics.mdx",
+      "slug": "/blog/lead-magnet-ideas-healthcare-practices-clinics",
+      "title": "Healthcare Lead Magnet Ideas to Increase Patient Leads",
+      "tags": [
+        "Healthcare Lead Generation",
+        "Patient Acquisition",
+        "Medical Marketing Strategy",
+        "Clinic Growth",
+        "Patient Education Resources",
+        "Medical SEO"
+      ],
+      "wordCount": 510
+    },
+    {
+      "filename": "linkedin-b2b-marketing-physician-referrals-healthcare.mdx",
+      "slug": "/blog/linkedin-b2b-marketing-physician-referrals-healthcare",
+      "title": "LinkedIn B2B Marketing for Healthcare & Physician Referrals",
+      "tags": [
+        "Healthcare Marketing",
+        "LinkedIn for Doctors",
+        "B2B Medical Marketing",
+        "Physician Referrals",
+        "Medical Practice Growth",
+        "Healthcare SEO"
+      ],
+      "wordCount": 1126
+    },
+    {
+      "filename": "local-search-ads-guide-healthcare-practices.mdx",
+      "slug": "/blog/local-search-ads-guide-healthcare-practices",
+      "title": "Local Search Ads Guide for Healthcare Practices | Top of Map",
+      "tags": [
+        "google business profile",
+        "Healthcare Marketing",
+        "Medical SEO",
+        "Local Search Ads",
+        "Google Maps Ads",
+        "Dental Marketing",
+        "Patient Acquisition",
+        "Local Search Ads"
+      ],
+      "wordCount": 1691
+    },
+    {
+      "filename": "local-seo-california-dominate-maps-near-me.mdx",
+      "slug": "/blog/local-seo-california-dominate-maps-near-me",
+      "title": "Local SEO California: Dominate Maps and Near Me Searches",
+      "tags": [
+        "local SEO California",
+        "Google Maps ranking",
+        "near me SEO strategies",
+        "California local search optimization",
+        "GrowLimo local SEO"
+      ],
+      "wordCount": 830
+    },
+    {
+      "filename": "local-seo-checklist-us-healthcare-practices.mdx",
+      "slug": "/blog/local-seo-checklist-us-healthcare-practices",
+      "title": "Local SEO Checklist for US Healthcare Practices 2026",
+      "tags": [
+        "Local SEO for Doctors",
+        "Medical Practice SEO",
+        "Google Maps Ranking",
+        "Urgent Care SEO",
+        "Clinic Growth Strategy",
+        "Healthcare Citations"
+      ],
+      "wordCount": 1291
+    },
+    {
+      "filename": "measuring-roi-medical-marketing-campaigns.mdx",
+      "slug": "/blog/measuring-roi-medical-marketing-campaigns",
+      "title": "Measure ROI in Healthcare Marketing for Better Growth",
+      "tags": [
+        "Healthcare Marketing ROI",
+        "Medical Practice Analytics",
+        "Patient Acquisition Cost",
+        "Clinic Growth Metrics",
+        "Healthcare SEO Tracking",
+        "Medical PPC Performance"
+      ],
+      "wordCount": 945
+    },
+    {
+      "filename": "medical-faq-seo-improving-local-patient-acquisition-clinics-hospitals.mdx",
+      "slug": "/blog/medical-faq-seo-improving-local-patient-acquisition-clinics-hospitals",
+      "title": "Medical FAQ SEO: Boost Local Patient Acquisition Now",
+      "tags": [
+        "Healthcare FAQ SEO",
+        "FAQs for healthcare websites",
+        "healthcare local SEO optimization",
+        "Healthcare Patient Acquisition FAQs",
+        "healthcare local patient acquisition",
+        "healthcare FAQ schema markup",
+        "GBP healthcare SEO FAQs"
+      ],
+      "wordCount": 1095
+    },
+    {
+      "filename": "multi-specialty-healthcare-seo-ranking-clinics-diverse-medical-services.mdx",
+      "slug": "/blog/multi-specialty-healthcare-seo-ranking-clinics-diverse-medical-services",
+      "title": "Multi-Specialty Healthcare SEO: Rank Clinics for All Services",
+      "tags": [
+        "healthcare multi-service SEO strategy",
+        "optimize healthcare service pages",
+        "healthcare schema markup implementation",
+        "healthcare GBP optimization guide",
+        "healthcare websites internal linking strategy",
+        "healthcare keyword mapping strategy"
+      ],
+      "wordCount": 1145
+    },
+    {
+      "filename": "optimizing-google-ads-healthcare-budgeting-tracking.mdx",
+      "slug": "/blog/optimizing-google-ads-healthcare-budgeting-tracking",
+      "title": "Optimize Google Ads for Healthcare Budgeting & Tracking",
+      "tags": [
+        "google ads for dentist",
+        "healthcare service google ads",
+        "Google Ads budget",
+        "ROI growth agency",
+        "ROI google PR agency",
+        "Google Ads conversion tracking"
+      ],
+      "wordCount": 738
+    },
+    {
+      "filename": "optimizing-google-business-profile-healthcare-practices.mdx",
+      "slug": "/blog/optimizing-google-business-profile-healthcare-practices",
+      "title": "Optimize Google Business Profile for Healthcare SEO",
+      "tags": [
+        "Google Business Profile",
+        "Healthcare SEO",
+        "Local SEO for Doctors",
+        "Dental Marketing",
+        "Medical Practice Growth",
+        "Patient Acquisition",
+        "Local SEO",
+        "GBP Optimization"
+      ],
+      "wordCount": 932
+    },
+    {
+      "filename": "partnership-marketing-ideas-medical-practices.mdx",
+      "slug": "/blog/partnership-marketing-ideas-medical-practices",
+      "title": "Partnership Marketing for Medical Practices Growth USA",
+      "tags": [
+        "Healthcare Partnership Marketing",
+        "Medical Referral Networks",
+        "Clinic Growth Strategy",
+        "Patient Acquisition",
+        "B2B Healthcare Marketing",
+        "Medical SEO"
+      ],
+      "wordCount": 887
+    },
+    {
+      "filename": "ppc-agency-vs-inhouse-team.mdx",
+      "slug": "/blog/ppc-agency-vs-inhouse-team",
+      "title": "PPC Agency vs In-House Team: What Works Better Today",
+      "tags": [
+        "PPC agency vs in-house",
+        "PPC outsourcing",
+        "paid ads strategy",
+        "GrowLimo PPC",
+        "marketing team comparison"
+      ],
+      "wordCount": 648
+    },
+    {
+      "filename": "ppc-mistakes-wasting-budget.mdx",
+      "slug": "/blog/ppc-mistakes-wasting-budget",
+      "title": "Top PPC Mistakes That Waste Budget and Kill Conversions",
+      "tags": [
+        "PPC mistakes",
+        "wasted ad spend",
+        "PPC optimization",
+        "GrowLimo PPC",
+        "conversion issues"
+      ],
+      "wordCount": 727
+    },
+    {
+      "filename": "ppc-services-california-complete-guide.mdx",
+      "slug": "/blog/ppc-services-california-complete-guide",
+      "title": "PPC Services California: Complete Guide for Business Owners",
+      "tags": [
+        "PPC services California",
+        "paid advertising strategy",
+        "PPC lead generation",
+        "ads optimization",
+        "GrowLimo PPC"
+      ],
+      "wordCount": 921
+    },
+    {
+      "filename": "proven-content-marketing-ideas-healthcare-practices.mdx",
+      "slug": "/blog/proven-content-marketing-ideas-healthcare-practices",
+      "title": "Healthcare Content Marketing Ideas to Grow Patient Traffic",
+      "tags": [
+        "Content Marketing for Doctors",
+        "Healthcare Content Strategy",
+        "Patient Education",
+        "Medical SEO",
+        "Clinic Growth",
+        "B2B Medical Marketing"
+      ],
+      "wordCount": 693
+    },
+    {
+      "filename": "rank-medical-clinic-near-me-google-maps-healthcare-seo.mdx",
+      "slug": "/blog/rank-medical-clinic-near-me-google-maps-healthcare-seo",
+      "title": "Rank \"Medical Clinic Near Me\" in Google Maps: Guide",
+      "tags": [
+        "Healthcare SEO",
+        "Local SEO for Doctors",
+        "Google Maps Ranking",
+        "Patient Acquisition",
+        "Medical Practice Growth",
+        "Dental Marketing"
+      ],
+      "wordCount": 1284
+    },
+    {
+      "filename": "retargeting-solutions-for-healthcare-bookings.mdx",
+      "slug": "/blog/retargeting-solutions-for-healthcare-bookings",
+      "title": "Healthcare Retargeting Strategies to Recover Patient Leads",
+      "tags": [
+        "retargeting solution for healthcare bookings",
+        "Allied Healthcare retargeting",
+        "retargeting for healthcare bookings",
+        "abandoned Healthcare bookings",
+        "dynamic remarketing for healthcare"
+      ],
+      "wordCount": 951
+    },
+    {
+      "filename": "seasonal-marketing-ideas-medical-practices.mdx",
+      "slug": "/blog/seasonal-marketing-ideas-medical-practices",
+      "title": "Seasonal Marketing for Healthcare to Increase Bookings",
+      "tags": [
+        "Healthcare Seasonal Marketing",
+        "Patient Acquisition",
+        "Clinic Growth Strategy",
+        "Medical SEO",
+        "Seasonal Health Campaigns",
+        "Medical PPC"
+      ],
+      "wordCount": 923
+    },
+    {
+      "filename": "seo-consultant-california-grow-business-strategy.mdx",
+      "slug": "/blog/seo-consultant-california-grow-business-strategy",
+      "title": "SEO Consultant California: Grow Your Business with Strategy",
+      "tags": [
+        "SEO consultant California",
+        "California SEO expert",
+        "SEO growth strategies",
+        "local SEO consultant",
+        "GrowLimo SEO consulting"
+      ],
+      "wordCount": 785
+    },
+    {
+      "filename": "seo-services-california-rank-1-competitive-markets.mdx",
+      "slug": "/blog/seo-services-california-rank-1-competitive-markets",
+      "title": "SEO Services California: Rank #1 in Competitive Markets",
+      "tags": [
+        "SEO services California",
+        "California SEO strategies",
+        "local SEO California",
+        "ranking on Google California",
+        "GrowLimo SEO"
+      ],
+      "wordCount": 624
+    },
+    {
+      "filename": "seo-vs-google-ads-california-which-better.mdx",
+      "slug": "/blog/seo-vs-google-ads-california-which-better",
+      "title": "SEO vs Google Ads California: Which Strategy Wins 2026",
+      "tags": [
+        "SEO vs Google Ads",
+        "California digital marketing strategy",
+        "paid ads vs organic traffic",
+        "Google Ads California",
+        "GrowLimo marketing strategy"
+      ],
+      "wordCount": 740
+    },
+    {
+      "filename": "social-media-strategies-healthcare-patient-appointments.mdx",
+      "slug": "/blog/social-media-strategies-healthcare-patient-appointments",
+      "title": "Social Media Strategies for Healthcare Patient Growth",
+      "tags": [
+        "Healthcare Marketing",
+        "Medical Social Media",
+        "Patient Acquisition",
+        "Dental Marketing",
+        "Reputation Management",
+        "Healthcare SEO"
+      ],
+      "wordCount": 913
+    },
+    {
+      "filename": "target-corporate-clients-referring-physicians-healthcare-social-ads.mdx",
+      "slug": "/blog/target-corporate-clients-referring-physicians-healthcare-social-ads",
+      "title": "B2B Healthcare Social Media Ads for Corporate Clients Growth",
+      "tags": [
+        "Healthcare Marketing",
+        "B2B Medical Marketing",
+        "Physician Referrals",
+        "Occupational Health",
+        "LinkedIn Ads for Doctors",
+        "Medical Advertising"
+      ],
+      "wordCount": 465
+    },
+    {
+      "filename": "tiktok-marketing-strategies-healthcare-practices.mdx",
+      "slug": "/blog/tiktok-marketing-strategies-healthcare-practices",
+      "title": "TikTok Marketing Strategies for Healthcare Patient Growth",
+      "tags": [
+        "TikTok for Doctors",
+        "Medical Social Media",
+        "Patient Acquisition",
+        "Dental Marketing",
+        "Healthcare SEO",
+        "Healthcare Marketing"
+      ],
+      "wordCount": 571
+    },
+    {
+      "filename": "tiktok-reels-for-healthcare-global-patient-engagement-strategies.mdx",
+      "slug": "/blog/tiktok-reels-for-healthcare-global-patient-engagement-strategies",
+      "title": "TikTok & Reels Healthcare Marketing for Patient Growth",
+      "tags": [
+        "TikTok for healthcare",
+        "healthcare social media marketing",
+        "global patient engagement strategies",
+        "healthcare video marketing",
+        "patient acquisition through TikTok",
+        "Reels Ads for healthcare"
+      ],
+      "wordCount": 949
+    },
+    {
+      "filename": "top-seo-mistakes-california-businesses-fix.mdx",
+      "slug": "/blog/top-seo-mistakes-california-businesses-fix",
+      "title": "Top SEO Mistakes California Businesses Must Avoid in 2026",
+      "tags": [
+        "SEO mistakes California",
+        "SEO errors businesses make",
+        "improve Google rankings",
+        "SEO optimization tips",
+        "GrowLimo SEO strategy"
+      ],
+      "wordCount": 696
+    },
+    {
+      "filename": "using-patient-testimonials-attract-new-healthcare-patients.mdx",
+      "slug": "/blog/using-patient-testimonials-attract-new-healthcare-patients",
+      "title": "Patient Testimonials for Healthcare: Boost Trust & Bookings",
+      "tags": [
+        "Patient Testimonials",
+        "Healthcare Reputation Management",
+        "Medical SEO",
+        "Clinic Marketing",
+        "Dental Reviews",
+        "HIPAA Compliant Marketing"
+      ],
+      "wordCount": 1191
+    },
+    {
+      "filename": "using-photos-posts-google-business-profile-attract-patients.mdx",
+      "slug": "/blog/using-photos-posts-google-business-profile-attract-patients",
+      "title": "Google Business Profile Photos & Posts for Patient Growth",
+      "tags": [
+        "Google Business Profile",
+        "Local Medical SEO",
+        "Patient Engagement",
+        "Clinic Marketing",
+        "Healthcare Visuals",
+        "GMB Posts for Doctors"
+      ],
+      "wordCount": 794
+    },
+    {
+      "filename": "video-marketing-increase-patient-appointments-healthcare.mdx",
+      "slug": "/blog/video-marketing-increase-patient-appointments-healthcare",
+      "title": "Video Marketing for Healthcare: Increase Patient Bookings",
+      "tags": [
+        "Healthcare Video Marketing",
+        "Medical SEO",
+        "Patient Acquisition",
+        "Healthcare Digital Marketing",
+        "Clinic Growth Strategy",
+        "Dental Video Marketing"
+      ],
+      "wordCount": 594
+    },
+    {
+      "filename": "website-traffic-no-leads-fix.mdx",
+      "slug": "/blog/website-traffic-no-leads-fix",
+      "title": "Website Gets Traffic but No Leads? Here's Exactly Why",
+      "tags": [
+        "website traffic but no leads",
+        "website conversion optimization",
+        "how to get more leads from website",
+        "website lead generation",
+        "conversion rate optimization"
+      ],
+      "wordCount": 4380
+    }
+  ]
+}
