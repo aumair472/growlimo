@@ -124,7 +124,7 @@ export default function ServiceContentSectionHDMCA({ service, slug, onSelectPlan
       />
 
       {/* SECTION 1: HERO */}
-      <section className="bg-[#080D18] text-white pt-[120px] pb-[80px] relative overflow-hidden">
+      <section className="bg-[#080D18] text-white pt-[100px] pb-[80px] relative overflow-hidden">
         {/* Abstract background glows */}
         <div className="absolute top-[-20%] left-[-10%] w-[50%] h-[60%] rounded-full bg-[rgba(0,198,138,0.04)] blur-[120px] pointer-events-none" />
         <div className="absolute bottom-[-10%] right-[-10%] w-[40%] h-[50%] rounded-full bg-[rgba(221,102,19,0.03)] blur-[120px] pointer-events-none" />
@@ -138,12 +138,12 @@ export default function ServiceContentSectionHDMCA({ service, slug, onSelectPlan
                 CALIFORNIA HEALTHCARE MARKETING AGENCY
               </span>
 
-              <h1 className="text-4xl md:text-[44px] lg:text-[48px] font-extrabold font-sora text-[#F0F4FF] leading-[1.12] mb-6 tracking-tight">
+              <h1 className="text-[30px] md:text-[36px] lg:text-[40px] font-extrabold font-sora text-[#F0F4FF] leading-[1.12] mb-6 tracking-tight">
                 {h1}
               </h1>
 
-              <p className="font-sans text-[16px] text-[#8FA8C8] leading-[1.7] mb-8 max-w-[620px]">
-                {heroContent[0]}
+              <p className="font-sans text-[15px] text-[#8FA8C8] leading-[1.7] mb-8 max-w-[620px]">
+                {subheadline}
               </p>
 
               {/* 3 Trust Pills */}
@@ -230,7 +230,7 @@ export default function ServiceContentSectionHDMCA({ service, slug, onSelectPlan
             <span className="text-[#00C68A] text-[11px] font-bold uppercase tracking-[2.5px] mb-3 block font-sans">
               MARKET REALITY
             </span>
-            <h2 className="text-[32px] md:text-[40px] font-extrabold font-sora leading-[1.15] text-[#0B1829] tracking-tight border-l-4 border-[#00C68A] pl-4">
+            <h2 className="text-[26px] md:text-[34px] font-extrabold font-sora leading-[1.15] text-[#0B1829] tracking-tight border-l-4 border-[#00C68A] pl-4">
               {whyHarderSec.heading}
             </h2>
           </div>
@@ -239,19 +239,19 @@ export default function ServiceContentSectionHDMCA({ service, slug, onSelectPlan
 
             {/* Left 60%: Text content */}
             <div className="lg:col-span-7 space-y-6 text-left">
-              <p className="font-sans text-[17px] leading-[1.8] text-[#1A2438] font-semibold">
+              <p className="font-sans text-[15px] leading-[1.8] text-[#1A2438] font-semibold">
                 {heroContent[1]}
               </p>
 
               {whyHarderSec.paragraphs && whyHarderSec.paragraphs.map((para, idx) => (
-                <p key={idx} className="font-sans text-[16px] leading-[1.8] text-[#3D5A73]">
+                <p key={idx} className="font-sans text-[15px] leading-[1.8] text-[#3D5A73]">
                   {para}
                 </p>
               ))}
 
               {whyHarderSec.closingText && (
                 <div className="border-l-4 border-[#00C68A] pl-5 py-2 my-6 bg-[#00C68A]/5 rounded-r-[8px]">
-                  <p className="font-sans text-[16px] leading-[1.8] font-bold text-[#0B1829]">
+                  <p className="font-sans text-[15px] leading-[1.8] font-bold text-[#0B1829]">
                     {whyHarderSec.closingText}
                   </p>
                 </div>
@@ -307,11 +307,11 @@ export default function ServiceContentSectionHDMCA({ service, slug, onSelectPlan
             <span className="text-[#00C68A] text-[11px] font-bold uppercase tracking-[2.5px] mb-3 block font-sans">
               THE COMPELLING FACTOR
             </span>
-            <h2 className="text-[32px] md:text-[40px] font-extrabold font-sora leading-[1.15] text-[#F0F4FF] tracking-tight border-l-4 border-[#00C68A] pl-4">
+            <h2 className="text-[26px] md:text-[34px] font-extrabold font-sora leading-[1.15] text-[#F0F4FF] tracking-tight border-l-4 border-[#00C68A] pl-4">
               {whyIntegratedSec.heading}
             </h2>
             {whyIntegratedSec.paragraphs && whyIntegratedSec.paragraphs.map((para, idx) => (
-              <p key={idx} className="font-sans text-[16px] leading-[1.8] text-[#8FA8C8] mt-4 max-w-[800px]">
+              <p key={idx} className="font-sans text-[15px] leading-[1.8] text-[#8FA8C8] mt-4 max-w-[800px]">
                 {para}
               </p>
             ))}
@@ -351,7 +351,7 @@ export default function ServiceContentSectionHDMCA({ service, slug, onSelectPlan
 
           {whyIntegratedSec.closingText && (
             <div className="mt-8 p-6 rounded-[16px] border-l-4 border-[#00C68A] bg-[#1A2438]/60 text-left">
-              <p className="font-sans text-[16px] leading-[1.8] font-bold italic text-[#F0F4FF]">
+              <p className="font-sans text-[15px] leading-[1.8] font-bold italic text-[#F0F4FF]">
                 "{whyIntegratedSec.closingText}"
               </p>
             </div>
@@ -382,11 +382,11 @@ export default function ServiceContentSectionHDMCA({ service, slug, onSelectPlan
               <span className="text-[#00C68A] text-[11px] font-bold uppercase tracking-[2.5px] block font-sans">
                 CORE CAPABILITIES
               </span>
-              <h2 className="text-[32px] md:text-[40px] font-extrabold font-sora leading-[1.15] text-[#0B1829] tracking-tight border-l-4 border-[#00C68A] pl-4">
+              <h2 className="text-[26px] md:text-[34px] font-extrabold font-sora leading-[1.15] text-[#0B1829] tracking-tight border-l-4 border-[#00C68A] pl-4">
                 {servicesIntroSec.heading}
               </h2>
               {servicesIntroSec.paragraphs && servicesIntroSec.paragraphs.map((para, idx) => (
-                <p key={idx} className="font-sans text-[16px] leading-[1.8] text-[#3D5A73]">
+                <p key={idx} className="font-sans text-[15px] leading-[1.8] text-[#3D5A73]">
                   {para}
                 </p>
               ))}
@@ -420,13 +420,13 @@ export default function ServiceContentSectionHDMCA({ service, slug, onSelectPlan
                   </div>
 
                   {/* Heading */}
-                  <h2 className={`text-[28px] md:text-[34px] font-extrabold font-sora leading-[1.15] mb-6 tracking-tight border-l-4 border-[#00C68A] pl-4 ${isWhiteBg ? 'text-[#0B1829]' : 'text-[#F0F4FF]'}`}>
+                  <h2 className={`text-[22px] md:text-[28px] font-extrabold font-sora leading-[1.15] mb-6 tracking-tight border-l-4 border-[#00C68A] pl-4 ${isWhiteBg ? 'text-[#0B1829]' : 'text-[#F0F4FF]'}`}>
                     {displayHeading}
                   </h2>
 
                   {/* Paragraphs */}
                   {serviceSec.paragraphs && serviceSec.paragraphs.map((para, pIdx) => (
-                    <p key={pIdx} className={`font-sans text-[16px] leading-[1.8] mb-5 font-normal ${isWhiteBg ? 'text-[#3D5A73]' : 'text-[#8FA8C8]'}`}>
+                    <p key={pIdx} className={`font-sans text-[15px] leading-[1.8] mb-5 font-normal ${isWhiteBg ? 'text-[#3D5A73]' : 'text-[#8FA8C8]'}`}>
                       {para}
                     </p>
                   ))}
@@ -455,12 +455,12 @@ export default function ServiceContentSectionHDMCA({ service, slug, onSelectPlan
                       {serviceSec.linkTo ? (
                         <Link
                           href={serviceSec.linkTo}
-                          className={`font-sans text-[16px] leading-[1.8] font-bold inline-flex items-center gap-2 transition-colors ${isWhiteBg ? 'text-[#00C68A] hover:text-[#00A572]' : 'text-[#00C68A] hover:text-[#00E6A0]'}`}
+                          className={`font-sans text-[15px] leading-[1.8] font-bold inline-flex items-center gap-2 transition-colors ${isWhiteBg ? 'text-[#00C68A] hover:text-[#00A572]' : 'text-[#00C68A] hover:text-[#00E6A0]'}`}
                         >
                           {serviceSec.closingText}
                         </Link>
                       ) : (
-                        <p className={`font-sans text-[16px] leading-[1.8] font-bold italic ${isWhiteBg ? 'text-[#0B1829]' : 'text-[#F0F4FF]'}`}>
+                        <p className={`font-sans text-[15px] leading-[1.8] font-bold italic ${isWhiteBg ? 'text-[#0B1829]' : 'text-[#F0F4FF]'}`}>
                           "{serviceSec.closingText}"
                         </p>
                       )}
@@ -523,11 +523,11 @@ export default function ServiceContentSectionHDMCA({ service, slug, onSelectPlan
           <span className="bg-[rgba(0,198,138,0.08)] border border-[rgba(0,198,138,0.20)] text-[#00C68A] text-[11px] font-extrabold uppercase tracking-[2.5px] rounded-full py-[6px] px-[16px] mb-6 inline-flex font-sans leading-none">
             SUCCESS STORIES
           </span>
-          <h2 className="text-[36px] md:text-[44px] lg:text-[48px] font-extrabold font-sora text-white leading-tight mb-6 tracking-tight max-w-[800px] mx-auto">
+          <h2 className="text-[28px] md:text-[36px] lg:text-[40px] font-extrabold font-sora text-white leading-tight mb-6 tracking-tight max-w-[800px] mx-auto">
             {caseStudiesIntroSec.heading}
           </h2>
           {caseStudiesIntroSec.paragraphs && caseStudiesIntroSec.paragraphs.map((para, idx) => (
-            <p key={idx} className="font-sans text-[16px] md:text-[18px] leading-[1.8] text-[#8FA8C8] max-w-[800px] mx-auto">
+            <p key={idx} className="font-sans text-[15px] md:text-[18px] leading-[1.8] text-[#8FA8C8] max-w-[800px] mx-auto">
               {para}
             </p>
           ))}
@@ -556,7 +556,7 @@ export default function ServiceContentSectionHDMCA({ service, slug, onSelectPlan
               </div>
               
               {/* 2. MAIN TITLE */}
-              <h3 className="text-[28px] md:text-[36px] lg:text-[42px] font-extrabold font-sora text-[#F0F4FF] leading-tight mb-8 tracking-tight max-w-[1000px] text-left">
+              <h3 className="text-[22px] md:text-[30px] lg:text-[34px] font-extrabold font-sora text-[#F0F4FF] leading-tight mb-8 tracking-tight max-w-[1000px] text-left">
                 {cleanTitle}
               </h3>
               
@@ -665,11 +665,11 @@ export default function ServiceContentSectionHDMCA({ service, slug, onSelectPlan
             <span className="text-[#00C68A] text-[11px] font-bold uppercase tracking-[2.5px] mb-3 block font-sans">
               SPECIALTY PLAYBOOKS
             </span>
-            <h2 className="text-[32px] md:text-[40px] font-extrabold font-sora leading-[1.15] text-[#0B1829] tracking-tight border-l-4 border-[#00C68A] pl-4">
+            <h2 className="text-[26px] md:text-[34px] font-extrabold font-sora leading-[1.15] text-[#0B1829] tracking-tight border-l-4 border-[#00C68A] pl-4">
               {specialtiesSec.heading}
             </h2>
             {specialtiesSec.paragraphs && specialtiesSec.paragraphs.map((para, idx) => (
-              <p key={idx} className="font-sans text-[16px] leading-[1.8] text-[#3D5A73] mt-4 max-w-[800px]">
+              <p key={idx} className="font-sans text-[15px] leading-[1.8] text-[#3D5A73] mt-4 max-w-[800px]">
                 {para}
               </p>
             ))}
@@ -731,11 +731,11 @@ export default function ServiceContentSectionHDMCA({ service, slug, onSelectPlan
               <span className="text-[#00C68A] text-[11px] font-bold uppercase tracking-[2.5px] block font-sans">
                 LOCAL OUTREACH
               </span>
-              <h2 className="text-[32px] md:text-[40px] font-extrabold font-sora leading-tight text-[#F0F4FF] tracking-tight">
+              <h2 className="text-[26px] md:text-[34px] font-extrabold font-sora leading-tight text-[#F0F4FF] tracking-tight">
                 {citiesSec.heading}
               </h2>
               {citiesSec.paragraphs && citiesSec.paragraphs.map((para, idx) => (
-                <p key={idx} className="font-sans text-[16px] leading-[1.8] text-[#8FA8C8]">
+                <p key={idx} className="font-sans text-[15px] leading-[1.8] text-[#8FA8C8]">
                   {para}
                 </p>
               ))}
@@ -799,11 +799,11 @@ export default function ServiceContentSectionHDMCA({ service, slug, onSelectPlan
             <span className="text-[#00C68A] text-[11px] font-bold uppercase tracking-[2.5px] mb-3 block font-sans">
               TRUSTED EXPERTISE
             </span>
-            <h2 className="text-[32px] md:text-[40px] font-extrabold font-sora leading-tight text-[#0B1829] tracking-tight border-l-4 border-[#00C68A] pl-4">
+            <h2 className="text-[26px] md:text-[34px] font-extrabold font-sora leading-tight text-[#0B1829] tracking-tight border-l-4 border-[#00C68A] pl-4">
               {partnerSec.heading}
             </h2>
             {partnerSec.paragraphs && partnerSec.paragraphs.map((para, idx) => (
-              <p key={idx} className="font-sans text-[16px] leading-[1.8] text-[#3D5A73] mt-4 max-w-[800px]">
+              <p key={idx} className="font-sans text-[15px] leading-[1.8] text-[#3D5A73] mt-4 max-w-[800px]">
                 {para}
               </p>
             ))}
@@ -842,7 +842,7 @@ export default function ServiceContentSectionHDMCA({ service, slug, onSelectPlan
 
           {partnerSec.closingText && (
             <div className="mt-8 p-6 rounded-[16px] border-l-4 border-[#00C68A] bg-[#F8FAFC] text-left">
-              <p className="font-sans text-[16px] leading-[1.8] font-bold italic text-[#0B1829]">
+              <p className="font-sans text-[15px] leading-[1.8] font-bold italic text-[#0B1829]">
                 "{partnerSec.closingText}"
               </p>
             </div>
@@ -863,7 +863,7 @@ export default function ServiceContentSectionHDMCA({ service, slug, onSelectPlan
             <div className="absolute inset-0 bg-gradient-to-r from-[#0C1220]/75 to-transparent" />
             <div className="absolute inset-0 flex items-center justify-center z-20">
               <div className="container mx-auto px-4 max-w-[1200px] text-center">
-                <h2 className="text-[28px] md:text-[44px] font-extrabold font-sora text-white leading-tight mb-2 tracking-tight">
+                <h2 className="text-[22px] md:text-[36px] font-extrabold font-sora text-white leading-tight mb-2 tracking-tight">
                   70+ California Healthcare Practices Partnered
                 </h2>
                 <p className="text-[#00C68A] font-sans font-bold text-[15px] tracking-[2.5px] uppercase">
@@ -883,11 +883,11 @@ export default function ServiceContentSectionHDMCA({ service, slug, onSelectPlan
             <span className="text-[#00C68A] text-[11px] font-bold uppercase tracking-[2.5px] mb-3 block font-sans">
               PATIENT TRUST & REVIEWS
             </span>
-            <h2 className="text-[32px] md:text-[38px] font-extrabold font-sora leading-tight text-[#0B1829] tracking-tight">
+            <h2 className="text-[26px] md:text-[32px] font-extrabold font-sora leading-tight text-[#0B1829] tracking-tight">
               {testimonialsSec.heading}
             </h2>
             {testimonialsSec.paragraphs && testimonialsSec.paragraphs.map((para, idx) => (
-              <p key={idx} className="font-sans text-[16px] leading-[1.8] text-[#3D5A73] mt-4 max-w-[800px] mx-auto">
+              <p key={idx} className="font-sans text-[15px] leading-[1.8] text-[#3D5A73] mt-4 max-w-[800px] mx-auto">
                 {para}
               </p>
             ))}
@@ -940,11 +940,11 @@ export default function ServiceContentSectionHDMCA({ service, slug, onSelectPlan
               <span className="text-[#00C68A] text-[11px] font-bold uppercase tracking-[2.5px] mb-3 block font-sans">
                 OUR METHODOLOGY
               </span>
-              <h2 className="text-[32px] md:text-[38px] font-extrabold font-sora leading-tight text-[#F0F4FF] tracking-tight">
+              <h2 className="text-[26px] md:text-[32px] font-extrabold font-sora leading-tight text-[#F0F4FF] tracking-tight">
                 {processSection.title}
               </h2>
               {processSection.intro && (
-                <p className="font-sans text-[16px] leading-[1.8] text-[#8FA8C8] mt-4 max-w-[800px] mx-auto">
+                <p className="font-sans text-[15px] leading-[1.8] text-[#8FA8C8] mt-4 max-w-[800px] mx-auto">
                   {processSection.intro}
                 </p>
               )}
@@ -979,12 +979,12 @@ export default function ServiceContentSectionHDMCA({ service, slug, onSelectPlan
           <div className="absolute inset-0 bg-[#00C68A]/2 opacity-25 blur-3xl pointer-events-none" />
           <div className="container mx-auto px-4 md:px-10 max-w-[900px] relative z-10">
             
-            <h2 className="text-[34px] md:text-[44px] font-extrabold font-sora text-white leading-tight mb-6 tracking-tight">
+            <h2 className="text-[28px] md:text-[36px] font-extrabold font-sora text-white leading-tight mb-6 tracking-tight">
               {ctaSection.heading}
             </h2>
             
             {ctaSection.paragraphs && ctaSection.paragraphs.map((para, idx) => (
-              <p key={idx} className="font-sans text-[16px] md:text-[17px] leading-[1.8] text-[#8FA8C8] mb-8 max-w-[700px] mx-auto">
+              <p key={idx} className="font-sans text-[15px] md:text-[17px] leading-[1.8] text-[#8FA8C8] mb-8 max-w-[700px] mx-auto">
                 {para}
               </p>
             ))}
@@ -1009,7 +1009,7 @@ export default function ServiceContentSectionHDMCA({ service, slug, onSelectPlan
               <span className="text-[#00C68A] text-[11px] font-bold uppercase tracking-[2.5px] mb-3 block font-sans">
                 FAQS & ANSWERS
               </span>
-              <h2 className="text-[32px] md:text-[38px] font-extrabold font-sora leading-tight text-[#0B1829] tracking-tight">
+              <h2 className="text-[26px] md:text-[32px] font-extrabold font-sora leading-tight text-[#0B1829] tracking-tight">
                 Frequently Asked Healthcare Marketing Questions
               </h2>
             </div>

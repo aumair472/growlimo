@@ -18,7 +18,7 @@ export default function ServiceLocalSection({ localSeoSection }) {
 
           {/* Paragraphs */}
           {localSeoSection.paragraphs && localSeoSection.paragraphs.map((para, pIdx) => (
-            <p key={pIdx} className="font-sans text-[16px] text-[#3D5A73] mt-4 max-w-2xl mx-auto leading-relaxed">
+            <p key={pIdx} className="font-sans text-[15px] text-[#3D5A73] mt-4 max-w-2xl mx-auto leading-relaxed">
               {para}
             </p>
           ))}
@@ -58,7 +58,7 @@ export default function ServiceLocalSection({ localSeoSection }) {
 
           {/* Closing Text */}
           {localSeoSection.closingText && (
-            <p className="font-sans text-[16px] text-[#3D5A73] leading-[1.8] text-center mt-10 max-w-2xl mx-auto font-semibold">
+            <p className="font-sans text-[15px] text-[#3D5A73] leading-[1.8] text-center mt-10 max-w-2xl mx-auto font-semibold">
               {localSeoSection.closingText}
             </p>
           )}

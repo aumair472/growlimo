@@ -25,7 +25,7 @@ export default function ServiceInvestSection({ investSection }) {
           </h2>
 
           {intro && (
-            <p className="font-sans text-[16px] text-[#3D5A73] mt-4 max-w-xl mx-auto leading-relaxed">
+            <p className="font-sans text-[15px] text-[#3D5A73] mt-4 max-w-xl mx-auto leading-relaxed">
               {intro}
             </p>
           )}

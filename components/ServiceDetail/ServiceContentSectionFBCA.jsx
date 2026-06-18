@@ -210,7 +210,7 @@ export default function ServiceContentSectionFBCA({ service, slug, onSelectPlan 
       />
 
       {/* SECTION 1: HERO */}
-      <section className="bg-[#080D18] text-white pt-[120px] pb-[80px] relative overflow-hidden">
+      <section className="bg-[#080D18] text-white pt-[100px] pb-[80px] relative overflow-hidden">
         {/* Glowing background highlights */}
         <div className="absolute top-[-20%] left-[-10%] w-[50%] h-[60%] rounded-full bg-[rgba(0,198,138,0.04)] blur-[120px] pointer-events-none" />
         <div className="absolute bottom-[-10%] right-[-10%] w-[40%] h-[50%] rounded-full bg-[rgba(221,102,19,0.03)] blur-[120px] pointer-events-none" />
@@ -224,12 +224,12 @@ export default function ServiceContentSectionFBCA({ service, slug, onSelectPlan 
                 CALIFORNIA META ADS SPECIALISTS
               </span>
 
-              <h1 className="text-4xl md:text-[44px] lg:text-[48px] font-extrabold font-sora text-[#F0F4FF] leading-[1.12] mb-6 tracking-tight animate-fade-in">
+              <h1 className="text-[30px] md:text-[36px] lg:text-[40px] font-extrabold font-sora text-[#F0F4FF] leading-[1.12] mb-6 tracking-tight animate-fade-in">
                 {h1}
               </h1>
 
               {/* First heroContent paragraph (max 3 lines) */}
-              <p className="font-sans text-[16px] text-[#8FA8C8] leading-[1.7] mb-8 max-w-[620px]">
+              <p className="font-sans text-[15px] text-[#8FA8C8] leading-[1.7] mb-8 max-w-[620px]">
                 {subheadline}
               </p>
 
@@ -318,7 +318,7 @@ export default function ServiceContentSectionFBCA({ service, slug, onSelectPlan 
             <span className="text-[#00C68A] text-[11px] font-bold uppercase tracking-[2.5px] mb-3 block font-sans">
               DEMAND CREATION ENGINE
             </span>
-            <h2 className="text-[32px] md:text-[40px] font-extrabold font-sora leading-tight text-[#0B1829] tracking-tight">
+            <h2 className="text-[26px] md:text-[34px] font-extrabold font-sora leading-tight text-[#0B1829] tracking-tight">
               Why Facebook Ads Are Non-Negotiable for California Businesses
             </h2>
           </div>
@@ -326,7 +326,7 @@ export default function ServiceContentSectionFBCA({ service, slug, onSelectPlan 
           <div className="text-left mb-12">
             {
               heroContent.map((para, idx) => (
-                <p key={idx} className="font-sans text-[16px] leading-[1.8] text-[#3D5A73] mt-3 mb-3">
+                <p key={idx} className="font-sans text-[15px] leading-[1.8] text-[#3D5A73] mt-3 mb-3">
                   {para}
                 </p>
               ))
@@ -338,7 +338,7 @@ export default function ServiceContentSectionFBCA({ service, slug, onSelectPlan 
             {/* Left 60%: Text content */}
             <div className="lg:col-span-7 space-y-6 text-left">
               {whyFacebookSec.paragraphs && whyFacebookSec.paragraphs.map((para, idx) => (
-                <p key={idx} className="font-sans text-[16px] leading-[1.8] text-[#3D5A73]">
+                <p key={idx} className="font-sans text-[15px] leading-[1.8] text-[#3D5A73]">
                   {para}
                 </p>
               ))}
@@ -417,11 +417,11 @@ export default function ServiceContentSectionFBCA({ service, slug, onSelectPlan 
             <span className="text-[#00C68A] text-[11px] font-bold uppercase tracking-[2.5px] mb-3 block font-sans">
               COMMON BOTTLENECKS
             </span>
-            <h2 className="text-[32px] md:text-[40px] font-extrabold font-sora leading-tight text-[#F0F4FF] tracking-tight">
+            <h2 className="text-[26px] md:text-[34px] font-extrabold font-sora leading-tight text-[#F0F4FF] tracking-tight">
               Why Most Campaigns Underperform
             </h2>
             {problemsSec.paragraphs && problemsSec.paragraphs.map((para, idx) => (
-              <p key={idx} className="font-sans text-[16px] leading-[1.8] text-[#8FA8C8] mt-4 max-w-[800px]">
+              <p key={idx} className="font-sans text-[15px] leading-[1.8] text-[#8FA8C8] mt-4 max-w-[800px]">
                 {para}
               </p>
             ))}
@@ -494,11 +494,11 @@ export default function ServiceContentSectionFBCA({ service, slug, onSelectPlan 
               <span className="text-[#00C68A] text-[11px] font-bold uppercase tracking-[2.5px] block font-sans">
                 GrowLimo META ADS SOLUTIONS
               </span>
-              <h2 className="text-[32px] md:text-[40px] font-extrabold font-sora leading-tight text-[#0B1829] tracking-tight">
+              <h2 className="text-[26px] md:text-[34px] font-extrabold font-sora leading-tight text-[#0B1829] tracking-tight">
                 Our Facebook Ads Management Services
               </h2>
               {servicesIntroSec.paragraphs && servicesIntroSec.paragraphs.map((para, idx) => (
-                <p key={idx} className="font-sans text-[17px] leading-[1.8] text-[#3D5A73]">
+                <p key={idx} className="font-sans text-[15px] leading-[1.8] text-[#3D5A73]">
                   {para}
                 </p>
               ))}
@@ -530,14 +530,14 @@ export default function ServiceContentSectionFBCA({ service, slug, onSelectPlan 
                       </span>
                     </div>
 
-                    <h2 className={`text-[30px] md:text-[36px] font-extrabold font-sora leading-tight tracking-tight mb-6 ${isWhiteBg ? 'text-[#0B1829]' : 'text-[#F0F4FF]'}`}>
+                    <h2 className={`text-[24px] md:text-[30px] font-extrabold font-sora leading-tight tracking-tight mb-6 ${isWhiteBg ? 'text-[#0B1829]' : 'text-[#F0F4FF]'}`}>
                       {displayHeading}
                     </h2>
 
                     {serviceSec.paragraphs && serviceSec.paragraphs.map((para, pIdx) => (
                       <p
                         key={pIdx}
-                        className={`font-sans text-[16px] leading-[1.8] mb-6 ${isWhiteBg ? 'text-[#3D5A73]' : 'text-[#8FA8C8]'}`}
+                        className={`font-sans text-[15px] leading-[1.8] mb-6 ${isWhiteBg ? 'text-[#3D5A73]' : 'text-[#8FA8C8]'}`}
                       >
                         {para}
                       </p>
@@ -579,7 +579,7 @@ export default function ServiceContentSectionFBCA({ service, slug, onSelectPlan 
 
                     {serviceSec.closingText && (
                       <div className={`mt-8 p-6 rounded-[16px] border-l-4 border-[#00C68A] ${isWhiteBg ? 'bg-[#F8FAFC] border-[#E3EEF7]' : 'bg-[#1A2438]/60 border-[rgba(255,255,255,0.04)]'}`}>
-                        <p className={`font-sans text-[16px] leading-[1.8] font-bold italic ${isWhiteBg ? 'text-[#0B1829]' : 'text-[#F0F4FF]'}`}>
+                        <p className={`font-sans text-[15px] leading-[1.8] font-bold italic ${isWhiteBg ? 'text-[#0B1829]' : 'text-[#F0F4FF]'}`}>
                           "{serviceSec.closingText}"
                         </p>
                       </div>
@@ -638,7 +638,7 @@ export default function ServiceContentSectionFBCA({ service, slug, onSelectPlan 
           <span className="text-[#00C68A] text-[11px] font-bold uppercase tracking-[2.5px] mb-3 block font-sans">
             CALIFORNIA EXPERTISE IN ACTION
           </span>
-          <h2 className="text-[32px] md:text-[42px] font-extrabold font-sora leading-tight text-[#F0F4FF] tracking-tight">
+          <h2 className="text-[26px] md:text-[36px] font-extrabold font-sora leading-tight text-[#F0F4FF] tracking-tight">
             Facebook Ads Case Studies
           </h2>
         </div>
@@ -666,7 +666,7 @@ export default function ServiceContentSectionFBCA({ service, slug, onSelectPlan 
                   <span className="text-[#00C68A] text-[12px] font-extrabold uppercase tracking-[4px] mb-4 block filter drop-shadow-[0_0_8px_rgba(0,198,138,0.3)] font-sans">
                     {badgeNumber}
                   </span>
-                  <h3 className="text-[28px] md:text-[44px] lg:text-[50px] font-extrabold font-sora text-[#F0F4FF] tracking-tight leading-[1.15]">
+                  <h3 className="text-[22px] md:text-[36px] lg:text-[42px] font-extrabold font-sora text-[#F0F4FF] tracking-tight leading-[1.15]">
                     {displayHeading}
                   </h3>
                 </div>
@@ -811,7 +811,7 @@ export default function ServiceContentSectionFBCA({ service, slug, onSelectPlan 
             <span className="text-[#00C68A] text-[11px] font-bold uppercase tracking-[2.5px] mb-3 block font-sans">
               CLIENT TESTIMONIALS
             </span>
-            <h2 className="text-[32px] md:text-[42px] font-extrabold font-sora leading-tight text-[#0B1829] tracking-tight">
+            <h2 className="text-[26px] md:text-[36px] font-extrabold font-sora leading-tight text-[#0B1829] tracking-tight">
               What California Businesses Say
             </h2>
           </div>
@@ -858,7 +858,7 @@ export default function ServiceContentSectionFBCA({ service, slug, onSelectPlan 
 
           <div className="absolute inset-0 flex items-center justify-center z-20">
             <div className="container mx-auto px-4 max-w-[1100px] text-center">
-              <h2 className="text-[28px] md:text-[38px] lg:text-[42px] font-extrabold font-sora text-white leading-tight mb-4 tracking-tight max-w-[900px] mx-auto">
+              <h2 className="text-[22px] md:text-[30px] lg:text-[34px] font-extrabold font-sora text-white leading-tight mb-4 tracking-tight max-w-[900px] mx-auto">
                 80+ California Businesses Scaling Revenue with Meta Ads
               </h2>
               <p className="text-[#00C68A] font-sans font-bold text-[14px] tracking-[2.5px] uppercase">
@@ -877,11 +877,11 @@ export default function ServiceContentSectionFBCA({ service, slug, onSelectPlan 
             <span className="text-[#00C68A] text-[11px] font-bold uppercase tracking-[2.5px] mb-3 block font-sans">
               SPECIALIZED SCALING
             </span>
-            <h2 className="text-[32px] md:text-[40px] font-extrabold font-sora leading-tight text-[#F0F4FF] tracking-tight">
+            <h2 className="text-[26px] md:text-[34px] font-extrabold font-sora leading-tight text-[#F0F4FF] tracking-tight">
               California Industries We Run Facebook Ads For
             </h2>
             {industriesSection.paragraphs && industriesSection.paragraphs.map((para, idx) => (
-              <p key={idx} className="font-sans text-[16px] leading-[1.8] text-[#8FA8C8] mt-4 max-w-[800px] mx-auto">
+              <p key={idx} className="font-sans text-[15px] leading-[1.8] text-[#8FA8C8] mt-4 max-w-[800px] mx-auto">
                 {para}
               </p>
             ))}
@@ -937,11 +937,11 @@ export default function ServiceContentSectionFBCA({ service, slug, onSelectPlan 
             <span className="text-[#00C68A] text-[11px] font-bold uppercase tracking-[2.5px] mb-3 block font-sans">
               LOCALIZED GEOGRAPHIC PERFORMANCE
             </span>
-            <h2 className="text-[32px] md:text-[40px] font-extrabold font-sora leading-tight text-[#0B1829] tracking-tight">
+            <h2 className="text-[26px] md:text-[34px] font-extrabold font-sora leading-tight text-[#0B1829] tracking-tight">
               Facebook Ads Across California Cities
             </h2>
             {citiesSection.paragraphs && citiesSection.paragraphs.map((para, idx) => (
-              <p key={idx} className="font-sans text-[16px] leading-[1.8] text-[#3D5A73] mt-4 max-w-[800px] mx-auto">
+              <p key={idx} className="font-sans text-[15px] leading-[1.8] text-[#3D5A73] mt-4 max-w-[800px] mx-auto">
                 {para}
               </p>
             ))}
@@ -997,13 +997,13 @@ export default function ServiceContentSectionFBCA({ service, slug, onSelectPlan 
             <span className="text-[#00C68A] text-[11px] font-bold uppercase tracking-[2.5px] mb-3 block font-sans">
               TRUST & CERTIFICATIONS
             </span>
-            <h2 className="text-[32px] md:text-[40px] font-extrabold font-sora leading-tight text-[#F0F4FF] tracking-tight mb-8">
+            <h2 className="text-[26px] md:text-[34px] font-extrabold font-sora leading-tight text-[#F0F4FF] tracking-tight mb-8">
               Managed by Meta Blueprint Certified Specialists
             </h2>
 
             <div className="space-y-6">
               {expertiseSection.paragraphs && expertiseSection.paragraphs.map((para, idx) => (
-                <p key={idx} className="font-sans text-[16px] leading-[1.85] text-[#8FA8C8]">
+                <p key={idx} className="font-sans text-[15px] leading-[1.85] text-[#8FA8C8]">
                   {para}
                 </p>
               ))}
@@ -1023,11 +1023,11 @@ export default function ServiceContentSectionFBCA({ service, slug, onSelectPlan 
                 <span className="text-[#00C68A] text-[11px] font-bold uppercase tracking-[2.5px] mb-3 block font-sans">
                   WORKFLOW PIPELINE
                 </span>
-                <h2 className="text-[32px] md:text-[42px] font-extrabold font-sora leading-tight text-[#F0F4FF] tracking-tight">
+                <h2 className="text-[26px] md:text-[36px] font-extrabold font-sora leading-tight text-[#F0F4FF] tracking-tight">
                   {processSection.title || 'Our Scaling Process'}
                 </h2>
                 {processSection.intro && (
-                  <p className="font-sans text-[16px] leading-[1.8] text-[#8FA8C8] mt-4 max-w-[700px] mx-auto">
+                  <p className="font-sans text-[15px] leading-[1.8] text-[#8FA8C8] mt-4 max-w-[700px] mx-auto">
                     {processSection.intro}
                   </p>
                 )}
@@ -1090,12 +1090,12 @@ export default function ServiceContentSectionFBCA({ service, slug, onSelectPlan 
               SCALE INBOUND VOLUME NOW
             </span>
 
-            <h2 className="text-[28px] md:text-[38px] font-extrabold font-sora text-[#F0F4FF] leading-tight mb-6 max-w-[720px] mx-auto tracking-tight">
+            <h2 className="text-[22px] md:text-[30px] font-extrabold font-sora text-[#F0F4FF] leading-tight mb-6 max-w-[720px] mx-auto tracking-tight">
               {ctaSection.heading || 'Ready to Scale Your California Business?'}
             </h2>
 
             {ctaSection.paragraphs && ctaSection.paragraphs.map((para, idx) => (
-              <p key={idx} className="font-sans text-[16px] leading-[1.8] text-[#8FA8C8] mb-6 max-w-[680px] mx-auto">
+              <p key={idx} className="font-sans text-[15px] leading-[1.8] text-[#8FA8C8] mb-6 max-w-[680px] mx-auto">
                 {para}
               </p>
             ))}
@@ -1129,7 +1129,7 @@ export default function ServiceContentSectionFBCA({ service, slug, onSelectPlan 
             <span className="text-[#00C68A] text-[11px] font-bold uppercase tracking-[2.5px] mb-3 block font-sans">
               REPEATED ENQUIRIES
             </span>
-            <h2 className="text-[32px] md:text-[40px] font-extrabold font-sora leading-tight text-[#F0F4FF] tracking-tight">
+            <h2 className="text-[26px] md:text-[34px] font-extrabold font-sora leading-tight text-[#F0F4FF] tracking-tight">
               Facebook Ads California FAQs
             </h2>
           </div>

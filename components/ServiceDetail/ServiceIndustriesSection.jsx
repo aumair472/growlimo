@@ -25,7 +25,7 @@ export default function ServiceIndustriesSection({ industriesSection }) {
 
           {/* Intro Description */}
           {intro && (
-            <p className="font-sans text-[16px] text-[#8FA8C8] mb-8 max-w-xl mx-auto leading-relaxed">
+            <p className="font-sans text-[15px] text-[#8FA8C8] mb-8 max-w-xl mx-auto leading-relaxed">
               {intro}
             </p>
           )}

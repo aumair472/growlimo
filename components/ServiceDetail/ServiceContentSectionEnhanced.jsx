@@ -123,7 +123,7 @@ export default function ServiceContentSectionEnhanced({ service, slug, onSelectP
       />
 
       {/* SECTION 1: HERO */}
-      <section className="bg-[#080D18] text-white pt-[120px] pb-[80px] relative overflow-hidden">
+      <section className="bg-[#080D18] text-white pt-[100px] pb-[80px] relative overflow-hidden">
         {/* Abstract background glow */}
         <div className="absolute top-[-20%] left-[-10%] w-[50%] h-[60%] rounded-full bg-[rgba(0,198,138,0.04)] blur-[120px] pointer-events-none" />
         <div className="absolute bottom-[-10%] right-[-10%] w-[40%] h-[50%] rounded-full bg-[rgba(221,102,19,0.03)] blur-[120px] pointer-events-none" />
@@ -137,11 +137,11 @@ export default function ServiceContentSectionEnhanced({ service, slug, onSelectP
                 {locationLabel}
               </span>
 
-              <h1 className="text-4xl md:text-[50px] lg:text-[54px] font-extrabold font-sora text-[#F0F4FF] leading-[1.08] mb-6 tracking-tight">
+              <h1 className="text-[30px] md:text-[36px] lg:text-[40px] font-extrabold font-sora text-[#F0F4FF] leading-[1.08] mb-6 tracking-tight">
                 {h1}
               </h1>
 
-              <p className="font-sans text-[17px] text-[#8FA8C8] leading-[1.75] mb-8 max-w-[620px]">
+              <p className="font-sans text-[15px] text-[#8FA8C8] leading-[1.75] mb-8 max-w-[620px]">
                 {heroContent[0]}
               </p>
 
@@ -229,7 +229,7 @@ export default function ServiceContentSectionEnhanced({ service, slug, onSelectP
             <span className="text-[#00C68A] text-[11px] font-bold uppercase tracking-[2.5px] mb-3 block font-sans">
               INTRODUCTION
             </span>
-            <h2 className="text-[32px] md:text-[42px] font-extrabold font-sora leading-tight text-[#0B1829] tracking-tight">
+            <h2 className="text-[26px] md:text-[36px] font-extrabold font-sora leading-tight text-[#0B1829] tracking-tight">
               What Is SEO and Why California?
             </h2>
           </div>
@@ -238,19 +238,19 @@ export default function ServiceContentSectionEnhanced({ service, slug, onSelectP
 
             {/* Left 60%: Text content */}
             <div className="lg:col-span-7 space-y-6 text-left">
-              <p className="font-sans text-[17px] leading-[1.8] text-[#1A2438] font-semibold">
+              <p className="font-sans text-[15px] leading-[1.8] text-[#1A2438] font-semibold">
                 {heroContent[1]}
               </p>
 
               {introSection.paragraphs && introSection.paragraphs.map((para, idx) => (
-                <p key={idx} className="font-sans text-[16px] leading-[1.8] text-[#3D5A73]">
+                <p key={idx} className="font-sans text-[15px] leading-[1.8] text-[#3D5A73]">
                   {para}
                 </p>
               ))}
 
               {introSection.closingText && (
                 <div className="border-l-4 border-[#00C68A] pl-5 py-2 my-6 bg-[#00C68A]/5 rounded-r-[8px]">
-                  <p className="font-sans text-[16px] leading-[1.8] font-bold text-[#0B1829]">
+                  <p className="font-sans text-[15px] leading-[1.8] font-bold text-[#0B1829]">
                     {introSection.closingText}
                   </p>
                 </div>
@@ -306,11 +306,11 @@ export default function ServiceContentSectionEnhanced({ service, slug, onSelectP
             <span className="text-[#00C68A] text-[11px] font-bold uppercase tracking-[2.5px] mb-3 block font-sans">
               OUR EDGE
             </span>
-            <h2 className="text-[32px] md:text-[40px] font-extrabold font-sora leading-tight text-[#F0F4FF] tracking-tight">
+            <h2 className="text-[26px] md:text-[34px] font-extrabold font-sora leading-tight text-[#F0F4FF] tracking-tight">
               {whyChooseUsSection.heading}
             </h2>
             {whyChooseUsSection.paragraphs && whyChooseUsSection.paragraphs.map((para, idx) => (
-              <p key={idx} className="font-sans text-[16px] leading-[1.8] text-[#8FA8C8] mt-4 max-w-[800px]">
+              <p key={idx} className="font-sans text-[15px] leading-[1.8] text-[#8FA8C8] mt-4 max-w-[800px]">
                 {para}
               </p>
             ))}
@@ -373,11 +373,11 @@ export default function ServiceContentSectionEnhanced({ service, slug, onSelectP
               <span className="text-[#00C68A] text-[11px] font-bold uppercase tracking-[2.5px] block font-sans">
                 CORE CAPABILITIES
               </span>
-              <h2 className="text-[32px] md:text-[40px] font-extrabold font-sora leading-tight text-[#0B1829] tracking-tight">
+              <h2 className="text-[26px] md:text-[34px] font-extrabold font-sora leading-tight text-[#0B1829] tracking-tight">
                 {servicesIntroSection.heading}
               </h2>
               {servicesIntroSection.paragraphs && servicesIntroSection.paragraphs.map((para, idx) => (
-                <p key={idx} className="font-sans text-[17px] leading-[1.8] text-[#3D5A73]">
+                <p key={idx} className="font-sans text-[15px] leading-[1.8] text-[#3D5A73]">
                   {para}
                 </p>
               ))}
@@ -410,7 +410,7 @@ export default function ServiceContentSectionEnhanced({ service, slug, onSelectP
                   </div>
 
                   {/* Heading */}
-                  <h2 className={`text-[30px] md:text-[36px] font-extrabold font-sora leading-tight tracking-tight mb-6 ${isWhiteBg ? 'text-[#0B1829]' : 'text-[#F0F4FF]'}`}>
+                  <h2 className={`text-[24px] md:text-[30px] font-extrabold font-sora leading-tight tracking-tight mb-6 ${isWhiteBg ? 'text-[#0B1829]' : 'text-[#F0F4FF]'}`}>
                     {displayHeading}
                   </h2>
 
@@ -418,7 +418,7 @@ export default function ServiceContentSectionEnhanced({ service, slug, onSelectP
                   {serviceSec.paragraphs && serviceSec.paragraphs.map((para, pIdx) => (
                     <p
                       key={pIdx}
-                      className={`font-sans text-[16px] leading-[1.8] mb-6 ${isWhiteBg ? 'text-[#3D5A73]' : 'text-[#8FA8C8]'}`}
+                      className={`font-sans text-[15px] leading-[1.8] mb-6 ${isWhiteBg ? 'text-[#3D5A73]' : 'text-[#8FA8C8]'}`}
                     >
                       {para}
                     </p>
@@ -452,7 +452,7 @@ export default function ServiceContentSectionEnhanced({ service, slug, onSelectP
                   {serviceSec.closingText && (
                     <div className={`mt-8 p-6 rounded-[16px] border-l-4 border-[#00C68A] ${isWhiteBg ? 'bg-[#F8FAFC] border-[#E3EEF7]' : 'bg-[#1A2438]/60 border-[rgba(255,255,255,0.04)]'
                       }`}>
-                      <p className={`font-sans text-[16px] leading-[1.8] font-bold italic ${isWhiteBg ? 'text-[#0B1829]' : 'text-[#F0F4FF]'}`}>
+                      <p className={`font-sans text-[15px] leading-[1.8] font-bold italic ${isWhiteBg ? 'text-[#0B1829]' : 'text-[#F0F4FF]'}`}>
                         "{serviceSec.closingText}"
                       </p>
                     </div>
@@ -510,7 +510,7 @@ export default function ServiceContentSectionEnhanced({ service, slug, onSelectP
           <span className="bg-[rgba(0,198,138,0.08)] border border-[rgba(0,198,138,0.20)] text-[#00C68A] text-[11px] font-extrabold uppercase tracking-[2.5px] rounded-full py-[6px] px-[16px] mb-6 inline-flex font-sans leading-none">
             SUCCESS STORIES
           </span>
-          <h2 className="text-[36px] md:text-[44px] lg:text-[48px] font-extrabold font-sora text-white leading-tight mb-6 tracking-tight max-w-[800px] mx-auto">
+          <h2 className="text-[28px] md:text-[36px] lg:text-[40px] font-extrabold font-sora text-white leading-tight mb-6 tracking-tight max-w-[800px] mx-auto">
             Real Results: California SEO Case Studies
           </h2>
         </div>
@@ -598,7 +598,7 @@ export default function ServiceContentSectionEnhanced({ service, slug, onSelectP
               </div>
 
               {/* 2. MAIN TITLE */}
-              <h3 className="text-[28px] md:text-[36px] lg:text-[42px] font-extrabold font-sora text-[#F0F4FF] leading-tight mb-8 tracking-tight max-w-[1000px] text-left">
+              <h3 className="text-[22px] md:text-[30px] lg:text-[34px] font-extrabold font-sora text-[#F0F4FF] leading-tight mb-8 tracking-tight max-w-[1000px] text-left">
                 {cleanTitle}
               </h3>
 
@@ -715,7 +715,7 @@ export default function ServiceContentSectionEnhanced({ service, slug, onSelectP
             <span className="text-[#00C68A] text-[11px] font-bold uppercase tracking-[2.5px] mb-3 block font-sans">
               REVIEWS
             </span>
-            <h2 className="text-[32px] md:text-[42px] font-extrabold font-sora leading-tight text-[#0B1829] tracking-tight">
+            <h2 className="text-[26px] md:text-[36px] font-extrabold font-sora leading-tight text-[#0B1829] tracking-tight">
               What Our California Clients Say
             </h2>
           </div>
@@ -763,7 +763,7 @@ export default function ServiceContentSectionEnhanced({ service, slug, onSelectP
 
           <div className="absolute inset-0 flex items-center justify-center z-20">
             <div className="container mx-auto px-4 max-w-[1100px] text-center">
-              <h2 className="text-[28px] md:text-[44px] font-extrabold font-sora text-white leading-tight mb-2 tracking-tight">
+              <h2 className="text-[22px] md:text-[36px] font-extrabold font-sora text-white leading-tight mb-2 tracking-tight">
                 100+ California Businesses Ranking on Page 1
               </h2>
               <p className="text-[#00C68A] font-sans font-bold text-[15px] tracking-[2.5px] uppercase">
@@ -782,11 +782,11 @@ export default function ServiceContentSectionEnhanced({ service, slug, onSelectP
             <span className="text-[#00C68A] text-[11px] font-bold uppercase tracking-[2.5px] mb-3 block font-sans">
               PRICING PLANS
             </span>
-            <h2 className="text-[32px] md:text-[42px] font-extrabold font-sora leading-tight text-[#F0F4FF] tracking-tight">
+            <h2 className="text-[26px] md:text-[36px] font-extrabold font-sora leading-tight text-[#F0F4FF] tracking-tight">
               California SEO Pricing
             </h2>
             {pricingSection.paragraphs && pricingSection.paragraphs.map((para, idx) => (
-              <p key={idx} className="font-sans text-[16px] leading-[1.8] text-[#8FA8C8] mt-4 max-w-[800px] mx-auto">
+              <p key={idx} className="font-sans text-[15px] leading-[1.8] text-[#8FA8C8] mt-4 max-w-[800px] mx-auto">
                 {para}
               </p>
             ))}
@@ -820,7 +820,7 @@ export default function ServiceContentSectionEnhanced({ service, slug, onSelectP
 
                       {/* Price tag */}
                       <div className="flex items-baseline mt-4 mb-2">
-                        <span className="text-[28px] md:text-[34px] font-extrabold font-sora text-[#00C68A]">{price}</span>
+                        <span className="text-[22px] md:text-[28px] font-extrabold font-sora text-[#00C68A]">{price}</span>
                       </div>
                     </div>
 
@@ -870,13 +870,13 @@ export default function ServiceContentSectionEnhanced({ service, slug, onSelectP
             <span className="text-[#00C68A] text-[11px] font-bold uppercase tracking-[2.5px] mb-3 block font-sans">
               ABOUT US
             </span>
-            <h2 className="text-[32px] md:text-[42px] font-extrabold font-sora leading-tight text-[#0B1829] tracking-tight mb-8">
+            <h2 className="text-[26px] md:text-[36px] font-extrabold font-sora leading-tight text-[#0B1829] tracking-tight mb-8">
               {aboutSection.heading}
             </h2>
 
             <div className="space-y-6">
               {aboutSection.paragraphs && aboutSection.paragraphs.map((para, idx) => (
-                <p key={idx} className="font-sans text-[16px] leading-[1.85] text-[#3D5A73]">
+                <p key={idx} className="font-sans text-[15px] leading-[1.85] text-[#3D5A73]">
                   {para}
                 </p>
               ))}
@@ -895,11 +895,11 @@ export default function ServiceContentSectionEnhanced({ service, slug, onSelectP
               <span className="text-[#00C68A] text-[11px] font-bold uppercase tracking-[2.5px] mb-3 block font-sans">
                 WORKFLOW
               </span>
-              <h2 className="text-[32px] md:text-[42px] font-extrabold font-sora leading-tight text-[#F0F4FF] tracking-tight">
+              <h2 className="text-[26px] md:text-[36px] font-extrabold font-sora leading-tight text-[#F0F4FF] tracking-tight">
                 {processSection.title}
               </h2>
               {processSection.intro && (
-                <p className="font-sans text-[16px] leading-[1.8] text-[#8FA8C8] mt-4 max-w-[800px] mx-auto">
+                <p className="font-sans text-[15px] leading-[1.8] text-[#8FA8C8] mt-4 max-w-[800px] mx-auto">
                   {processSection.intro}
                 </p>
               )}
@@ -950,7 +950,7 @@ export default function ServiceContentSectionEnhanced({ service, slug, onSelectP
               <span className="text-[#00C68A] text-[11px] font-bold uppercase tracking-[2.5px] mb-3 block font-sans">
                 GEO EXPERTISE
               </span>
-              <h2 className="text-[30px] md:text-[38px] font-extrabold font-sora leading-tight text-[#F0F4FF] tracking-tight mb-4">
+              <h2 className="text-[24px] md:text-[32px] font-extrabold font-sora leading-tight text-[#F0F4FF] tracking-tight mb-4">
                 {industriesSection.heading}
               </h2>
               {industriesSection.intro && (
@@ -985,14 +985,14 @@ export default function ServiceContentSectionEnhanced({ service, slug, onSelectP
           <div className="container mx-auto px-4 md:px-10 max-w-[1100px] relative z-10">
             <div className="max-w-[760px] mx-auto text-center space-y-6">
 
-              <h2 className="text-[32px] md:text-[44px] font-extrabold font-sora text-white leading-tight tracking-tight">
+              <h2 className="text-[26px] md:text-[36px] font-extrabold font-sora text-white leading-tight tracking-tight">
                 {ctaSection.heading}
               </h2>
 
               {ctaSection.paragraphs && ctaSection.paragraphs.map((para, idx) => (
                 <p
                   key={idx}
-                  className={`font-sans text-[16px] leading-[1.8] ${idx === 1 ? 'text-[#00C68A] font-bold text-[15px]' : 'text-[#8FA8C8]'}`}
+                  className={`font-sans text-[15px] leading-[1.8] ${idx === 1 ? 'text-[#00C68A] font-bold text-[15px]' : 'text-[#8FA8C8]'}`}
                 >
                   {para}
                 </p>
@@ -1021,7 +1021,7 @@ export default function ServiceContentSectionEnhanced({ service, slug, onSelectP
               <span className="text-[#00C68A] text-[11px] font-bold uppercase tracking-[2.5px] mb-3 block font-sans">
                 FAQ
               </span>
-              <h2 className="text-[32px] md:text-[42px] font-extrabold font-sora leading-tight text-[#F0F4FF] tracking-tight">
+              <h2 className="text-[26px] md:text-[36px] font-extrabold font-sora leading-tight text-[#F0F4FF] tracking-tight">
                 Frequently Asked Questions
               </h2>
             </div>

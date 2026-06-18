@@ -30,20 +30,20 @@ export default function ServiceCTASection({ ctaSection, ctaButtonText }) {
           </span>
 
           {/* H2 Title with last word colored green */}
-          <h2 className="text-3xl md:text-[42px] font-extrabold font-sora text-[#F0F4FF] mb-3.5 tracking-tight leading-tight">
+          <h2 className="text-[26px] md:text-[36px] font-extrabold font-sora text-[#F0F4FF] mb-3.5 tracking-tight leading-tight">
             {leadingWords} {lastWord && <span className="text-[#00C68A]">{lastWord}</span>}
           </h2>
 
           {/* Paragraphs */}
           {ctaSection.paragraphs && ctaSection.paragraphs.map((para, pIdx) => (
-            <p key={pIdx} className="font-sans text-[16px] text-[#8FA8C8] leading-[1.7] mb-6 max-w-[520px] mx-auto">
+            <p key={pIdx} className="font-sans text-[15px] text-[#8FA8C8] leading-[1.7] mb-6 max-w-[520px] mx-auto">
               {para}
             </p>
           ))}
 
           {/* Subtext highlight or callout */}
           {!ctaSection.paragraphs && ctaSection.ctaText && (
-            <p className="font-sans text-[16px] text-[#8FA8C8] leading-[1.7] mb-8 max-w-[520px] mx-auto">
+            <p className="font-sans text-[15px] text-[#8FA8C8] leading-[1.7] mb-8 max-w-[520px] mx-auto">
               {ctaSection.ctaText}
             </p>
           )}

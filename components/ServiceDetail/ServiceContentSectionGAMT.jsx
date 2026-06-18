@@ -299,7 +299,7 @@ export default function ServiceContentSectionGAMT({ service, slug, onSelectPlan 
       />
 
       {/* SECTION 1: HERO */}
-      <section className="bg-[#080D18] text-white pt-[120px] pb-[80px] relative overflow-hidden">
+      <section className="bg-[#080D18] text-white pt-[100px] pb-[80px] relative overflow-hidden">
         <div className="absolute top-[-20%] left-[-10%] w-[50%] h-[60%] rounded-full bg-[rgba(0,198,138,0.04)] blur-[120px] pointer-events-none" />
         <div className="absolute bottom-[-10%] right-[-10%] w-[40%] h-[50%] rounded-full bg-[rgba(221,102,19,0.03)] blur-[120px] pointer-events-none" />
 
@@ -312,7 +312,7 @@ export default function ServiceContentSectionGAMT({ service, slug, onSelectPlan 
                 GOOGLE PARTNER CERTIFIED PPC AGENCY
               </span>
 
-              <h1 className="text-3xl md:text-[40px] lg:text-[44px] font-extrabold font-sora text-[#F0F4FF] leading-[1.15] mb-6 tracking-tight">
+              <h1 className="text-[30px] md:text-[36px] lg:text-[40px] font-extrabold font-sora text-[#F0F4FF] leading-[1.15] mb-6 tracking-tight">
                 {h1}
               </h1>
 
@@ -405,7 +405,7 @@ export default function ServiceContentSectionGAMT({ service, slug, onSelectPlan 
               <span className="text-[#00C68A] text-[11px] font-bold uppercase tracking-[2.5px] mb-3 block font-sans">
                 TEXAS ADVERTISING BluePrint
               </span>
-              <p className="font-sans text-[16px] sm:text-[18px] leading-[1.8] text-[#1A2438] font-bold">
+              <p className="font-sans text-[15px] sm:text-[18px] leading-[1.8] text-[#1A2438] font-bold">
                 {heroContent[0]}
               </p>
             </div>
@@ -425,7 +425,7 @@ export default function ServiceContentSectionGAMT({ service, slug, onSelectPlan 
                   <span className="text-[#00C68A] text-[11px] font-bold uppercase tracking-[2.5px] mb-3 block font-sans">
                     MARKET REALITY
                   </span>
-                  <h2 className="text-[30px] md:text-[38px] font-extrabold font-sora leading-[1.2] text-[#0B1829] tracking-tight border-l-4 border-[#00C68A] pl-4">
+                  <h2 className="text-[24px] md:text-[32px] font-extrabold font-sora leading-[1.2] text-[#0B1829] tracking-tight border-l-4 border-[#00C68A] pl-4">
                     {section.heading}
                   </h2>
                 </div>
@@ -501,7 +501,7 @@ export default function ServiceContentSectionGAMT({ service, slug, onSelectPlan 
                     <span className="text-[#00C68A] text-[11px] font-bold uppercase tracking-[2.5px] block font-sans">
                       THE GROWLIMO DIFFERENCE
                     </span>
-                    <h2 className="text-[30px] md:text-[36px] font-extrabold font-sora leading-[1.2] text-[#F0F4FF] tracking-tight border-l-4 border-[#00C68A] pl-4">
+                    <h2 className="text-[24px] md:text-[30px] font-extrabold font-sora leading-[1.2] text-[#F0F4FF] tracking-tight border-l-4 border-[#00C68A] pl-4">
                       {section.heading}
                     </h2>
                     {section.paragraphs && section.paragraphs.map((para, idx) => (
@@ -568,11 +568,11 @@ export default function ServiceContentSectionGAMT({ service, slug, onSelectPlan 
                   <span className="text-[#00C68A] text-[11px] font-bold uppercase tracking-[2.5px] mb-3 block font-sans">
                     CORE CAPABILITIES
                   </span>
-                  <h2 className="text-[32px] md:text-[40px] font-extrabold font-sora leading-tight text-[#0B1829] tracking-tight border-l-4 border-[#00C68A] pl-4">
+                  <h2 className="text-[26px] md:text-[34px] font-extrabold font-sora leading-tight text-[#0B1829] tracking-tight border-l-4 border-[#00C68A] pl-4">
                     {section.heading}
                   </h2>
                   {section.paragraphs && section.paragraphs.map((para, idx) => (
-                    <p key={idx} className="font-sans text-[16px] leading-[1.8] text-[#3D5A73] mt-5">
+                    <p key={idx} className="font-sans text-[15px] leading-[1.8] text-[#3D5A73] mt-5">
                       {para}
                     </p>
                   ))}
@@ -608,7 +608,7 @@ export default function ServiceContentSectionGAMT({ service, slug, onSelectPlan 
                     </div>
 
                     {/* Heading */}
-                    <h2 className={`text-[26px] md:text-[32px] font-extrabold font-sora leading-[1.2] mb-6 tracking-tight border-l-4 border-[#00C68A] pl-4 ${isWhiteBg ? 'text-[#0B1829]' : 'text-[#F0F4FF]'}`}>
+                    <h2 className={`text-[22px] md:text-[26px] font-extrabold font-sora leading-[1.2] mb-6 tracking-tight border-l-4 border-[#00C68A] pl-4 ${isWhiteBg ? 'text-[#0B1829]' : 'text-[#F0F4FF]'}`}>
                       {section.heading}
                     </h2>
 
@@ -714,7 +714,7 @@ export default function ServiceContentSectionGAMT({ service, slug, onSelectPlan 
                   <span className="bg-[rgba(0,198,138,0.08)] border border-[rgba(0,198,138,0.20)] text-[#00C68A] text-[11px] font-extrabold uppercase tracking-[2.5px] rounded-full py-[6px] px-[16px] mb-6 inline-flex font-sans leading-none">
                     REAL PPC RESULTS
                   </span>
-                  <h2 className="text-[34px] md:text-[42px] font-extrabold font-sora text-white leading-tight mb-6 tracking-tight max-w-[800px] mx-auto">
+                  <h2 className="text-[28px] md:text-[36px] font-extrabold font-sora text-white leading-tight mb-6 tracking-tight max-w-[800px] mx-auto">
                     {section.heading}
                   </h2>
                   {section.paragraphs && section.paragraphs.map((para, pIdx) => (
@@ -749,7 +749,7 @@ export default function ServiceContentSectionGAMT({ service, slug, onSelectPlan 
                       </div>
 
                       {/* Main Title */}
-                      <h3 className="text-[26px] md:text-[32px] font-extrabold font-sora text-[#F0F4FF] leading-tight mb-8 tracking-tight max-w-[1000px] text-left">
+                      <h3 className="text-[22px] md:text-[26px] font-extrabold font-sora text-[#F0F4FF] leading-tight mb-8 tracking-tight max-w-[1000px] text-left">
                         {cs.client} — {cs.stat}
                       </h3>
 
@@ -855,7 +855,7 @@ export default function ServiceContentSectionGAMT({ service, slug, onSelectPlan 
                   <span className="text-[#00C68A] text-[11px] font-bold uppercase tracking-[2.5px] mb-3 block font-sans">
                     VOICES OF AUTHORITY
                   </span>
-                  <h2 className="text-[32px] md:text-[38px] font-extrabold font-sora leading-tight text-[#0B1829] tracking-tight border-l-4 border-[#00C68A] pl-4">
+                  <h2 className="text-[26px] md:text-[32px] font-extrabold font-sora leading-tight text-[#0B1829] tracking-tight border-l-4 border-[#00C68A] pl-4">
                     {section.heading}
                   </h2>
                 </div>
@@ -902,7 +902,7 @@ export default function ServiceContentSectionGAMT({ service, slug, onSelectPlan 
                   <span className="bg-[rgba(0,198,138,0.08)] border border-[rgba(0,198,138,0.20)] text-[#00C68A] text-[11px] font-extrabold uppercase tracking-[2.5px] rounded-full py-[6px] px-[16px] mb-6 inline-flex font-sans leading-none">
                     INVESTMENT OPTIONS
                   </span>
-                  <h2 className="text-[32px] md:text-[40px] font-extrabold font-sora text-white leading-tight tracking-tight max-w-[800px] mx-auto">
+                  <h2 className="text-[26px] md:text-[34px] font-extrabold font-sora text-white leading-tight tracking-tight max-w-[800px] mx-auto">
                     {section.heading}
                   </h2>
                   {section.paragraphs && section.paragraphs.map((para, pIdx) => (
@@ -1013,7 +1013,7 @@ export default function ServiceContentSectionGAMT({ service, slug, onSelectPlan 
                     <span className="text-[#00C68A] text-[11px] font-bold uppercase tracking-[2.5px] block font-sans">
                       CERTIFIED AGENCY PARTNERS
                     </span>
-                    <h2 className="text-[32px] md:text-[38px] font-extrabold font-sora leading-tight text-[#0B1829] tracking-tight border-l-4 border-[#00C68A] pl-4">
+                    <h2 className="text-[26px] md:text-[32px] font-extrabold font-sora leading-tight text-[#0B1829] tracking-tight border-l-4 border-[#00C68A] pl-4">
                       {section.heading}
                     </h2>
                     {section.paragraphs && section.paragraphs.map((para, idx) => (
@@ -1058,7 +1058,7 @@ export default function ServiceContentSectionGAMT({ service, slug, onSelectPlan 
             <section key={index} className="bg-[#FFFFFF] py-[80px] relative z-10 border-t border-[#E3EEF7] text-left">
               <div className="container mx-auto px-4 md:px-10 max-w-[900px]">
                 {section.heading && (
-                  <h2 className="text-[28px] md:text-[34px] font-extrabold font-sora text-[#0B1829] mb-6 border-l-4 border-[#00C68A] pl-4">
+                  <h2 className="text-[22px] md:text-[28px] font-extrabold font-sora text-[#0B1829] mb-6 border-l-4 border-[#00C68A] pl-4">
                     {section.heading}
                   </h2>
                 )}
@@ -1131,7 +1131,7 @@ export default function ServiceContentSectionGAMT({ service, slug, onSelectPlan 
               <span className="text-[#00C68A] text-[11px] font-bold uppercase tracking-[2.5px] mb-3 block font-sans">
                 CAMPAIGN LIFECYCLE
               </span>
-              <h2 className="text-[30px] md:text-[38px] font-extrabold font-sora leading-tight text-white tracking-tight border-l-4 border-[#00C68A] pl-4">
+              <h2 className="text-[24px] md:text-[32px] font-extrabold font-sora leading-tight text-white tracking-tight border-l-4 border-[#00C68A] pl-4">
                 {processSection.title}
               </h2>
               <p className="font-sans text-[15px] sm:text-[16px] leading-[1.8] text-[#8FA8C8] mt-4">
@@ -1171,7 +1171,7 @@ export default function ServiceContentSectionGAMT({ service, slug, onSelectPlan 
               <span className="text-[#00C68A] text-[11px] font-bold uppercase tracking-[2.5px] mb-3 block font-sans">
                 VERTICAL SOLUTIONS
               </span>
-              <h2 className="text-[32px] md:text-[38px] font-extrabold font-sora leading-tight text-[#0B1829] tracking-tight border-l-4 border-[#00C68A] pl-4">
+              <h2 className="text-[26px] md:text-[32px] font-extrabold font-sora leading-tight text-[#0B1829] tracking-tight border-l-4 border-[#00C68A] pl-4">
                 {industriesSection.heading}
               </h2>
               <p className="font-sans text-[15px] sm:text-[16px] leading-[1.8] text-[#3D5A73] mt-4 max-w-[840px]">
@@ -1215,7 +1215,7 @@ export default function ServiceContentSectionGAMT({ service, slug, onSelectPlan 
           <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[350px] h-[350px] bg-[#00C68A]/5 rounded-full blur-[80px] pointer-events-none" />
 
           <div className="container mx-auto px-4 max-w-[800px] relative z-10">
-            <h2 className="text-[30px] sm:text-[36px] md:text-[40px] font-extrabold font-sora text-white leading-tight tracking-tight mb-6">
+            <h2 className="text-[24px] sm:text-[30px] md:text-[34px] font-extrabold font-sora text-white leading-tight tracking-tight mb-6">
               {ctaSection.heading}
             </h2>
 
@@ -1248,7 +1248,7 @@ export default function ServiceContentSectionGAMT({ service, slug, onSelectPlan 
               <span className="bg-[rgba(0,198,138,0.08)] border border-[rgba(0,198,138,0.20)] text-[#00C68A] text-[11px] font-extrabold uppercase tracking-[2.5px] rounded-full py-[6px] px-[16px] mb-6 inline-flex font-sans leading-none">
                 QUESTIONS & ANSWERS
               </span>
-              <h2 className="text-[32px] md:text-[38px] font-extrabold font-sora text-[#F0F4FF] leading-tight tracking-tight max-w-[800px] mx-auto">
+              <h2 className="text-[26px] md:text-[32px] font-extrabold font-sora text-[#F0F4FF] leading-tight tracking-tight max-w-[800px] mx-auto">
                 Frequently Asked Questions
               </h2>
             </div>

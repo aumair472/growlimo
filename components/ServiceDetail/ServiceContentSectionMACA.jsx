@@ -118,7 +118,7 @@ export default function ServiceContentSectionMACA({ service, slug, onSelectPlan 
       {/* ══════════════════════════════════════════════════════
           SECTION 1 · HERO
       ══════════════════════════════════════════════════════ */}
-      <section className="bg-[#080D18] text-white pt-[120px] pb-[80px] relative overflow-hidden">
+      <section className="bg-[#080D18] text-white pt-[100px] pb-[80px] relative overflow-hidden">
         {/* Glow blobs */}
         <div className="absolute top-[-20%] left-[-10%] w-[50%] h-[60%] rounded-full bg-[rgba(0,129,251,0.05)] blur-[120px] pointer-events-none" />
         <div className="absolute bottom-[-10%] right-[-5%] w-[40%] h-[50%] rounded-full bg-[rgba(155,91,245,0.04)] blur-[120px] pointer-events-none" />
@@ -134,11 +134,11 @@ export default function ServiceContentSectionMACA({ service, slug, onSelectPlan 
                 META BLUEPRINT–CERTIFIED AGENCY · CALIFORNIA
               </span>
 
-              <h1 className="text-4xl md:text-[44px] lg:text-[48px] font-extrabold font-sora text-[#F0F4FF] leading-[1.12] mb-6 tracking-tight">
+              <h1 className="text-[30px] md:text-[36px] lg:text-[40px] font-extrabold font-sora text-[#F0F4FF] leading-[1.12] mb-6 tracking-tight">
                 {h1}
               </h1>
 
-              <p className="font-sans text-[16px] text-[#8FA8C8] leading-[1.7] mb-8 max-w-[620px]">
+              <p className="font-sans text-[15px] text-[#8FA8C8] leading-[1.7] mb-8 max-w-[620px]">
                 {heroContent[0]}
               </p>
 
@@ -227,7 +227,7 @@ export default function ServiceContentSectionMACA({ service, slug, onSelectPlan 
             <span className="text-[#0081FB] text-[11px] font-bold uppercase tracking-[2.5px] mb-3 block font-sans">
               THE 2026 PLATFORM REALITY
             </span>
-            <h2 className="text-[32px] md:text-[40px] font-extrabold font-sora leading-[1.15] text-[#0B1829] tracking-tight border-l-4 border-[#0081FB] pl-4">
+            <h2 className="text-[26px] md:text-[34px] font-extrabold font-sora leading-[1.15] text-[#0B1829] tracking-tight border-l-4 border-[#0081FB] pl-4">
               {landscapeSec.heading}
             </h2>
           </div>
@@ -243,7 +243,7 @@ export default function ServiceContentSectionMACA({ service, slug, onSelectPlan 
 
 
               {landscapeSec.paragraphs && landscapeSec.paragraphs.map((para, idx) => (
-                <p key={idx} className="font-sans text-[16px] leading-[1.8] text-[#3D5A73]">
+                <p key={idx} className="font-sans text-[15px] leading-[1.8] text-[#3D5A73]">
                   {para}
                 </p>
               ))}
@@ -286,11 +286,11 @@ export default function ServiceContentSectionMACA({ service, slug, onSelectPlan 
             <span className="text-[#4DA6FF] text-[11px] font-bold uppercase tracking-[2.5px] mb-3 block font-sans">
               THE AGENCY GAP
             </span>
-            <h2 className="text-[32px] md:text-[40px] font-extrabold font-sora leading-[1.15] text-[#F0F4FF] tracking-tight max-w-[900px] mx-auto">
+            <h2 className="text-[26px] md:text-[34px] font-extrabold font-sora leading-[1.15] text-[#F0F4FF] tracking-tight max-w-[900px] mx-auto">
               {vsSec.heading}
             </h2>
             {vsSec.paragraphs && vsSec.paragraphs.map((para, idx) => (
-              <p key={idx} className="font-sans text-[16px] leading-[1.8] text-[#8FA8C8] mt-4 max-w-[800px] mx-auto">
+              <p key={idx} className="font-sans text-[15px] leading-[1.8] text-[#8FA8C8] mt-4 max-w-[800px] mx-auto">
                 {para}
               </p>
             ))}
@@ -358,7 +358,7 @@ export default function ServiceContentSectionMACA({ service, slug, onSelectPlan 
 
           {vsSec.closingText && (
             <div className="mt-10 max-w-[800px] mx-auto p-6 rounded-[16px] border-l-4 border-[#0081FB] bg-[#1A2438]/60 text-left">
-              <p className="font-sans text-[16px] leading-[1.8] font-bold italic text-[#F0F4FF]">
+              <p className="font-sans text-[15px] leading-[1.8] font-bold italic text-[#F0F4FF]">
                 "{vsSec.closingText}"
               </p>
             </div>
@@ -388,11 +388,11 @@ export default function ServiceContentSectionMACA({ service, slug, onSelectPlan 
               <span className="text-[#0081FB] text-[11px] font-bold uppercase tracking-[2.5px] block font-sans">
                 FULL-STACK META ADS SYSTEM
               </span>
-              <h2 className="text-[32px] md:text-[40px] font-extrabold font-sora leading-[1.15] text-[#0B1829] tracking-tight border-l-4 border-[#0081FB] pl-4">
+              <h2 className="text-[26px] md:text-[34px] font-extrabold font-sora leading-[1.15] text-[#0B1829] tracking-tight border-l-4 border-[#0081FB] pl-4">
                 {servicesIntroSec.heading}
               </h2>
               {servicesIntroSec.paragraphs && servicesIntroSec.paragraphs.map((para, idx) => (
-                <p key={idx} className="font-sans text-[16px] leading-[1.8] text-[#3D5A73]">
+                <p key={idx} className="font-sans text-[15px] leading-[1.8] text-[#3D5A73]">
                   {para}
                 </p>
               ))}
@@ -439,12 +439,12 @@ export default function ServiceContentSectionMACA({ service, slug, onSelectPlan 
                     </span>
                   </div>
 
-                  <h2 className={`text-[28px] md:text-[34px] font-extrabold font-sora leading-[1.15] mb-6 tracking-tight border-l-4 border-[#0081FB] pl-4 ${isWhiteBg ? 'text-[#0B1829]' : 'text-[#F0F4FF]'}`}>
+                  <h2 className={`text-[22px] md:text-[28px] font-extrabold font-sora leading-[1.15] mb-6 tracking-tight border-l-4 border-[#0081FB] pl-4 ${isWhiteBg ? 'text-[#0B1829]' : 'text-[#F0F4FF]'}`}>
                     {serviceSec.heading}
                   </h2>
 
                   {serviceSec.paragraphs && serviceSec.paragraphs.map((para, pIdx) => (
-                    <p key={pIdx} className={`font-sans text-[16px] leading-[1.8] mb-5 ${isWhiteBg ? 'text-[#3D5A73]' : 'text-[#8FA8C8]'}`}>
+                    <p key={pIdx} className={`font-sans text-[15px] leading-[1.8] mb-5 ${isWhiteBg ? 'text-[#3D5A73]' : 'text-[#8FA8C8]'}`}>
                       {para}
                     </p>
                   ))}
@@ -534,11 +534,11 @@ export default function ServiceContentSectionMACA({ service, slug, onSelectPlan 
           <span className="bg-[rgba(0,129,251,0.08)] border border-[rgba(0,129,251,0.22)] text-[#4DA6FF] text-[11px] font-extrabold uppercase tracking-[2.5px] rounded-full py-[6px] px-[16px] mb-6 inline-flex font-sans leading-none">
             VERIFIED CLIENT RESULTS
           </span>
-          <h2 className="text-[36px] md:text-[44px] lg:text-[48px] font-extrabold font-sora text-white leading-tight mb-6 tracking-tight max-w-[800px] mx-auto">
+          <h2 className="text-[28px] md:text-[36px] lg:text-[40px] font-extrabold font-sora text-white leading-tight mb-6 tracking-tight max-w-[800px] mx-auto">
             {caseIntroSec.heading}
           </h2>
           {caseIntroSec.paragraphs && caseIntroSec.paragraphs.map((para, idx) => (
-            <p key={idx} className="font-sans text-[16px] md:text-[18px] leading-[1.8] text-[#8FA8C8] max-w-[800px] mx-auto">
+            <p key={idx} className="font-sans text-[15px] md:text-[18px] leading-[1.8] text-[#8FA8C8] max-w-[800px] mx-auto">
               {para}
             </p>
           ))}
@@ -568,7 +568,7 @@ export default function ServiceContentSectionMACA({ service, slug, onSelectPlan 
                 <div className="h-[1px] w-12 bg-[#0081FB]/30" />
               </div>
 
-              <h3 className="text-[28px] md:text-[36px] lg:text-[40px] font-extrabold font-sora text-[#F0F4FF] leading-tight mb-8 tracking-tight max-w-[1000px] text-left">
+              <h3 className="text-[22px] md:text-[30px] lg:text-[40px] font-extrabold font-sora text-[#F0F4FF] leading-tight mb-8 tracking-tight max-w-[1000px] text-left">
                 {cleanTitle}
               </h3>
 
@@ -663,11 +663,11 @@ export default function ServiceContentSectionMACA({ service, slug, onSelectPlan 
             <span className="text-[#0081FB] text-[11px] font-bold uppercase tracking-[2.5px] mb-3 block font-sans">
               VERTICAL EXPERTISE
             </span>
-            <h2 className="text-[32px] md:text-[40px] font-extrabold font-sora leading-[1.15] text-[#0B1829] tracking-tight border-l-4 border-[#0081FB] pl-4">
+            <h2 className="text-[26px] md:text-[34px] font-extrabold font-sora leading-[1.15] text-[#0B1829] tracking-tight border-l-4 border-[#0081FB] pl-4">
               {industriesSec.heading}
             </h2>
             {industriesSec.paragraphs && industriesSec.paragraphs.map((para, idx) => (
-              <p key={idx} className="font-sans text-[16px] leading-[1.8] text-[#3D5A73] mt-4 max-w-[800px]">
+              <p key={idx} className="font-sans text-[15px] leading-[1.8] text-[#3D5A73] mt-4 max-w-[800px]">
                 {para}
               </p>
             ))}
@@ -725,11 +725,11 @@ export default function ServiceContentSectionMACA({ service, slug, onSelectPlan 
               <span className="text-[#4DA6FF] text-[11px] font-bold uppercase tracking-[2.5px] block font-sans">
                 REGIONAL MARKET EXPERTISE
               </span>
-              <h2 className="text-[32px] md:text-[38px] font-extrabold font-sora leading-tight text-[#F0F4FF] tracking-tight">
+              <h2 className="text-[26px] md:text-[32px] font-extrabold font-sora leading-tight text-[#F0F4FF] tracking-tight">
                 {citiesSec.heading}
               </h2>
               {citiesSec.paragraphs && citiesSec.paragraphs.map((para, idx) => (
-                <p key={idx} className="font-sans text-[16px] leading-[1.8] text-[#8FA8C8]">
+                <p key={idx} className="font-sans text-[15px] leading-[1.8] text-[#8FA8C8]">
                   {para}
                 </p>
               ))}
@@ -781,7 +781,7 @@ export default function ServiceContentSectionMACA({ service, slug, onSelectPlan 
             <span className="text-[#0081FB] text-[11px] font-bold uppercase tracking-[2.5px] mb-3 block font-sans">
               OUR CREDENTIALS
             </span>
-            <h2 className="text-[32px] md:text-[38px] font-extrabold font-sora leading-tight text-[#0B1829] tracking-tight border-l-4 border-[#0081FB] pl-4 mb-8">
+            <h2 className="text-[26px] md:text-[32px] font-extrabold font-sora leading-tight text-[#0B1829] tracking-tight border-l-4 border-[#0081FB] pl-4 mb-8">
               {authorSec.heading}
             </h2>
 
@@ -797,7 +797,7 @@ export default function ServiceContentSectionMACA({ service, slug, onSelectPlan 
             </div>
 
             {authorSec.paragraphs && authorSec.paragraphs.map((para, idx) => (
-              <p key={idx} className={`font-sans text-[16px] leading-[1.8] mb-5 ${idx === authorSec.paragraphs.length - 1 ? 'italic text-[#5A7898] text-[14px]' : 'text-[#3D5A73]'}`}>
+              <p key={idx} className={`font-sans text-[15px] leading-[1.8] mb-5 ${idx === authorSec.paragraphs.length - 1 ? 'italic text-[#5A7898] text-[14px]' : 'text-[#3D5A73]'}`}>
                 {para}
               </p>
             ))}
@@ -819,7 +819,7 @@ export default function ServiceContentSectionMACA({ service, slug, onSelectPlan 
             <div className="absolute inset-0 bg-gradient-to-r from-[#080D18]/80 to-transparent" />
             <div className="absolute inset-0 flex items-center justify-center z-20">
               <div className="container mx-auto px-4 max-w-[1200px] text-center">
-                <h2 className="text-[26px] md:text-[42px] font-extrabold font-sora text-white leading-tight mb-2 tracking-tight">
+                <h2 className="text-[22px] md:text-[34px] font-extrabold font-sora text-white leading-tight mb-2 tracking-tight">
                   Average 5.4x ROAS Across All California Meta Campaigns
                 </h2>
                 <p className="text-[#4DA6FF] font-sans font-bold text-[14px] tracking-[2.5px] uppercase">
@@ -840,11 +840,11 @@ export default function ServiceContentSectionMACA({ service, slug, onSelectPlan 
             <span className="text-[#0081FB] text-[11px] font-bold uppercase tracking-[2.5px] mb-3 block font-sans">
               CLIENT TESTIMONIALS
             </span>
-            <h2 className="text-[32px] md:text-[38px] font-extrabold font-sora leading-tight text-[#0B1829] tracking-tight">
+            <h2 className="text-[26px] md:text-[32px] font-extrabold font-sora leading-tight text-[#0B1829] tracking-tight">
               {testimonialsSec.heading}
             </h2>
             {testimonialsSec.paragraphs && testimonialsSec.paragraphs.map((para, idx) => (
-              <p key={idx} className="font-sans text-[16px] leading-[1.8] text-[#3D5A73] mt-4 max-w-[800px] mx-auto">
+              <p key={idx} className="font-sans text-[15px] leading-[1.8] text-[#3D5A73] mt-4 max-w-[800px] mx-auto">
                 {para}
               </p>
             ))}
@@ -891,11 +891,11 @@ export default function ServiceContentSectionMACA({ service, slug, onSelectPlan 
               <span className="text-[#4DA6FF] text-[11px] font-bold uppercase tracking-[2.5px] mb-3 block font-sans">
                 HOW WE WORK
               </span>
-              <h2 className="text-[32px] md:text-[38px] font-extrabold font-sora leading-tight text-[#F0F4FF] tracking-tight">
+              <h2 className="text-[26px] md:text-[32px] font-extrabold font-sora leading-tight text-[#F0F4FF] tracking-tight">
                 {processSection.title}
               </h2>
               {processSection.intro && (
-                <p className="font-sans text-[16px] leading-[1.8] text-[#8FA8C8] mt-4 max-w-[800px] mx-auto">
+                <p className="font-sans text-[15px] leading-[1.8] text-[#8FA8C8] mt-4 max-w-[800px] mx-auto">
                   {processSection.intro}
                 </p>
               )}
@@ -927,11 +927,11 @@ export default function ServiceContentSectionMACA({ service, slug, onSelectPlan 
         <section className="bg-gradient-to-br from-[#050C1A] via-[#0A1230] to-[#0D1635] py-[100px] relative z-10 border-t border-[rgba(255,255,255,0.04)] text-center overflow-hidden">
           <div className="absolute top-[20%] left-[30%] w-[40%] h-[40%] rounded-full bg-[rgba(0,129,251,0.04)] blur-[80px] pointer-events-none" />
           <div className="container mx-auto px-4 md:px-10 max-w-[900px] relative z-10">
-            <h2 className="text-[34px] md:text-[44px] font-extrabold font-sora text-white leading-tight mb-6 tracking-tight">
+            <h2 className="text-[28px] md:text-[36px] font-extrabold font-sora text-white leading-tight mb-6 tracking-tight">
               {ctaSection.heading}
             </h2>
             {ctaSection.paragraphs && ctaSection.paragraphs.map((para, idx) => (
-              <p key={idx} className="font-sans text-[16px] md:text-[17px] leading-[1.8] text-[#8FA8C8] mb-6 max-w-[700px] mx-auto">
+              <p key={idx} className="font-sans text-[15px] md:text-[17px] leading-[1.8] text-[#8FA8C8] mb-6 max-w-[700px] mx-auto">
                 {para}
               </p>
             ))}
@@ -955,7 +955,7 @@ export default function ServiceContentSectionMACA({ service, slug, onSelectPlan 
               <span className="text-[#0081FB] text-[11px] font-bold uppercase tracking-[2.5px] mb-3 block font-sans">
                 COMMON QUESTIONS
               </span>
-              <h2 className="text-[32px] md:text-[38px] font-extrabold font-sora leading-tight text-[#0B1829] tracking-tight">
+              <h2 className="text-[26px] md:text-[32px] font-extrabold font-sora leading-tight text-[#0B1829] tracking-tight">
                 Frequently Asked Questions — Meta Ads Agency California
               </h2>
             </div>

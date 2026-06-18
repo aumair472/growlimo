@@ -141,7 +141,7 @@ export default function ServiceContentSectionDSCA({ service, slug, onSelectPlan 
       />
 
       {/* SECTION 1: HERO CONTAINER */}
-      <section className="bg-[#080D18] text-white pt-[120px] pb-[80px] relative overflow-hidden">
+      <section className="bg-[#080D18] text-white pt-[100px] pb-[80px] relative overflow-hidden">
         {/* Glow Spheres */}
         <div className="absolute top-[-20%] left-[-10%] w-[50%] h-[60%] rounded-full bg-[rgba(0,198,138,0.05)] blur-[120px] pointer-events-none animate-pulse duration-[8000ms]" />
         <div className="absolute bottom-[-10%] right-[-10%] w-[40%] h-[50%] rounded-full bg-[rgba(0,198,138,0.02)] blur-[120px] pointer-events-none animate-pulse duration-[10000ms]" />
@@ -155,11 +155,11 @@ export default function ServiceContentSectionDSCA({ service, slug, onSelectPlan 
                 CALIFORNIA DENTIST SEO AGENCY
               </span>
 
-              <h1 className="text-3xl md:text-[42px] lg:text-[46px] font-extrabold font-sora text-[#F0F4FF] leading-[1.12] mb-6 tracking-tight">
+              <h1 className="text-[30px] md:text-[36px] lg:text-[40px] font-extrabold font-sora text-[#F0F4FF] leading-[1.12] mb-6 tracking-tight">
                 {h1}
               </h1>
 
-              <p className="font-sans text-[16px] sm:text-[17px] text-[#8FA8C8] leading-[1.7] mb-8 max-w-[660px]">
+              <p className="font-sans text-[15px] sm:text-[17px] text-[#8FA8C8] leading-[1.7] mb-8 max-w-[660px]">
                 {subheadline}
               </p>
 
@@ -250,7 +250,7 @@ export default function ServiceContentSectionDSCA({ service, slug, onSelectPlan 
             <span className="text-[#00C68A] text-[11px] font-bold uppercase tracking-[2.5px] mb-3 block font-sans">
               MARKET REALITY
             </span>
-            <h2 className="text-[30px] md:text-[38px] font-extrabold font-sora leading-[1.15] text-[#0B1829] tracking-tight border-l-4 border-[#00C68A] pl-4">
+            <h2 className="text-[24px] md:text-[32px] font-extrabold font-sora leading-[1.15] text-[#0B1829] tracking-tight border-l-4 border-[#00C68A] pl-4">
               {introSection.heading}
             </h2>
           </div>
@@ -259,15 +259,15 @@ export default function ServiceContentSectionDSCA({ service, slug, onSelectPlan 
 
             {/* Left 60%: Text context */}
             <div className="lg:col-span-7 space-y-6 text-left">
-              <p className="font-sans text-[17px] leading-[1.8] text-[#1A2438] font-semibold">
+              <p className="font-sans text-[15px] leading-[1.8] text-[#1A2438] font-semibold">
                 {heroContent[0]}
               </p>
               {introSection.paragraphs && introSection.paragraphs.map((para, idx) => (
-                <p key={idx} className="font-sans text-[16px] leading-[1.8] text-[#3D5A73]">
+                <p key={idx} className="font-sans text-[15px] leading-[1.8] text-[#3D5A73]">
                   {para}
                 </p>
               ))}
-              <p className="font-sans text-[16px] leading-[1.8] text-[#3D5A73] font-bold">
+              <p className="font-sans text-[15px] leading-[1.8] text-[#3D5A73] font-bold">
                 {heroContent[1]}
               </p>
             </div>
@@ -306,7 +306,7 @@ export default function ServiceContentSectionDSCA({ service, slug, onSelectPlan 
 
           {problem3.closingText && (
             <div className="border-l-4 border-[#00C68A] pl-5 py-3.5 my-8 bg-[#00C68A]/5 rounded-r-[10px] text-left max-w-[900px]">
-              <p className="font-sans text-[16px] leading-[1.8] font-bold text-[#0B1829]">
+              <p className="font-sans text-[15px] leading-[1.8] font-bold text-[#0B1829]">
                 {problem3.closingText}
               </p>
             </div>
@@ -337,11 +337,11 @@ export default function ServiceContentSectionDSCA({ service, slug, onSelectPlan 
               <span className="text-[#00C68A] text-[11px] font-bold uppercase tracking-[2.5px] block font-sans">
                 CORE SOLUTIONS
               </span>
-              <h2 className="text-[30px] md:text-[38px] font-extrabold font-sora leading-[1.15] text-[#F0F4FF] tracking-tight border-l-4 border-[#00C68A] pl-4">
+              <h2 className="text-[24px] md:text-[32px] font-extrabold font-sora leading-[1.15] text-[#F0F4FF] tracking-tight border-l-4 border-[#00C68A] pl-4">
                 {servicesIntro.heading}
               </h2>
               {servicesIntro.paragraphs && servicesIntro.paragraphs.map((para, idx) => (
-                <p key={idx} className="font-sans text-[16px] leading-[1.8] text-[#8FA8C8]">
+                <p key={idx} className="font-sans text-[15px] leading-[1.8] text-[#8FA8C8]">
                   {para}
                 </p>
               ))}
@@ -375,13 +375,13 @@ export default function ServiceContentSectionDSCA({ service, slug, onSelectPlan 
                   </div>
 
                   {/* Heading */}
-                  <h2 className={`text-[26px] md:text-[34px] font-extrabold font-sora leading-[1.18] mb-6 tracking-tight border-l-4 border-[#00C68A] pl-4 ${isWhiteBg ? 'text-[#0B1829]' : 'text-[#F0F4FF]'}`}>
+                  <h2 className={`text-[22px] md:text-[28px] font-extrabold font-sora leading-[1.18] mb-6 tracking-tight border-l-4 border-[#00C68A] pl-4 ${isWhiteBg ? 'text-[#0B1829]' : 'text-[#F0F4FF]'}`}>
                     {cleanHeading}
                   </h2>
 
                   {/* Paragraphs */}
                   {servicePillar.paragraphs && servicePillar.paragraphs.map((para, pIdx) => (
-                    <p key={pIdx} className={`font-sans text-[16px] leading-[1.8] mb-5 font-normal ${isWhiteBg ? 'text-[#3D5A73]' : 'text-[#8FA8C8]'}`}>
+                    <p key={pIdx} className={`font-sans text-[15px] leading-[1.8] mb-5 font-normal ${isWhiteBg ? 'text-[#3D5A73]' : 'text-[#8FA8C8]'}`}>
                       {para}
                     </p>
                   ))}
@@ -419,7 +419,7 @@ export default function ServiceContentSectionDSCA({ service, slug, onSelectPlan 
                   {/* Optional Highlight Closing Text */}
                   {servicePillar.closingText && (
                     <div className={`mt-8 p-6 rounded-[18px] border-l-4 border-[#00C68A] text-left ${isWhiteBg ? 'bg-[#F8FAFC]' : 'bg-[#1A2438]/60'}`}>
-                      <p className={`font-sans text-[16px] leading-[1.8] font-bold italic ${isWhiteBg ? 'text-[#0B1829]' : 'text-[#F0F4FF]'}`}>
+                      <p className={`font-sans text-[15px] leading-[1.8] font-bold italic ${isWhiteBg ? 'text-[#0B1829]' : 'text-[#F0F4FF]'}`}>
                         "{servicePillar.closingText}"
                       </p>
                     </div>
@@ -483,7 +483,7 @@ export default function ServiceContentSectionDSCA({ service, slug, onSelectPlan 
               <span className="bg-[rgba(0,198,138,0.08)] border border-[rgba(0,198,138,0.20)] text-[#00C68A] text-[11px] font-extrabold uppercase tracking-[2.5px] rounded-full py-[6px] px-[16px] mb-6 inline-flex font-sans leading-none">
                 CASE STUDIES
               </span>
-              <h2 className="text-[34px] md:text-[44px] lg:text-[48px] font-extrabold font-sora text-white leading-tight mb-6 tracking-tight max-w-[820px] mx-auto">
+              <h2 className="text-[28px] md:text-[36px] lg:text-[40px] font-extrabold font-sora text-white leading-tight mb-6 tracking-tight max-w-[820px] mx-auto">
                 {caseStudiesSection.heading}
               </h2>
             </div>
@@ -533,7 +533,7 @@ export default function ServiceContentSectionDSCA({ service, slug, onSelectPlan 
                   </div>
 
                   {/* Main case study stat title */}
-                  <h3 className="text-[26px] md:text-[34px] lg:text-[40px] font-extrabold font-sora text-[#F0F4FF] leading-tight mb-8 tracking-tight max-w-[1000px] text-left">
+                  <h3 className="text-[22px] md:text-[28px] lg:text-[34px] font-extrabold font-sora text-[#F0F4FF] leading-tight mb-8 tracking-tight max-w-[1000px] text-left">
                     {author} — {stat}
                   </h3>
 
@@ -639,7 +639,7 @@ export default function ServiceContentSectionDSCA({ service, slug, onSelectPlan 
               <span className="text-[#00C68A] text-[11px] font-bold uppercase tracking-[2.5px] mb-3 block font-sans">
                 CLINICAL CLIENT REVIEW
               </span>
-              <h2 className="text-[32px] md:text-[38px] font-extrabold font-sora leading-tight text-[#0B1829] tracking-tight">
+              <h2 className="text-[26px] md:text-[32px] font-extrabold font-sora leading-tight text-[#0B1829] tracking-tight">
                 {testimonialsSection.heading}
               </h2>
             </div>
@@ -683,11 +683,11 @@ export default function ServiceContentSectionDSCA({ service, slug, onSelectPlan 
               <span className="text-[#00C68A] text-[11px] font-bold uppercase tracking-[2.5px] mb-3 block font-sans">
                 INVESTMENT & PLAN PLANS
               </span>
-              <h2 className="text-[32px] md:text-[38px] font-extrabold font-sora leading-tight text-[#F0F4FF] tracking-tight">
+              <h2 className="text-[26px] md:text-[32px] font-extrabold font-sora leading-tight text-[#F0F4FF] tracking-tight">
                 {pricingSection.heading}
               </h2>
               {pricingSection.paragraphs && pricingSection.paragraphs.map((para, idx) => (
-                <p key={idx} className="font-sans text-[16px] leading-[1.8] text-[#8FA8C8] mt-4 max-w-[800px] mx-auto text-center">
+                <p key={idx} className="font-sans text-[15px] leading-[1.8] text-[#8FA8C8] mt-4 max-w-[800px] mx-auto text-center">
                   {para}
                 </p>
               ))}
@@ -774,7 +774,7 @@ export default function ServiceContentSectionDSCA({ service, slug, onSelectPlan 
               <span className="text-[#00C68A] text-[11px] font-bold uppercase tracking-[2.5px] mb-3 block font-sans">
                 SPECIALTY STRATEGY
               </span>
-              <h2 className="text-[30px] md:text-[38px] font-extrabold font-sora leading-[1.15] text-[#0B1829] tracking-tight border-l-4 border-[#00C68A] pl-4">
+              <h2 className="text-[24px] md:text-[32px] font-extrabold font-sora leading-[1.15] text-[#0B1829] tracking-tight border-l-4 border-[#00C68A] pl-4">
                 {specialtiesSection.heading}
               </h2>
             </div>
@@ -834,11 +834,11 @@ export default function ServiceContentSectionDSCA({ service, slug, onSelectPlan 
               <span className="text-[#00C68A] text-[11px] font-bold uppercase tracking-[2.5px] mb-3 block font-sans">
                 6-PHASE ROADMAP
               </span>
-              <h2 className="text-[32px] md:text-[38px] font-extrabold font-sora leading-tight text-[#F0F4FF] tracking-tight">
+              <h2 className="text-[26px] md:text-[32px] font-extrabold font-sora leading-tight text-[#F0F4FF] tracking-tight">
                 {processSection.title}
               </h2>
               {processSection.intro && (
-                <p className="font-sans text-[16px] leading-[1.8] text-[#8FA8C8] mt-4 max-w-[800px] mx-auto text-center">
+                <p className="font-sans text-[15px] leading-[1.8] text-[#8FA8C8] mt-4 max-w-[800px] mx-auto text-center">
                   {processSection.intro}
                 </p>
               )}
@@ -878,7 +878,7 @@ export default function ServiceContentSectionDSCA({ service, slug, onSelectPlan 
                 <span className="text-[#00C68A] text-[11px] font-bold uppercase tracking-[2.5px] block font-sans">
                   CLINICAL EEAT PARTNERS
                 </span>
-                <h2 className="text-[30px] md:text-[38px] font-extrabold font-sora leading-tight text-[#F0F4FF] tracking-tight">
+                <h2 className="text-[24px] md:text-[32px] font-extrabold font-sora leading-tight text-[#F0F4FF] tracking-tight">
                   {aboutSection.heading}
                 </h2>
                 {aboutSection.paragraphs && aboutSection.paragraphs.map((para, idx) => (
@@ -920,12 +920,12 @@ export default function ServiceContentSectionDSCA({ service, slug, onSelectPlan 
           <div className="absolute inset-0 bg-[#00C68A]/2 opacity-20 blur-3xl pointer-events-none" />
           <div className="container mx-auto px-4 md:px-10 max-w-[920px] relative z-10">
 
-            <h2 className="text-[34px] md:text-[42px] font-extrabold font-sora text-white leading-tight mb-6 tracking-tight">
+            <h2 className="text-[28px] md:text-[36px] font-extrabold font-sora text-white leading-tight mb-6 tracking-tight">
               {ctaSection.heading}
             </h2>
 
             {ctaSection.paragraphs && ctaSection.paragraphs.map((para, idx) => (
-              <p key={idx} className="font-sans text-[16px] md:text-[17px] leading-[1.8] text-[#8FA8C8] mb-8 max-w-[740px] mx-auto">
+              <p key={idx} className="font-sans text-[15px] md:text-[17px] leading-[1.8] text-[#8FA8C8] mb-8 max-w-[740px] mx-auto">
                 {para}
               </p>
             ))}
@@ -950,7 +950,7 @@ export default function ServiceContentSectionDSCA({ service, slug, onSelectPlan 
               <span className="text-[#00C68A] text-[11px] font-bold uppercase tracking-[2.5px] mb-3 block font-sans">
                 FAQS & INFORMATION
               </span>
-              <h2 className="text-[32px] md:text-[38px] font-extrabold font-sora leading-tight text-[#0B1829] tracking-tight">
+              <h2 className="text-[26px] md:text-[32px] font-extrabold font-sora leading-tight text-[#0B1829] tracking-tight">
                 Frequently Asked Dentist SEO Questions
               </h2>
             </div>

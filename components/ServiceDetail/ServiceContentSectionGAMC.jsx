@@ -99,7 +99,7 @@ export default function ServiceContentSectionGAMC({ service, slug, onSelectPlan 
       />
 
       {/* SECTION 1: HERO */}
-      <section className="bg-[#080D18] text-white pt-[120px] pb-[80px] relative overflow-hidden">
+      <section className="bg-[#080D18] text-white pt-[100px] pb-[80px] relative overflow-hidden">
         {/* Abstract background glows */}
         <div className="absolute top-[-20%] left-[-10%] w-[50%] h-[60%] rounded-full bg-[rgba(0,198,138,0.04)] blur-[120px] pointer-events-none" />
         <div className="absolute bottom-[-10%] right-[-10%] w-[40%] h-[50%] rounded-full bg-[rgba(221,102,19,0.03)] blur-[120px] pointer-events-none" />
@@ -113,11 +113,11 @@ export default function ServiceContentSectionGAMC({ service, slug, onSelectPlan 
                 GOOGLE PARTNER CERTIFIED PPC AGENCY
               </span>
 
-              <h1 className="text-4xl md:text-[44px] lg:text-[48px] font-extrabold font-sora text-[#F0F4FF] leading-[1.12] mb-6 tracking-tight">
+              <h1 className="text-[30px] md:text-[36px] lg:text-[40px] font-extrabold font-sora text-[#F0F4FF] leading-[1.12] mb-6 tracking-tight">
                 {h1}
               </h1>
 
-              <p className="font-sans text-[16px] text-[#8FA8C8] leading-[1.7] mb-8 max-w-[620px]">
+              <p className="font-sans text-[15px] text-[#8FA8C8] leading-[1.7] mb-8 max-w-[620px]">
                 {subheadline}
               </p>
 
@@ -207,7 +207,7 @@ export default function ServiceContentSectionGAMC({ service, slug, onSelectPlan 
             <span className="text-[#00C68A] text-[11px] font-bold uppercase tracking-[2.5px] mb-3 block font-sans">
               MARKET REALITY
             </span>
-            <h2 className="text-[32px] md:text-[40px] font-extrabold font-sora leading-[1.15] text-[#0B1829] tracking-tight border-l-4 border-[#00C68A] pl-4">
+            <h2 className="text-[26px] md:text-[34px] font-extrabold font-sora leading-[1.15] text-[#0B1829] tracking-tight border-l-4 border-[#00C68A] pl-4">
               {whyFailSec.heading}
             </h2>
           </div>
@@ -216,19 +216,19 @@ export default function ServiceContentSectionGAMC({ service, slug, onSelectPlan 
 
             {/* Left 60%: Text content */}
             <div className="lg:col-span-7 space-y-6 text-left">
-              <p className="font-sans text-[17px] leading-[1.8] text-[#1A2438] font-semibold">
+              <p className="font-sans text-[15px] leading-[1.8] text-[#1A2438] font-semibold">
                 {heroContent[1]}
               </p>
 
               {whyFailSec.paragraphs && whyFailSec.paragraphs.map((para, idx) => (
-                <p key={idx} className="font-sans text-[16px] leading-[1.8] text-[#3D5A73]">
+                <p key={idx} className="font-sans text-[15px] leading-[1.8] text-[#3D5A73]">
                   {para}
                 </p>
               ))}
 
               {whyFailSec.closingText && (
                 <div className="border-l-4 border-[#00C68A] pl-5 py-2 my-6 bg-[#00C68A]/5 rounded-r-[8px]">
-                  <p className="font-sans text-[16px] leading-[1.8] font-bold text-[#0B1829]">
+                  <p className="font-sans text-[15px] leading-[1.8] font-bold text-[#0B1829]">
                     {whyFailSec.closingText}
                   </p>
                 </div>
@@ -299,11 +299,11 @@ export default function ServiceContentSectionGAMC({ service, slug, onSelectPlan 
               <span className="text-[#00C68A] text-[11px] font-bold uppercase tracking-[2.5px] block font-sans">
                 CAMPAIGN ARCHITECTURE
               </span>
-              <h2 className="text-[32px] md:text-[40px] font-extrabold font-sora leading-[1.15] text-[#F0F4FF] tracking-tight border-l-4 border-[#00C68A] pl-4">
+              <h2 className="text-[26px] md:text-[34px] font-extrabold font-sora leading-[1.15] text-[#F0F4FF] tracking-tight border-l-4 border-[#00C68A] pl-4">
                 {servicesIntroSec.heading}
               </h2>
               {servicesIntroSec.paragraphs && servicesIntroSec.paragraphs.map((para, idx) => (
-                <p key={idx} className="font-sans text-[16px] leading-[1.8] text-[#8FA8C8]">
+                <p key={idx} className="font-sans text-[15px] leading-[1.8] text-[#8FA8C8]">
                   {para}
                 </p>
               ))}
@@ -337,13 +337,13 @@ export default function ServiceContentSectionGAMC({ service, slug, onSelectPlan 
                   </div>
 
                   {/* Heading */}
-                  <h2 className={`text-[28px] md:text-[34px] font-extrabold font-sora leading-[1.15] mb-6 tracking-tight border-l-4 border-[#00C68A] pl-4 ${isWhiteBg ? 'text-[#0B1829]' : 'text-[#F0F4FF]'}`}>
+                  <h2 className={`text-[22px] md:text-[28px] font-extrabold font-sora leading-[1.15] mb-6 tracking-tight border-l-4 border-[#00C68A] pl-4 ${isWhiteBg ? 'text-[#0B1829]' : 'text-[#F0F4FF]'}`}>
                     {displayHeading}
                   </h2>
 
                   {/* Paragraphs */}
                   {serviceSec.paragraphs && serviceSec.paragraphs.map((para, pIdx) => (
-                    <p key={pIdx} className={`font-sans text-[16px] leading-[1.8] mb-5 font-normal ${isWhiteBg ? 'text-[#3D5A73]' : 'text-[#8FA8C8]'}`}>
+                    <p key={pIdx} className={`font-sans text-[15px] leading-[1.8] mb-5 font-normal ${isWhiteBg ? 'text-[#3D5A73]' : 'text-[#8FA8C8]'}`}>
                       {para}
                     </p>
                   ))}
@@ -369,7 +369,7 @@ export default function ServiceContentSectionGAMC({ service, slug, onSelectPlan 
                   {/* Service Specific Callout */}
                   {serviceSec.closingText && (
                     <div className={`mt-8 p-6 rounded-[16px] border-l-4 border-[#00C68A] text-left ${isWhiteBg ? 'bg-[#F8FAFC]' : 'bg-[#1A2438]/60'}`}>
-                      <p className={`font-sans text-[16px] leading-[1.8] font-bold italic ${isWhiteBg ? 'text-[#0B1829]' : 'text-[#F0F4FF]'}`}>
+                      <p className={`font-sans text-[15px] leading-[1.8] font-bold italic ${isWhiteBg ? 'text-[#0B1829]' : 'text-[#F0F4FF]'}`}>
                         "{serviceSec.closingText}"
                       </p>
                     </div>
@@ -431,11 +431,11 @@ export default function ServiceContentSectionGAMC({ service, slug, onSelectPlan 
           <span className="bg-[rgba(0,198,138,0.08)] border border-[rgba(0,198,138,0.20)] text-[#00C68A] text-[11px] font-extrabold uppercase tracking-[2.5px] rounded-full py-[6px] px-[16px] mb-6 inline-flex font-sans leading-none">
             REAL PPC RESULTS
           </span>
-          <h2 className="text-[36px] md:text-[44px] lg:text-[48px] font-extrabold font-sora text-white leading-tight mb-6 tracking-tight max-w-[800px] mx-auto">
+          <h2 className="text-[28px] md:text-[36px] lg:text-[40px] font-extrabold font-sora text-white leading-tight mb-6 tracking-tight max-w-[800px] mx-auto">
             {caseStudiesIntroSec.heading}
           </h2>
           {caseStudiesIntroSec.paragraphs && caseStudiesIntroSec.paragraphs.map((para, idx) => (
-            <p key={idx} className="font-sans text-[16px] md:text-[18px] leading-[1.8] text-[#8FA8C8] max-w-[800px] mx-auto">
+            <p key={idx} className="font-sans text-[15px] md:text-[18px] leading-[1.8] text-[#8FA8C8] max-w-[800px] mx-auto">
               {para}
             </p>
           ))}
@@ -464,7 +464,7 @@ export default function ServiceContentSectionGAMC({ service, slug, onSelectPlan 
               </div>
 
               {/* 2. MAIN TITLE */}
-              <h3 className="text-[28px] md:text-[36px] lg:text-[42px] font-extrabold font-sora text-[#F0F4FF] leading-tight mb-8 tracking-tight max-w-[1000px] text-left">
+              <h3 className="text-[22px] md:text-[30px] lg:text-[34px] font-extrabold font-sora text-[#F0F4FF] leading-tight mb-8 tracking-tight max-w-[1000px] text-left">
                 {cleanTitle}
               </h3>
 
@@ -573,11 +573,11 @@ export default function ServiceContentSectionGAMC({ service, slug, onSelectPlan 
             <span className="text-[#00C68A] text-[11px] font-bold uppercase tracking-[2.5px] mb-3 block font-sans">
               VERTICAL STRATEGIES
             </span>
-            <h2 className="text-[32px] md:text-[40px] font-extrabold font-sora leading-[1.15] text-[#0B1829] tracking-tight border-l-4 border-[#00C68A] pl-4">
+            <h2 className="text-[26px] md:text-[34px] font-extrabold font-sora leading-[1.15] text-[#0B1829] tracking-tight border-l-4 border-[#00C68A] pl-4">
               {industriesSec.heading}
             </h2>
             {industriesSec.paragraphs && industriesSec.paragraphs.map((para, idx) => (
-              <p key={idx} className="font-sans text-[16px] leading-[1.8] text-[#3D5A73] mt-4 max-w-[800px]">
+              <p key={idx} className="font-sans text-[15px] leading-[1.8] text-[#3D5A73] mt-4 max-w-[800px]">
                 {para}
               </p>
             ))}
@@ -628,11 +628,11 @@ export default function ServiceContentSectionGAMC({ service, slug, onSelectPlan 
               <span className="text-[#00C68A] text-[11px] font-bold uppercase tracking-[2.5px] block font-sans">
                 REGIONAL targeting
               </span>
-              <h2 className="text-[32px] md:text-[40px] font-extrabold font-sora leading-tight text-[#F0F4FF] tracking-tight">
+              <h2 className="text-[26px] md:text-[34px] font-extrabold font-sora leading-tight text-[#F0F4FF] tracking-tight">
                 {citiesSec.heading}
               </h2>
               {citiesSec.paragraphs && citiesSec.paragraphs.map((para, idx) => (
-                <p key={idx} className="font-sans text-[16px] leading-[1.8] text-[#8FA8C8]">
+                <p key={idx} className="font-sans text-[15px] leading-[1.8] text-[#8FA8C8]">
                   {para}
                 </p>
               ))}
@@ -691,11 +691,11 @@ export default function ServiceContentSectionGAMC({ service, slug, onSelectPlan 
               <span className="text-[#00C68A] text-[11px] font-bold uppercase tracking-[2.5px] block font-sans">
                 CERTIFIED GOOGLE PARTNER
               </span>
-              <h2 className="text-[32px] md:text-[40px] font-extrabold font-sora leading-tight text-[#0B1829] tracking-tight border-l-4 border-[#00C68A] pl-4">
+              <h2 className="text-[26px] md:text-[34px] font-extrabold font-sora leading-tight text-[#0B1829] tracking-tight border-l-4 border-[#00C68A] pl-4">
                 {partnerSec.heading}
               </h2>
               {partnerSec.paragraphs && partnerSec.paragraphs.map((para, idx) => (
-                <p key={idx} className="font-sans text-[16px] leading-[1.8] text-[#3D5A73]">
+                <p key={idx} className="font-sans text-[15px] leading-[1.8] text-[#3D5A73]">
                   {para}
                 </p>
               ))}
@@ -736,10 +736,10 @@ export default function ServiceContentSectionGAMC({ service, slug, onSelectPlan 
             <span className="text-[#00C68A] text-[11px] font-bold uppercase tracking-[2.5px] mb-3 block font-sans">
               CAMPAIGN LIFECYCLE
             </span>
-            <h2 className="text-[32px] md:text-[40px] font-extrabold font-sora leading-tight text-white tracking-tight border-l-4 border-[#00C68A] pl-4">
+            <h2 className="text-[26px] md:text-[34px] font-extrabold font-sora leading-tight text-white tracking-tight border-l-4 border-[#00C68A] pl-4">
               {processSection.title}
             </h2>
-            <p className="font-sans text-[16px] leading-[1.8] text-[#8FA8C8] mt-4">
+            <p className="font-sans text-[15px] leading-[1.8] text-[#8FA8C8] mt-4">
               {processSection.intro}
             </p>
           </div>
@@ -777,7 +777,7 @@ export default function ServiceContentSectionGAMC({ service, slug, onSelectPlan 
             <span className="bg-[rgba(0,198,138,0.08)] border border-[rgba(0,198,138,0.20)] text-[#00C68A] text-[11px] font-extrabold uppercase tracking-[2.5px] rounded-full py-[6px] px-[16px] mb-6 inline-flex font-sans leading-none">
               QUESTIONS & ANSWERS
             </span>
-            <h2 className="text-[32px] md:text-[40px] font-extrabold font-sora text-[#F0F4FF] leading-tight tracking-tight max-w-[800px] mx-auto">
+            <h2 className="text-[26px] md:text-[34px] font-extrabold font-sora text-[#F0F4FF] leading-tight tracking-tight max-w-[800px] mx-auto">
               Frequently Asked Questions
             </h2>
           </div>
@@ -825,12 +825,12 @@ export default function ServiceContentSectionGAMC({ service, slug, onSelectPlan 
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[350px] h-[350px] bg-[#00C68A]/5 rounded-full blur-[80px] pointer-events-none" />
 
         <div className="container mx-auto px-4 max-w-[800px] relative z-10">
-          <h2 className="text-[32px] sm:text-[40px] md:text-[44px] font-extrabold font-sora text-white leading-tight tracking-tight mb-6">
+          <h2 className="text-[26px] sm:text-[34px] md:text-[36px] font-extrabold font-sora text-white leading-tight tracking-tight mb-6">
             {ctaSection.heading}
           </h2>
 
           {ctaSection.paragraphs && ctaSection.paragraphs.slice(0, 2).map((para, idx) => (
-            <p key={idx} className="font-sans text-[16px] sm:text-[17px] leading-[1.8] text-[#8FA8C8] mb-6 max-w-[660px] mx-auto">
+            <p key={idx} className="font-sans text-[15px] sm:text-[17px] leading-[1.8] text-[#8FA8C8] mb-6 max-w-[660px] mx-auto">
               {para}
             </p>
           ))}

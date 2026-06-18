@@ -79,7 +79,7 @@ export default function ServiceHero({
   ];
 
   return (
-    <section className="bg-[#080D18] text-white pt-[120px] pb-[80px] relative overflow-hidden">
+    <section className="bg-[#080D18] text-white pt-[100px] pb-[80px] relative overflow-hidden">
       {/* Background radial glow highlights */}
       <div className="absolute top-[-20%] left-[-10%] w-[50%] h-[60%] rounded-full bg-[rgba(0,198,138,0.04)] blur-[120px] pointer-events-none" />
       <div className="absolute bottom-[-10%] right-[-10%] w-[40%] h-[50%] rounded-full bg-[rgba(221,102,19,0.03)] blur-[120px] pointer-events-none" />
@@ -93,20 +93,20 @@ export default function ServiceHero({
               {badgeText}
             </span>
 
-            <h1 className="text-4xl md:text-[44px] lg:text-[48px] font-extrabold font-sora text-[#F0F4FF] leading-[1.12] mb-6 tracking-tight">
+            <h1 className="text-[30px] md:text-[36px] lg:text-[40px] font-extrabold font-sora text-[#F0F4FF] leading-[1.12] mb-6 tracking-tight">
               {h1}
             </h1>
 
             {/* Subheadline or first paragraph of heroContent */}
             {heroContent && heroContent.length > 0 ? (
               heroContent.map((para, index) => (
-                <p key={index} className="font-sans text-[16px] text-[#8FA8C8] leading-[1.7] mb-4 max-w-[620px]">
+                <p key={index} className="font-sans text-[15px] text-[#8FA8C8] leading-[1.7] mb-4 max-w-[620px]">
                   {para}
                 </p>
               ))
             ) : (
               subheadline && (
-                <p className="font-sans text-[16px] text-[#8FA8C8] leading-[1.7] mb-8 max-w-[620px]">
+                <p className="font-sans text-[15px] text-[#8FA8C8] leading-[1.7] mb-8 max-w-[620px]">
                   {subheadline}
                 </p>
               )

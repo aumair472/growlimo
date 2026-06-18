@@ -10,11 +10,11 @@ export default function ServiceContentSection({
   const bgClass = isWhiteBg ? 'bg-[#FFFFFF]' : 'bg-[#0C1220]';
   const eyebrowClass = 'text-[#00C68A] text-[11px] font-bold uppercase tracking-[2.5px] mb-2.5 block font-sans';
   
-  const headingClass = `text-[32px] md:text-[34px] font-extrabold font-sora leading-[1.15] mb-6 tracking-tight ${
+  const headingClass = `text-[26px] md:text-[28px] font-extrabold font-sora leading-[1.15] mb-6 tracking-tight ${
     isDentist ? 'border-l-4 border-[#00C68A] pl-4' : ''
   } ${isWhiteBg ? 'text-[#0B1829]' : 'text-[#F0F4FF]'}`;
   
-  const paragraphClass = `font-sans text-[16px] leading-[1.8] mb-5 font-normal ${
+  const paragraphClass = `font-sans text-[15px] leading-[1.8] mb-5 font-normal ${
     isWhiteBg ? 'text-[#3D5A73]' : 'text-[#8FA8C8]'
   }`;
 
@@ -82,11 +82,11 @@ export default function ServiceContentSection({
               <span className={eyebrowClass}>
                 CORE CAPABILITIES
               </span>
-              <h2 className="text-[32px] md:text-[34px] font-extrabold font-sora leading-[1.15] mb-4 tracking-tight text-[#0B1829] border-l-4 border-[#00C68A] pl-4">
+              <h2 className="text-[26px] md:text-[28px] font-extrabold font-sora leading-[1.15] mb-4 tracking-tight text-[#0B1829] border-l-4 border-[#00C68A] pl-4">
                 {section.heading}
               </h2>
               {section.paragraphs && section.paragraphs.map((para, pIdx) => (
-                <p key={pIdx} className="font-sans text-[16px] leading-[1.8] text-[#3D5A73]">
+                <p key={pIdx} className="font-sans text-[15px] leading-[1.8] text-[#3D5A73]">
                   {para}
                 </p>
               ))}
@@ -113,7 +113,7 @@ export default function ServiceContentSection({
             <span className={eyebrowClass}>
               SUCCESS STORIES
             </span>
-            <h2 className="text-[32px] md:text-[38px] font-extrabold font-sora leading-tight text-[#F0F4FF] tracking-tight">
+            <h2 className="text-[26px] md:text-[32px] font-extrabold font-sora leading-tight text-[#F0F4FF] tracking-tight">
               Proven Patient Growth Results Across California
             </h2>
           </div>
@@ -178,11 +178,11 @@ export default function ServiceContentSection({
             <span className={eyebrowClass}>
               PATIENT TRUST & REVIEWS
             </span>
-            <h2 className="text-[32px] md:text-[38px] font-extrabold font-sora leading-tight text-[#0B1829] tracking-tight">
+            <h2 className="text-[26px] md:text-[32px] font-extrabold font-sora leading-tight text-[#0B1829] tracking-tight">
               {section.heading}
             </h2>
             {section.paragraphs && section.paragraphs.map((para, idx) => (
-               <p key={idx} className="font-sans text-[16px] leading-[1.8] text-[#3D5A73] mt-4 max-w-[800px] mx-auto">
+               <p key={idx} className="font-sans text-[15px] leading-[1.8] text-[#3D5A73] mt-4 max-w-[800px] mx-auto">
                  {para}
                </p>
             ))}
@@ -291,7 +291,7 @@ export default function ServiceContentSection({
                   ? 'bg-[#F8FAFC] border-[#E3EEF7]' 
                   : 'bg-[#1A2438]/60 border-[rgba(255,255,255,0.04)]'
               }`}>
-                <p className={`font-sans text-[16px] leading-[1.8] font-bold italic ${isWhiteBg ? 'text-[#0B1829]' : 'text-[#F0F4FF]'}`}>
+                <p className={`font-sans text-[15px] leading-[1.8] font-bold italic ${isWhiteBg ? 'text-[#0B1829]' : 'text-[#F0F4FF]'}`}>
                   "{section.closingText}"
                 </p>
               </div>
@@ -393,7 +393,7 @@ export default function ServiceContentSection({
             <div className="absolute inset-0 bg-gradient-to-r from-[#0C1220]/75 to-transparent" />
             <div className="absolute inset-0 flex items-center justify-center z-20">
               <div className="container mx-auto px-4 max-w-[1200px] text-center">
-                <h2 className="text-[28px] md:text-[44px] font-extrabold font-sora text-white leading-tight mb-2 tracking-tight">
+                <h2 className="text-[22px] md:text-[36px] font-extrabold font-sora text-white leading-tight mb-2 tracking-tight">
                   60+ California Dental Practices & DSOs Partnered
                 </h2>
                 <p className="text-[#00C68A] font-sans font-bold text-[15px] tracking-[2.5px] uppercase">

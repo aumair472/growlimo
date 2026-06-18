@@ -118,7 +118,7 @@ export default function ServiceContentSectionTX({ service, slug, onSelectPlan })
             <span className="text-[#00C68A] text-[11px] font-bold uppercase tracking-[2.5px] mb-3 block font-sans">
               TEXAS-SPECIFIC STRATEGY
             </span>
-            <h2 className="text-[32px] md:text-[40px] font-extrabold font-sora leading-tight text-[#0B1829] tracking-tight">
+            <h2 className="text-[26px] md:text-[34px] font-extrabold font-sora leading-tight text-[#0B1829] tracking-tight">
               {section.heading}
             </h2>
           </div>
@@ -127,7 +127,7 @@ export default function ServiceContentSectionTX({ service, slug, onSelectPlan })
             {/* Left 60%: Text content */}
             <div className="lg:col-span-7 space-y-6 text-left">
               {section.paragraphs && section.paragraphs.map((para, pIdx) => (
-                <p key={pIdx} className="font-sans text-[16px] leading-[1.8] text-[#3D5A73]">
+                <p key={pIdx} className="font-sans text-[15px] leading-[1.8] text-[#3D5A73]">
                   {para}
                 </p>
               ))}
@@ -190,11 +190,11 @@ export default function ServiceContentSectionTX({ service, slug, onSelectPlan })
             <span className="text-[#00C68A] text-[11px] font-bold uppercase tracking-[2.5px] mb-3 block font-sans">
               COMMON BOTTLENECKS
             </span>
-            <h2 className="text-[32px] md:text-[40px] font-extrabold font-sora leading-tight text-[#F0F4FF] tracking-tight">
+            <h2 className="text-[26px] md:text-[34px] font-extrabold font-sora leading-tight text-[#F0F4FF] tracking-tight">
               {section.heading}
             </h2>
             {section.paragraphs && section.paragraphs.map((para, pIdx) => (
-              <p key={pIdx} className="font-sans text-[16px] leading-[1.8] text-[#8FA8C8] mt-4 max-w-[800px]">
+              <p key={pIdx} className="font-sans text-[15px] leading-[1.8] text-[#8FA8C8] mt-4 max-w-[800px]">
                 {para}
               </p>
             ))}
@@ -276,11 +276,11 @@ export default function ServiceContentSectionTX({ service, slug, onSelectPlan })
               <span className="text-[#00C68A] text-[11px] font-bold uppercase tracking-[2.5px] block font-sans">
                 TEXAS SEO AGENCY SERVICES
               </span>
-              <h2 className="text-[32px] md:text-[40px] font-extrabold font-sora leading-tight text-[#0B1829] tracking-tight">
+              <h2 className="text-[26px] md:text-[34px] font-extrabold font-sora leading-tight text-[#0B1829] tracking-tight">
                 {section.heading}
               </h2>
               {section.paragraphs && section.paragraphs.map((para, pIdx) => (
-                <p key={pIdx} className="font-sans text-[17px] leading-[1.8] text-[#3D5A73]">
+                <p key={pIdx} className="font-sans text-[15px] leading-[1.8] text-[#3D5A73]">
                   {para}
                 </p>
               ))}
@@ -316,7 +316,7 @@ export default function ServiceContentSectionTX({ service, slug, onSelectPlan })
               </div>
 
               {/* Heading */}
-              <h2 className={`text-[30px] md:text-[36px] font-extrabold font-sora leading-tight tracking-tight mb-6 ${isWhiteBg ? 'text-[#0B1829]' : 'text-[#F0F4FF]'}`}>
+              <h2 className={`text-[24px] md:text-[30px] font-extrabold font-sora leading-tight tracking-tight mb-6 ${isWhiteBg ? 'text-[#0B1829]' : 'text-[#F0F4FF]'}`}>
                 {displayHeading}
               </h2>
 
@@ -324,7 +324,7 @@ export default function ServiceContentSectionTX({ service, slug, onSelectPlan })
               {section.paragraphs && section.paragraphs.map((para, pIdx) => (
                 <p
                   key={pIdx}
-                  className={`font-sans text-[16px] leading-[1.8] mb-6 ${isWhiteBg ? 'text-[#3D5A73]' : 'text-[#8FA8C8]'}`}
+                  className={`font-sans text-[15px] leading-[1.8] mb-6 ${isWhiteBg ? 'text-[#3D5A73]' : 'text-[#8FA8C8]'}`}
                 >
                   {para}
                 </p>
@@ -357,7 +357,7 @@ export default function ServiceContentSectionTX({ service, slug, onSelectPlan })
               {/* closingText Note */}
               {section.closingText && (
                 <div className={`mt-8 p-6 rounded-[16px] border-l-4 border-[#00C68A] ${isWhiteBg ? 'bg-[#F8FAFC] border-[#E3EEF7]' : 'bg-[#1A2438]/60 border-[rgba(255,255,255,0.04)]'}`}>
-                  <p className={`font-sans text-[16px] leading-[1.8] font-bold italic ${isWhiteBg ? 'text-[#0B1829]' : 'text-[#F0F4FF]'}`}>
+                  <p className={`font-sans text-[15px] leading-[1.8] font-bold italic ${isWhiteBg ? 'text-[#0B1829]' : 'text-[#F0F4FF]'}`}>
                     "{section.closingText}"
                   </p>
                 </div>
@@ -416,11 +416,11 @@ export default function ServiceContentSectionTX({ service, slug, onSelectPlan })
           <span className="bg-[rgba(0,198,138,0.08)] border border-[rgba(0,198,138,0.20)] text-[#00C68A] text-[11px] font-extrabold uppercase tracking-[2.5px] rounded-full py-[6px] px-[16px] mb-6 inline-flex font-sans leading-none">
             SUCCESS STORIES
           </span>
-          <h2 className="text-[36px] md:text-[44px] lg:text-[48px] font-extrabold font-sora text-white leading-tight mb-6 tracking-tight max-w-[800px] mx-auto">
+          <h2 className="text-[28px] md:text-[36px] lg:text-[40px] font-extrabold font-sora text-white leading-tight mb-6 tracking-tight max-w-[800px] mx-auto">
             {section.heading}
           </h2>
           {section.paragraphs && section.paragraphs.map((p, pIdx) => (
-            <p key={pIdx} className="font-sans text-[16px] leading-[1.8] text-[#8FA8C8] max-w-[700px] mx-auto">
+            <p key={pIdx} className="font-sans text-[15px] leading-[1.8] text-[#8FA8C8] max-w-[700px] mx-auto">
               {p}
             </p>
           ))}
@@ -451,7 +451,7 @@ export default function ServiceContentSectionTX({ service, slug, onSelectPlan })
           </div>
 
           {/* Main Title */}
-          <h3 className="text-[28px] md:text-[36px] font-extrabold font-sora text-[#F0F4FF] leading-tight mb-8 tracking-tight max-w-[1000px] text-left">
+          <h3 className="text-[22px] md:text-[30px] font-extrabold font-sora text-[#F0F4FF] leading-tight mb-8 tracking-tight max-w-[1000px] text-left">
             {title}
           </h3>
 
@@ -490,7 +490,7 @@ export default function ServiceContentSectionTX({ service, slug, onSelectPlan })
             {/* Right Column: Paragraphs */}
             <div className="lg:col-span-7 space-y-6 text-left">
               {section.paragraphs && section.paragraphs.map((para, pIdx) => (
-                <p key={pIdx} className="font-sans text-[16px] leading-[1.8] text-[#8FA8C8]">
+                <p key={pIdx} className="font-sans text-[15px] leading-[1.8] text-[#8FA8C8]">
                   {para}
                 </p>
               ))}
@@ -510,7 +510,7 @@ export default function ServiceContentSectionTX({ service, slug, onSelectPlan })
             <span className="text-[#00C68A] text-[11px] font-bold uppercase tracking-[2.5px] mb-3 block font-sans">
               CLIENT TESTIMONIALS
             </span>
-            <h2 className="text-[32px] md:text-[42px] font-extrabold font-sora leading-tight text-[#0B1829] tracking-tight">
+            <h2 className="text-[26px] md:text-[36px] font-extrabold font-sora leading-tight text-[#0B1829] tracking-tight">
               {section.heading}
             </h2>
           </div>
@@ -556,13 +556,13 @@ export default function ServiceContentSectionTX({ service, slug, onSelectPlan })
             <span className="text-[#00C68A] text-[11px] font-bold uppercase tracking-[2.5px] mb-3 block font-sans">
               ABOUT OUR TEAM
             </span>
-            <h2 className="text-[32px] md:text-[40px] font-extrabold font-sora leading-tight text-[#0B1829] tracking-tight mb-8">
+            <h2 className="text-[26px] md:text-[34px] font-extrabold font-sora leading-tight text-[#0B1829] tracking-tight mb-8">
               {section.heading}
             </h2>
 
             <div className="space-y-6">
               {section.paragraphs && section.paragraphs.map((para, pIdx) => (
-                <p key={pIdx} className="font-sans text-[16px] leading-[1.85] text-[#3D5A73]">
+                <p key={pIdx} className="font-sans text-[15px] leading-[1.85] text-[#3D5A73]">
                   {para}
                 </p>
               ))}
@@ -582,11 +582,11 @@ export default function ServiceContentSectionTX({ service, slug, onSelectPlan })
             <span className="text-[#00C68A] text-[11px] font-bold uppercase tracking-[2.5px] mb-3 block font-sans">
               LOCALIZED GEOGRAPHIC FOCUS
             </span>
-            <h2 className="text-[32px] md:text-[40px] font-extrabold font-sora leading-tight text-[#F0F4FF] tracking-tight">
+            <h2 className="text-[26px] md:text-[34px] font-extrabold font-sora leading-tight text-[#F0F4FF] tracking-tight">
               {section.heading}
             </h2>
             {section.paragraphs && section.paragraphs.map((para, pIdx) => (
-              <p key={pIdx} className="font-sans text-[16px] leading-[1.8] text-[#8FA8C8] mt-4 max-w-[800px] mx-auto">
+              <p key={pIdx} className="font-sans text-[15px] leading-[1.8] text-[#8FA8C8] mt-4 max-w-[800px] mx-auto">
                 {para}
               </p>
             ))}
@@ -645,11 +645,11 @@ export default function ServiceContentSectionTX({ service, slug, onSelectPlan })
       <section key={idx} className={`${bgClass} py-[96px] relative z-10`}>
         <div className="container mx-auto px-4 md:px-10 max-w-[1100px] text-left">
           <div className="max-w-[860px] mx-auto">
-            <h2 className={`text-[30px] md:text-[36px] font-extrabold font-sora leading-tight tracking-tight mb-6 ${isWhiteBg ? 'text-[#0B1829]' : 'text-[#F0F4FF]'}`}>
+            <h2 className={`text-[24px] md:text-[30px] font-extrabold font-sora leading-tight tracking-tight mb-6 ${isWhiteBg ? 'text-[#0B1829]' : 'text-[#F0F4FF]'}`}>
               {section.heading}
             </h2>
             {section.paragraphs && section.paragraphs.map((p, pIdx) => (
-              <p key={pIdx} className={`font-sans text-[16px] leading-[1.8] mb-6 ${isWhiteBg ? 'text-[#3D5A73]' : 'text-[#8FA8C8]'}`}>
+              <p key={pIdx} className={`font-sans text-[15px] leading-[1.8] mb-6 ${isWhiteBg ? 'text-[#3D5A73]' : 'text-[#8FA8C8]'}`}>
                 {p}
               </p>
             ))}
@@ -661,7 +661,7 @@ export default function ServiceContentSectionTX({ service, slug, onSelectPlan })
               </ul>
             )}
             {section.closingText && (
-              <p className={`font-sans text-[16px] leading-[1.8] font-bold italic mt-8 p-6 border-l-4 border-[#00C68A] ${isWhiteBg ? 'bg-[#F8FAFC]' : 'bg-[#1A2438]/60'}`}>
+              <p className={`font-sans text-[15px] leading-[1.8] font-bold italic mt-8 p-6 border-l-4 border-[#00C68A] ${isWhiteBg ? 'bg-[#F8FAFC]' : 'bg-[#1A2438]/60'}`}>
                 "{section.closingText}"
               </p>
             )}
@@ -737,7 +737,7 @@ export default function ServiceContentSectionTX({ service, slug, onSelectPlan })
       />
 
       {/* SECTION 1: HERO */}
-      <section className="bg-[#080D18] text-white pt-[120px] pb-[80px] relative overflow-hidden">
+      <section className="bg-[#080D18] text-white pt-[100px] pb-[80px] relative overflow-hidden">
         {/* Glowing background highlights */}
         <div className="absolute top-[-20%] left-[-10%] w-[50%] h-[60%] rounded-full bg-[rgba(0,198,138,0.04)] blur-[120px] pointer-events-none" />
         <div className="absolute bottom-[-10%] right-[-10%] w-[40%] h-[50%] rounded-full bg-[rgba(221,102,19,0.03)] blur-[120px] pointer-events-none" />
@@ -751,12 +751,12 @@ export default function ServiceContentSectionTX({ service, slug, onSelectPlan })
                 TEXAS SEO SPECIALISTS
               </span>
 
-              <h1 className="text-4xl md:text-[44px] lg:text-[48px] font-extrabold font-sora text-[#F0F4FF] leading-[1.12] mb-6 tracking-tight">
+              <h1 className="text-[30px] md:text-[36px] lg:text-[40px] font-extrabold font-sora text-[#F0F4FF] leading-[1.12] mb-6 tracking-tight">
                 {h1}
               </h1>
 
               {/* Subheadline (HTML first paragraph) strictly on hero */}
-              <p className="font-sans text-[16px] text-[#8FA8C8] leading-[1.7] mb-8 max-w-[620px]">
+              <p className="font-sans text-[15px] text-[#8FA8C8] leading-[1.7] mb-8 max-w-[620px]">
                 {subheadline}
               </p>
 
@@ -851,11 +851,11 @@ export default function ServiceContentSectionTX({ service, slug, onSelectPlan })
               <span className="text-[#00C68A] text-[11px] font-bold uppercase tracking-[2.5px] mb-3 block font-sans">
                 WORKFLOW PIPELINE
               </span>
-              <h2 className="text-[32px] md:text-[42px] font-extrabold font-sora leading-tight text-[#F0F4FF] tracking-tight">
+              <h2 className="text-[26px] md:text-[36px] font-extrabold font-sora leading-tight text-[#F0F4FF] tracking-tight">
                 {processSection.title}
               </h2>
               {processSection.intro && (
-                <p className="font-sans text-[16px] leading-[1.8] text-[#8FA8C8] mt-4 max-w-[800px] mx-auto">
+                <p className="font-sans text-[15px] leading-[1.8] text-[#8FA8C8] mt-4 max-w-[800px] mx-auto">
                   {processSection.intro}
                 </p>
               )}
@@ -906,7 +906,7 @@ export default function ServiceContentSectionTX({ service, slug, onSelectPlan })
               <span className="text-[#00C68A] text-[11px] font-bold uppercase tracking-[2.5px] mb-3 block font-sans">
                 INDUSTRY SPECIFIC ARCHITECTURE
               </span>
-              <h2 className="text-[30px] md:text-[38px] font-extrabold font-sora leading-tight text-[#F0F4FF] tracking-tight mb-4">
+              <h2 className="text-[24px] md:text-[32px] font-extrabold font-sora leading-tight text-[#F0F4FF] tracking-tight mb-4">
                 {industriesSection.heading}
               </h2>
               {industriesSection.intro && (
@@ -950,14 +950,14 @@ export default function ServiceContentSectionTX({ service, slug, onSelectPlan })
           <div className="container mx-auto px-4 md:px-10 max-w-[1100px] relative z-10">
             <div className="max-w-[760px] mx-auto text-center space-y-6">
 
-              <h2 className="text-[32px] md:text-[44px] font-extrabold font-sora text-white leading-tight tracking-tight">
+              <h2 className="text-[26px] md:text-[36px] font-extrabold font-sora text-white leading-tight tracking-tight">
                 {ctaSection.heading}
               </h2>
 
               {ctaSection.paragraphs && ctaSection.paragraphs.map((para, idx) => (
                 <p
                   key={idx}
-                  className={`font-sans text-[16px] leading-[1.8] ${idx === 2 ? 'text-[#00C68A] font-bold text-[15px]' : 'text-[#8FA8C8]'}`}
+                  className={`font-sans text-[15px] leading-[1.8] ${idx === 2 ? 'text-[#00C68A] font-bold text-[15px]' : 'text-[#8FA8C8]'}`}
                 >
                   {para}
                 </p>
@@ -995,7 +995,7 @@ export default function ServiceContentSectionTX({ service, slug, onSelectPlan })
               <span className="text-[#00C68A] text-[11px] font-bold uppercase tracking-[2.5px] mb-3 block font-sans">
                 TEXAS MARKET FREQUENT QUESTIONS
               </span>
-              <h2 className="text-[32px] md:text-[42px] font-extrabold font-sora leading-tight text-[#F0F4FF] tracking-tight">
+              <h2 className="text-[26px] md:text-[36px] font-extrabold font-sora leading-tight text-[#F0F4FF] tracking-tight">
                 Frequently Asked Questions
               </h2>
             </div>

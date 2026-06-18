@@ -245,17 +245,17 @@ export default function ServiceContentSectionDMTX({ service, slug, onSelectPlan 
                 <div className="container mx-auto px-4 md:px-10 max-w-[1200px]">
                     <div className="text-left mb-12">
                         <span className="text-[#00C68A] text-[11px] font-bold uppercase tracking-[2.5px] mb-3 block font-sans">MARKET REALITY</span>
-                        <h2 className="text-[30px] md:text-[38px] font-extrabold font-sora leading-[1.15] text-[#0B1829] tracking-tight border-l-4 border-[#00C68A] pl-4">
+                        <h2 className="text-[24px] md:text-[32px] font-extrabold font-sora leading-[1.15] text-[#0B1829] tracking-tight border-l-4 border-[#00C68A] pl-4">
                             {sec.heading}
                         </h2>
                     </div>
                     <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
                         <div className="lg:col-span-7 space-y-6 text-left">
                             {heroContent && heroContent.map((item, idx) => (
-                                <p key={idx} className="font-sans text-[17px] leading-[1.8] text-[#1A2438] font-semibold">{item}</p>
+                                <p key={idx} className="font-sans text-[15px] leading-[1.8] text-[#1A2438] font-semibold">{item}</p>
                             ))}
                             {sec.paragraphs && sec.paragraphs.map((para, pIdx) => (
-                                <p key={pIdx} className="font-sans text-[16px] leading-[1.8] text-[#3D5A73]">{para}</p>
+                                <p key={pIdx} className="font-sans text-[15px] leading-[1.8] text-[#3D5A73]">{para}</p>
                             ))}
                         </div>
                         <div className="lg:col-span-5 space-y-5">
@@ -299,7 +299,7 @@ export default function ServiceContentSectionDMTX({ service, slug, onSelectPlan 
                             </div>
                             <div className="lg:col-span-7">
                                 <span className="text-[#00C68A] text-[11px] font-bold uppercase tracking-[2.5px] block font-sans mb-3">CORE SOLUTIONS</span>
-                                <h2 className="font-sora font-extrabold text-[28px] md:text-[36px] text-[#0B1829] mb-6 border-l-4 border-[#00C68A] pl-6">
+                                <h2 className="font-sora font-extrabold text-[22px] md:text-[30px] text-[#0B1829] mb-6 border-l-4 border-[#00C68A] pl-6">
                                     {sec.heading}
                                 </h2>
                                 {sec.paragraphs && sec.paragraphs.map((para, idx) => (
@@ -353,13 +353,13 @@ export default function ServiceContentSectionDMTX({ service, slug, onSelectPlan 
                             SERVICE {serviceNumberFormatted}
                         </span>
                         
-                        <h2 className={`text-[30px] md:text-[36px] font-extrabold font-sora leading-[1.2] mb-8 tracking-tight border-l-4 border-[#00C68A] pl-4 ${titleClass}`}>
+                        <h2 className={`text-[24px] md:text-[30px] font-extrabold font-sora leading-[1.2] mb-8 tracking-tight border-l-4 border-[#00C68A] pl-4 ${titleClass}`}>
                             {displayHeading}
                         </h2>
 
                         <div className="space-y-6 text-left mb-8">
                             {sec.paragraphs && sec.paragraphs.map((para, pIdx) => (
-                                <p key={pIdx} className="font-sans text-[16px] leading-[1.8] font-normal">{para}</p>
+                                <p key={pIdx} className="font-sans text-[15px] leading-[1.8] font-normal">{para}</p>
                             ))}
                         </div>
 
@@ -441,7 +441,7 @@ export default function ServiceContentSectionDMTX({ service, slug, onSelectPlan 
                     <span className="bg-[rgba(0,198,138,0.08)] border border-[rgba(0,198,138,0.20)] text-[#00C68A] text-[11px] font-extrabold uppercase tracking-[2.5px] rounded-full py-[6px] px-[16px] mb-6 inline-flex font-sans leading-none">
                         CASE STUDIES
                     </span>
-                    <h2 className="font-sora font-extrabold text-[32px] md:text-[40px] text-[#0B1829] mb-6 max-w-[820px] mx-auto">
+                    <h2 className="font-sora font-extrabold text-[26px] md:text-[34px] text-[#0B1829] mb-6 max-w-[820px] mx-auto">
                         {sec.heading}
                     </h2>
                     {sec.paragraphs && sec.paragraphs.map((para, idx) => (
@@ -481,7 +481,7 @@ export default function ServiceContentSectionDMTX({ service, slug, onSelectPlan 
                             <div className="h-[1px] w-12 bg-[#00C68A]/30" />
                         </div>
 
-                        <h3 className={`text-[26px] md:text-[32px] font-extrabold font-sora ${titleClass} leading-tight mb-8 tracking-tight max-w-[1000px] text-left`}>
+                        <h3 className={`text-[22px] md:text-[26px] font-extrabold font-sora ${titleClass} leading-tight mb-8 tracking-tight max-w-[1000px] text-left`}>
                             {sec.heading}
                         </h3>
 
@@ -521,7 +521,7 @@ export default function ServiceContentSectionDMTX({ service, slug, onSelectPlan 
                                     {sec.bullets.map((bullet, idx) => (
                                         <li key={idx} className="flex items-start gap-3">
                                             <span className="text-[#00C68A] text-[18px] mt-1">▸</span>
-                                            <span className={`font-sans text-[16px] leading-[1.7] font-medium ${isDark ? 'text-[#F0F4FF]' : 'text-[#0B1829]'}`}>{bullet}</span>
+                                            <span className={`font-sans text-[15px] leading-[1.7] font-medium ${isDark ? 'text-[#F0F4FF]' : 'text-[#0B1829]'}`}>{bullet}</span>
                                         </li>
                                     ))}
                                 </ul>
@@ -557,11 +557,11 @@ export default function ServiceContentSectionDMTX({ service, slug, onSelectPlan 
                     <span className="bg-[rgba(0,198,138,0.08)] border border-[rgba(0,198,138,0.20)] text-[#00C68A] text-[11px] font-extrabold uppercase tracking-[2.5px] rounded-full py-[6px] px-[16px] mb-6 inline-flex font-sans leading-none">
                         CLIENT REVIEWS
                     </span>
-                    <h2 className="text-[32px] md:text-[40px] text-[#0B1829] font-extrabold font-sora leading-tight mb-12 tracking-tight max-w-[800px] mx-auto">
+                    <h2 className="text-[26px] md:text-[34px] text-[#0B1829] font-extrabold font-sora leading-tight mb-12 tracking-tight max-w-[800px] mx-auto">
                         {sec.heading}
                     </h2>
                     {sec.paragraphs && sec.paragraphs.map((para, pIdx) => (
-                        <p key={pIdx} className="font-sans text-[16px] leading-[1.8] text-[#3D5A73] max-w-[800px] mx-auto mb-6">{para}</p>
+                        <p key={pIdx} className="font-sans text-[15px] leading-[1.8] text-[#3D5A73] max-w-[800px] mx-auto mb-6">{para}</p>
                     ))}
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                         {sec.bullets && sec.bullets.map((bullet, bIdx) => {
@@ -588,11 +588,11 @@ export default function ServiceContentSectionDMTX({ service, slug, onSelectPlan 
             <section key={`${sec.heading || 'industries'}-${index}`} className="bg-white py-[96px] relative z-10 border-t border-[#E3EEF7] text-left">
                 <div className="container mx-auto px-4 md:px-10 max-w-[1200px]">
                     <span className="text-[#00C68A] text-[11px] font-bold uppercase tracking-[2.5px] block font-sans mb-3">VERTICAL EXPERTISE</span>
-                    <h2 className="text-[26px] md:text-[34px] font-extrabold font-sora leading-[1.18] mb-6 tracking-tight border-l-4 border-[#00C68A] pl-4 text-[#0B1829]">
+                    <h2 className="text-[22px] md:text-[28px] font-extrabold font-sora leading-[1.18] mb-6 tracking-tight border-l-4 border-[#00C68A] pl-4 text-[#0B1829]">
                         {sec.heading}
                     </h2>
                     {sec.paragraphs && sec.paragraphs.map((para, idx) => (
-                        <p key={idx} className="font-sans text-[16px] leading-[1.8] mb-8 font-normal text-[#3D5A73] max-w-[800px]">
+                        <p key={idx} className="font-sans text-[15px] leading-[1.8] mb-8 font-normal text-[#3D5A73] max-w-[800px]">
                             {para}
                         </p>
                     ))}
@@ -624,11 +624,11 @@ export default function ServiceContentSectionDMTX({ service, slug, onSelectPlan 
                     <div className="grid grid-cols-1 lg:grid-cols-12 gap-10">
                         <div className="lg:col-span-5">
                             <span className="text-[#00C68A] text-[11px] font-bold uppercase tracking-[2.5px] block font-sans mb-3">TEXAS CITY-LEVEL EXPERTISE</span>
-                            <h2 className="text-[26px] md:text-[34px] font-extrabold font-sora leading-[1.18] mb-6 tracking-tight border-l-4 border-[#00C68A] pl-4 text-[#F0F4FF]">
+                            <h2 className="text-[22px] md:text-[28px] font-extrabold font-sora leading-[1.18] mb-6 tracking-tight border-l-4 border-[#00C68A] pl-4 text-[#F0F4FF]">
                                 {sec.heading}
                             </h2>
                             {sec.paragraphs && sec.paragraphs.map((para, idx) => (
-                                <p key={idx} className="font-sans text-[16px] leading-[1.8] mb-8 font-normal text-[#8FA8C8]">
+                                <p key={idx} className="font-sans text-[15px] leading-[1.8] mb-8 font-normal text-[#8FA8C8]">
                                     {para}
                                 </p>
                             ))}
@@ -669,12 +669,12 @@ export default function ServiceContentSectionDMTX({ service, slug, onSelectPlan 
                 <div className="container mx-auto px-4 md:px-10 max-w-[1200px]">
                     <div className="max-w-[880px] mx-auto">
                         <span className="text-[#00C68A] text-[11px] font-bold uppercase tracking-[2.5px] block font-sans mb-3">EXPERTISE</span>
-                        <h2 className="text-[26px] md:text-[34px] font-extrabold font-sora leading-[1.18] mb-6 tracking-tight border-l-4 border-[#00C68A] pl-4 text-[#F0F4FF]">
+                        <h2 className="text-[22px] md:text-[28px] font-extrabold font-sora leading-[1.18] mb-6 tracking-tight border-l-4 border-[#00C68A] pl-4 text-[#F0F4FF]">
                             {sec.heading}
                         </h2>
                         <div className="space-y-6 mb-10">
                             {sec.paragraphs && sec.paragraphs.map((para, pIdx) => (
-                                <p key={pIdx} className="font-sans text-[16px] leading-[1.8] font-normal text-[#8FA8C8]">{para}</p>
+                                <p key={pIdx} className="font-sans text-[15px] leading-[1.8] font-normal text-[#8FA8C8]">{para}</p>
                             ))}
                         </div>
 
@@ -713,11 +713,11 @@ export default function ServiceContentSectionDMTX({ service, slug, onSelectPlan 
                 <div className="container mx-auto px-4 md:px-10 max-w-[1200px]">
                     <div className="max-w-[880px] mx-auto">
                         <span className="text-[#00C68A] text-[11px] font-bold uppercase tracking-[2.5px] block font-sans mb-3">ADDITIONAL INFO</span>
-                        <h2 className={`text-[26px] md:text-[34px] font-extrabold font-sora leading-[1.18] mb-6 tracking-tight border-l-4 border-[#00C68A] pl-4 ${titleClass}`}>
+                        <h2 className={`text-[22px] md:text-[28px] font-extrabold font-sora leading-[1.18] mb-6 tracking-tight border-l-4 border-[#00C68A] pl-4 ${titleClass}`}>
                             {sec.heading}
                         </h2>
                         {sec.paragraphs && sec.paragraphs.map((para, pIdx) => (
-                            <p key={pIdx} className="font-sans text-[16px] leading-[1.8] mb-6">{para}</p>
+                            <p key={pIdx} className="font-sans text-[15px] leading-[1.8] mb-6">{para}</p>
                         ))}
 
                         {sec.bullets && (
@@ -852,7 +852,7 @@ export default function ServiceContentSectionDMTX({ service, slug, onSelectPlan 
             `}</style>
 
             {/* SECTION 1: HERO */}
-            <section className="bg-[#080D18] text-white pt-[120px] pb-[80px] relative overflow-hidden">
+            <section className="bg-[#080D18] text-white pt-[100px] pb-[80px] relative overflow-hidden">
                 <div className="absolute top-[-20%] left-[-10%] w-[50%] h-[60%] rounded-full bg-[rgba(0,198,138,0.04)] blur-[120px] pointer-events-none" />
                 <div className="absolute bottom-[-10%] right-[-10%] w-[40%] h-[50%] rounded-full bg-[rgba(221,102,19,0.03)] blur-[120px] pointer-events-none" />
 
@@ -865,11 +865,11 @@ export default function ServiceContentSectionDMTX({ service, slug, onSelectPlan 
                                 TEXAS DIGITAL MARKETING
                             </span>
 
-                            <h1 className="text-4xl md:text-[44px] lg:text-[48px] font-extrabold font-sora text-[#F0F4FF] leading-[1.12] mb-6 tracking-tight">
+                            <h1 className="text-[30px] md:text-[36px] lg:text-[40px] font-extrabold font-sora text-[#F0F4FF] leading-[1.12] mb-6 tracking-tight">
                                 {h1}
                             </h1>
 
-                            <p className="font-sans text-[16px] text-[#8FA8C8] leading-[1.7] mb-8 max-w-[620px]">
+                            <p className="font-sans text-[15px] text-[#8FA8C8] leading-[1.7] mb-8 max-w-[620px]">
                                 {subheadline}
                             </p>
 
@@ -915,7 +915,7 @@ export default function ServiceContentSectionDMTX({ service, slug, onSelectPlan 
                                     const card = parseTrustCard(item);
                                     return (
                                         <div key={idx} className="bg-[#1A2438]/90 backdrop-blur-md border border-[rgba(255,255,255,0.1)] rounded-[16px] p-6 shadow-2xl flex flex-col items-center text-center justify-center min-h-[140px] transition-all duration-300 hover:translate-y-[-4px]">
-                                            <div className="text-[#00C68A] font-sora font-extrabold text-[24px] sm:text-[28px] md:text-[32px] mb-2 leading-none">{card.value}</div>
+                                            <div className="text-[#00C68A] font-sora font-extrabold text-[24px] sm:text-[22px] md:text-[26px] mb-2 leading-none">{card.value}</div>
                                             <div className="text-[#F0F4FF] font-sans text-[11px] sm:text-[12px] md:text-[13px] font-medium leading-relaxed">{card.label}</div>
                                         </div>
                                     );
@@ -933,7 +933,7 @@ export default function ServiceContentSectionDMTX({ service, slug, onSelectPlan 
             {processSection && processSection.steps && (
                 <section className="bg-white py-[96px] relative z-10 border-t border-[#E3EEF7] text-left">
                     <div className="container mx-auto px-4 md:px-10 max-w-[1200px]">
-                        <h2 className="font-sora font-extrabold text-[32px] md:text-[40px] text-[#0B1829] mb-6 text-center">
+                        <h2 className="font-sora font-extrabold text-[26px] md:text-[34px] text-[#0B1829] mb-6 text-center">
                             {processSection.title}
                         </h2>
                         {processSection.intro && (
@@ -976,7 +976,7 @@ export default function ServiceContentSectionDMTX({ service, slug, onSelectPlan 
             {faqs && faqs.length > 0 && (
                 <section className="bg-[#0C1220] py-[96px] relative z-10 border-t border-[rgba(255,255,255,0.04)]">
                     <div className="container mx-auto px-4 md:px-10 max-w-[900px]">
-                        <h2 className="font-sora font-extrabold text-[32px] md:text-[40px] text-[#F0F4FF] mb-12 text-center">
+                        <h2 className="font-sora font-extrabold text-[26px] md:text-[34px] text-[#F0F4FF] mb-12 text-center">
                             Frequently Asked Questions
                         </h2>
 
@@ -1015,7 +1015,7 @@ export default function ServiceContentSectionDMTX({ service, slug, onSelectPlan 
                     <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full bg-[#00C68A]/5 blur-[120px] pointer-events-none" />
 
                     <div className="container mx-auto px-4 md:px-10 max-w-[900px] relative z-10 text-center">
-                        <h2 className="font-sora font-extrabold text-[36px] md:text-[48px] text-[#0B1829] mb-6">
+                        <h2 className="font-sora font-extrabold text-[28px] md:text-[36px] text-[#0B1829] mb-6">
                             {ctaSection.heading}
                         </h2>
 

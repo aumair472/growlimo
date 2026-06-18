@@ -93,7 +93,7 @@ export default function ServiceContentSectionPPCCA({ service, slug, onSelectPlan
       `}</style>
 
             {/* SECTION 1: HERO */}
-            <section className="bg-[#080D18] text-white pt-[120px] pb-[80px] relative overflow-hidden">
+            <section className="bg-[#080D18] text-white pt-[100px] pb-[80px] relative overflow-hidden">
                 <div className="absolute top-[-20%] left-[-10%] w-[50%] h-[60%] rounded-full bg-[rgba(0,198,138,0.04)] blur-[120px] pointer-events-none" />
                 <div className="absolute bottom-[-10%] right-[-10%] w-[40%] h-[50%] rounded-full bg-[rgba(221,102,19,0.03)] blur-[120px] pointer-events-none" />
 
@@ -106,11 +106,11 @@ export default function ServiceContentSectionPPCCA({ service, slug, onSelectPlan
                                 PPC MANAGEMENT CALIFORNIA
                             </span>
 
-                            <h1 className="text-4xl md:text-[44px] lg:text-[48px] font-extrabold font-sora text-[#F0F4FF] leading-[1.12] mb-6 tracking-tight">
+                            <h1 className="text-[30px] md:text-[36px] lg:text-[40px] font-extrabold font-sora text-[#F0F4FF] leading-[1.12] mb-6 tracking-tight">
                                 {h1}
                             </h1>
 
-                            <p className="font-sans text-[16px] text-[#8FA8C8] leading-[1.7] mb-8 max-w-[620px]">
+                            <p className="font-sans text-[15px] text-[#8FA8C8] leading-[1.7] mb-8 max-w-[620px]">
                                 {subheadline}
                             </p>
 
@@ -174,7 +174,7 @@ export default function ServiceContentSectionPPCCA({ service, slug, onSelectPlan
             {/* SECTION 3: WHY PPC IS DIFFERENT - WHITE BG */}
             <section className="bg-white py-[96px]">
                 <div className="container mx-auto px-4 md:px-10 max-w-[1200px]">
-                    <h2 className="font-sora font-extrabold text-[32px] md:text-[40px] text-[#0B1829] mb-2 border-l-4 border-[#00C68A] pl-6">
+                    <h2 className="font-sora font-extrabold text-[26px] md:text-[34px] text-[#0B1829] mb-2 border-l-4 border-[#00C68A] pl-6">
                         {whyPPCDifferent.heading}
                     </h2>
 
@@ -204,7 +204,7 @@ export default function ServiceContentSectionPPCCA({ service, slug, onSelectPlan
             {/* SECTION 4: 8 MISTAKES - DARK BG */}
             <section className="bg-[#0C1220] py-[96px]">
                 <div className="container mx-auto px-4 md:px-10 max-w-[1200px]">
-                    <h2 className="font-sora font-extrabold text-[32px] md:text-[40px] text-[#F0F4FF] mb-6 border-l-4 border-[#00C68A] pl-6">
+                    <h2 className="font-sora font-extrabold text-[26px] md:text-[34px] text-[#F0F4FF] mb-6 border-l-4 border-[#00C68A] pl-6">
                         {eightMistakes.heading}
                     </h2>
                     {eightMistakes.paragraphs && eightMistakes.paragraphs.map((para, idx) => (
@@ -232,7 +232,7 @@ export default function ServiceContentSectionPPCCA({ service, slug, onSelectPlan
             {/* SECTION 5: SERVICES INTRO - WHITE BG */}
             <section className="bg-white py-[96px]">
                 <div className="container mx-auto px-4 md:px-10 max-w-[1200px]">
-                    <h2 className="font-sora font-extrabold text-[32px] md:text-[40px] text-[#0B1829] mb-6 border-l-4 border-[#00C68A] pl-6">
+                    <h2 className="font-sora font-extrabold text-[26px] md:text-[34px] text-[#0B1829] mb-6 border-l-4 border-[#00C68A] pl-6">
                         {servicesIntro.heading}
                     </h2>
                     {servicesIntro.paragraphs && servicesIntro.paragraphs.map((para, idx) => (
@@ -251,7 +251,7 @@ export default function ServiceContentSectionPPCCA({ service, slug, onSelectPlan
                             <img src={strategyImg} alt="Google Search Campaign Strategy" className="rounded-[16px] shadow-2xl w-full" />
                         </div>
                         <div>
-                            <h2 className="font-sora font-extrabold text-[28px] md:text-[36px] text-[#F0F4FF] mb-6 border-l-4 border-[#00C68A] pl-6">
+                            <h2 className="font-sora font-extrabold text-[22px] md:text-[30px] text-[#F0F4FF] mb-6 border-l-4 border-[#00C68A] pl-6">
                                 {googleSearchCampaigns.heading}
                             </h2>
                             {googleSearchCampaigns.paragraphs && googleSearchCampaigns.paragraphs.map((para, idx) => (
@@ -267,7 +267,7 @@ export default function ServiceContentSectionPPCCA({ service, slug, onSelectPlan
             {/* SECTION 7: PERFORMANCE MAX - WHITE BG */}
             <section className="bg-white py-[96px]">
                 <div className="container mx-auto px-4 md:px-10 max-w-[1200px]">
-                    <h2 className="font-sora font-extrabold text-[28px] md:text-[36px] text-[#0B1829] mb-6 border-l-4 border-[#00C68A] pl-6">
+                    <h2 className="font-sora font-extrabold text-[22px] md:text-[30px] text-[#0B1829] mb-6 border-l-4 border-[#00C68A] pl-6">
                         {performanceMax.heading}
                     </h2>
                     {performanceMax.paragraphs && performanceMax.paragraphs.map((para, idx) => (
@@ -281,7 +281,7 @@ export default function ServiceContentSectionPPCCA({ service, slug, onSelectPlan
             {/* SECTION 8: REMARKETING - DARK BG */}
             <section className="bg-[#0C1220] py-[96px]">
                 <div className="container mx-auto px-4 md:px-10 max-w-[1200px]">
-                    <h2 className="font-sora font-extrabold text-[28px] md:text-[36px] text-[#F0F4FF] mb-6 border-l-4 border-[#00C68A] pl-6">
+                    <h2 className="font-sora font-extrabold text-[22px] md:text-[30px] text-[#F0F4FF] mb-6 border-l-4 border-[#00C68A] pl-6">
                         {remarketing.heading}
                     </h2>
                     {remarketing.paragraphs && remarketing.paragraphs.map((para, idx) => (
@@ -312,7 +312,7 @@ export default function ServiceContentSectionPPCCA({ service, slug, onSelectPlan
             {/* SECTION 10: SHOPPING CAMPAIGNS - WHITE BG */}
             <section className="bg-white py-[96px]">
                 <div className="container mx-auto px-4 md:px-10 max-w-[1200px]">
-                    <h2 className="font-sora font-extrabold text-[28px] md:text-[36px] text-[#0B1829] mb-6 border-l-4 border-[#00C68A] pl-6">
+                    <h2 className="font-sora font-extrabold text-[22px] md:text-[30px] text-[#0B1829] mb-6 border-l-4 border-[#00C68A] pl-6">
                         {googleShopping.heading}
                     </h2>
                     {googleShopping.paragraphs && googleShopping.paragraphs.map((para, idx) => (
@@ -366,7 +366,7 @@ export default function ServiceContentSectionPPCCA({ service, slug, onSelectPlan
                 <div className="container mx-auto px-4 md:px-10 max-w-[1200px]">
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                         <div>
-                            <h2 className="font-sora font-extrabold text-[28px] md:text-[36px] text-[#0B1829] mb-6 border-l-4 border-[#00C68A] pl-6">
+                            <h2 className="font-sora font-extrabold text-[22px] md:text-[30px] text-[#0B1829] mb-6 border-l-4 border-[#00C68A] pl-6">
                                 {landingPages.heading}
                             </h2>
                             {landingPages.paragraphs && landingPages.paragraphs.map((para, idx) => (
@@ -400,7 +400,7 @@ export default function ServiceContentSectionPPCCA({ service, slug, onSelectPlan
             {/* SECTION 13: CASE STUDIES INTRO - DARK BG */}
             <section className="bg-[#0C1220] py-[96px]">
                 <div className="container mx-auto px-4 md:px-10 max-w-[1200px]">
-                    <h2 className="font-sora font-extrabold text-[32px] md:text-[40px] text-[#F0F4FF] mb-6 border-l-4 border-[#00C68A] pl-6 text-center">
+                    <h2 className="font-sora font-extrabold text-[26px] md:text-[34px] text-[#F0F4FF] mb-6 border-l-4 border-[#00C68A] pl-6 text-center">
                         {caseStudiesIntro.heading}
                     </h2>
                     {caseStudiesIntro.paragraphs && caseStudiesIntro.paragraphs.map((para, idx) => (
@@ -414,7 +414,7 @@ export default function ServiceContentSectionPPCCA({ service, slug, onSelectPlan
             {/* SECTION 14: CASE STUDY 1 - WHITE BG */}
             <section className="bg-white py-[96px]">
                 <div className="container mx-auto px-4 md:px-10 max-w-[1200px]">
-                    <h3 className="font-sora font-extrabold text-[28px] md:text-[32px] text-[#0B1829] mb-6 text-center">
+                    <h3 className="font-sora font-extrabold text-[22px] md:text-[26px] text-[#0B1829] mb-6 text-center">
                         {caseStudy1.heading}
                     </h3>
                     {caseStudy1.image && (
@@ -446,7 +446,7 @@ export default function ServiceContentSectionPPCCA({ service, slug, onSelectPlan
             {/* SECTION 15: CASE STUDY 2 - DARK BG */}
             <section className="bg-[#0C1220] py-[96px]">
                 <div className="container mx-auto px-4 md:px-10 max-w-[1200px]">
-                    <h3 className="font-sora font-extrabold text-[28px] md:text-[32px] text-[#F0F4FF] mb-6 text-center">
+                    <h3 className="font-sora font-extrabold text-[22px] md:text-[26px] text-[#F0F4FF] mb-6 text-center">
                         {caseStudy2.heading}
                     </h3>
                     {caseStudy2.image && (
@@ -478,7 +478,7 @@ export default function ServiceContentSectionPPCCA({ service, slug, onSelectPlan
             {/* SECTION 16: CASE STUDY 3 - WHITE BG */}
             <section className="bg-white py-[96px]">
                 <div className="container mx-auto px-4 md:px-10 max-w-[1200px]">
-                    <h3 className="font-sora font-extrabold text-[28px] md:text-[32px] text-[#0B1829] mb-6 text-center">
+                    <h3 className="font-sora font-extrabold text-[22px] md:text-[26px] text-[#0B1829] mb-6 text-center">
                         {caseStudy3.heading}
                     </h3>
                     {caseStudy3.image && (
@@ -525,7 +525,7 @@ export default function ServiceContentSectionPPCCA({ service, slug, onSelectPlan
             {/* SECTION 18: INDUSTRIES - DARK BG */}
             <section className="bg-[#0C1220] py-[96px]">
                 <div className="container mx-auto px-4 md:px-10 max-w-[1200px]">
-                    <h2 className="font-sora font-extrabold text-[32px] md:text-[40px] text-[#F0F4FF] mb-6 border-l-4 border-[#00C68A] pl-6">
+                    <h2 className="font-sora font-extrabold text-[26px] md:text-[34px] text-[#F0F4FF] mb-6 border-l-4 border-[#00C68A] pl-6">
                         {industries.heading}
                     </h2>
                     {industries.paragraphs && industries.paragraphs.map((para, idx) => (
@@ -548,7 +548,7 @@ export default function ServiceContentSectionPPCCA({ service, slug, onSelectPlan
             {/* SECTION 19: LOCATIONS - WHITE BG */}
             <section className="bg-white py-[96px]">
                 <div className="container mx-auto px-4 md:px-10 max-w-[1200px]">
-                    <h2 className="font-sora font-extrabold text-[32px] md:text-[40px] text-[#0B1829] mb-6 border-l-4 border-[#00C68A] pl-6">
+                    <h2 className="font-sora font-extrabold text-[26px] md:text-[34px] text-[#0B1829] mb-6 border-l-4 border-[#00C68A] pl-6">
                         {locations.heading}
                     </h2>
                     {locations.paragraphs && locations.paragraphs.map((para, idx) => (
@@ -572,7 +572,7 @@ export default function ServiceContentSectionPPCCA({ service, slug, onSelectPlan
             {/* SECTION 20: PROCESS - DARK BG */}
             <section className="bg-[#0C1220] py-[96px]">
                 <div className="container mx-auto px-4 md:px-10 max-w-[1200px]">
-                    <h2 className="font-sora font-extrabold text-[32px] md:text-[40px] text-[#F0F4FF] mb-6 text-center">
+                    <h2 className="font-sora font-extrabold text-[26px] md:text-[34px] text-[#F0F4FF] mb-6 text-center">
                         {processSection.title}
                     </h2>
                     {processSection.intro && (
@@ -613,7 +613,7 @@ export default function ServiceContentSectionPPCCA({ service, slug, onSelectPlan
             {/* SECTION 21: EXPERTISE - WHITE BG */}
             <section className="bg-white py-[96px]">
                 <div className="container mx-auto px-4 md:px-10 max-w-[1200px]">
-                    <h2 className="font-sora font-extrabold text-[32px] md:text-[40px] text-[#0B1829] mb-6 border-l-4 border-[#00C68A] pl-6">
+                    <h2 className="font-sora font-extrabold text-[26px] md:text-[34px] text-[#0B1829] mb-6 border-l-4 border-[#00C68A] pl-6">
                         {expertise.heading}
                     </h2>
                     {expertise.paragraphs && expertise.paragraphs.map((para, idx) => (
@@ -627,7 +627,7 @@ export default function ServiceContentSectionPPCCA({ service, slug, onSelectPlan
             {/* SECTION 22: TESTIMONIALS - DARK BG */}
             <section className="bg-[#0C1220] py-[96px]">
                 <div className="container mx-auto px-4 md:px-10 max-w-[1200px]">
-                    <h2 className="font-sora font-extrabold text-[32px] md:text-[40px] text-[#F0F4FF] mb-12 text-center">
+                    <h2 className="font-sora font-extrabold text-[26px] md:text-[34px] text-[#F0F4FF] mb-12 text-center">
                         {testimonials.heading}
                     </h2>
 
@@ -654,7 +654,7 @@ export default function ServiceContentSectionPPCCA({ service, slug, onSelectPlan
             {/* SECTION 23: FAQ - WHITE BG */}
             <section className="bg-white py-[96px]">
                 <div className="container mx-auto px-4 md:px-10 max-w-[900px]">
-                    <h2 className="font-sora font-extrabold text-[32px] md:text-[40px] text-[#0B1829] mb-12 text-center">
+                    <h2 className="font-sora font-extrabold text-[26px] md:text-[34px] text-[#0B1829] mb-12 text-center">
                         Frequently Asked Questions
                     </h2>
 
@@ -691,7 +691,7 @@ export default function ServiceContentSectionPPCCA({ service, slug, onSelectPlan
                 <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full bg-[#00C68A]/5 blur-[120px] pointer-events-none" />
 
                 <div className="container mx-auto px-4 md:px-10 max-w-[900px] relative z-10 text-center">
-                    <h2 className="font-sora font-extrabold text-[36px] md:text-[48px] text-[#F0F4FF] mb-6">
+                    <h2 className="font-sora font-extrabold text-[28px] md:text-[36px] text-[#F0F4FF] mb-6">
                         {ctaSection.heading}
                     </h2>
 
