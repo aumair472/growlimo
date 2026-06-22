@@ -25,7 +25,7 @@
     {
       "heading": "Why California Businesses Choose GrowLimo",
       "paragraphs": [
-        "There are hundreds of SEO agencies claiming to serve California. Most offer generic packages, automated reports, and outsourced work. GrowLimo is built differently — every client gets a senior SEO strategist, a custom-built strategy, and accountability to real business metrics."
+        "Among hundreds of SEO agencies and SEO firms California businesses evaluate each year, most offer generic packages, automated reports, and outsourced work. GrowLimo is built differently — every client gets a senior SEO strategist, a custom-built strategy, and accountability to real business metrics."
       ],
       "bullets": [
         "Proven Top-3 Rankings — We have delivered first-page rankings for clients in Los Angeles, San Francisco, San Diego, Sacramento, and San Jose across healthcare, legal, real estate, eCommerce, and B2B industries",
@@ -33,13 +33,13 @@
         "California Market Expertise — We understand the geo-specific search behavior, industry competition, and Google local algorithm signals that drive rankings in California cities",
         "No Long-Term Lock-In Contracts — We earn your business every month through performance. Our clients stay because of results, not contracts",
         "Transparent Monthly Reporting — You receive a detailed report every month showing rankings, organic traffic growth, leads from search, and clear ROI data",
-        "Dedicated SEO Strategist — You work directly with one expert who knows your business, your competitors, and your California market — not a rotating support queue"
+        "Dedicated SEO Strategist — As your SEO consultant California partner, you work directly with one expert who knows your business, your competitors, and your California market — not a rotating support queue"
       ]
     },
     {
-      "heading": "Our California SEO Services",
+      "heading": "Our SEO Company California Services",
       "paragraphs": [
-        "We offer a comprehensive suite of SEO services designed to address every factor Google uses to rank websites in the California market. From technical foundations to content authority, here is how we get your business to Page 1:"
+        "We offer a comprehensive suite of SEO services California businesses need to rank — designed to address every factor Google uses to rank websites in the California market. From technical foundations to content authority, here is how we get your business to Page 1:"
       ]
     },
     {
@@ -161,7 +161,7 @@
     {
       "heading": "California SEO Pricing — Transparent, Flexible Packages",
       "paragraphs": [
-        "We believe in transparent pricing. The cost of SEO in California varies based on market competitiveness, the number of locations you serve, and the scope of work required. Here is an overview of our core packages:"
+        "We believe in transparent pricing. As an SEO company California businesses trust for measurable results, we tailor every package to your market competitiveness, the number of locations you serve, and the scope of work required. Here is an overview of our core SEO services California pricing:"
       ],
       "bullets": [
         "Local SEO Starter (Starting From $799/month) — Best For: Single-location small businesses. Includes: Technical audit, GBP optimization, 5 on-page optimizations, local citations, monthly reporting.",
@@ -171,9 +171,9 @@
       "closingText": "All packages include a free onboarding SEO audit, a dedicated account strategist, and detailed monthly performance reporting. No long-term contracts required."
     },
     {
-      "heading": "About GrowLimo — Your California SEO Experts",
+      "heading": "About GrowLimo — Your Trusted SEO Consultant California",
       "paragraphs": [
-        "GrowLimo is a full-service digital marketing agency specializing in SEO for competitive US markets. Our SEO team combines over 10 years of combined experience in technical SEO, content strategy, and authority link building — with a specific focus on California's unique and demanding search landscape.",
+        "GrowLimo is a full-service SEO company California businesses rely on for competitive US markets. Our SEO team combines over 10 years of combined experience in technical SEO, content strategy, and authority link building — with a specific focus on California's unique and demanding search landscape.",
         "We have worked with businesses from solo practitioners to multi-location franchises, in industries from healthcare to law to eCommerce — and we bring that depth of California market knowledge to every campaign we run. Our approach is grounded in Google's EEAT principles (Experience, Expertise, Authoritativeness, and Trustworthiness) — meaning every strategy we build is designed not just to rank, but to earn lasting, algorithm-resistant authority for your brand."
       ]
     }
@@ -277,22 +277,135 @@
     "/images/services/link-building.webp",
     "/images/services/california-results-banner.webp"
   ],
-  "schema": {
-    "@context": "https://schema.org",
-    "@type": "ProfessionalService",
-    "name": "GrowLimo SEO Services California",
-    "url": "https://growlimo.com/seo-services-california/",
-    "description": "GrowLimo provides expert SEO services across California including Los Angeles, San Francisco, San Diego, and Sacramento. We help businesses rank on Page 1 of Google.",
-    "areaServed": {
-      "@type": "State",
-      "name": "California"
+  "schema": [
+    {
+      "@type": "ProfessionalService",
+      "name": "GrowLimo SEO Services California",
+      "url": "https://growlimo.com/seo-services-california/",
+      "description": "GrowLimo provides expert SEO services across California including Los Angeles, San Francisco, San Diego, and Sacramento. We help businesses rank on Page 1 of Google.",
+      "areaServed": {
+        "@type": "State",
+        "name": "California"
+      },
+      "serviceType": "SEO Services",
+      "offers": {
+        "@type": "Offer",
+        "priceCurrency": "USD",
+        "price": "799",
+        "description": "California SEO programs starting from $799/month"
+      }
     },
-    "serviceType": "SEO Services",
-    "offers": {
-      "@type": "Offer",
-      "priceCurrency": "USD",
-      "price": "799",
-      "description": "California SEO Services starting from $799/month"
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://growlimo.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "SEO Services California",
+          "item": "https://growlimo.com/seo-services-california/"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How long does SEO take to show results in California?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Most California businesses start seeing measurable ranking improvements within 60–90 days. Highly competitive niches like legal, medical, and real estate typically take 4–6 months to reach Page 1. SEO is a long-term investment with compounding returns — the longer you invest, the stronger your rankings and the lower your cost-per-lead becomes compared to paid advertising. Unlike Google Ads, organic rankings continue delivering traffic even when you're not actively spending."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you offer local SEO for specific California cities?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. We create dedicated, fully optimized landing pages for every California city and neighborhood you want to rank in — including Los Angeles, San Francisco, San Diego, Sacramento, San Jose, Fresno, Long Beach, Oakland, Anaheim, Riverside, Bakersfield, and more. Each page is written with unique, location-specific content to avoid duplicate content penalties and maximize local relevance."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What makes GrowLimo different from other California SEO agencies?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Unlike agencies that rely on generic templates and junior outsourced teams, every GrowLimo strategy is built from scratch by a senior SEO strategist with deep California market expertise. We combine technical SEO, authoritative content creation, and white-hat link building into one unified system — and we report on real business outcomes (leads, revenue) not just vanity metrics like keyword impressions."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much do SEO services cost in California?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Our California SEO packages start at $799/month for local SEO, $1,499/month for growth SEO, and $2,999/month for enterprise and multi-location SEO. All packages include a dedicated strategist and monthly reporting."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you provide monthly SEO reports?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Every client receives a detailed monthly report covering keyword rankings, organic traffic growth, backlink profile updates, and conversion data — always tied back to measurable business outcomes."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can you help if my website was penalized by Google?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Absolutely. We perform full Google penalty audits, disavow toxic backlinks, fix technical violations, and execute recovery strategies. Most clients see full recovery within 3–6 months depending on the penalty type."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "Service",
+      "name": "SEO Services California",
+      "provider": {
+        "@id": "https://growlimo.com/#organization"
+      },
+      "areaServed": "California"
+    },
+    {
+      "@type": "WebPage",
+      "name": "SEO Services California",
+      "url": "https://growlimo.com/seo-services-california/",
+      "description": "GrowLimo delivers expert SEO services across California — Los Angeles, San Francisco, San Diego & beyond. 100+ businesses ranked on Page 1. Get your free audit today."
+    },
+    {
+      "@type": "ImageObject",
+      "contentUrl": "https://growlimo.com/images/services/hero-seo-california.webp",
+      "caption": "California SEO services hero — GrowLimo ranking results"
+    },
+    {
+      "@type": "ImageObject",
+      "contentUrl": "https://growlimo.com/images/services/strategy-planning.webp",
+      "caption": "SEO strategy and planning for California businesses"
+    },
+    {
+      "@type": "ImageObject",
+      "contentUrl": "https://growlimo.com/images/services/keyword-research.webp",
+      "caption": "Keyword research for California SEO campaigns"
+    },
+    {
+      "@type": "LocalBusiness",
+      "name": "GrowLimo",
+      "telephone": "+1-724-750-6935",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "7917 Mountain Rd NE",
+        "addressLocality": "Albuquerque",
+        "addressRegion": "NM",
+        "postalCode": "87110",
+        "addressCountry": "US"
+      }
     }
-  }
+  ]
 }
