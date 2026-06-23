@@ -142,6 +142,12 @@ export default function SEO({
         }}
       />
       <Head>
+        {canonicalUrl && (
+          <>
+            <link rel="alternate" hrefLang="en-US" href={canonicalUrl} />
+            <link rel="alternate" hrefLang="x-default" href={canonicalUrl} />
+          </>
+        )}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaGraph) }}
