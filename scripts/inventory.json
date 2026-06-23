@@ -2,12 +2,12 @@
   "services": [
     {
       "slug": "/dentist-digital-marketing-agency-california",
-      "title": "California's Dentist Digital Marketing Agency — Building Patient Acquisition Systems That Fill Schedules and Scale Practice Revenue",
+      "title": "Dentist Digital Marketing Agency in California",
       "primaryTopic": "Digital Marketing Agency (California)"
     },
     {
       "slug": "/dentist-digital-marketing-agency-texas",
-      "title": "Texas's Specialist Dentist Digital Marketing Agency — Integrated Patient Acquisition Systems for Dental Practices, DSOs & Orthodontists Across Dallas, Houston, Austin, San Antonio & Every Texas Market",
+      "title": "Dentist Digital Marketing Agency in Texas",
       "primaryTopic": "Digital Marketing Agency (Texas)"
     },
     {
@@ -52,22 +52,22 @@
     },
     {
       "slug": "/dentist-seo-services-california",
-      "title": "Dental SEO Services in California That Put Your Practice in Front of Patients Searching for a Dentist Right Now",
+      "title": "Dental SEO Services in California",
       "primaryTopic": "SEO Services (California)"
     },
     {
       "slug": "/dentist-seo-services-texas",
-      "title": "Dentist SEO Services in Texas — More New Patients, Higher-Value Cases, and Map Pack Dominance Across Dallas, Houston, Austin, San Antonio & Every Texas Dental Market",
+      "title": "Dentist SEO Services in Texas",
       "primaryTopic": "SEO Services (Texas)"
     },
     {
       "slug": "/digital-marketing-agency-california",
-      "title": "California's Performance-Driven Digital Marketing Agency That Turns Online Presence Into Revenue",
+      "title": "Digital Marketing Agency in California",
       "primaryTopic": "Digital Marketing Agency (California)"
     },
     {
       "slug": "/digital-marketing-agency-texas",
-      "title": "Texas's Full-Service Digital Marketing Agency — Integrated SEO, Paid Ads, Web Design & Reputation Management That Grows Texas Businesses",
+      "title": "Digital Marketing Agency in Texas",
       "primaryTopic": "Digital Marketing Agency (Texas)"
     },
     {
@@ -82,7 +82,7 @@
     },
     {
       "slug": "/facebook-ads-management-california",
-      "title": "Facebook Ads Management in California That Builds Audiences, Generates Leads, and Scales Revenue",
+      "title": "Facebook Ads Management in California",
       "primaryTopic": "Meta/Facebook Ads (California)"
     },
     {
@@ -92,22 +92,22 @@
     },
     {
       "slug": "/google-ads-management-california",
-      "title": "Google Ads Management in California That Turns Your Budget Into Measurable Revenue",
+      "title": "Google Ads Management in California",
       "primaryTopic": "Google Ads Management (California)"
     },
     {
       "slug": "/google-ads-management-texas",
-      "title": "Google Ads Management in Texas That Generates Real Leads, Not Just Clicks — Certified PPC Management for Dallas, Houston, Austin, San Antonio & Beyond",
+      "title": "Google Ads Management in Texas",
       "primaryTopic": "Google Ads Management (Texas)"
     },
     {
       "slug": "/healthcare-digital-marketing-agency-california",
-      "title": "California's Specialist Healthcare Digital Marketing Agency — Built to Fill Your Patient Pipeline Across Every Channel",
+      "title": "Healthcare Digital Marketing Agency in California",
       "primaryTopic": "Digital Marketing Agency (California)"
     },
     {
       "slug": "/healthcare-digital-marketing-agency-texas",
-      "title": "Texas's Specialist Healthcare Digital Marketing Agency — Integrated Patient Acquisition for Medical Practices, Dental Offices, DSOs & Health Systems Across Dallas, Houston, Austin, San Antonio & Beyond",
+      "title": "Healthcare Digital Marketing Agency in Texas",
       "primaryTopic": "Digital Marketing Agency (Texas)"
     },
     {
@@ -152,17 +152,17 @@
     },
     {
       "slug": "/healthcare-seo-services-california",
-      "title": "Healthcare SEO Services in California That Fill Your Patient Pipeline — Not Just Your Analytics Dashboard",
+      "title": "Healthcare SEO Services in California",
       "primaryTopic": "SEO Services (California)"
     },
     {
       "slug": "/healthcare-seo-services-texas",
-      "title": "Healthcare SEO Services in Texas — Rank Higher, Attract More Patients, and Build the Clinical Authority Google Requires for Medical Websites",
+      "title": "Healthcare SEO Services in Texas",
       "primaryTopic": "SEO Services (Texas)"
     },
     {
       "slug": "/meta-ads-agency-california",
-      "title": "California's Meta Ads Agency That Builds Full-Funnel Facebook & Instagram Systems — Not Just Campaigns",
+      "title": "Meta Ads Agency in California",
       "primaryTopic": "Meta/Facebook Ads (California)"
     },
     {
@@ -172,22 +172,22 @@
     },
     {
       "slug": "/ppc-services-california",
-      "title": "PPC Services in California That Maximize Every Dollar of Your Ad Budget",
+      "title": "PPC Services in California",
       "primaryTopic": "PPC Services (California)"
     },
     {
       "slug": "/ppc-services-texas",
-      "title": "PPC Services in Texas That Turn Ad Spend Into Qualified Leads and Measurable Revenue — Not Just Clicks and Impressions",
+      "title": "PPC Services in Texas",
       "primaryTopic": "PPC Services (Texas)"
     },
     {
       "slug": "/seo-services-california",
-      "title": "SEO Services California — Built to Rank, Designed to Convert",
+      "title": "SEO Services in California",
       "primaryTopic": "SEO Services (California)"
     },
     {
       "slug": "/seo-services-texas",
-      "title": "SEO Services in Texas That Drive Real Business Growth — From Dallas to Houston to Austin and Every Market In Between",
+      "title": "SEO Services in Texas",
       "primaryTopic": "SEO Services (Texas)"
     },
     {
@@ -231,6 +231,11 @@
       "slug": "/blog/ai-search-optimization-local-businesses-2026",
       "title": "Why Your Local Business Is Invisible on AI Search (And How to Fix It in 2026)",
       "primaryTopic": "AI search optimization"
+    },
+    {
+      "slug": "/blog/ai-tools-for-marketing",
+      "title": "AI Tools for Marketing: The Honest 2026 Guide to What's Actually Worth Paying For",
+      "primaryTopic": "AI tools for marketing"
     },
     {
       "slug": "/blog/ai-tools-healthcare-marketing-scaling-clinics-hospitals",
@@ -443,6 +448,11 @@
       "primaryTopic": "Medical SEO"
     },
     {
+      "slug": "/blog/instagram-reels-healthcare-best-practices",
+      "title": "Instagram Reels for Healthcare: Best Practices for 2026 (Without Risking a HIPAA Violation)",
+      "primaryTopic": "Instagram Reels for healthcare best practices"
+    },
+    {
       "slug": "/blog/instagram-reels-ideas-high-ticket-patients-healthcare",
       "title": "Instagram Reels for High-Ticket Healthcare Patient Growth",
       "primaryTopic": "Instagram Marketing"
@@ -508,6 +518,11 @@
       "primaryTopic": "Healthcare Partnership Marketing"
     },
     {
+      "slug": "/blog/ppc-advertising-services",
+      "title": "PPC Advertising Services: What You're Actually Paying For, and How to Tell If It's Working",
+      "primaryTopic": "PPC advertising services"
+    },
+    {
       "slug": "/blog/ppc-agency-vs-inhouse-team",
       "title": "PPC Agency vs In-House Team: What Works Better Today",
       "primaryTopic": "PPC agency vs in-house"
@@ -521,6 +536,11 @@
       "slug": "/blog/ppc-services-california-complete-guide",
       "title": "PPC Services California: Complete Guide for Business Owners",
       "primaryTopic": "PPC services California"
+    },
+    {
+      "slug": "/blog/professional-seo-services",
+      "title": "Professional SEO Services: What They Actually Include, What They Cost, and How to Know If You're Getting Real Work Done",
+      "primaryTopic": "professional SEO services"
     },
     {
       "slug": "/blog/proven-content-marketing-ideas-healthcare-practices",
@@ -601,6 +621,11 @@
       "slug": "/blog/website-traffic-no-leads-fix",
       "title": "Website Gets Traffic but No Leads? Here's Exactly Why",
       "primaryTopic": "website traffic but no leads"
+    },
+    {
+      "slug": "/blog/zero-click-search-2026-what-us-businesses-need-to-know",
+      "title": "Your Rankings Are Fine. Your Traffic Is Down. Here's What's Actually Happening in Search Right Now.",
+      "primaryTopic": "zero-click search 2026"
     }
   ]
 }

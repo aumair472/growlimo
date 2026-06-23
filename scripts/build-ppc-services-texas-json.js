@@ -9,7 +9,7 @@ const data = {
     'PPC Services Texas | GrowLimo – Pay-Per-Click Advertising That Generates Leads Not Just Clicks',
   metaDescription:
     'GrowLimo delivers certified PPC services for Texas businesses — Google Ads, Microsoft Ads, Meta Ads, remarketing & landing page optimization across Dallas, Houston, Austin, San Antonio & beyond. Transparent ROAS reporting. Get a free PPC audit.',
-  h1: 'PPC Services in Texas That Turn Ad Spend Into Qualified Leads and Measurable Revenue — Not Just Clicks and Impressions',
+  h1: 'PPC Services in Texas',
   subheadline:
     'Pay-per-click advertising is the fastest path from marketing investment to booked revenue available to any Texas business.',
   heroContent: [

@@ -15,7 +15,7 @@ const data = {
     'Healthcare Digital Marketing Agency Texas | GrowLimo – Full-Funnel Patient Acquisition for Texas Practices',
   metaDescription:
     'GrowLimo is a specialist healthcare digital marketing agency serving Texas medical practices, dental offices, DSOs, hospitals & med spas across Dallas, Houston, Austin, San Antonio & beyond. SEO, Google Ads, Meta Ads, reputation management & HIPAA-aware analytics — integrated patient acquisition built for Texas. Get a free audit.',
-  h1: "Texas's Specialist Healthcare Digital Marketing Agency — Integrated Patient Acquisition for Medical Practices, Dental Offices, DSOs & Health Systems Across Dallas, Houston, Austin, San Antonio & Beyond",
+  h1: 'Healthcare Digital Marketing Agency in Texas',
   subheadline:
     'Texas healthcare is one of the largest and most competitive patient acquisition markets in the United States — and the practices filling appointment books are winning through visible, trusted, conversion-optimized digital marketing.',
   heroContent: [

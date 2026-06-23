@@ -15,7 +15,7 @@ const data = {
     'Healthcare SEO Services Texas | GrowLimo – More Patients. Higher Rankings. HIPAA-Aware.',
   metaDescription:
     'GrowLimo delivers specialist healthcare SEO services for Texas medical practices, dental offices, hospitals, DSOs & med spas across Dallas, Houston, Austin, San Antonio & beyond. HIPAA-aware tracking, YMYL-compliant content, local map pack dominance & patient acquisition SEO built for Texas. Get a free healthcare SEO audit.',
-  h1: 'Healthcare SEO Services in Texas — Rank Higher, Attract More Patients, and Build the Clinical Authority Google Requires for Medical Websites',
+  h1: 'Healthcare SEO Services in Texas',
   subheadline:
     'Texas is home to one of the largest and fastest-growing healthcare markets in the United States — and the practices dominating Google patient searches are filling appointment books while competitors spend more on paid advertising for diminishing returns.',
   heroContent: [

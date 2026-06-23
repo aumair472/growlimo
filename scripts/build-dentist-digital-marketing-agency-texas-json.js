@@ -15,7 +15,7 @@ const data = {
     'Dentist Digital Marketing Agency Texas | GrowLimo – Full-Funnel Patient Acquisition for Texas Dental Practices',
   metaDescription:
     'GrowLimo is Texas\'s specialist dentist digital marketing agency — delivering SEO, Google Ads, Meta Ads, Facebook Ads, reputation management, web design & patient retention for dental practices, DSOs & orthodontists across Dallas, Houston, Austin, San Antonio & every Texas market. HIPAA-aware. No lock-in. Get a free dental marketing audit.',
-  h1: 'Texas\'s Specialist Dentist Digital Marketing Agency — Integrated Patient Acquisition Systems for Dental Practices, DSOs & Orthodontists Across Dallas, Houston, Austin, San Antonio & Every Texas Market',
+  h1: 'Dentist Digital Marketing Agency in Texas',
   subheadline:
     'Texas has nearly 15,000 licensed dentists competing for patients — and the practices filling their chairs are the ones with the most visible, trusted, conversion-optimized digital marketing presence.',
   heroContent: [

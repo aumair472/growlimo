@@ -3,14 +3,14 @@
     {
       "filename": "dentist-digital-marketing-agency-california.json",
       "slug": "/dentist-digital-marketing-agency-california",
-      "title": "California's Dentist Digital Marketing Agency — Building Patient Acquisition Systems That Fill Schedules and Scale Practice Revenue",
+      "title": "Dentist Digital Marketing Agency in California",
       "inferredTopic": "dentist digital marketing agency",
       "geo": "California"
     },
     {
       "filename": "dentist-digital-marketing-agency-texas.json",
       "slug": "/dentist-digital-marketing-agency-texas",
-      "title": "Texas's Specialist Dentist Digital Marketing Agency — Integrated Patient Acquisition Systems for Dental Practices, DSOs & Orthodontists Across Dallas, Houston, Austin, San Antonio & Every Texas Market",
+      "title": "Dentist Digital Marketing Agency in Texas",
       "inferredTopic": "dentist digital marketing agency",
       "geo": "Texas"
     },
@@ -73,28 +73,28 @@
     {
       "filename": "dentist-seo-services-california.json",
       "slug": "/dentist-seo-services-california",
-      "title": "Dental SEO Services in California That Put Your Practice in Front of Patients Searching for a Dentist Right Now",
+      "title": "Dental SEO Services in California",
       "inferredTopic": "dentist seo services",
       "geo": "California"
     },
     {
       "filename": "dentist-seo-services-texas.json",
       "slug": "/dentist-seo-services-texas",
-      "title": "Dentist SEO Services in Texas — More New Patients, Higher-Value Cases, and Map Pack Dominance Across Dallas, Houston, Austin, San Antonio & Every Texas Dental Market",
+      "title": "Dentist SEO Services in Texas",
       "inferredTopic": "dentist seo services",
       "geo": "Texas"
     },
     {
       "filename": "digital-marketing-agency-california.json",
       "slug": "/digital-marketing-agency-california",
-      "title": "California's Performance-Driven Digital Marketing Agency That Turns Online Presence Into Revenue",
+      "title": "Digital Marketing Agency in California",
       "inferredTopic": "digital marketing agency",
       "geo": "California"
     },
     {
       "filename": "digital-marketing-agency-texas.json",
       "slug": "/digital-marketing-agency-texas",
-      "title": "Texas's Full-Service Digital Marketing Agency — Integrated SEO, Paid Ads, Web Design & Reputation Management That Grows Texas Businesses",
+      "title": "Digital Marketing Agency in Texas",
       "inferredTopic": "digital marketing agency",
       "geo": "Texas"
     },
@@ -115,7 +115,7 @@
     {
       "filename": "facebook-ads-management-california.json",
       "slug": "/facebook-ads-management-california",
-      "title": "Facebook Ads Management in California That Builds Audiences, Generates Leads, and Scales Revenue",
+      "title": "Facebook Ads Management in California",
       "inferredTopic": "facebook ads management",
       "geo": "California"
     },
@@ -129,28 +129,28 @@
     {
       "filename": "google-ads-management-california.json",
       "slug": "/google-ads-management-california",
-      "title": "Google Ads Management in California That Turns Your Budget Into Measurable Revenue",
+      "title": "Google Ads Management in California",
       "inferredTopic": "google ads management",
       "geo": "California"
     },
     {
       "filename": "google-ads-management-texas.json",
       "slug": "/google-ads-management-texas",
-      "title": "Google Ads Management in Texas That Generates Real Leads, Not Just Clicks — Certified PPC Management for Dallas, Houston, Austin, San Antonio & Beyond",
+      "title": "Google Ads Management in Texas",
       "inferredTopic": "google ads management",
       "geo": "Texas"
     },
     {
       "filename": "healthcare-digital-marketing-agency-california.json",
       "slug": "/healthcare-digital-marketing-agency-california",
-      "title": "California's Specialist Healthcare Digital Marketing Agency — Built to Fill Your Patient Pipeline Across Every Channel",
+      "title": "Healthcare Digital Marketing Agency in California",
       "inferredTopic": "healthcare digital marketing agency",
       "geo": "California"
     },
     {
       "filename": "healthcare-digital-marketing-agency-texas.json",
       "slug": "/healthcare-digital-marketing-agency-texas",
-      "title": "Texas's Specialist Healthcare Digital Marketing Agency — Integrated Patient Acquisition for Medical Practices, Dental Offices, DSOs & Health Systems Across Dallas, Houston, Austin, San Antonio & Beyond",
+      "title": "Healthcare Digital Marketing Agency in Texas",
       "inferredTopic": "healthcare digital marketing agency",
       "geo": "Texas"
     },
@@ -213,21 +213,21 @@
     {
       "filename": "healthcare-seo-services-california.json",
       "slug": "/healthcare-seo-services-california",
-      "title": "Healthcare SEO Services in California That Fill Your Patient Pipeline — Not Just Your Analytics Dashboard",
+      "title": "Healthcare SEO Services in California",
       "inferredTopic": "healthcare seo services",
       "geo": "California"
     },
     {
       "filename": "healthcare-seo-services-texas.json",
       "slug": "/healthcare-seo-services-texas",
-      "title": "Healthcare SEO Services in Texas — Rank Higher, Attract More Patients, and Build the Clinical Authority Google Requires for Medical Websites",
+      "title": "Healthcare SEO Services in Texas",
       "inferredTopic": "healthcare seo services",
       "geo": "Texas"
     },
     {
       "filename": "meta-ads-agency-california.json",
       "slug": "/meta-ads-agency-california",
-      "title": "California's Meta Ads Agency That Builds Full-Funnel Facebook & Instagram Systems — Not Just Campaigns",
+      "title": "Meta Ads Agency in California",
       "inferredTopic": "meta ads agency",
       "geo": "California"
     },
@@ -241,28 +241,28 @@
     {
       "filename": "ppc-services-california.json",
       "slug": "/ppc-services-california",
-      "title": "PPC Services in California That Maximize Every Dollar of Your Ad Budget",
+      "title": "PPC Services in California",
       "inferredTopic": "ppc services",
       "geo": "California"
     },
     {
       "filename": "ppc-services-texas.json",
       "slug": "/ppc-services-texas",
-      "title": "PPC Services in Texas That Turn Ad Spend Into Qualified Leads and Measurable Revenue — Not Just Clicks and Impressions",
+      "title": "PPC Services in Texas",
       "inferredTopic": "ppc services",
       "geo": "Texas"
     },
     {
       "filename": "seo-services-california.json",
       "slug": "/seo-services-california",
-      "title": "SEO Services California — Built to Rank, Designed to Convert",
+      "title": "SEO Services in California",
       "inferredTopic": "seo services",
       "geo": "California"
     },
     {
       "filename": "seo-services-texas.json",
       "slug": "/seo-services-texas",
-      "title": "SEO Services in Texas That Drive Real Business Growth — From Dallas to Houston to Austin and Every Market In Between",
+      "title": "SEO Services in Texas",
       "inferredTopic": "seo services",
       "geo": "Texas"
     },
@@ -337,6 +337,20 @@
         "Google Business Profile optimization"
       ],
       "wordCount": 2684
+    },
+    {
+      "filename": "ai-tools-for-marketing.mdx",
+      "slug": "/blog/ai-tools-for-marketing",
+      "title": "AI Tools for Marketing: The Honest 2026 Guide to What's Actually Worth Paying For",
+      "tags": [
+        "AI tools for marketing",
+        "best AI marketing tools 2026",
+        "AI marketing software",
+        "AI tools for small business marketing",
+        "AI content tools",
+        "marketing automation AI"
+      ],
+      "wordCount": 4116
     },
     {
       "filename": "ai-tools-healthcare-marketing-scaling-clinics-hospitals.mdx",
@@ -912,6 +926,20 @@
       "wordCount": 950
     },
     {
+      "filename": "instagram-reels-healthcare-best-practices.mdx",
+      "slug": "/blog/instagram-reels-healthcare-best-practices",
+      "title": "Instagram Reels for Healthcare: Best Practices for 2026 (Without Risking a HIPAA Violation)",
+      "tags": [
+        "Instagram Reels for healthcare best practices",
+        "healthcare social media marketing 2026",
+        "HIPAA compliant Instagram content",
+        "medical practice Reels",
+        "Instagram for doctors",
+        "healthcare video marketing"
+      ],
+      "wordCount": 4056
+    },
+    {
       "filename": "instagram-reels-ideas-high-ticket-patients-healthcare.mdx",
       "slug": "/blog/instagram-reels-ideas-high-ticket-patients-healthcare",
       "title": "Instagram Reels for High-Ticket Healthcare Patient Growth",
@@ -1104,6 +1132,21 @@
       "wordCount": 887
     },
     {
+      "filename": "ppc-advertising-services.mdx",
+      "slug": "/blog/ppc-advertising-services",
+      "title": "PPC Advertising Services: What You're Actually Paying For, and How to Tell If It's Working",
+      "tags": [
+        "PPC advertising services",
+        "PPC management cost",
+        "pay per click agency",
+        "PPC management pricing",
+        "Google Ads management",
+        "PPC vs SEO",
+        "paid search advertising"
+      ],
+      "wordCount": 3085
+    },
+    {
       "filename": "ppc-agency-vs-inhouse-team.mdx",
       "slug": "/blog/ppc-agency-vs-inhouse-team",
       "title": "PPC Agency vs In-House Team: What Works Better Today",
@@ -1141,6 +1184,21 @@
         "GrowLimo PPC"
       ],
       "wordCount": 921
+    },
+    {
+      "filename": "professional-seo-services.mdx",
+      "slug": "/blog/professional-seo-services",
+      "title": "Professional SEO Services: What They Actually Include, What They Cost, and How to Know If You're Getting Real Work Done",
+      "tags": [
+        "professional SEO services",
+        "what do SEO services include",
+        "SEO results timeline",
+        "how long does SEO take",
+        "professional SEO agency",
+        "local SEO services",
+        "SEO ROI"
+      ],
+      "wordCount": 3736
     },
     {
       "filename": "proven-content-marketing-ideas-healthcare-practices.mdx",
@@ -1359,6 +1417,21 @@
         "conversion rate optimization"
       ],
       "wordCount": 4380
+    },
+    {
+      "filename": "zero-click-search-2026-what-us-businesses-need-to-know.mdx",
+      "slug": "/blog/zero-click-search-2026-what-us-businesses-need-to-know",
+      "title": "Your Rankings Are Fine. Your Traffic Is Down. Here's What's Actually Happening in Search Right Now.",
+      "tags": [
+        "zero-click search 2026",
+        "Google AI Overviews traffic loss",
+        "why is my website traffic down 2026",
+        "AI search impact on SEO",
+        "GEO strategy",
+        "AEO for business",
+        "digital marketing trends 2026"
+      ],
+      "wordCount": 4035
     }
   ]
 }
