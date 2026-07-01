@@ -101,16 +101,19 @@ export default function ServiceContentSectionEnhanced({ service, slug, onSelectP
   // Extract sections safely by indices based on JSON sequence
   const introSection = contentSections[0] || {};
   const whyChooseUsSection = contentSections[1] || {};
-  const servicesIntroSection = contentSections[2] || {};
+  const howToChooseSection = contentSections[2] || {};
+  const servicesIntroSection = contentSections[3] || {};
 
   // Numbered Services 1-7
-  const numberedServices = contentSections.slice(3, 10);
+  const numberedServices = contentSections.slice(4, 11);
 
   // Custom styled components content sources
-  const caseStudiesSection = contentSections[10] || {};
-  const testimonialsSection = contentSections[11] || {};
-  const pricingSection = contentSections[12] || {};
-  const aboutSection = contentSections[13] || {};
+  const caseStudiesSection = contentSections[11] || {};
+  const testimonialsSection = contentSections[12] || {};
+  const bestServicesSection = contentSections[13] || {};
+  const seoPackagesSection = contentSections[14] || {};
+  const pricingSection = contentSections[15] || {};
+  const aboutSection = contentSections[16] || {};
 
   return (
     <div className="bg-[#080D18] font-sans selection:bg-[#00C68A]/30 selection:text-white overflow-x-hidden text-[#8FA8C8]">
@@ -350,6 +353,74 @@ export default function ServiceContentSectionEnhanced({ service, slug, onSelectP
 
         </div>
       </section>
+
+      {/* SECTION: HOW TO CHOOSE THE RIGHT SEO COMPANY IN CALIFORNIA (white bg) */}
+      {howToChooseSection.heading && (
+        <section className="bg-[#FFFFFF] py-[96px] relative z-10 border-t border-[#E3EEF7]">
+          <div className="container mx-auto px-4 md:px-10 max-w-[1100px]">
+            <div className="text-left mb-12">
+              <span className="text-[#00C68A] text-[11px] font-bold uppercase tracking-[2.5px] mb-3 block font-sans">
+                BUYER'S GUIDE
+              </span>
+              <h2 className="text-[26px] md:text-[36px] font-extrabold font-sora leading-tight text-[#0B1829] tracking-tight">
+                {howToChooseSection.heading}
+              </h2>
+            </div>
+
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
+              <div className="lg:col-span-7 space-y-6 text-left">
+                {howToChooseSection.paragraphs && howToChooseSection.paragraphs.map((para, idx) => (
+                  <p key={idx} className="font-sans text-[15px] leading-[1.8] text-[#3D5A73]">
+                    {para}
+                  </p>
+                ))}
+                {howToChooseSection.closingText && (
+                  <div className="border-l-4 border-[#00C68A] pl-5 py-2 my-6 bg-[#00C68A]/5 rounded-r-[8px]">
+                    <p className="font-sans text-[15px] leading-[1.8] font-bold text-[#0B1829]">
+                      {howToChooseSection.closingText}
+                    </p>
+                  </div>
+                )}
+              </div>
+
+              <div className="lg:col-span-5">
+                <div className="bg-[#F8FAFC] border border-[#E3EEF7] rounded-[20px] p-8 shadow-sm">
+                  <h3 className="font-sora font-bold text-[18px] text-[#0B1829] mb-6 text-left border-b border-[#E3EEF7] pb-3">
+                    Key Evaluation Criteria
+                  </h3>
+                  <div className="space-y-5">
+                    {howToChooseSection.bullets && howToChooseSection.bullets.map((bullet, idx) => {
+                      const parts = bullet.split('—');
+                      const title = parts[0] ? parts[0].trim() : '';
+                      const desc = parts[1] ? parts[1].trim() : '';
+
+                      return (
+                        <div key={idx} className="flex gap-4 items-start text-left">
+                          <div className="w-[26px] h-[26px] rounded-full bg-[rgba(0,198,138,0.12)] border border-[rgba(0,198,138,0.20)] flex items-center justify-center shrink-0 mt-0.5">
+                            <svg className="w-[12px] h-[12px] text-[#00C68A]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
+                            </svg>
+                          </div>
+                          <div className="flex-1">
+                            <h4 className="font-sans text-[15px] font-bold text-[#0B1829] leading-tight mb-1">
+                              {title}
+                            </h4>
+                            {desc && (
+                              <p className="font-sans text-[13.5px] leading-relaxed text-[#3D5A73]">
+                                {desc}
+                              </p>
+                            )}
+                          </div>
+                        </div>
+                      );
+                    })}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      )}
 
       {/* SECTION 5: TWO-COLUMN IMAGE + TEXT */}
       <section className="bg-[#FFFFFF] py-[96px] relative z-10 border-t border-[#E3EEF7]">
@@ -773,6 +844,51 @@ export default function ServiceContentSectionEnhanced({ service, slug, onSelectP
           </div>
         </div>
       </section>
+
+      {/* SECTION: BEST SEO SERVICES & PACKAGES TRANSITION (dark bg) */}
+      {(bestServicesSection.heading || seoPackagesSection.heading) && (
+        <section className="bg-[#0C1220] pt-[96px] pb-[0px] relative z-10 border-t border-[rgba(255,255,255,0.04)]">
+          <div className="container mx-auto px-4 md:px-10 max-w-[1100px]">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 text-left mb-12">
+              
+              {/* Left: What Makes GrowLimo the Best */}
+              {bestServicesSection.heading && (
+                <div className="space-y-4">
+                  <span className="text-[#00C68A] text-[11px] font-bold uppercase tracking-[2.5px] block font-sans">
+                    WHY WE LEAD
+                  </span>
+                  <h2 className="text-[26px] md:text-[32px] font-extrabold font-sora leading-tight text-[#F0F4FF] tracking-tight">
+                    {bestServicesSection.heading}
+                  </h2>
+                  {bestServicesSection.paragraphs && bestServicesSection.paragraphs.map((para, idx) => (
+                    <p key={idx} className="font-sans text-[15px] leading-[1.8] text-[#8FA8C8]">
+                      {para}
+                    </p>
+                  ))}
+                </div>
+              )}
+
+              {/* Right: Packages Built for Every Size */}
+              {seoPackagesSection.heading && (
+                <div className="space-y-4">
+                  <span className="text-[#00C68A] text-[11px] font-bold uppercase tracking-[2.5px] block font-sans">
+                    SCALABLE OPTIONS
+                  </span>
+                  <h2 className="text-[26px] md:text-[32px] font-extrabold font-sora leading-tight text-[#F0F4FF] tracking-tight">
+                    {seoPackagesSection.heading}
+                  </h2>
+                  {seoPackagesSection.paragraphs && seoPackagesSection.paragraphs.map((para, idx) => (
+                    <p key={idx} className="font-sans text-[15px] leading-[1.8] text-[#8FA8C8]">
+                      {para}
+                    </p>
+                  ))}
+                </div>
+              )}
+
+            </div>
+          </div>
+        </section>
+      )}
 
       {/* SECTION 16: PRICING (dark bg) */}
       <section className="bg-[#0C1220] py-[96px] relative z-10 border-t border-[rgba(255,255,255,0.04)]">
