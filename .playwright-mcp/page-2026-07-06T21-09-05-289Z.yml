@@ -1,0 +1,443 @@
+- generic [ref=e1]:
+  - generic [ref=e4]:
+    - navigation "Main navigation" [ref=e5]:
+      - generic [ref=e7]:
+        - link "GrowLimo Home" [ref=e8] [cursor=pointer]:
+          - /url: /
+          - text: GrowLimo
+        - generic [ref=e9]:
+          - link "Home" [ref=e10] [cursor=pointer]:
+            - /url: /
+          - link "Case Studies" [ref=e11] [cursor=pointer]:
+            - /url: /case-studies/
+          - link "Blog" [ref=e12] [cursor=pointer]:
+            - /url: /blog/
+          - link "About" [ref=e13] [cursor=pointer]:
+            - /url: /about/
+          - link "Contact" [ref=e14] [cursor=pointer]:
+            - /url: /contact/
+          - link "Get Growth Plan" [ref=e15] [cursor=pointer]:
+            - /url: /contact/
+    - main [ref=e16]:
+      - generic [ref=e17]:
+        - generic [ref=e19]:
+          - generic [ref=e20]: GET IN TOUCH
+          - heading "Book Your 30-Minute Digital Marketing Lead Strategy Session" [level=1] [ref=e21]
+          - paragraph [ref=e22]:
+            - text: Whether you need a complete digital audit, high-ROI paid media strategy, or custom lead acquisition plan, our digital marketing specialists are ready to help.
+            - link "Learn more about Growlimo" [ref=e23] [cursor=pointer]:
+              - /url: /about/
+            - text: or see
+            - link "real results from real clients" [ref=e24] [cursor=pointer]:
+              - /url: /case-studies/
+            - text: to understand our impact.
+        - generic [ref=e29]:
+          - generic [ref=e30]:
+            - heading "Schedule Your 30-Minute Lead Mapping Session" [level=2] [ref=e31]
+            - list [ref=e32]:
+              - listitem [ref=e33]:
+                - generic [ref=e34]: ✓
+                - text: SEO Performance Analysis
+              - listitem [ref=e35]:
+                - generic [ref=e36]: ✓
+                - text: PPC Account Review
+              - listitem [ref=e37]:
+                - generic [ref=e38]: ✓
+                - text: Website Conversion Audit
+              - listitem [ref=e39]:
+                - generic [ref=e40]: ✓
+                - text: Competitor Analysis
+              - listitem [ref=e41]:
+                - generic [ref=e42]: ✓
+                - text: Custom Growth Roadmap
+          - generic [ref=e45]:
+            - progressbar "Step 1 of 6" [ref=e46]:
+              - generic [ref=e47]:
+                - generic [ref=e48]: Name
+                - generic [ref=e49]: 1 / 6
+            - generic [ref=e53]:
+              - heading "What's your name?" [level=3] [ref=e54]
+              - generic [ref=e55]:
+                - generic [ref=e56]: Name *
+                - textbox "Name *" [active] [ref=e57]:
+                  - /placeholder: Dr. Sarah Johnson
+                  - text: Dr. Test User
+            - button "Next →" [ref=e59] [cursor=pointer]
+        - generic [ref=e61]:
+          - generic [ref=e62]: WHY GROWLIMO
+          - heading "Why Businesses Choose Growlimo" [level=2] [ref=e63]
+          - generic [ref=e64]:
+            - generic [ref=e65]:
+              - img [ref=e67]
+              - heading "Nationwide Industry Expertise" [level=3] [ref=e69]
+              - paragraph [ref=e70]: We serve local businesses, startups, and enterprises across the entire United States. Our specialized teams provide expert digital solutions that dominate competitive markets.
+            - generic [ref=e71]:
+              - img [ref=e73]
+              - heading "Proven Growth Results" [level=3] [ref=e75]
+              - paragraph [ref=e76]: Over 500 businesses trust us to manage their digital presence. Our clients see an average of 713% revenue increase and 31% reduction in lead costs.
+            - generic [ref=e77]:
+              - img [ref=e79]
+              - heading "Data-First Strategy" [level=3] [ref=e81]
+              - paragraph [ref=e82]: Every campaign is backed by real-time data and profit tracking. We don’t just report on clicks; we report on the revenue generated for your business.
+            - generic [ref=e83]:
+              - img [ref=e85]
+              - heading "Transparent ROI Tracking" [level=3] [ref=e88]
+              - paragraph [ref=e89]: Your custom dashboard shows exactly where every dollar goes. No hidden fees or confusing jargon—just clear results you can bank on.
+            - generic [ref=e90]:
+              - img [ref=e92]
+              - heading "Dedicated Account Strategists" [level=3] [ref=e94]
+              - paragraph [ref=e95]: You work with a dedicated specialist who understands your unique goals and proactively optimizes your campaigns for maximum performance.
+        - generic [ref=e97]:
+          - generic [ref=e98]: THE PROCESS
+          - heading "What Happens After You Contact Us" [level=2] [ref=e99]
+          - generic [ref=e102]:
+            - generic [ref=e103]:
+              - generic [ref=e105]: "1"
+              - generic [ref=e106]:
+                - heading "Growth Strategy Session (30 min)" [level=3] [ref=e107]
+                - paragraph [ref=e108]: We’ll discuss your business goals, current challenges, and market opportunities. This is an honest consultation to map out your growth potential.
+            - generic [ref=e109]:
+              - generic [ref=e111]: "2"
+              - generic [ref=e112]:
+                - heading "Deep-Dive Audit (3-5 days)" [level=3] [ref=e113]
+                - paragraph [ref=e114]: Our specialists conduct a comprehensive audit of your SEO, paid ads, and technical infrastructure to find every growth opportunity.
+            - generic [ref=e115]:
+              - generic [ref=e117]: "3"
+              - generic [ref=e118]:
+                - heading "Roadmap Presentation (45 min)" [level=3] [ref=e119]
+                - paragraph [ref=e120]: We present our findings, actionable recommendations, projected ROI, and transparent pricing tailored to your business.
+            - generic [ref=e121]:
+              - generic [ref=e123]: "4"
+              - generic [ref=e124]:
+                - heading "Campaign Kickoff" [level=3] [ref=e125]
+                - paragraph [ref=e126]: Review the proposal and finalize the target goals. We move only when you’re confident in the roadmap and the projected results.
+            - generic [ref=e127]:
+              - generic [ref=e129]: "5"
+              - generic [ref=e130]:
+                - heading "Implementation & Launch" [level=3] [ref=e131]
+                - paragraph [ref=e132]: We handle the heavy lifting—from technical setup to ad launch. You’ll have a dedicated team monitoring your growth 24/7 with monthly detailed reports.
+        - generic [ref=e134]:
+          - generic [ref=e135]: SUCCESS STORIES
+          - heading "Success Stories" [level=2] [ref=e136]
+          - generic [ref=e137]:
+            - generic [ref=e138]:
+              - generic [ref=e139]:
+                - generic [ref=e140]: ★★★★★
+                - paragraph [ref=e141]: "\"Growlimo took our law firm from page 8 to position #1 for our top keywords. Their PPC campaigns are generating $50K in new client revenue every single month.\""
+              - generic [ref=e144]:
+                - generic [ref=e146]: JH
+                - generic [ref=e147]:
+                  - generic [ref=e148]: James Harrington
+                  - generic [ref=e149]: Managing Partner, Harrington Law Group, Dallas, TX
+            - generic [ref=e150]:
+              - generic [ref=e151]:
+                - generic [ref=e152]: ★★★★★
+                - paragraph [ref=e153]: "\"Best marketing investment we have ever made. Our website traffic grew 240% and we cut our cost per lead in half within just 6 months.\""
+              - generic [ref=e156]:
+                - generic [ref=e158]: SC
+                - generic [ref=e159]:
+                  - generic [ref=e160]: Sarah Chen
+                  - generic [ref=e161]: Owner, Chen Medical Group, Los Angeles, CA
+            - generic [ref=e162]:
+              - generic [ref=e163]:
+                - generic [ref=e164]: ★★★★★
+                - paragraph [ref=e165]: "\"Finally a marketing agency that actually understands ROI. We went from 2 to 17 on Google Ads quality score. Qualified leads flow in daily.\""
+              - generic [ref=e168]:
+                - generic [ref=e170]: RM
+                - generic [ref=e171]:
+                  - generic [ref=e172]: Robert Martinez
+                  - generic [ref=e173]: Director, Martinez Home Services, Houston, TX
+        - generic [ref=e175]:
+          - generic [ref=e176]: FAQ
+          - heading "Frequently Asked Questions" [level=2] [ref=e177]
+          - generic [ref=e178]:
+            - generic [ref=e179]:
+              - button "How quickly can we start seeing results?" [ref=e180]:
+                - generic [ref=e181]: How quickly can we start seeing results?
+                - img [ref=e182]
+              - paragraph [ref=e184]: Campaign setup typically takes 7-10 days. Most businesses see meaningful improvements in lead quality and ad performance within month 1, with long-term SEO growth compounding over 3-6 months.
+            - generic [ref=e185]:
+              - button "Do you require long-term contracts?" [ref=e186]:
+                - generic [ref=e187]: Do you require long-term contracts?
+                - img [ref=e188]
+              - paragraph [ref=e190]: No. While marketing works best over 6-12 months, we offer month-to-month agreements. We earn your business every month through performance, not fine print.
+            - generic [ref=e191]:
+              - button "Do you work with businesses across the entire United States?" [ref=e192]:
+                - generic [ref=e193]: Do you work with businesses across the entire United States?
+                - img [ref=e194]
+              - paragraph [ref=e196]: Yes! We serve clients in all 50 states. Our digital strategies are built to scale and work in any competitive landscape across the USA.
+            - generic [ref=e197]:
+              - button "What's the typical ROI for your campaigns?" [ref=e198]:
+                - generic [ref=e199]: What's the typical ROI for your campaigns?
+                - img [ref=e200]
+              - paragraph [ref=e202]: Most clients see a 4-8x ROI on their ad spend and significant revenue growth through organic search. We focus on total revenue, not just traffic volume.
+            - generic [ref=e203]:
+              - button "Do you only work with large enterprises?" [ref=e204]:
+                - generic [ref=e205]: Do you only work with large enterprises?
+                - img [ref=e206]
+              - paragraph [ref=e208]: No. We work with local service providers and small businesses up to multi-location franchises. Our services are tailored to fit your specific growth stage and budget.
+        - generic [ref=e210]:
+          - generic [ref=e211]:
+            - generic [ref=e212]: ✓
+            - generic [ref=e213]: 500+ Businesses Served Nationwide
+            - generic [ref=e214]: ·
+          - generic [ref=e215]:
+            - generic [ref=e216]: ✓
+            - generic [ref=e217]: $25M+ Revenue Generated for Clients
+            - generic [ref=e218]: ·
+          - generic [ref=e219]:
+            - generic [ref=e220]: ✓
+            - generic [ref=e221]: 713% Avg. Client Revenue Increase
+            - generic [ref=e222]: ·
+          - generic [ref=e223]:
+            - generic [ref=e224]: ✓
+            - generic [ref=e225]: Google Partner Certified Agency
+            - generic [ref=e226]: ·
+          - generic [ref=e227]:
+            - generic [ref=e228]: ✓
+            - generic [ref=e229]: Transparent ROI Tracking Systems
+        - generic [ref=e231]:
+          - heading "Explore Our Specialized Services" [level=2] [ref=e232]
+          - generic [ref=e233]:
+            - generic [ref=e234]:
+              - heading "Dental Marketing" [level=3] [ref=e235]
+              - list [ref=e236]:
+                - listitem [ref=e237]:
+                  - link "Dentist Agency CA" [ref=e238] [cursor=pointer]:
+                    - /url: /dentist-digital-marketing-agency-california/
+                - listitem [ref=e239]:
+                  - link "Dentist Agency TX" [ref=e240] [cursor=pointer]:
+                    - /url: /dentist-digital-marketing-agency-texas/
+                - listitem [ref=e241]:
+                  - link "Dentist SEO CA" [ref=e242] [cursor=pointer]:
+                    - /url: /dentist-seo-services-california/
+            - generic [ref=e243]:
+              - heading "Healthcare SEO" [level=3] [ref=e244]
+              - list [ref=e245]:
+                - listitem [ref=e246]:
+                  - link "Healthcare Agency CA" [ref=e247] [cursor=pointer]:
+                    - /url: /healthcare-digital-marketing-agency-california/
+                - listitem [ref=e248]:
+                  - link "Healthcare Agency TX" [ref=e249] [cursor=pointer]:
+                    - /url: /healthcare-digital-marketing-agency-texas/
+                - listitem [ref=e250]:
+                  - link "Healthcare SEO CA" [ref=e251] [cursor=pointer]:
+                    - /url: /healthcare-seo-services-california/
+            - generic [ref=e252]:
+              - heading "Ads Management" [level=3] [ref=e253]
+              - list [ref=e254]:
+                - listitem [ref=e255]:
+                  - link "Google Ads CA" [ref=e256] [cursor=pointer]:
+                    - /url: /google-ads-management-california/
+                - listitem [ref=e257]:
+                  - link "Google Ads TX" [ref=e258] [cursor=pointer]:
+                    - /url: /google-ads-management-texas/
+                - listitem [ref=e259]:
+                  - link "Medical Ads CA" [ref=e260] [cursor=pointer]:
+                    - /url: /healthcare-google-ads-management-california/
+            - generic [ref=e261]:
+              - heading "General SEO" [level=3] [ref=e262]
+              - list [ref=e263]:
+                - listitem [ref=e264]:
+                  - link "SEO Services CA" [ref=e265] [cursor=pointer]:
+                    - /url: /seo-services-california/
+                - listitem [ref=e266]:
+                  - link "SEO Services TX" [ref=e267] [cursor=pointer]:
+                    - /url: /seo-services-texas/
+                - listitem [ref=e268]:
+                  - link "Success Stories" [ref=e269] [cursor=pointer]:
+                    - /url: /case-studies/
+        - generic [ref=e271]:
+          - heading "Ready to Grow Your Business?" [level=2] [ref=e272]
+          - paragraph [ref=e273]: Stop losing customers to competitors. Start capturing high-intent searches, building a powerful online reputation, and scaling your revenue predictably.
+          - generic [ref=e274]:
+            - link "Schedule Your Free 30-Minute Strategy Session" [ref=e275] [cursor=pointer]:
+              - /url: "#contact-form"
+            - link "Call +1 (724) 750-6935" [ref=e276] [cursor=pointer]:
+              - /url: tel:+17247506935
+    - contentinfo [ref=e277]:
+      - generic [ref=e278]:
+        - generic [ref=e279]:
+          - generic [ref=e280]:
+            - heading "GrowLimo" [level=3] [ref=e281]
+            - paragraph [ref=e282]: GrowLimo is a results-driven digital marketing agency serving businesses nationwide across the entire United States. SEO, Google Ads, PPC, social media & web design to grow your leads and revenue.
+            - generic [ref=e283]:
+              - generic [ref=e284]:
+                - img [ref=e285]
+                - 'link "US: +1 (724) 750-6935" [ref=e287] [cursor=pointer]':
+                  - /url: tel:+17247506935
+              - generic [ref=e288]:
+                - img [ref=e289]
+                - link "info@growlimo.com" [ref=e291] [cursor=pointer]:
+                  - /url: mailto:info@growlimo.com
+              - generic [ref=e292]:
+                - img [ref=e293]
+                - generic [ref=e296]:
+                  - paragraph [ref=e297]: 7917 Mountain Rd NE, Albuquerque, NM 87110
+                  - paragraph [ref=e298]:
+                    - generic [ref=e299]: ★★★★★
+                    - text: 5.0 on Google
+          - generic [ref=e300]:
+            - heading "Texas General" [level=4] [ref=e301]
+            - list [ref=e302]:
+              - listitem [ref=e303]:
+                - link "SEO Services Texas" [ref=e304] [cursor=pointer]:
+                  - /url: /seo-services-texas/
+              - listitem [ref=e305]:
+                - link "Digital Marketing Texas" [ref=e306] [cursor=pointer]:
+                  - /url: /digital-marketing-agency-texas/
+              - listitem [ref=e307]:
+                - link "Google Ads Texas" [ref=e308] [cursor=pointer]:
+                  - /url: /google-ads-management-texas/
+              - listitem [ref=e309]:
+                - link "PPC Services Texas" [ref=e310] [cursor=pointer]:
+                  - /url: /ppc-services-texas/
+              - listitem [ref=e311]:
+                - link "Social Media Texas" [ref=e312] [cursor=pointer]:
+                  - /url: /social-media-marketing-services-texas/
+              - listitem [ref=e313]:
+                - link "Facebook Ads Texas" [ref=e314] [cursor=pointer]:
+                  - /url: /facebook-ads-management-texas/
+              - listitem [ref=e315]:
+                - link "Meta Ads Texas" [ref=e316] [cursor=pointer]:
+                  - /url: /meta-ads-agency-texas/
+              - listitem [ref=e317]:
+                - link "Web Developer Texas" [ref=e318] [cursor=pointer]:
+                  - /url: /web-developer-texas/
+              - listitem [ref=e319]:
+                - link "Web Design Texas" [ref=e320] [cursor=pointer]:
+                  - /url: /web-design-services-texas/
+              - listitem [ref=e321]:
+                - link "Email Marketing Texas" [ref=e322] [cursor=pointer]:
+                  - /url: /email-marketing-services-texas/
+          - generic [ref=e323]:
+            - heading "California General" [level=4] [ref=e324]
+            - list [ref=e325]:
+              - listitem [ref=e326]:
+                - link "SEO Services California" [ref=e327] [cursor=pointer]:
+                  - /url: /seo-services-california/
+              - listitem [ref=e328]:
+                - link "Digital Marketing California" [ref=e329] [cursor=pointer]:
+                  - /url: /digital-marketing-agency-california/
+              - listitem [ref=e330]:
+                - link "Google Ads California" [ref=e331] [cursor=pointer]:
+                  - /url: /google-ads-management-california/
+              - listitem [ref=e332]:
+                - link "PPC Services California" [ref=e333] [cursor=pointer]:
+                  - /url: /ppc-services-california/
+              - listitem [ref=e334]:
+                - link "Social Media California" [ref=e335] [cursor=pointer]:
+                  - /url: /social-media-marketing-services-california/
+              - listitem [ref=e336]:
+                - link "Facebook Ads California" [ref=e337] [cursor=pointer]:
+                  - /url: /facebook-ads-management-california/
+              - listitem [ref=e338]:
+                - link "Meta Ads California" [ref=e339] [cursor=pointer]:
+                  - /url: /meta-ads-agency-california/
+              - listitem [ref=e340]:
+                - link "Web Developer California" [ref=e341] [cursor=pointer]:
+                  - /url: /web-developer-california/
+              - listitem [ref=e342]:
+                - link "Web Design California" [ref=e343] [cursor=pointer]:
+                  - /url: /web-design-services-california/
+              - listitem [ref=e344]:
+                - link "Email Marketing California" [ref=e345] [cursor=pointer]:
+                  - /url: /email-marketing-services-california/
+          - generic [ref=e346]:
+            - heading "Healthcare" [level=4] [ref=e347]
+            - list [ref=e348]:
+              - listitem [ref=e349]: Texas
+              - listitem [ref=e350]:
+                - link "Healthcare SEO Texas" [ref=e351] [cursor=pointer]:
+                  - /url: /healthcare-seo-services-texas/
+              - listitem [ref=e352]:
+                - link "Healthcare Agency Texas" [ref=e353] [cursor=pointer]:
+                  - /url: /healthcare-digital-marketing-agency-texas/
+              - listitem [ref=e354]:
+                - link "Google Ads Texas" [ref=e355] [cursor=pointer]:
+                  - /url: /healthcare-google-ads-management-texas/
+              - listitem [ref=e356]:
+                - link "PPC Services Texas" [ref=e357] [cursor=pointer]:
+                  - /url: /healthcare-ppc-services-texas/
+              - listitem [ref=e358]:
+                - link "Facebook Ads Texas" [ref=e359] [cursor=pointer]:
+                  - /url: /healthcare-facebook-ads-management-texas/
+              - listitem [ref=e360]: California
+              - listitem [ref=e361]:
+                - link "Healthcare SEO California" [ref=e362] [cursor=pointer]:
+                  - /url: /healthcare-seo-services-california/
+              - listitem [ref=e363]:
+                - link "Healthcare Agency California" [ref=e364] [cursor=pointer]:
+                  - /url: /healthcare-digital-marketing-agency-california/
+              - listitem [ref=e365]:
+                - link "Google Ads California" [ref=e366] [cursor=pointer]:
+                  - /url: /healthcare-google-ads-management-california/
+              - listitem [ref=e367]:
+                - link "PPC Services California" [ref=e368] [cursor=pointer]:
+                  - /url: /healthcare-ppc-services-california/
+              - listitem [ref=e369]:
+                - link "Facebook Ads California" [ref=e370] [cursor=pointer]:
+                  - /url: /healthcare-facebook-ads-management-california/
+          - generic [ref=e371]:
+            - heading "Dentist" [level=4] [ref=e372]
+            - list [ref=e373]:
+              - listitem [ref=e374]: Texas
+              - listitem [ref=e375]:
+                - link "Dentist SEO Texas" [ref=e376] [cursor=pointer]:
+                  - /url: /dentist-seo-services-texas/
+              - listitem [ref=e377]:
+                - link "Dentist Agency Texas" [ref=e378] [cursor=pointer]:
+                  - /url: /dentist-digital-marketing-agency-texas/
+              - listitem [ref=e379]:
+                - link "Google Ads Texas" [ref=e380] [cursor=pointer]:
+                  - /url: /dentist-google-ads-management-texas/
+              - listitem [ref=e381]:
+                - link "PPC Services Texas" [ref=e382] [cursor=pointer]:
+                  - /url: /dentist-ppc-services-texas/
+              - listitem [ref=e383]:
+                - link "Facebook Ads Texas" [ref=e384] [cursor=pointer]:
+                  - /url: /dentist-facebook-ads-management-texas/
+              - listitem [ref=e385]: California
+              - listitem [ref=e386]:
+                - link "Dentist SEO California" [ref=e387] [cursor=pointer]:
+                  - /url: /dentist-seo-services-california/
+              - listitem [ref=e388]:
+                - link "Dentist Agency California" [ref=e389] [cursor=pointer]:
+                  - /url: /dentist-digital-marketing-agency-california/
+              - listitem [ref=e390]:
+                - link "Google Ads California" [ref=e391] [cursor=pointer]:
+                  - /url: /dentist-google-ads-management-california/
+              - listitem [ref=e392]:
+                - link "PPC Services California" [ref=e393] [cursor=pointer]:
+                  - /url: /dentist-ppc-services-california/
+              - listitem [ref=e394]:
+                - link "Facebook Ads California" [ref=e395] [cursor=pointer]:
+                  - /url: /dentist-facebook-ads-management-california/
+        - generic [ref=e397]:
+          - generic [ref=e398]:
+            - paragraph [ref=e399]: © 2026 GrowLimo. All rights reserved.
+            - generic [ref=e400]:
+              - link "Privacy Policy" [ref=e401] [cursor=pointer]:
+                - /url: /privacy-policy/
+              - generic [ref=e402]: "|"
+              - link "Terms & Conditions" [ref=e403] [cursor=pointer]:
+                - /url: /terms-and-conditions/
+          - generic [ref=e404]:
+            - generic [ref=e405]: ★★★★★
+            - generic [ref=e406]: 5.0 Google Rating
+          - generic [ref=e407]:
+            - link "LinkedIn" [ref=e408] [cursor=pointer]:
+              - /url: https://www.linkedin.com/company/growlimo
+              - img [ref=e409]
+            - link "Facebook" [ref=e411] [cursor=pointer]:
+              - /url: https://www.facebook.com/people/GrowLimo/61581846653070/
+              - img [ref=e412]
+            - link "Instagram" [ref=e414] [cursor=pointer]:
+              - /url: https://www.instagram.com/growlimo/
+              - img [ref=e415]
+            - link "TikTok" [ref=e417] [cursor=pointer]:
+              - /url: https://www.tiktok.com/@growlimo
+              - img [ref=e418]
+  - button "Open Next.js Dev Tools" [ref=e425] [cursor=pointer]:
+    - img [ref=e426]
+  - alert [ref=e429]

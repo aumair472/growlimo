@@ -1,5 +1,10 @@
-import { useState, useRef, useEffect } from 'react';
-import { useContactForm } from '../../hooks/useContactForm';
+import { useEffect, useRef } from 'react';
+import { useContactForm, isStepValid } from '../../hooks/useContactForm';
+import ProgressBar from './form-steps/ProgressBar';
+import StepShell from './form-steps/StepShell';
+import StepInput from './form-steps/StepInput';
+import ServiceCards from './form-steps/ServiceCards';
+import ReviewStep from './form-steps/ReviewStep';
 
 const SERVICE_OPTIONS = [
   {
@@ -39,6 +44,9 @@ const SERVICE_OPTIONS = [
   },
 ];
 
+const serviceLabel = (value) =>
+  SERVICE_OPTIONS.flatMap((g) => g.options).find((o) => o.value === value)?.label || '';
+
 export default function Form({
   slug,
   ctaHeadline = 'Request Free Consultation',
@@ -56,10 +64,16 @@ export default function Form({
     handleChange,
     handleSubmit,
     setFormData,
+    steps,
+    currentStep,
+    goNext,
+    goBack,
+    goToStep,
   } = useContactForm(slug, variant);
 
-  const [serviceOpen, setServiceOpen] = useState(false);
-  const serviceDropdownRef = useRef(null);
+  const stepContainerRef = useRef(null);
+  // Final step (message + review summary) hosts the real submit button.
+  const isFinalStep = currentStep === steps.length - 1;
 
   useEffect(() => {
     if (initialService || initialMessage) {
@@ -71,33 +85,47 @@ export default function Form({
     }
   }, [initialService, initialMessage, setFormData]);
 
+  // Autofocus first field of each step — keeps keyboard users (and Enter-key
+  // advancers) in flow. Only after the user has interacted with the form, so
+  // embedded hero/sidebar forms (and sessionStorage restores) never steal
+  // focus or scroll the page on load.
+  const interactedRef = useRef(false);
   useEffect(() => {
-    function handleClickOutside(e) {
-      if (
-        serviceDropdownRef.current &&
-        !serviceDropdownRef.current.contains(e.target)
-      ) {
-        setServiceOpen(false);
-      }
+    if (!interactedRef.current) return;
+    const el = stepContainerRef.current?.querySelector('[data-autofocus="true"]');
+    if (el) el.focus();
+  }, [currentStep]);
+
+  // Enter advances to the next step when valid (explicit handler — implicit
+  // form submission is unreliable without a rendered submit button). Textarea
+  // keeps Enter for newlines; review step keeps Enter for real submit.
+  const onFormKeyDown = (e) => {
+    if (e.key !== 'Enter' || isFinalStep) return;
+    if (e.target.tagName === 'TEXTAREA') return;
+    e.preventDefault();
+    goNext();
+  };
+
+  // Guard against premature real submission on non-final steps.
+  const onFormSubmit = (e) => {
+    if (!isFinalStep) {
+      e.preventDefault();
+      goNext();
+      return;
     }
-    document.addEventListener('mousedown', handleClickOutside);
-    return () => document.removeEventListener('mousedown', handleClickOutside);
-  }, []);
+    handleSubmit(e);
+  };
 
-  const selectedServiceLabel =
-    SERVICE_OPTIONS.flatMap((g) => g.options).find(
-      (o) => o.value === formData.service
-    )?.label || '';
+  const stepId = steps[currentStep].id;
+  const stepValid = isStepValid(currentStep, formData);
 
-  const fieldClass = (err) =>
-    `w-full px-4 py-[11px] bg-[#0C1220] border ${err
-      ? 'border-red-500'
-      : 'border-[rgba(255,255,255,0.10)]'
-    } rounded-[10px] text-[#F0F4FF] text-[12px]
-    placeholder-[#4A6080] 
-    focus:outline-none 
-    focus:border-[#00C68A] 
-    transition-colors duration-200`;
+  const reviewRows = [
+    { label: 'Name', value: formData.name, stepIndex: 0 },
+    { label: 'Company', value: formData.company, stepIndex: 0 },
+    { label: 'Email', value: formData.email, stepIndex: 1 },
+    { label: 'Phone', value: formData.phone, stepIndex: 1 },
+    { label: 'Service', value: serviceLabel(formData.service), stepIndex: 2 },
+  ];
 
   return (
     <section id="contact-form" className={compact ? '' : 'bg-[#080D18] py-16'}>
@@ -124,96 +152,18 @@ export default function Form({
           )}
 
           <div className={compact ? 'w-full' : 'lg:col-span-3'}>
-            <div className="bg-[#1A2438] border border-[rgba(255,255,255,0.08)] rounded-[16px] p-8">
-              <form onSubmit={handleSubmit} className="flex flex-col gap-4">
-                <div className="grid md:grid-cols-2 gap-4">
-                  <div>
-                    <label className="block text-[11px] font-medium text-[#8FA8C8] mb-[6px]">Name *</label>
-                    <input
-                      type="text"
-                      name="name"
-                      value={formData.name}
-                      onChange={handleChange}
-                      className={fieldClass(formErrors.name)}
-                      placeholder="Dr. Sarah Johnson"
-                    />
-                  </div>
-                  <div>
-                    <label className="block text-[11px] font-medium text-[#8FA8C8] mb-[6px]">Practice / Company</label>
-                    <input
-                      type="text"
-                      name="company"
-                      value={formData.company}
-                      onChange={handleChange}
-                      className={fieldClass(false)}
-                      placeholder="Elite Medical Practice"
-                    />
-                  </div>
-                </div>
+            <div className={`bg-[#1A2438] border border-[rgba(255,255,255,0.08)] rounded-[16px] ${compact ? 'p-6' : 'p-8'}`}>
+              <form
+                onSubmit={onFormSubmit}
+                onKeyDown={onFormKeyDown}
+                onPointerDownCapture={() => { interactedRef.current = true; }}
+                onKeyDownCapture={() => { interactedRef.current = true; }}
+                noValidate
+              >
+                <ProgressBar steps={steps} currentStep={currentStep} />
 
-                <div className="grid md:grid-cols-2 gap-4">
-                  <div>
-                    <label className="block text-[11px] font-medium text-[#8FA8C8] mb-[6px]">Email *</label>
-                    <input
-                      type="email"
-                      name="email"
-                      value={formData.email}
-                      onChange={handleChange}
-                      className={fieldClass(formErrors.email)}
-                      placeholder="sarah@elitemedical.com"
-                    />
-                  </div>
-                  <div>
-                    <label className="block text-[11px] font-medium text-[#8FA8C8] mb-[6px]">Phone *</label>
-                    <input
-                      type="tel"
-                      name="phone"
-                      value={formData.phone}
-                      onChange={handleChange}
-                      className={fieldClass(formErrors.phone)}
-                      placeholder="+1 555-123-4567"
-                    />
-                  </div>
-                </div>
-
-                <div ref={serviceDropdownRef} className="relative">
-                  <label className="block text-[11px] font-medium text-[#8FA8C8] mb-[6px]">Service Interested In *</label>
-                  <button
-                    type="button"
-                    onClick={() => setServiceOpen(!serviceOpen)}
-                    className={fieldClass(formErrors.service)}
-                  >
-                    <span className={selectedServiceLabel ? 'text-white' : 'text-slate-500'}>
-                      {selectedServiceLabel || 'Select a service'}
-                    </span>
-                  </button>
-                  {serviceOpen && (
-                    <div className="absolute top-full left-0 right-0 mt-2 bg-[#0C1220] border border-[rgba(255,255,255,0.10)] rounded-[12px] shadow-2xl z-50 overflow-hidden max-h-60 overflow-y-auto">
-                      {SERVICE_OPTIONS.map((group) => (
-                        <div key={group.group}>
-                          <div className="px-4 py-2 text-[10px] font-bold text-[#4A6080] bg-[#080D18] uppercase tracking-widest">
-                            {group.group}
-                          </div>
-                          {group.options.map((opt) => (
-                            <button
-                              key={opt.value}
-                              type="button"
-                              onClick={() => {
-                                handleChange({ target: { name: 'service', value: opt.value } });
-                                setServiceOpen(false);
-                              }}
-                              className="w-full text-left px-4 py-3 text-[13px] text-[#8FA8C8] hover:bg-[rgba(0,198,138,0.08)] hover:text-[#00C68A] transition-colors duration-150"
-                            >
-                              {opt.label}
-                            </button>
-                          ))}
-                        </div>
-                      ))}
-                    </div>
-                  )}
-                </div>
-
-                {/* Honeypot field - anti-spam */}
+                {/* Honeypot field - anti-spam. Rendered on every step so bots
+                    that ignore the step flow still fill it. */}
                 <div className="hidden" aria-hidden="true">
                   <input
                     type="text"
@@ -225,27 +175,133 @@ export default function Form({
                   />
                 </div>
 
-                <div>
-                  <label className="block text-[11px] font-medium text-[#8FA8C8] mb-[6px]">Message *</label>
-                  <textarea
-                    name="message"
-                    value={formData.message}
-                    onChange={handleChange}
-                    rows={4}
-                    className={fieldClass(formErrors.message)}
-                    placeholder="Tell us about your practice and goals..."
-                  />
+                {/* key={currentStep} re-mounts the wrapper per step so the CSS
+                    enter animation replays (respects prefers-reduced-motion). */}
+                <div key={currentStep} ref={stepContainerRef} className="form-step-enter">
+                  {stepId === 'about' && (
+                    <StepShell question="Tell us who you are" hint="Company is optional — skip it if it doesn't apply.">
+                      <div className="flex flex-col gap-4">
+                        <StepInput
+                          label="Name *"
+                          name="name"
+                          value={formData.name}
+                          onChange={handleChange}
+                          error={formErrors.name}
+                          placeholder="Dr. Sarah Johnson"
+                          autoComplete="name"
+                          autoFocus
+                        />
+                        <StepInput
+                          label="Practice / Company (optional)"
+                          name="company"
+                          value={formData.company}
+                          onChange={handleChange}
+                          placeholder="Elite Medical Practice"
+                          autoComplete="organization"
+                        />
+                      </div>
+                    </StepShell>
+                  )}
+
+                  {stepId === 'contact' && (
+                    <StepShell question="How do we reach you?" hint="We'll send your audit here — no spam, ever.">
+                      <div className="flex flex-col gap-4">
+                        <StepInput
+                          label="Email *"
+                          name="email"
+                          type="email"
+                          value={formData.email}
+                          onChange={handleChange}
+                          error={formErrors.email}
+                          placeholder="sarah@elitemedical.com"
+                          autoComplete="email"
+                          autoFocus
+                        />
+                        <StepInput
+                          label="Phone *"
+                          name="phone"
+                          type="tel"
+                          value={formData.phone}
+                          onChange={handleChange}
+                          error={formErrors.phone}
+                          placeholder="+1 555-123-4567"
+                          autoComplete="tel"
+                        />
+                      </div>
+                    </StepShell>
+                  )}
+
+                  {stepId === 'service' && (
+                    <StepShell question="What service are you interested in?">
+                      <ServiceCards
+                        options={SERVICE_OPTIONS}
+                        value={formData.service}
+                        error={formErrors.service}
+                        onSelect={(value) =>
+                          handleChange({ target: { name: 'service', value } })
+                        }
+                      />
+                    </StepShell>
+                  )}
+
+                  {stepId === 'message' && (
+                    <StepShell question="Tell us about your goals" hint="Check your details, then send.">
+                      {/* Summary of steps 1–3 with Edit links — review merged into
+                          the final step so users confirm without an extra screen. */}
+                      <ReviewStep rows={reviewRows} onEdit={goToStep} />
+                      <StepInput
+                        label="Message *"
+                        name="message"
+                        textarea
+                        value={formData.message}
+                        onChange={handleChange}
+                        error={formErrors.message}
+                        placeholder="Tell us about your practice and goals..."
+                        autoFocus
+                      />
+                      {submitError && (
+                        <p className="text-red-400 text-[13px] mt-3" role="alert">
+                          {submitError}
+                        </p>
+                      )}
+                    </StepShell>
+                  )}
                 </div>
 
-                {submitError && <p className="text-red-400 text-[13px] mt-1">{submitError}</p>}
-
-                <button
-                  type="submit"
-                  disabled={formLoading}
-                  className="w-full py-[11px] bg-[#DD6613] hover:bg-[#FB923C] text-white font-bold text-[13px] rounded-[10px] border-none cursor-pointer transition-colors duration-200 disabled:opacity-50 disabled:cursor-not-allowed mt-2"
-                >
-                  {formLoading ? 'Sending...' : ctaButtonText}
-                </button>
+                {/* Step navigation; final step swaps Next for the real submit */}
+                <div className="flex items-center gap-3 mt-5">
+                  {currentStep > 0 && (
+                    <button
+                      type="button"
+                      onClick={goBack}
+                      className="px-5 py-[11px] bg-transparent border border-[rgba(255,255,255,0.15)] text-[#8FA8C8] hover:text-[#F0F4FF] hover:border-[rgba(255,255,255,0.30)] font-semibold text-[13px] rounded-[10px] cursor-pointer transition-colors duration-200"
+                    >
+                      ← Back
+                    </button>
+                  )}
+                  {isFinalStep ? (
+                    <button
+                      type="submit"
+                      disabled={formLoading || !stepValid}
+                      className="flex-1 py-[11px] bg-[#DD6613] hover:bg-[#FB923C] text-white font-bold text-[13px] rounded-[10px] border-none cursor-pointer transition-colors duration-200 disabled:opacity-50 disabled:cursor-not-allowed"
+                    >
+                      {formLoading ? 'Sending...' : ctaButtonText}
+                    </button>
+                  ) : (
+                    <button
+                      type="button"
+                      onClick={goNext}
+                      disabled={!stepValid}
+                      className="flex-1 py-[11px] bg-[#DD6613] hover:bg-[#FB923C] text-white font-bold text-[13px] rounded-[10px] border-none cursor-pointer transition-colors duration-200 disabled:opacity-50 disabled:cursor-not-allowed"
+                    >
+                      {/* Visible "Skip" affordance: company optional, so label reads
+                          Skip when name is done but company left blank */}
+                      {stepId === 'about' && formData.name.trim() && !formData.company.trim()
+                        ? 'Skip company →'
+                        : 'Next →'}
+                    </button>
+                  )}
+                </div>
               </form>
             </div>
           </div>
