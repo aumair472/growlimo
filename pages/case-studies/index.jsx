@@ -1,9 +1,13 @@
+import { useEffect, useRef } from 'react';
 import fs from 'fs';
 import path from 'path';
 import Link from 'next/link';
 import SEO from '../../components/SEO';
+import { ENC, handleCall } from '../../lib/contactProtection';
 
 export default function CaseStudiesIndex({ caseStudies }) {
+  const mountedAt = useRef(null);
+  useEffect(() => { mountedAt.current = Date.now(); }, []);
   return (
     <>
       <SEO
@@ -92,12 +96,26 @@ export default function CaseStudiesIndex({ caseStudies }) {
               >
                 Schedule a Free Consultation
               </Link>
-              <a
-                href="tel:+17247506935"
-                className="bg-transparent text-white border border-white/20 hover:border-white font-bold py-4 px-10 rounded-full transition-all duration-200 text-center transform hover:scale-[1.02]"
+              <button
+                type="button"
+                onClick={() => handleCall(ENC.US_PHONE, mountedAt.current)}
+                className="bg-transparent text-white border border-white/20 hover:border-white font-bold py-4 px-10 rounded-full transition-all duration-200 text-center transform hover:scale-[1.02] cursor-pointer"
+                aria-label="Call US Office"
               >
-                Call +1 (724) 750-6935
-              </a>
+                Call +1 (667) 347-4729
+              </button>
+            </div>
+
+            {/* Location directories or markets */}
+            <div className="mt-12 text-sm text-[#4A6080]">
+              <span className="font-semibold text-white/60 mr-3">Looking for local services? Explore our flagships in:</span>
+              <Link href="/dubai/" className="hover:text-[#00C68A] transition-colors font-medium">Dubai, UAE</Link>
+              <span className="mx-2.5 text-white/10">•</span>
+              <Link href="/australia/" className="hover:text-[#00C68A] transition-colors font-medium">Australia (National)</Link>
+              <span className="mx-2.5 text-white/10">•</span>
+              <Link href="/seo-services-california/" className="hover:text-[#00C68A] transition-colors font-medium">California</Link>
+              <span className="mx-2.5 text-white/10">•</span>
+              <Link href="/seo-services-texas/" className="hover:text-[#00C68A] transition-colors font-medium">Texas</Link>
             </div>
           </div>
         </section>

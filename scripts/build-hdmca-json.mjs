@@ -369,7 +369,7 @@ const data = {
         'California',
       ],
       serviceType: 'Healthcare Digital Marketing Agency',
-      telephone: '+1-724-750-6935',
+      telephone: '+1-667-347-4729',
       address: {
         '@type': 'PostalAddress',
         addressState: 'CA',

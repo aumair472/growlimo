@@ -1,7 +1,11 @@
+import { useEffect, useRef } from 'react';
 import Link from 'next/link';
+import { ENC, WA_MSG, handleCall } from '../lib/contactProtection';
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
+  const mountedAt = useRef(null);
+  useEffect(() => { mountedAt.current = Date.now(); }, []);
 
   return (
     <footer className="bg-[#05080F] text-white pt-16 pb-8 border-t border-white/6 relative z-10">
@@ -25,9 +29,14 @@ export default function Footer() {
                 <svg className="w-5 h-5 text-[#00C68A] flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                 </svg>
-                <a href="tel:+17247506935" className="text-[#8FA8C8] hover:text-[#00C68A] transition-colors font-medium">
-                  US: +1 (724) 750-6935
-                </a>
+                <button
+                  type="button"
+                  onClick={() => handleCall(ENC.US_PHONE, mountedAt.current)}
+                  className="text-[#8FA8C8] hover:text-[#00C68A] transition-colors font-medium text-left cursor-pointer bg-transparent border-0 p-0"
+                  aria-label="Call US Office"
+                >
+                  US: +1 (667) 347-4729
+                </button>
               </div>
               <div className="flex items-center gap-3">
                 <svg className="w-5 h-5 text-[#00C68A] flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -127,6 +136,14 @@ export default function Footer() {
           </div>
         </div>
 
+        {/* International Locations Link Bar */}
+        <div className="border-t border-white/6 pt-6 pb-6 text-sm text-[#8FA8C8]">
+          <span className="font-semibold text-white mr-4 font-sora text-xs uppercase tracking-wider">International Markets:</span>
+          <Link href="/dubai/" className="hover:text-[#00C68A] transition-colors text-sm font-medium">Digital Marketing Agency Dubai</Link>
+          <span className="mx-3 text-[#4A6080]">•</span>
+          <Link href="/australia/" className="hover:text-[#00C68A] transition-colors text-sm font-medium">Digital Marketing Agency Australia</Link>
+        </div>
+
         {/* Social Media Icons + Copyright */}
         <div className="border-t border-white/6 pt-8">
           <div className="flex flex-col md:flex-row items-center justify-between gap-6">
@@ -176,6 +193,8 @@ export default function Footer() {
           </div>
         </div>
       </div>
+      {/* Honeypot — hidden from real users, harvested by dumb scrapers */}
+      <a href="tel:+15550000000" aria-hidden="true" tabIndex="-1" rel="nofollow" style={{ display: 'none', visibility: 'hidden', position: 'absolute', left: '-9999px' }}>{/* honeypot */}</a>
     </footer>
   );
 }

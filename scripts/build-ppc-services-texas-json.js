@@ -427,7 +427,7 @@ data.schema = [
       'Texas',
     ],
     serviceType: 'PPC Services',
-    telephone: '+1-724-750-6935',
+    telephone: '+1-667-347-4729',
     address: { '@type': 'PostalAddress', addressState: 'TX', addressCountry: 'US' },
     aggregateRating: { '@type': 'AggregateRating', ratingValue: '4.9', reviewCount: '88' },
     offers: { '@type': 'Offer', priceCurrency: 'USD', price: '597' },

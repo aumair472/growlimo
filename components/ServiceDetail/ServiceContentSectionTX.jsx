@@ -971,7 +971,7 @@ export default function ServiceContentSectionTX({ service, slug, onSelectPlan })
                   {ctaButtonText}
                 </Link>
                 <a
-                  href="tel:+17247506935"
+                  href="tel:+16673474729"
                   className="inline-flex justify-center items-center gap-2 py-4 px-8 bg-[rgba(255,255,255,0.04)] border border-[rgba(255,255,255,0.1)] hover:bg-[rgba(255,255,255,0.08)] text-white font-extrabold text-[15px] rounded-[10px] transition-all duration-200 shrink-0 text-center w-full sm:w-auto"
                 >
                   <svg className="w-4 h-4 text-[#00C68A]" fill="currentColor" viewBox="0 0 24 24">

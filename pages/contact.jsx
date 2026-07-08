@@ -1,8 +1,9 @@
-import { useState } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
 import SEO from '../components/SEO';
 import { getSEOConfig } from '../lib/config';
 import Form from '../components/common/Form';
+import { ENC, handleCall } from '../lib/contactProtection';
 
 const whyChooseUs = [
   {
@@ -136,6 +137,8 @@ const trustSignals = [
 export default function Contact() {
   const seo = getSEOConfig('/contact');
   const [openFaq, setOpenFaq] = useState(null);
+  const mountedAt = useRef(null);
+  useEffect(() => { mountedAt.current = Date.now(); }, []);
 
   const getInitials = (name) => {
     return name
@@ -428,7 +431,7 @@ export default function Contact() {
               Explore Our Specialized Services
             </h2>
 
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-10">
+            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-10">
               
               <div>
                 <h3 className="text-[#00C68A] text-[11px] font-bold uppercase tracking-[1.5px] mb-4 pb-2 border-b border-[rgba(0,198,138,0.20)] leading-none">
@@ -522,6 +525,24 @@ export default function Contact() {
                 </ul>
               </div>
 
+              <div>
+                <h3 className="text-[#00C68A] text-[11px] font-bold uppercase tracking-[1.5px] mb-4 pb-2 border-b border-[rgba(0,198,138,0.20)] leading-none">
+                  Global Hubs
+                </h3>
+                <ul className="space-y-2.5">
+                  <li>
+                    <Link href="/dubai/" className="font-sans text-[13px] text-[#4A6080] hover:text-[#F0F4FF] transition-all duration-200 block">
+                      Marketing Agency Dubai
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/australia/" className="font-sans text-[13px] text-[#4A6080] hover:text-[#F0F4FF] transition-all duration-200 block">
+                      Marketing Agency Australia
+                    </Link>
+                  </li>
+                </ul>
+              </div>
+
             </div>
 
           </div>
@@ -561,12 +582,14 @@ export default function Contact() {
               >
                 Schedule Your Free 30-Minute Strategy Session
               </a>
-              <a
-                href="tel:+17247506935"
-                className="border border-[rgba(255,255,255,0.20)] hover:border-[#00C68A] text-white font-semibold py-4 px-8 rounded-[10px] transition-all duration-200 hover:scale-[1.02] transform leading-none block text-center"
+              <button
+                type="button"
+                onClick={() => handleCall(ENC.US_PHONE, mountedAt.current)}
+                className="border border-[rgba(255,255,255,0.20)] hover:border-[#00C68A] text-white font-semibold py-4 px-8 rounded-[10px] transition-all duration-200 hover:scale-[1.02] transform leading-none block text-center cursor-pointer bg-transparent"
+                aria-label="Call US Office"
               >
-                Call +1 (724) 750-6935
-              </a>
+                Call +1 (667) 347-4729
+              </button>
             </div>
 
           </div>

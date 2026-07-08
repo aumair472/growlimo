@@ -6,6 +6,7 @@ import Testimonials from '../components/Testimonials';
 import FAQ from '../components/FAQ';
 import { getSEOConfig } from '../lib/config';
 import { useCountUp } from '../hooks/useCountUp';
+import { ENC, WA_MSG, handleCall } from '../lib/contactProtection';
 
 /* ─── Stats Band Card ─── */
 function StatCard({ value, suffix, prefix, label }) {
@@ -72,6 +73,8 @@ export default function Home() {
   const seo = getSEOConfig('/');
   const [emailInput, setEmailInput] = useState('');
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const mountedAt = useRef(null);
+  useEffect(() => { mountedAt.current = Date.now(); }, []);
 
   const handleFormSubmit = (e) => {
     e.preventDefault();
@@ -375,6 +378,8 @@ export default function Home() {
               { name: 'Texas SEO', link: '/seo-services-texas/' },
               { name: 'Google Ads CA', link: '/google-ads-management-california/' },
               { name: 'Google Ads TX', link: '/google-ads-management-texas/' },
+              { name: 'Dubai Marketing Agency', link: '/dubai/' },
+              { name: 'Australia Marketing Agency', link: '/australia/' },
               { name: 'Marketing Case Studies', link: '/case-studies/' },
               { name: 'About Us', link: '/about/' },
             ].map((item, i) => (
@@ -451,10 +456,15 @@ export default function Home() {
             </div>
 
             <div className="flex flex-col sm:flex-row items-center justify-center gap-6 mt-12 text-sm text-[#4A6080]">
-              <a href="tel:+17247506935" className="hover:text-[#00C68A] transition-colors flex items-center gap-2 font-medium">
+              <button
+                type="button"
+                onClick={() => handleCall(ENC.US_PHONE, mountedAt.current)}
+                className="hover:text-[#00C68A] transition-colors flex items-center gap-2 font-medium cursor-pointer bg-transparent border-0 p-0 text-[#4A6080]"
+                aria-label="Call US Office"
+              >
                 <svg className="w-4 h-4 text-[#00C68A] flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" /></svg>
-                <span><strong>US:</strong> +1 (724) 750-6935</span>
-              </a>
+                <span><strong>US:</strong> +1 (667) 347-4729</span>
+              </button>
               <a href="mailto:info@growlimo.com" className="hover:text-[#00C68A] transition-colors flex items-center gap-2 font-medium">
                 <svg className="w-4 h-4 text-[#00C68A] flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>
                 <span>info@growlimo.com</span>

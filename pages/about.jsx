@@ -199,6 +199,8 @@ export default function About() {
                 { name: 'Texas SEO', link: '/seo-services-texas/' },
                 { name: 'Google Ads CA', link: '/google-ads-management-california/' },
                 { name: 'Google Ads TX', link: '/google-ads-management-texas/' },
+                { name: 'Dubai Marketing Agency', link: '/dubai/' },
+                { name: 'Australia Marketing Agency', link: '/australia/' },
                 { name: 'Marketing Case Studies', link: '/case-studies/' },
                 { name: 'About Us', link: '/about/' },
               ].map((item, i) => (
