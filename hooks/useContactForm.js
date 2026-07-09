@@ -30,7 +30,11 @@ const FIELD_VALIDATORS = {
     if (!EMAIL_REGEX.test(v.trim())) return 'Please enter a valid email address';
     return '';
   },
-  phone: (v) => (!v.trim() ? 'Phone is required' : ''),
+  phone: (v) => {
+    if (!v.trim()) return 'Phone is required';
+    if (v.trim().length < 7) return 'Please enter a valid phone number';
+    return '';
+  },
   service: (v) => (!v ? 'Please select a service' : ''),
   message: (v) => (!v.trim() ? 'Message is required' : ''),
 };
@@ -178,7 +182,11 @@ export const useContactForm = (slug, variant = 'service') => {
   }, []);
 
   const handleChange = useCallback((e) => {
-    const { name, value } = e.target;
+    const { name } = e.target;
+    let { value } = e.target;
+    if (name === 'phone') {
+      value = value.replace(/\D/g, '').slice(0, 15);
+    }
     setFormData((prev) => ({ ...prev, [name]: value }));
     setFormErrors((prev) => {
       const n = { ...prev };
