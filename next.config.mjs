@@ -27,6 +27,14 @@ const nextConfig = {
           { key: 'Strict-Transport-Security', value: 'max-age=31536000; includeSubDomains; preload' },
         ],
       },
+      // ✅ FIX 5: Deindex Next.js image-optimizer URLs (/_next/image?url=...)
+      // Prevents duplicate asset URLs bloating the index / wasting crawl budget.
+      {
+        source: '/_next/image(.*)',
+        headers: [
+          { key: 'X-Robots-Tag', value: 'noindex' },
+        ],
+      },
       // ✅ FIX 3: Long-term cache for static blog images
       {
         source: '/blog-image/:path*',

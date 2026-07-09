@@ -1,6 +1,7 @@
 # *
 User-agent: *
 Allow: /
+Disallow: /_next/image
 
 # Host
 Host: https://growlimo.com
