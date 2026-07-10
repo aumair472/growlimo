@@ -56,6 +56,36 @@ const nextConfig = {
         destination: 'https://growlimo.com/:path*',
         permanent: true, // 308 in Next.js (treated as 301 by crawlers)
       },
+      {
+        source: '/services/marketing-automation/',
+        destination: '/email-marketing-services-california/',
+        permanent: true,
+      },
+      {
+        source: '/web-developer-services-texas/',
+        destination: '/web-developer-texas/',
+        permanent: true,
+      },
+      {
+        source: '/web-developer-services-california/',
+        destination: '/web-developer-california/',
+        permanent: true,
+      },
+      {
+        source: '/social-media-marketing-california/',
+        destination: '/social-media-marketing-services-california/',
+        permanent: true,
+      },
+      {
+        source: '/blog/facebook-ads-vs-google-ads/',
+        destination: '/blog/facebook-ads-vs-google-ads-california/',
+        permanent: true,
+      },
+      {
+        source: '/blog/step-by-step-guide-local-search-ads-for-limo-services/',
+        destination: '/blog/local-search-ads-guide-healthcare-practices/',
+        permanent: true,
+      },
     ];
   },
 }

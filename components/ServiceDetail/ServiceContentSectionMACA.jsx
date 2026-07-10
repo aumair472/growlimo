@@ -936,7 +936,7 @@ export default function ServiceContentSectionMACA({ service, slug, onSelectPlan 
               </p>
             ))}
             <Link
-              href="/contact"
+              href="/contact/"
               className="inline-block bg-[#0081FB] hover:bg-[#0069D9] text-white font-sora font-extrabold text-[15px] tracking-[1.5px] uppercase rounded-[12px] py-4 px-9 shadow-lg hover:shadow-[#0081FB]/25 transition-all duration-300 transform hover:scale-[1.02] cursor-pointer mt-2"
             >
               {ctaButtonText}

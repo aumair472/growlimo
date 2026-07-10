@@ -990,7 +990,7 @@ export default function ServiceContentSectionHDMCA({ service, slug, onSelectPlan
             ))}
 
             <Link
-              href="/contact"
+              href="/contact/"
               className="inline-block bg-[#00C68A] hover:bg-[#00B37C] text-[#080D18] font-sora font-extrabold text-[15px] tracking-[1.5px] uppercase rounded-[12px] py-4 px-9 shadow-lg hover:shadow-[#00C68A]/20 transition-all duration-300 transform hover:scale-[1.02] cursor-pointer"
             >
               {ctaButtonText}
