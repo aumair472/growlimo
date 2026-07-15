@@ -65,16 +65,16 @@ export default function Footer() {
           <div className="lg:col-span-2">
             <h4 className="font-semibold mb-4 text-[#F0F4FF] text-xs uppercase tracking-wider font-sora">Texas General</h4>
             <ul className="space-y-2">
-              <li><Link href="/seo-services-texas/" className="text-[#8FA8C8] hover:text-[#00C68A] transition text-sm">SEO Services Texas</Link></li>
-              <li><Link href="/digital-marketing-agency-texas/" className="text-[#8FA8C8] hover:text-[#00C68A] transition text-sm">Digital Marketing Texas</Link></li>
-              <li><Link href="/google-ads-management-texas/" className="text-[#8FA8C8] hover:text-[#00C68A] transition text-sm">Google Ads Texas</Link></li>
-              <li><Link href="/ppc-services-texas/" className="text-[#8FA8C8] hover:text-[#00C68A] transition text-sm">PPC Services Texas</Link></li>
-              <li><Link href="/social-media-marketing-services-texas/" className="text-[#8FA8C8] hover:text-[#00C68A] transition text-sm">Social Media Texas</Link></li>
-              <li><Link href="/facebook-ads-management-texas/" className="text-[#8FA8C8] hover:text-[#00C68A] transition text-sm">Facebook Ads Texas</Link></li>
-              <li><Link href="/meta-ads-agency-texas/" className="text-[#8FA8C8] hover:text-[#00C68A] transition text-sm">Meta Ads Texas</Link></li>
+              <li><Link href="/seo-services-texas/" className="text-[#8FA8C8] hover:text-[#00C68A] transition text-sm">Seo Services Texas</Link></li>
+              <li><Link href="/digital-marketing-agency-texas/" className="text-[#8FA8C8] hover:text-[#00C68A] transition text-sm">Digital Marketing Agency Texas</Link></li>
+              <li><Link href="/google-ads-management-texas/" className="text-[#8FA8C8] hover:text-[#00C68A] transition text-sm">Google Ads Management Texas</Link></li>
+              <li><Link href="/ppc-services-texas/" className="text-[#8FA8C8] hover:text-[#00C68A] transition text-sm">Ppc Services Texas</Link></li>
+              <li><Link href="/social-media-marketing-services-texas/" className="text-[#8FA8C8] hover:text-[#00C68A] transition text-sm">Social Media Marketing Services Texas</Link></li>
+              <li><Link href="/facebook-ads-management-texas/" className="text-[#8FA8C8] hover:text-[#00C68A] transition text-sm">Facebook Ads Management Texas</Link></li>
+              <li><Link href="/meta-ads-agency-texas/" className="text-[#8FA8C8] hover:text-[#00C68A] transition text-sm">Meta Ads Agency Texas</Link></li>
               <li><Link href="/web-developer-texas/" className="text-[#8FA8C8] hover:text-[#00C68A] transition text-sm">Web Developer Texas</Link></li>
-              <li><Link href="/web-design-services-texas/" className="text-[#8FA8C8] hover:text-[#00C68A] transition text-sm">Web Design Texas</Link></li>
-              <li><Link href="/email-marketing-services-texas/" className="text-[#8FA8C8] hover:text-[#00C68A] transition text-sm">Email Marketing Texas</Link></li>
+              <li><Link href="/web-design-services-texas/" className="text-[#8FA8C8] hover:text-[#00C68A] transition text-sm">Web Design Services Texas</Link></li>
+              <li><Link href="/email-marketing-services-texas/" className="text-[#8FA8C8] hover:text-[#00C68A] transition text-sm">Email Marketing Services Texas</Link></li>
             </ul>
           </div>
 
@@ -82,16 +82,16 @@ export default function Footer() {
           <div className="lg:col-span-2">
             <h4 className="font-semibold mb-4 text-[#F0F4FF] text-xs uppercase tracking-wider font-sora">California General</h4>
             <ul className="space-y-2">
-              <li><Link href="/seo-services-california/" className="text-[#8FA8C8] hover:text-[#00C68A] transition text-sm">SEO Services California</Link></li>
-              <li><Link href="/digital-marketing-agency-california/" className="text-[#8FA8C8] hover:text-[#00C68A] transition text-sm">Digital Marketing California</Link></li>
-              <li><Link href="/google-ads-management-california/" className="text-[#8FA8C8] hover:text-[#00C68A] transition text-sm">Google Ads California</Link></li>
-              <li><Link href="/ppc-services-california/" className="text-[#8FA8C8] hover:text-[#00C68A] transition text-sm">PPC Services California</Link></li>
-              <li><Link href="/social-media-marketing-services-california/" className="text-[#8FA8C8] hover:text-[#00C68A] transition text-sm">Social Media California</Link></li>
-              <li><Link href="/facebook-ads-management-california/" className="text-[#8FA8C8] hover:text-[#00C68A] transition text-sm">Facebook Ads California</Link></li>
-              <li><Link href="/meta-ads-agency-california/" className="text-[#8FA8C8] hover:text-[#00C68A] transition text-sm">Meta Ads California</Link></li>
+              <li><Link href="/seo-services-california/" className="text-[#8FA8C8] hover:text-[#00C68A] transition text-sm">Seo Services California</Link></li>
+              <li><Link href="/digital-marketing-agency-california/" className="text-[#8FA8C8] hover:text-[#00C68A] transition text-sm">Digital Marketing Agency California</Link></li>
+              <li><Link href="/google-ads-management-california/" className="text-[#8FA8C8] hover:text-[#00C68A] transition text-sm">Google Ads Management California</Link></li>
+              <li><Link href="/ppc-services-california/" className="text-[#8FA8C8] hover:text-[#00C68A] transition text-sm">Ppc Services California</Link></li>
+              <li><Link href="/social-media-marketing-services-california/" className="text-[#8FA8C8] hover:text-[#00C68A] transition text-sm">Social Media Marketing Services California</Link></li>
+              <li><Link href="/facebook-ads-management-california/" className="text-[#8FA8C8] hover:text-[#00C68A] transition text-sm">Facebook Ads Management California</Link></li>
+              <li><Link href="/meta-ads-agency-california/" className="text-[#8FA8C8] hover:text-[#00C68A] transition text-sm">Meta Ads Agency California</Link></li>
               <li><Link href="/web-developer-california/" className="text-[#8FA8C8] hover:text-[#00C68A] transition text-sm">Web Developer California</Link></li>
-              <li><Link href="/web-design-services-california/" className="text-[#8FA8C8] hover:text-[#00C68A] transition text-sm">Web Design California</Link></li>
-              <li><Link href="/email-marketing-services-california/" className="text-[#8FA8C8] hover:text-[#00C68A] transition text-sm">Email Marketing California</Link></li>
+              <li><Link href="/web-design-services-california/" className="text-[#8FA8C8] hover:text-[#00C68A] transition text-sm">Web Design Services California</Link></li>
+              <li><Link href="/email-marketing-services-california/" className="text-[#8FA8C8] hover:text-[#00C68A] transition text-sm">Email Marketing Services California</Link></li>
             </ul>
           </div>
 
@@ -100,18 +100,18 @@ export default function Footer() {
             <h4 className="font-semibold mb-4 text-[#F0F4FF] text-xs uppercase tracking-wider font-sora">Healthcare</h4>
             <ul className="space-y-2">
               <li className="text-[10px] text-[#4A6080] font-bold uppercase tracking-widest pt-1 font-sans">Texas</li>
-              <li><Link href="/healthcare-seo-services-texas/" className="text-[#8FA8C8] hover:text-[#00C68A] transition text-sm">Healthcare SEO Texas</Link></li>
-              <li><Link href="/healthcare-digital-marketing-agency-texas/" className="text-[#8FA8C8] hover:text-[#00C68A] transition text-sm">Healthcare Agency Texas</Link></li>
-              <li><Link href="/healthcare-google-ads-management-texas/" className="text-[#8FA8C8] hover:text-[#00C68A] transition text-sm">Google Ads Texas</Link></li>
-              <li><Link href="/healthcare-ppc-services-texas/" className="text-[#8FA8C8] hover:text-[#00C68A] transition text-sm">PPC Services Texas</Link></li>
-              <li><Link href="/healthcare-facebook-ads-management-texas/" className="text-[#8FA8C8] hover:text-[#00C68A] transition text-sm">Facebook Ads Texas</Link></li>
+              <li><Link href="/healthcare-seo-services-texas/" className="text-[#8FA8C8] hover:text-[#00C68A] transition text-sm">Healthcare Seo Services Texas</Link></li>
+              <li><Link href="/healthcare-digital-marketing-agency-texas/" className="text-[#8FA8C8] hover:text-[#00C68A] transition text-sm">Healthcare Digital Marketing Agency Texas</Link></li>
+              <li><Link href="/healthcare-google-ads-management-texas/" className="text-[#8FA8C8] hover:text-[#00C68A] transition text-sm">Healthcare Google Ads Management Texas</Link></li>
+              <li><Link href="/healthcare-ppc-services-texas/" className="text-[#8FA8C8] hover:text-[#00C68A] transition text-sm">Healthcare Ppc Services Texas</Link></li>
+              <li><Link href="/healthcare-facebook-ads-management-texas/" className="text-[#8FA8C8] hover:text-[#00C68A] transition text-sm">Healthcare Facebook Ads Management Texas</Link></li>
 
               <li className="text-[10px] text-[#4A6080] font-bold uppercase tracking-widest pt-3 font-sans">California</li>
-              <li><Link href="/healthcare-seo-services-california/" className="text-[#8FA8C8] hover:text-[#00C68A] transition text-sm">Healthcare SEO California</Link></li>
-              <li><Link href="/healthcare-digital-marketing-agency-california/" className="text-[#8FA8C8] hover:text-[#00C68A] transition text-sm">Healthcare Agency California</Link></li>
-              <li><Link href="/healthcare-google-ads-management-california/" className="text-[#8FA8C8] hover:text-[#00C68A] transition text-sm">Google Ads California</Link></li>
-              <li><Link href="/healthcare-ppc-services-california/" className="text-[#8FA8C8] hover:text-[#00C68A] transition text-sm">PPC Services California</Link></li>
-              <li><Link href="/healthcare-facebook-ads-management-california/" className="text-[#8FA8C8] hover:text-[#00C68A] transition text-sm">Facebook Ads California</Link></li>
+              <li><Link href="/healthcare-seo-services-california/" className="text-[#8FA8C8] hover:text-[#00C68A] transition text-sm">Healthcare Seo Services California</Link></li>
+              <li><Link href="/healthcare-digital-marketing-agency-california/" className="text-[#8FA8C8] hover:text-[#00C68A] transition text-sm">Healthcare Digital Marketing Agency California</Link></li>
+              <li><Link href="/healthcare-google-ads-management-california/" className="text-[#8FA8C8] hover:text-[#00C68A] transition text-sm">Healthcare Google Ads Management California</Link></li>
+              <li><Link href="/healthcare-ppc-services-california/" className="text-[#8FA8C8] hover:text-[#00C68A] transition text-sm">Healthcare Ppc Services California</Link></li>
+              <li><Link href="/healthcare-facebook-ads-management-california/" className="text-[#8FA8C8] hover:text-[#00C68A] transition text-sm">Healthcare Facebook Ads Management California</Link></li>
             </ul>
           </div>
 
@@ -120,18 +120,18 @@ export default function Footer() {
             <h4 className="font-semibold mb-4 text-[#F0F4FF] text-xs uppercase tracking-wider font-sora">Dentist</h4>
             <ul className="space-y-2">
               <li className="text-[10px] text-[#4A6080] font-bold uppercase tracking-widest pt-1 font-sans">Texas</li>
-              <li><Link href="/dentist-seo-services-texas/" className="text-[#8FA8C8] hover:text-[#00C68A] transition text-sm">Dentist SEO Texas</Link></li>
-              <li><Link href="/dentist-digital-marketing-agency-texas/" className="text-[#8FA8C8] hover:text-[#00C68A] transition text-sm">Dentist Agency Texas</Link></li>
-              <li><Link href="/dentist-google-ads-management-texas/" className="text-[#8FA8C8] hover:text-[#00C68A] transition text-sm">Google Ads Texas</Link></li>
-              <li><Link href="/dentist-ppc-services-texas/" className="text-[#8FA8C8] hover:text-[#00C68A] transition text-sm">PPC Services Texas</Link></li>
-              <li><Link href="/dentist-facebook-ads-management-texas/" className="text-[#8FA8C8] hover:text-[#00C68A] transition text-sm">Facebook Ads Texas</Link></li>
+              <li><Link href="/dentist-seo-services-texas/" className="text-[#8FA8C8] hover:text-[#00C68A] transition text-sm">Dentist Seo Services Texas</Link></li>
+              <li><Link href="/dentist-digital-marketing-agency-texas/" className="text-[#8FA8C8] hover:text-[#00C68A] transition text-sm">Dentist Digital Marketing Agency Texas</Link></li>
+              <li><Link href="/dentist-google-ads-management-texas/" className="text-[#8FA8C8] hover:text-[#00C68A] transition text-sm">Dentist Google Ads Management Texas</Link></li>
+              <li><Link href="/dentist-ppc-services-texas/" className="text-[#8FA8C8] hover:text-[#00C68A] transition text-sm">Dentist Ppc Services Texas</Link></li>
+              <li><Link href="/dentist-facebook-ads-management-texas/" className="text-[#8FA8C8] hover:text-[#00C68A] transition text-sm">Dentist Facebook Ads Management Texas</Link></li>
 
               <li className="text-[10px] text-[#4A6080] font-bold uppercase tracking-widest pt-3 font-sans">California</li>
-              <li><Link href="/dentist-seo-services-california/" className="text-[#8FA8C8] hover:text-[#00C68A] transition text-sm">Dentist SEO California</Link></li>
-              <li><Link href="/dentist-digital-marketing-agency-california/" className="text-[#8FA8C8] hover:text-[#00C68A] transition text-sm">Dentist Agency California</Link></li>
-              <li><Link href="/dentist-google-ads-management-california/" className="text-[#8FA8C8] hover:text-[#00C68A] transition text-sm">Google Ads California</Link></li>
-              <li><Link href="/dentist-ppc-services-california/" className="text-[#8FA8C8] hover:text-[#00C68A] transition text-sm">PPC Services California</Link></li>
-              <li><Link href="/dentist-facebook-ads-management-california/" className="text-[#8FA8C8] hover:text-[#00C68A] transition text-sm">Facebook Ads California</Link></li>
+              <li><Link href="/dentist-seo-services-california/" className="text-[#8FA8C8] hover:text-[#00C68A] transition text-sm">Dentist Seo Services California</Link></li>
+              <li><Link href="/dentist-digital-marketing-agency-california/" className="text-[#8FA8C8] hover:text-[#00C68A] transition text-sm">Dentist Digital Marketing Agency California</Link></li>
+              <li><Link href="/dentist-google-ads-management-california/" className="text-[#8FA8C8] hover:text-[#00C68A] transition text-sm">Dentist Google Ads Management California</Link></li>
+              <li><Link href="/dentist-ppc-services-california/" className="text-[#8FA8C8] hover:text-[#00C68A] transition text-sm">Dentist Ppc Services California</Link></li>
+              <li><Link href="/dentist-facebook-ads-management-california/" className="text-[#8FA8C8] hover:text-[#00C68A] transition text-sm">Dentist Facebook Ads Management California</Link></li>
             </ul>
           </div>
         </div>
