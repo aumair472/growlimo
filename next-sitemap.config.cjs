@@ -3,6 +3,7 @@ module.exports = {
   siteUrl: 'https://growlimo.com',
   generateRobotsTxt: true,
   generateIndexSitemap: false,
+  exclude: ['/thank-you'],
   transform: async (config, path) => {
     // Custom parameters for Dubai and Australia flagship landing pages
     const cleanPath = path.replace(/\/$/, '');
