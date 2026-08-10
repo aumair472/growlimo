@@ -125,10 +125,11 @@ export default function ServiceContentSectionDSCA({ service, slug, onSelectPlan 
   const servicesIntro = contentSections[4] || {};
   const numberedServices = contentSections.slice(5, 14); // Pillared core service blocks 1 to 9
   const caseStudiesSection = contentSections[14] || {};
-  const testimonialsSection = contentSections[15] || {};
-  const pricingSection = contentSections[16] || {};
-  const specialtiesSection = contentSections[17] || {};
-  const aboutSection = contentSections[18] || {};
+  const whatSeparatesSection = contentSections[15] || {};
+  const testimonialsSection = contentSections[16] || {};
+  const pricingSection = contentSections[17] || {};
+  const specialtiesSection = contentSections[18] || {};
+  const aboutSection = contentSections[19] || {};
 
   return (
     <div className="bg-[#080D18] font-sans selection:bg-[#00C68A]/30 selection:text-white overflow-x-hidden text-[#8FA8C8]">
@@ -628,6 +629,27 @@ export default function ServiceContentSectionDSCA({ service, slug, onSelectPlan 
             );
           })}
         </>
+      )}
+
+      {/* SECTION 14B: WHAT SEPARATES A REAL DENTAL SEO COMPANY (Dark Bg) */}
+      {whatSeparatesSection.heading && (
+        <section className="bg-[#0C1220] py-[96px] relative z-10 border-t border-[rgba(255,255,255,0.04)] text-left">
+          <div className="container mx-auto px-4 md:px-10 max-w-[1000px]">
+            <span className="text-[#00C68A] text-[11px] font-bold uppercase tracking-[2.5px] mb-3 block font-sans">
+              THE REAL DIFFERENCE
+            </span>
+            <h2 className="text-[24px] md:text-[32px] font-extrabold font-sora leading-[1.15] text-[#F0F4FF] tracking-tight border-l-4 border-[#00C68A] pl-4 mb-8">
+              {whatSeparatesSection.heading}
+            </h2>
+            <div className="space-y-6">
+              {whatSeparatesSection.paragraphs && whatSeparatesSection.paragraphs.map((para, idx) => (
+                <p key={idx} className="font-sans text-[15px] leading-[1.8] text-[#8FA8C8]">
+                  {para}
+                </p>
+              ))}
+            </div>
+          </div>
+        </section>
       )}
 
       {/* SECTION 15: CLIENT TESTIMONIALS (White Bg) */}

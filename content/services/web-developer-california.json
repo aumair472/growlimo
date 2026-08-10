@@ -1,49 +1,54 @@
 {
-  "metaTitle": "Web Development Services California | GrowLimo",
-  "metaDescription": "GrowLimo is the premier Web Development Services agency in California. We build custom conversion funnels, local campaigns, and technical systems for businesses in LA, San Diego & SF.",
-  "h1": "California Web Development Services — Performance-Driven Customer Acquisition & Growth for Regional Businesses",
-  "subheadline": "Turn online traffic into booked customers. We build fully managed, secure web, email, and social media campaigns that scale local schedules across California.",
+  "metaTitle": "Web Developer California | Best Web Developers | GrowLimo",
+  "metaDescription": "Web Developer California - Looking for the best web developers in California? GrowLimo is a web developer & UI/UX developer offering custom website building services. Free audit.",
+  "canonical": "https://growlimo.com/web-developer-california/",
+  "h1": "Web Developer in California",
+  "subheadline": "A slow, generic website costs you customers before they ever see what you sell. GrowLimo is a web developer in California built for businesses that have outgrown templates and bloated plugins — a team of engineers and UI/UX developers who build custom web applications, not cookie-cutter sites, for companies across Los Angeles, San Diego, and San Francisco. Whether you need website building services from the ground up, a UI/UX developer to redesign how customers experience your product, or a technical partner to fix a slow site someone else built, this is where California businesses come when the current site is holding the business back.",
   "heroBullets": [
-    "✅ Custom-Tailored Local Strategy & Visual Identity",
-    "✅ Clean Code & Speed Optimization (Core Web Vitals Pass)",
-    "✅ Direct CRM & Intake Database Sync Workflows"
+    "✅ 100+ California Clients",
+    "✅ 4.9-star Google Rating",
+    "✅ No Lock-In Contracts"
   ],
   "whyChooseUs": [
     {
-      "title": "Custom Web Application Engineering Services",
-      "description": "We do not rely on bloated plugins, pre-made themes, or cookie-cutter templates that slow down performance. We engineer custom web applications using modern, fast frameworks like React, Next.js, and Node.js. This ensures lightning-fast load times, clean code structures, and solid platform performance built for your exact business requirements and operations in the California market. Our custom architectures prevent security leaks and scale smoothly with user growth. We follow modular development principles, separating concerns to enable rapid updates and feature integrations without breaking existing backend systems."
+      "title": "Custom Web Application Engineering",
+      "description": "We don't rely on bloated plugins, pre-made themes, or cookie-cutter templates that slow performance down. We engineer custom web applications using modern, fast frameworks — React, Next.js, and Node.js — for lightning-fast load times, clean code structures, and platform performance built around your exact business requirements in the California market. Custom architecture prevents the security leaks that come bundled with generic plugin stacks and scales smoothly as your user base grows. We follow modular development principles, separating concerns so features can be added and updated without breaking what's already running."
     },
     {
       "title": "EHR/CRM & API System Integrations",
-      "description": "We connect your web systems directly to your business databases, CRM systems, and e-commerce platforms. Whether you need to integrate billing tools, CRM lead flows, or custom API endpoints, we build secure, encrypted connections that automate your workflows, transfer files without data loss, and prevent sync errors. We write automated test scripts to verify endpoints remain active and monitor API latency daily. Our developers configure robust error-handling pipelines, retry queues, and diagnostic logging scripts to ensure absolute reliability across all integrations."
+      "description": "A website that doesn't talk to your business systems is only doing half the job. We connect your web systems directly to your databases, CRM, and e-commerce platforms — billing tools, CRM lead flows, custom API endpoints — through secure, encrypted connections that automate workflows and eliminate sync errors. We write automated test scripts to verify endpoints stay active, monitor API latency daily, and configure error-handling pipelines, retry queues, and diagnostic logging so integrations stay reliable, not just functional on launch day."
     },
     {
       "title": "Advanced Code Performance & Security Standards",
-      "description": "We build websites and custom applications to meet strict speed, performance, and compliance standards. We configure secure database access, deploy SSL certificates, set up firewalls, and optimize code execution to pass Google's Core Web Vitals, ensuring zero build latency, minimum Time to First Byte (TTFB), and excellent page responsiveness. We follow industry best practices to protect sensitive customer data. We deploy automated unit tests, continuous integration checks, and security updates to keep your platform completely safe from vulnerabilities."
+      "description": "Every build meets strict speed, performance, and compliance standards: secure database access, SSL certificates, configured firewalls, and code optimized to pass Google's Core Web Vitals, with minimal Time to First Byte and genuinely responsive pages. We follow industry best practices to protect customer data and deploy automated unit tests, continuous integration checks, and security updates so the platform stays clear of vulnerabilities long after launch."
     }
   ],
   "servicesBreakdown": [
     {
       "title": "Next.js & React Development",
-      "description": "Building high-performance static and server-rendered web applications that deliver fast load speeds, smooth user navigation, and strong SEO rankings. We leverage incremental static regeneration (ISR) to compile database pages dynamically, combining speed with up-to-date content. We optimize webpack bundles, implement code-splitting structures, and leverage lazy-loading pathways to minimize download file sizes."
+      "description": "High-performance static and server-rendered applications built for fast load speeds, smooth navigation, and strong SEO rankings. We use incremental static regeneration to compile database-driven pages dynamically, combining speed with up-to-date content, and optimize webpack bundles, code-splitting, and lazy-loading to keep download sizes lean."
     },
     {
       "title": "API & Systems Integrations",
-      "description": "Connecting websites to CRM, billing, inventory, and practice management databases using secure API pipelines to automate processes, eliminate manual data entry errors, and ensure lead routing occurs in under five seconds. We write secure serverless endpoints and authorization protocols to check credentials before transferring files or sensitive customer information."
+      "description": "Connecting websites to CRM, billing, inventory, and practice management databases through secure API pipelines that automate processes, eliminate manual data entry errors, and route leads in under five seconds. We write secure serverless endpoints and authorization protocols that verify credentials before any file or customer data transfers."
     },
     {
       "title": "Custom E-Commerce Engineering",
-      "description": "Building custom e-commerce systems with secure payment checkouts, dynamic inventory syncing, automated discount rules, shopping cart recovery automation, and structured customer notifications that drive repeat purchases. Our payment systems connect to leading processing systems, utilizing encryption and compliance standards to manage transactions safely."
+      "description": "Custom e-commerce systems with secure payment checkouts, dynamic inventory syncing, automated discount rules, shopping cart recovery automation, and structured customer notifications built to drive repeat purchases — connected to leading payment processors with encryption and compliance standards built in."
     },
     {
       "title": "Technical Site Speed Audits",
-      "description": "Debugging slow database queries, minifying bloated code scripts, optimizing asset loading, and tuning server response times to improve Core Web Vitals performance metrics and boost organic rankings. We trace script execution blockages, audit database indexes, and compile assets to guarantee your site functions efficiently under heavy traffic loads."
+      "description": "Debugging slow database queries, minifying bloated scripts, optimizing asset loading, and tuning server response times to improve Core Web Vitals and organic rankings — tracing script execution blockages, auditing database indexes, and compiling assets to keep the site functional under heavy traffic."
+    },
+    {
+      "title": "UI/UX Developer Services & Interface Design",
+      "description": "As a UI/UX developer team embedded inside the same build process as our engineers, we design the experience and build it in the same breath — no handoff gap between what a designer imagines and what actually ships. Covering user research & journey mapping, wireframing & information architecture, interaction & visual design, prototyping, design systems, and WCAG accessibility-first design."
     }
   ],
   "process": [
     {
       "title": "1. Technical Specifications Planning",
-      "description": "We analyze your business requirements, design the database architecture, map user stories, and select the technology stack to ensure a scalable, secure setup."
+      "description": "We analyze your business requirements, design the database architecture, map user stories, and select the technology stack for a scalable, secure setup from day one."
     },
     {
       "title": "2. Database & API Architecture",
@@ -51,58 +56,60 @@
     },
     {
       "title": "3. Frontend & Backend Development",
-      "description": "We write clean code for your application. We connect the user interface to your backend databases, test API responses, and run integration tests to verify data pipelines."
+      "description": "We write clean code for the application, connect the interface to backend databases, test API responses, and run integration tests to verify every data pipeline."
     },
     {
       "title": "4. Deployment & QA Testing",
-      "description": "We run security checks, optimize site speed, deploy the app to hosting environments (like Vercel or AWS), configure domain settings, and monitor logs to prevent downtime."
+      "description": "Security checks, site speed optimization, deployment to hosting environments like Vercel or AWS, domain configuration, and log monitoring to prevent downtime after launch."
     }
   ],
   "benefits": [
-    "Build custom digital tools and patient portals tailored to your exact business workflows in California.",
-    "Improve mobile load speeds and SEO rankings with clean, high-performance web code.",
-    "Reduce software licensing costs by building custom database integrations instead of relying on expensive third-party plugins."
+    "Build custom digital tools and portals tailored to your exact business workflows in California.",
+    "Pass Google's Core Web Vitals with sub-second mobile load speeds and clean Next.js/React architecture.",
+    "Eliminate manual data entry errors with secure CRM, EHR, and database API integrations.",
+    "UI/UX developer designs embedded into code production for seamless user conversions."
   ],
-  "industries": "Technology Startups, Multi-Location Groups, E-Commerce Brands, and Service Providers.",
+  "industries": "Technology Startups, Multi-Location Groups, E-Commerce Brands, Healthcare Practices, Legal Firms, and Professional Service Providers across California.",
   "additionalContent": [
     {
-      "heading": "Custom Web Development Services in California - High-Performance Platforms",
+      "heading": "UI/UX Developer Services — Designing Interfaces That Convert",
       "paragraphs": [
-        "In the competitive California market, off-the-shelf templates and bloated plugins are often not enough to support business growth. Across major metro centers like Los Angeles, San Diego, San Francisco, businesses require custom digital platforms to stand out, automate workflows, and rank on search engines. Slow websites bounce visitors, while insecure platforms expose customer data. High-performance growth requires custom web engineering built to your exact requirements. A customized code base ensures your system remains responsive under heavy traffic and prevents script failures.",
-        "GrowLimo delivers custom web development services in California that bypass generic frameworks. We write clean code using modern technologies like React, Next.js, and Node.js. Whether you need a secure portal, a custom database integration, or a speed audit for a slow website, we align code quality and database performance to drive business results, protecting your data integrity. We build custom applications that solve your specific operational bottlenecks. We structure code to be clean, organized, and scalable.",
-        "Stop fighting with slow, bloated template sites. GrowLimo provides a specialized, performance-driven web development service that maps technical execution back to business metrics. Request your free California technical review today to discover how we can optimize your code foundation. We trace your database response times, review code structures, and outline a development plan to improve performance. We evaluate API performance and identify slow dependencies.",
-        "By selecting a modern web stack, we ensure your site remains scalable, easily maintainable, and secure. We build frameworks that adapt to your growing business needs without requiring expensive software migrations down the road. Our development workflows use version control and continuous integration, ensuring updates are deployed smoothly without interrupting your service. We ensure that our applications are easily editable for your local operations, giving you complete ownership."
-      ]
-    },
-    {
-      "heading": "Next.js, React and Modern Web Engineering",
-      "paragraphs": [
-        "Bloated websites take too long to load, especially on mobile connections. Standard content management systems often load excessive scripts and styles, slowing user experience. We build websites using modern headless architectures. This separates backend data from frontend rendering, delivering fast load speeds that improve conversion rates. This headless configuration ensures that visual rendering does not wait on heavy database queries.",
-        "By separating the user interface from backend databases, we compile static pages that load in milliseconds. Next.js and React allow us to deploy server-rendered pages that pass all Core Web Vitals, providing a fast user experience that search engines reward. This custom setup provides fluid page transitions that mimic a native application. We configure dynamic routing to keep directory pages updated automatically.",
-        "We focus on optimized bundling, code-splitting, and asset prefetching, ensuring that users navigate your digital platform with zero friction or visual lag. We clean up external dependencies and structure script execution to prevent mobile lag. We use TypeScript to ensure type safety and eliminate runtime errors. We test build compilations to keep code bugs out of production environments.",
-        "Our development stack delivers:"
+        "Code that runs fast still fails if the interface confuses the person using it. As a UI/UX developer team embedded inside the same build process as our engineers, we design the experience and build it in the same breath — no handoff gap between what a designer imagines and what actually ships. Our UI/UX developer process covers:"
       ],
       "bullets": [
-        "Next.js Framework: Server-side rendering and static page generation to ensure fast mobile speeds.",
+        "User research & journey mapping — understanding how your California customers actually navigate toward a decision, not how we assume they do",
+        "Wireframing & information architecture — structuring pages and flows around the actions that matter most to your business, before a single pixel is polished",
+        "Interaction & visual design — building interfaces that feel native to how people already use the web, reducing the friction between arrival and action",
+        "Prototyping & usability testing — validating flows with real interaction patterns before development time is spent building the wrong thing",
+        "Design systems — reusable, documented component libraries that keep new pages and features visually consistent as the site grows",
+        "Accessibility-first design — interfaces built to WCAG standards from the first wireframe, not retrofitted after launch"
+      ],
+      "closingText": "Because the same team designs and builds, a UI/UX developer decision never gets lost in translation on the way to production code."
+    },
+    {
+      "heading": "Modern Web Engineering: Headless Architecture & Performance",
+      "paragraphs": [
+        "Bloated websites take too long to load, especially on mobile connections — standard content management systems often ship excessive scripts and styles that slow everything down. We build on modern headless architecture instead, separating backend data from frontend rendering so visual rendering never has to wait on a heavy database query.",
+        "Separating the interface from the backend lets us compile static pages that load in milliseconds. Next.js and React let us deploy server-rendered pages that pass Core Web Vitals cleanly, giving both users and search engines the fast experience each one rewards, with fluid page transitions that feel closer to a native app than a website. We optimize bundling, code-splitting, and asset prefetching so navigation carries zero friction, clean up external dependencies to prevent mobile lag, and build in TypeScript for type safety and fewer runtime errors."
+      ],
+      "bullets": [
+        "Next.js Framework: Server-side rendering and static page generation for fast mobile speeds.",
         "React UI Components: Flexible, reusable user interface elements built for mobile screens.",
         "Tailored Code Base: Writing only the code your site needs, avoiding bloated third-party scripts.",
         "Global CDN Deployment: Deploying pages to edge networks so they load fast from any city.",
-        "Modular Code Standards: Writing structured code components that enable easy features additions.",
-        "Pre-fetching Technology: Loading linked page resources in the background to ensure instant navigation clicks.",
-        "TypeScript Integration: Verifying type constraints at compile time to eliminate operational runtime crashes."
-      ],
-      "closingText": "Modern web frameworks ensure your site loads fast, improving conversion rates and search rankings."
+        "Modular Code Standards: Writing structured code components that enable easy feature additions.",
+        "Pre-fetching Technology: Loading linked page resources in the background for instant navigation.",
+        "TypeScript Integration: Verifying type constraints at compile time to eliminate runtime crashes."
+      ]
     },
     {
-      "heading": "Secure CRM, EHR and API Database Integrations",
+      "heading": "Secure CRM, EHR & API Database Integrations",
       "paragraphs": [
-        "A website should not operate in isolation. To improve business efficiency, your site must sync with your billing, scheduling, inventory, and database systems. We build secure API connections that automate data transfer between your site and business software. This eliminates manual data entry chores for your staff. We structure database connections to protect user data from unauthorized access.",
-        "We connect contact forms and scheduling links directly to your databases (such as Dentrix, Eaglesoft, Salesforce, or custom SQL databases). We ensure that APIs route data securely, keeping customer information protected and compliance standards met. We install security filters to redact sensitive parameters before files are saved.",
-        "This keeps your backend clean and ensures customer records are synced securely without manual data entry errors. We build fail-safes and sync queues to prevent data loss during hosting interruptions. We write automated unit tests to verify API connections. We configure webhook listeners to process real-time status updates instantly.",
-        "Our integration engineering ensures:"
+        "A website shouldn't operate in isolation. To actually improve business efficiency, your site has to sync with billing, scheduling, inventory, and database systems — so we build secure API connections that automate data transfer and eliminate manual entry work for your staff. We connect contact forms and scheduling links directly to databases like Dentrix, Eaglesoft, Salesforce, or custom SQL systems, routing data securely while keeping customer information protected and compliance standards met, with redaction filters for sensitive parameters before anything is saved.",
+        "That keeps the backend clean and customer records synced without manual entry errors — fail-safes and sync queues prevent data loss during hosting interruptions, automated unit tests verify API connections continuously, and webhook listeners process real-time status updates as they happen."
       ],
       "bullets": [
-        "Secure Data Encryption: encrypting all data in transit using SSL and modern encryption protocols.",
+        "Secure Data Encryption: Encrypting all data in transit using SSL and modern encryption protocols.",
         "Real-Time Sync: Syncing booking calendars and user entries to databases instantly.",
         "Error Handling: Designing retry protocols to ensure no form entry is lost during network issues.",
         "Custom API Endpoints: Building tailored endpoints to support unique database integrations.",
@@ -111,22 +118,18 @@
       ]
     },
     {
-      "heading": "Hyper-Localized Technical SEO Architecture across California",
+      "heading": "Hyper-Localized Technical SEO Architecture Across California",
       "paragraphs": [
-        "Search engines evaluate technical code quality. Clean crawl paths, structured URL hierarchies, and schema markup tell search engines exactly what services you offer and where you serve customers. If your technical architecture is flawed, your content will struggle to rank. We build clear directory frameworks that search bots index easily, improving visibility.",
-        "In Los Angeles, we configure site structures to target neighborhood queries in Beverly Hills and Pasadena, while optimizing database routing for San Diego and tech-forward mobile booking integrations for San Francisco. We build clean, semantic HTML and organize URL routing to target regional search terms. We build localized schema tags to link services directly to CA neighborhoods.",
-        "We customize page routing, schema markup, and geographic data to match the exact California markets you serve. We verify that all page metadata is rendered server-side, enabling search engine crawlers to parse local information easily. We optimize metadata scripts to avoid rendering delays. We build dynamic XML sitemaps to verify that new pages are indexed instantly.",
-        "By structuring site code to follow search engine guidelines, we help your business capture organic local search volume."
+        "Search engines evaluate code quality directly. Clean crawl paths, structured URL hierarchies, and schema markup tell search engines exactly what you offer and where you serve customers — flawed technical architecture makes even great content struggle to rank. We build directory frameworks that search bots index cleanly, with site structures configured to target neighborhood queries in Beverly Hills and Pasadena for Los Angeles clients, database routing tuned for San Diego, and mobile booking integrations built for San Francisco's tech-forward audience.",
+        "We customize page routing, schema markup, and geographic data to match the exact California markets you serve, verify that page metadata renders server-side so crawlers can parse local information without delay, and build dynamic XML sitemaps so new pages get indexed quickly. Structuring code to follow search engine guidelines is what turns technical architecture into organic local search volume."
       ],
-      "closingText": "Optimizing site code for local markets helps you rank for the terms your customers search."
+      "closingText": "Optimizing site code for local markets helps you rank for the exact terms your California customers search."
     },
     {
       "heading": "Site Speed Auditing & Core Web Vitals Remediation",
       "paragraphs": [
-        "If your website is slow, you are losing customers. We run technical audits to find performance bottlenecks in your code. We inspect database queries, analyze image file sizes, and review server response times. We use profiling tools to isolate slow-loading assets and script blockers. We debug database indexing issues to optimize read and write events.",
-        "We resolve code blocking issues, minify JavaScript files, set up caching routines, and optimize image assets to help your site pass Google's Core Web Vitals, lowering click costs and improving organic rankings. We optimize font loading and script parsing orders to keep pages functional from the first millisecond. We configure code bundle sizes to prevent parser delays on mobile browsers.",
-        "We tune server configurations, run server-side performance traces, and optimize routing paths to ensure page content loads instantly for every user. We configure server caching tools to minimize database loads. We optimize server memory usage to handle high traffic volume. We set up automatic media compression steps inside build pipelines.",
-        "Improving Core Web Vitals scores protects your ad budget and helps you rank higher on search engines:"
+        "A slow website is a business actively losing customers. Our technical audits inspect database queries, analyze image file sizes, and review server response times, using profiling tools to isolate slow-loading assets and script blockers and debugging database indexing issues on both read and write events.",
+        "We resolve code-blocking issues, minify JavaScript, set up caching, and optimize image assets so your site passes Core Web Vitals — lowering ad click costs and lifting organic rankings — while optimizing font loading and script parsing order so pages stay functional from the first millisecond. Server configurations get tuned, performance traces run server-side, and routing paths get optimized so content loads instantly for every visitor."
       ],
       "bullets": [
         "Database Query Tuning: Optimizing slow database calls to speed up page generation.",
@@ -139,33 +142,31 @@
       "closingText": "Improving Core Web Vitals scores protects your ad budget and helps you rank higher on search engines."
     },
     {
-      "heading": "Accessibility, WCAG Guidelines and Security Compliance",
+      "heading": "Accessibility, WCAG Compliance & Security Standards",
       "paragraphs": [
-        "We build websites to meet WCAG and accessibility standards, ensuring they are usable for individuals with disabilities. This includes keyboard navigation support, clean header structures, and screen-reader compatibility. We review contrasting elements and label forms clearly. This compliance setup protects your business from legal vulnerabilities and ADA lawsuits.",
-        "We also secure applications against common vulnerabilities (OWASP Top 10), configure SSL encryption, and implement secure user authentication to protect customer data. We implement automated dependency updates to keep software packages free of vulnerabilities. We configure secure API authorization tokens to prevent data scraping attacks.",
-        "Our thorough compliance audits eliminate security risks and protect your platform from legal vulnerabilities, providing a secure foundation for your business. We test security filters to prevent unauthorized access and verify user session expirations. We configure automated scanning tools to alert developers of vulnerabilities."
+        "We build to WCAG and accessibility standards so sites work for people using screen readers, keyboard navigation, and assistive technology — clean header structures, properly contrasted elements, and clearly labeled forms — which also protects your business from ADA-related legal exposure.",
+        "We secure applications against the OWASP Top 10, configure SSL encryption, and implement secure user authentication to protect customer data, with automated dependency updates keeping software packages free of known vulnerabilities and secure API authorization tokens preventing data scraping. Compliance audits eliminate security risk before it becomes a legal one, with session expiration testing and automated vulnerability scanning built into the process, not bolted on after the fact."
       ]
     },
     {
-      "heading": "Comprehensive Web Analytics and Event Attribution",
+      "heading": "Web Analytics & Event Attribution",
       "paragraphs": [
-        "We configure Google Analytics 4 (GA4) with custom tracking codes to measure conversions. We build live dashboards tracking website visitors, conversion rates, API performance, and database write metrics, allowing you to track technical performance. This detailed setup provides absolute visibility into campaign success.",
-        "This detailed tracking setup provides absolute visibility into user behavior, enabling data-driven decisions on software features and marketing strategies. We set up event tracking for form submissions, script interactions, and link clicks to map user conversion paths. We trace API response times to identify technical bottlenecks and optimize databases. We write custom tracking scripts to log user interactions cleanly without capturing PHI."
+        "We configure Google Analytics 4 with custom tracking codes to measure conversions and build live dashboards tracking visitors, conversion rates, API performance, and database write metrics, giving full visibility into both technical performance and campaign success. Event tracking on form submissions, script interactions, and link clicks maps the actual conversion path, API response times get traced to catch technical bottlenecks early, and custom tracking scripts log interactions cleanly without capturing anything they shouldn't."
       ]
     }
   ],
   "faqs": [
     {
       "question": "Which programming languages and frameworks do you use?",
-      "answer": "We build websites and applications using React, Next.js, Node.js, and standard web technologies. We select the technology stack based on your project requirements."
+      "answer": "We build websites and applications using React, Next.js, Node.js, and standard web technologies, selecting the stack based on your specific project requirements."
     },
     {
       "question": "Will the custom application pass Google's Core Web Vitals?",
-      "answer": "Yes. We build all applications to meet strict performance standards, optimizing code execution and media assets to pass Google's speed tests."
+      "answer": "Yes. Every application is built to meet strict performance standards, with code execution and media assets optimized to pass Google's speed tests."
     },
     {
       "question": "Can you integrate our custom CRM or database system?",
-      "answer": "Yes. We write secure API integrations to connect your website to e-commerce, CRM, or database systems, automating your data workflows."
+      "answer": "Yes. We write secure API integrations connecting your website to e-commerce, CRM, or database systems to automate your data workflows."
     },
     {
       "question": "How do you handle website security and data protection?",
@@ -177,7 +178,15 @@
     },
     {
       "question": "Can you fix a slow website built by another developer?",
-      "answer": "Yes. We perform technical speed audits to identify bottlenecks in your code and databases, implementing speed optimization fixes."
+      "answer": "Yes. We run technical speed audits to identify bottlenecks in your code and databases, then implement the fixes needed to resolve them."
+    },
+    {
+      "question": "Do you offer UI/UX design services as part of a build?",
+      "answer": "Yes. Our UI/UX developer process covers user research, wireframing, interaction and visual design, prototyping, usability testing, and accessibility-first design — handled by the same team that builds the final product, not handed off between separate agencies."
+    },
+    {
+      "question": "What's included in your website building services?",
+      "answer": "Strategy and UX planning, custom Next.js/React development, API and CRM integrations, e-commerce engineering where needed, technical SEO architecture, site speed optimization, accessibility and security compliance, and analytics setup — as one connected build, not separate line items from separate vendors."
     },
     {
       "question": "Do you provide ongoing technical support after launch?",
@@ -189,67 +198,103 @@
     },
     {
       "question": "How long does a custom web application take to develop?",
-      "answer": "Development timelines vary by project size. Small applications take 6 to 10 weeks, while larger custom platforms can take several months."
+      "answer": "Timelines vary by project size. Small applications typically take 6 to 10 weeks; larger custom platforms can take several months."
     },
     {
       "question": "Do you require a long-term contract?",
       "answer": "No. We build custom applications on a flat-rate project fee structure. Once launched, you own the source code and assets completely."
     }
   ],
-  "ctaHeadline": "Ready to scale your local customer volume in California?",
+  "ctaHeadline": "Get Started With California's Trusted Web Developer",
   "ctaButtonText": "Claim Your Free Strategic Review",
   "internalLinks": [
     {
       "to": "/web-design-services-california/",
-      "anchor": "California Web Services"
+      "anchor": "California Web Design Services"
     },
     {
       "to": "/seo-services-california/",
-      "anchor": "California SEO Solutions"
+      "anchor": "California SEO Services"
     },
     {
       "to": "/ppc-services-california/",
-      "anchor": "California Paid Search PPC"
+      "anchor": "California PPC Services"
     },
     {
-      "to": "/email-marketing-services-california/",
-      "anchor": "California Email Automations"
-    },
-    {
-      "to": "/social-media-marketing-services-california/",
-      "anchor": "California Social Media Management"
+      "to": "/digital-marketing-agency-california/",
+      "anchor": "Digital Marketing Agency California"
     },
     {
       "to": "/contact/",
       "anchor": "Contact GrowLimo Team"
     }
   ],
-  "schema": {
-    "@context": "https://schema.org",
-    "@type": "ProfessionalService",
-    "name": "GrowLimo – Web Development Services California",
-    "url": "https://growlimo.com/web-developer-california/",
-    "description": "Web Development Services and campaign management agency serving local businesses and multi-location firms across California major metro markets.",
-    "areaServed": [
-      "Los Angeles",
-      "San Diego",
-      "San Francisco",
-      "Sacramento",
-      "San Jose",
-      "Oakland",
-      "California"
-    ],
-    "serviceType": "Web Development Services",
-    "telephone": "+1-667-347-4729",
-    "address": {
-      "@type": "PostalAddress",
-      "addressState": "CA",
-      "addressCountry": "US"
+  "schema": [
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "GrowLimo – Web Developer California",
+      "url": "https://growlimo.com/web-developer-california/",
+      "description": "Custom web developer & UI/UX engineering agency in California — React, Next.js, API integrations, Core Web Vitals speed optimization, and custom e-commerce applications.",
+      "areaServed": [
+        "Los Angeles",
+        "San Diego",
+        "San Francisco",
+        "Sacramento",
+        "San Jose",
+        "Oakland",
+        "California"
+      ],
+      "serviceType": "Web Development Services",
+      "telephone": "+1-667-347-4729",
+      "address": {
+        "@type": "PostalAddress",
+        "addressState": "CA",
+        "addressCountry": "US"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": "86"
+      }
     },
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "4.9",
-      "reviewCount": "86"
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Which programming languages and frameworks do you use?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We build websites and applications using React, Next.js, Node.js, and standard web technologies, selecting the stack based on your specific project requirements."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Will the custom application pass Google's Core Web Vitals?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Every application is built to meet strict performance standards, with code execution and media assets optimized to pass Google's speed tests."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you offer UI/UX design services as part of a build?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Our UI/UX developer process covers user research, wireframing, interaction and visual design, prototyping, usability testing, and accessibility-first design — handled by the same team that builds the final product."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What's included in your website building services?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Strategy and UX planning, custom Next.js/React development, API and CRM integrations, e-commerce engineering, technical SEO architecture, site speed optimization, accessibility/security compliance, and analytics setup as one connected build."
+          }
+        }
+      ]
     }
-  }
+  ]
 }

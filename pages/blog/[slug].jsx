@@ -183,7 +183,7 @@ function FAQItem({ question, answerHTML }) {
   );
 }
 
-export default function BlogPost({ source, frontMatter, slug, relatedPosts }) {
+export default function BlogPost({ source, frontMatter, slug, relatedPosts, faqItems }) {
   const pageUrl = `${WWW}/blog/${slug}/`;
   const [faqs, setFaqs] = useState([]);
 
@@ -239,20 +239,27 @@ export default function BlogPost({ source, frontMatter, slug, relatedPosts }) {
     }
   }, [source]);
 
+  const postDescription = frontMatter.metaDescription || frontMatter.excerpt;
+
   // Schema configuration
   const blogPostingSchema = {
     '@type': 'BlogPosting',
     '@id': pageUrl,
     mainEntityOfPage: { '@type': 'WebPage', '@id': pageUrl },
     headline: frontMatter.metaTitle || frontMatter.title,
-    description: frontMatter.excerpt,
+    description: postDescription,
     image: frontMatter.featuredImage ? `${WWW}${frontMatter.featuredImage}` : `${WWW}/og-image.png`,
     datePublished: frontMatter.date,
-    dateModified: frontMatter.date,
+    dateModified: frontMatter.dateModified || frontMatter.date,
     author: {
-      '@type': 'Organization',
-      name: 'GrowLimo',
-      url: WWW,
+      '@type': 'Person',
+      name: frontMatter.author || 'GrowLimo Team',
+      url: `${WWW}/about/`,
+      worksFor: {
+        '@type': 'Organization',
+        name: 'GrowLimo',
+        url: WWW,
+      },
     },
     publisher: {
       '@type': 'Organization',
@@ -270,15 +277,31 @@ export default function BlogPost({ source, frontMatter, slug, relatedPosts }) {
     ],
   };
 
+  const schemaArray = [blogPostingSchema, breadcrumbSchema];
+
+  if (faqItems && faqItems.length > 0) {
+    schemaArray.push({
+      '@type': 'FAQPage',
+      mainEntity: faqItems.map((faq) => ({
+        '@type': 'Question',
+        name: faq.question,
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: faq.answer,
+        },
+      })),
+    });
+  }
+
   return (
     <>
       <SEO
         title={frontMatter.metaTitle || frontMatter.title}
-        description={frontMatter.excerpt}
+        description={postDescription}
         url={pageUrl}
         type="article"
         disableSuffix={true}
-        schema={[blogPostingSchema, breadcrumbSchema]}
+        schema={schemaArray}
         image={frontMatter.featuredImage ? `${WWW}${frontMatter.featuredImage}` : undefined}
       />
 
@@ -291,13 +314,16 @@ export default function BlogPost({ source, frontMatter, slug, relatedPosts }) {
           <div className="container mx-auto px-4 relative z-10">
             <div className="max-w-[860px] mx-auto">
               
-              {/* Back Link */}
-              <Link
-                href="/blog/"
-                className="inline-flex items-center gap-2 text-[13px] text-[#8FA8C8] hover:text-[#00C68A] mb-6 font-semibold font-sans transition-colors group"
-              >
-                <span className="transition-transform group-hover:-translate-x-1">&larr;</span> Back to Blog
-              </Link>
+              {/* Breadcrumb Navigation */}
+              <nav aria-label="Breadcrumb" className="mb-6">
+                <ol className="flex items-center gap-1.5 text-[13px] font-sans text-[#8FA8C8]">
+                  <li><Link href="/" className="hover:text-[#00C68A] transition-colors">Home</Link></li>
+                  <li className="text-[#4A6080]">/</li>
+                  <li><Link href="/blog/" className="hover:text-[#00C68A] transition-colors">Blog</Link></li>
+                  <li className="text-[#4A6080]">/</li>
+                  <li className="text-[#00C68A] truncate max-w-[300px]">{frontMatter.title}</li>
+                </ol>
+              </nav>
 
               {/* Category Badge */}
               <div className="mb-5">
@@ -336,7 +362,7 @@ export default function BlogPost({ source, frontMatter, slug, relatedPosts }) {
                 <div className="mt-9 rounded-[16px] overflow-hidden border border-[rgba(255,255,255,0.08)] shadow-2xl relative w-full h-[240px] md:h-[460px]">
                   <Image
                     src={frontMatter.featuredImage}
-                    alt={frontMatter.title}
+                    alt={frontMatter.imageAlt || frontMatter.title}
                     fill
                     priority
                     sizes="(max-width: 1200px) 100vw, 1200px"
@@ -501,6 +527,22 @@ export async function getStaticProps({ params }) {
     mdxOptions: { remarkPlugins: [remarkGfm] },
   });
 
+  // Extract FAQ items from MDX content for schema generation
+  const faqItems = [];
+  const faqMatch = content.match(/##\s*(?:frequently\s+asked\s+questions?|faqs?)\s*\n([\s\S]*?)(?=\n##\s[^#]|\n---|\s*$)/i);
+  if (faqMatch) {
+    const faqSection = faqMatch[1];
+    const questionBlocks = faqSection.split(/\n###\s+/).filter(Boolean);
+    for (const block of questionBlocks) {
+      const lines = block.trim().split('\n');
+      const question = lines[0].replace(/\*\*/g, '').replace(/\??\s*$/, '?').trim();
+      const answer = lines.slice(1).join(' ').replace(/\*\*/g, '').trim();
+      if (question && answer) {
+        faqItems.push({ question, answer });
+      }
+    }
+  }
+
   // Read other posts for related posts
   const allPosts = files
     .map((file) => {
@@ -553,6 +595,7 @@ export async function getStaticProps({ params }) {
       frontMatter: data,
       slug,
       relatedPosts,
+      faqItems,
     },
   };
 }

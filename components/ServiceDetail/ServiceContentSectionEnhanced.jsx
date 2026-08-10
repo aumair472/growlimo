@@ -100,20 +100,22 @@ export default function ServiceContentSectionEnhanced({ service, slug, onSelectP
 
   // Extract sections safely by indices based on JSON sequence
   const introSection = contentSections[0] || {};
-  const whyChooseUsSection = contentSections[1] || {};
-  const howToChooseSection = contentSections[2] || {};
-  const servicesIntroSection = contentSections[3] || {};
+  const disambiguationSection = contentSections[1] || {};
+  const whyChooseUsSection = contentSections[2] || {};
+  const howToChooseSection = contentSections[3] || {};
+  const servicesIntroSection = contentSections[4] || {};
 
-  // Numbered Services 1-7
-  const numberedServices = contentSections.slice(4, 11);
+  // Numbered Services 1-8
+  const numberedServices = contentSections.slice(5, 13);
 
   // Custom styled components content sources
-  const caseStudiesSection = contentSections[11] || {};
-  const testimonialsSection = contentSections[12] || {};
-  const bestServicesSection = contentSections[13] || {};
-  const seoPackagesSection = contentSections[14] || {};
-  const pricingSection = contentSections[15] || {};
-  const aboutSection = contentSections[16] || {};
+  const caseStudiesSection = contentSections[13] || {};
+  const testimonialsSection = contentSections[14] || {};
+  const bestServicesSection = contentSections[15] || {};
+  const seoPackagesSection = contentSections[16] || {};
+  const pricingSection = contentSections[17] || {};
+  const aboutSection = contentSections[18] || {};
+  const areasServedSection = contentSections[19] || {};
 
   return (
     <div className="bg-[#080D18] font-sans selection:bg-[#00C68A]/30 selection:text-white overflow-x-hidden text-[#8FA8C8]">
@@ -300,6 +302,55 @@ export default function ServiceContentSectionEnhanced({ service, slug, onSelectP
 
         </div>
       </section>
+
+      {/* SECTION 3B: SEO AGENCY VS COMPANY VS FIRM VS CONSULTANT (white bg) */}
+      {disambiguationSection.heading && (
+        <section className="bg-[#FFFFFF] py-[96px] relative z-10 border-t border-[#E3EEF7]">
+          <div className="container mx-auto px-4 md:px-10 max-w-[1100px]">
+            <div className="text-left mb-12">
+              <span className="text-[#00C68A] text-[11px] font-bold uppercase tracking-[2.5px] mb-3 block font-sans">
+                TERMINOLOGY
+              </span>
+              <h2 className="text-[26px] md:text-[36px] font-extrabold font-sora leading-tight text-[#0B1829] tracking-tight">
+                {disambiguationSection.heading}
+              </h2>
+              {disambiguationSection.paragraphs && disambiguationSection.paragraphs.map((para, idx) => (
+                <p key={idx} className="font-sans text-[15px] leading-[1.8] text-[#3D5A73] mt-4 max-w-[800px]">
+                  {para}
+                </p>
+              ))}
+            </div>
+
+            {disambiguationSection.bullets && (
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                {disambiguationSection.bullets.map((bullet, idx) => {
+                  const parts = bullet.split('—');
+                  const term = parts[0] ? parts[0].trim() : '';
+                  const def = parts[1] ? parts[1].trim() : '';
+
+                  return (
+                    <div
+                      key={idx}
+                      className="bg-[#F8FAFC] border border-[#E3EEF7] rounded-[16px] p-6 text-left transition-all duration-200 hover:border-[#00C68A]/30"
+                    >
+                      <h3 className="font-sora font-bold text-[16px] text-[#0B1829] mb-2">{term}</h3>
+                      <p className="font-sans text-[14px] leading-relaxed text-[#3D5A73]">{def}</p>
+                    </div>
+                  );
+                })}
+              </div>
+            )}
+
+            {disambiguationSection.closingText && (
+              <div className="border-l-4 border-[#00C68A] pl-5 py-2 mt-8 bg-[#00C68A]/5 rounded-r-[8px] max-w-[900px]">
+                <p className="font-sans text-[15px] leading-[1.8] font-bold text-[#0B1829]">
+                  {disambiguationSection.closingText}
+                </p>
+              </div>
+            )}
+          </div>
+        </section>
+      )}
 
       {/* SECTION 4: WHY CHOOSE US (dark bg) */}
       <section className="bg-[#0C1220] py-[96px] relative z-10 border-t border-[rgba(255,255,255,0.04)]">
@@ -1001,6 +1052,39 @@ export default function ServiceContentSectionEnhanced({ service, slug, onSelectP
           </div>
         </div>
       </section>
+
+      {/* SECTION 17B: AREAS WE SERVE (white bg) */}
+      {areasServedSection.heading && (
+        <section className="bg-[#FFFFFF] py-[80px] relative z-10 border-t border-[#E3EEF7]">
+          <div className="container mx-auto px-4 md:px-10 max-w-[1100px] text-center">
+            <span className="text-[#00C68A] text-[11px] font-bold uppercase tracking-[2.5px] mb-3 block font-sans">
+              SERVICE AREA
+            </span>
+            <h2 className="text-[24px] md:text-[32px] font-extrabold font-sora leading-tight text-[#0B1829] tracking-tight mb-4">
+              {areasServedSection.heading}
+            </h2>
+            {areasServedSection.paragraphs && areasServedSection.paragraphs.map((para, idx) => (
+              <p key={idx} className="font-sans text-[15px] leading-[1.8] text-[#3D5A73] mb-8 max-w-[820px] mx-auto">
+                {para}
+              </p>
+            ))}
+
+            {areasServedSection.bullets && (
+              <div className="flex flex-wrap justify-center gap-3 max-w-[900px] mx-auto">
+                {areasServedSection.bullets.map((city, idx) => (
+                  <div
+                    key={idx}
+                    className="bg-[#F8FAFC] border border-[#E3EEF7] rounded-full px-6 py-3 shadow-sm hover:border-[#00C68A]/30 transition-all duration-200 flex items-center gap-3 cursor-default"
+                  >
+                    <span className="w-2 h-2 rounded-full bg-[#00C68A]" />
+                    <span className="text-[#0B1829] font-sans text-[14px] font-bold">{city}</span>
+                  </div>
+                ))}
+              </div>
+            )}
+          </div>
+        </section>
+      )}
 
       {/* SECTION 18: PROCESS (dark bg) */}
       {processSection.steps && (
