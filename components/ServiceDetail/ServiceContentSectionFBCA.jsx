@@ -3,199 +3,276 @@ import Link from 'next/link';
 import SEO from '../SEO';
 import Form from '../common/Form';
 
-export default function ServiceContentSectionFBCA({ service, slug, onSelectPlan }) {
-  const [activeFaq, setActiveFaq] = useState(null);
-  const [expandedCities, setExpandedCities] = useState({});
-  const [expandedIndustries, setExpandedIndustries] = useState({});
+export default function ServiceContentSectionFBCA({ service, slug }) {
+  const [activeTab, setActiveTab] = useState(0);
+  const [openProblem, setOpenProblem] = useState(null);
+  const [openFaq, setOpenFaq] = useState(null);
 
   if (!service) return null;
 
   const {
-    metaTitle,
-    metaDescription,
-    h1,
-    subheadline,
-    heroContent = [],
-    contentSections = [],
-    processSection = {},
-    ctaSection = {},
-    ctaButtonText = 'Get Your Free Facebook Ads Audit →',
-    faqs = [],
-    internalLinks = [],
-    images = [],
+    metaTitle = 'Facebook Ads Management & Marketing Services CA | GrowLimo',
+    metaDescription = 'Facebook Ads Management California - GrowLimo delivers professional Facebook marketing services and Facebook Ads management in California - Meta Blueprint certified, 6.8x avg ROAS. Free audit.',
+    h1 = 'Facebook Ads Management in California',
+    subheadline = "Facebook and Instagram together reach over 73% of California's adult population — more people, more often, than any TV network, radio station, or print publication in the state. That reach is exactly why so many California businesses assume Facebook Ads should be easy money, and exactly why so many of them are disappointed. Reach doesn't build revenue on its own. The gap between a campaign that bleeds budget and one that consistently returns 4x, 6x, or 8x comes down to strategy, creative, audience architecture, and how relentlessly the account gets optimized. GrowLimo provides professional Facebook marketing services and Facebook Ads management in California through a Meta Blueprint-certified team that has built and managed paid social for 80+ California businesses, from local service companies in San Diego to e-commerce brands in Los Angeles to B2B firms in the Bay Area.",
     schema
   } = service;
 
-  // Safe image pointers
-  const heroImg = images[0] || '/images/services/hero-facebook-ads-california.webp';
-  const strategyImg = images[1] || '/images/services/facebook-ads-strategy.webp';
-  const creativeImg = images[2] || '/images/services/facebook-creative-production.webp';
-  const dashboardImg = images[3] || '/images/services/facebook-ads-dashboard.webp';
-  const bannerImg = images[4] || '/images/services/california-facebook-results.webp';
+  // Stat Bar Data (5 Pills)
+  const statBar = [
+    { value: '80+', label: 'California Clients', icon: 'M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z' },
+    { value: 'Meta Blueprint', label: 'Certified Specialists', icon: 'M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z' },
+    { value: '6.8x', label: 'Average Campaign ROAS', icon: 'M13 7h8m0 0v8m0-8l-8 8-4-4-6 6' },
+    { value: '4.9★', label: 'Client Rating', icon: 'M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z' },
+    { value: 'Full Creative', label: 'Production Included', icon: 'M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z' }
+  ];
 
-  const toggleCity = (idx) => {
-    setExpandedCities(prev => ({
-      ...prev,
-      [idx]: !prev[idx]
-    }));
-  };
-
-  const toggleIndustry = (idx) => {
-    setExpandedIndustries(prev => ({
-      ...prev,
-      [idx]: !prev[idx]
-    }));
-  };
-
-  // Safe mapping of contentSections based on the JSON sequence
-  const whyFacebookSec = contentSections[0] || {}; // Why Facebook Ads Are a Non-Negotiable...
-  const problemsSec = contentSections[1] || {}; // Why Most California Facebook Ads Campaigns Underperform...
-  const servicesIntroSec = contentSections[2] || {}; // Our Facebook Ads Management Services...
-
-  // Numbered Services 1-8 are contentSections[3] to [10]
-  const numberedServices = contentSections.slice(3, 11);
-
-  // Case Studies contentSections[11], [12], [13]
-  const caseStudy1Sec = contentSections[11] || {};
-  const caseStudy2Sec = contentSections[12] || {};
-  const caseStudy3Sec = contentSections[13] || {};
-
-  // Industries Section is contentSections[14]
-  const industriesSection = contentSections[14] || {};
-
-  // Cities Section is contentSections[15]
-  const citiesSection = contentSections[15] || {};
-
-  // Expertise Section is contentSections[16]
-  const expertiseSection = contentSections[16] || {};
-
-  // Testimonials Section is contentSections[17]
-  const testimonialsSection = contentSections[17] || {};
-
-  // Testimonial parser: '"Quote" — Name, Role, Location'
-  const parseTestimonial = (bullet) => {
-    if (!bullet) return { quote: '', name: '', role: '', location: '' };
-
-    const lastDashIndex = bullet.lastIndexOf('—');
-
-    if (lastDashIndex === -1) {
-      return {
-        quote: bullet.replace(/^["'“”]/, '').replace(/["'“”]$/, '').trim(),
-        name: '',
-        role: '',
-        location: ''
-      };
-    }
-
-    const quote = bullet
-      .substring(0, lastDashIndex)
-      .trim()
-      .replace(/^["'“”]/, '')
-      .replace(/["'“”]$/, '');
-
-    const attribution = bullet.substring(lastDashIndex + 1).trim();
-
-    const parts = attribution.split(',').map(part => part.trim());
-
-    return {
-      quote,
-      name: parts[0] || '',
-      role: parts[1] || '',
-      location: parts.slice(2).join(', ') || ''
-    };
-  };
-
-  // Helper to separate title and description in a colon or dash separated list item
-  const parseSplitItem = (item) => {
-    const separators = [':', '—'];
-    for (const sep of separators) {
-      const idx = item.indexOf(sep);
-      if (idx !== -1) {
-        const title = item.substring(0, idx).trim();
-        const desc = item.substring(idx + 1).trim();
-        return { title, desc };
-      }
-    }
-    return { title: item, desc: '' };
-  };
-
-  const splitSentences = (text) => {
-    if (!text) return [];
-    const raw = text.split('. ');
-    return raw.map((s, i) => {
-      let clean = s.trim();
-      if (i < raw.length - 1 && !clean.endsWith('.')) {
-        clean += '.';
-      }
-      return clean;
-    }).filter(Boolean);
-  };
-
-  const parseCaseStudySegments = (paragraphs, idx) => {
-    if (!paragraphs || paragraphs.length < 2) {
-      return {
-        problem: paragraphs?.[0] || '',
-        strategy: paragraphs?.[1] || '',
-        execution: ''
-      };
-    }
-
-    if (idx === 0) {
-      const problem = paragraphs[0];
-      const p1 = paragraphs[1];
-      const sentences = splitSentences(p1);
-      const strategy = sentences[0] || '';
-      const execution = sentences.slice(1).join(' ') || '';
-      return { problem, strategy, execution };
-    }
-
-    if (idx === 1 || idx === 2) {
-      const p0 = paragraphs[0];
-      const execution = paragraphs[1];
-      const sentences = splitSentences(p0);
-      const problem = sentences.slice(0, 2).join(' ') || '';
-      const strategy = sentences.slice(2).join(' ') || '';
-      return { problem, strategy, execution };
-    }
-
-    return {
-      problem: paragraphs[0] || '',
-      strategy: paragraphs[1] || '',
-      execution: paragraphs.slice(2).join(' ') || ''
-    };
-  };
-
-  const parseBulletMetric = (bullet) => {
-    const colonIdx = bullet.indexOf(':');
-    if (colonIdx === -1) {
-      return {
-        value: '✓',
-        label: bullet
-      };
-    }
-    const left = bullet.substring(0, colonIdx).trim();
-    const right = bullet.substring(colonIdx + 1).trim();
-    return {
-      value: right,
-      label: left
-    };
-  };
-
-  const caseStudyMetadata = [
+  // Section 3: 7 Problem / Solution Pairs
+  const problemSolutionPairs = [
     {
-      location: 'Los Angeles, CA',
-      industry: 'E-Commerce & Beauty',
-      campaignType: 'Advantage+ Shopping & Retargeting'
+      problem: 'Targeting audiences that are too broad or too narrow',
+      desc: "California's size makes audience sizing deceptively hard. \"California adults interested in fitness\" is too broad — budget gets diluted across millions of low-probability prospects. An 8,000-person hyper-specific audience is too small for Meta's algorithm to exit the learning phase and optimize delivery.",
+      fix: 'We build layered audience architectures — cold, warm custom, and lookalike — each sized to sit in the range where Meta\'s algorithm can actually work.'
     },
     {
-      location: 'San Diego, CA',
-      industry: 'Real Estate & Luxury Sales',
-      campaignType: 'Meta Lead Gen & CRM Integration'
+      problem: 'Creative fatigue killing performance within weeks',
+      desc: 'The most common reason a California Facebook campaign goes from 4x ROAS in week one to 1.2x by week six is creative fatigue — California audiences see hundreds of ads a day, and repeated exposure to the same creative kills performance fast.',
+      fix: 'We run a systematic creative rotation schedule, testing new variations before the existing ones fatigue, so performance holds steady instead of spiking and crashing.'
     },
     {
-      location: 'Sacramento, CA',
-      industry: 'Fitness & Wellness',
-      campaignType: 'Local Lead Gen & Reels Retargeting'
+      problem: 'No campaign funnel structure — running a single objective',
+      desc: 'Many California businesses run one campaign objective, usually Conversions or Traffic, aimed at cold audiences, and expect immediate sales.',
+      fix: 'A properly structured account uses Awareness or Reach to introduce cold audiences to the brand, Consideration campaigns to warm them up, and Conversion campaigns to close the audiences who are now familiar with you.'
+    },
+    {
+      problem: 'Ignoring first-party data for audience building',
+      desc: 'Businesses sitting on customer email lists, phone databases, or website visitor data are leaving real value on the table by not uploading it into Meta\'s Custom Audiences.',
+      fix: 'A lookalike audience built from your best 500 California customers will consistently beat an interest-based cold audience, often by 2–4x in conversion rate.'
+    },
+    {
+      problem: 'Weak ad creative that doesn\'t stop the scroll',
+      desc: 'Most California Facebook Ads get stopped by the same generic stock photos and vague value propositions audiences have learned to ignore.',
+      fix: 'We build creative that leads with the hook — a provocative question, a compelling before/after, a specific result, a direct price anchor — in the first three seconds, before the scroll wins.'
+    },
+    {
+      problem: 'No post-iOS tracking solution in place',
+      desc: 'Since iOS 14.5, a meaningful share of Meta pixel data simply isn\'t tracked, which leaves the algorithm optimizing against incomplete signals.',
+      fix: 'We implement Meta\'s Conversions API (CAPI) as a server-side layer that operates independently of browser privacy restrictions, recovering a substantial portion of that lost conversion data.'
+    },
+    {
+      problem: 'Sending paid traffic to a website with no conversion architecture',
+      desc: 'Meta traffic landing on a slow homepage with no clear CTA and no mobile optimization wastes every dollar behind it.',
+      fix: 'We build dedicated landing pages for every major campaign — fast, mobile-first, and built around a single conversion action matched to the ad\'s exact message and audience.'
+    }
+  ];
+
+  // Section 4: 8 Services Tabbed Interface
+  const servicesTabs = [
+    {
+      id: 'strategy',
+      label: 'Campaign Strategy',
+      heading: '1. Campaign Strategy',
+      paragraphs: [
+        'Every engagement starts with a full California market and competitor analysis, mapping your audience across Meta\'s targeting dimensions — demographics, interests, behaviors, job titles, income, life events — into a funnel architecture covering all three stages of the buyer journey.',
+        'Cold audiences meet awareness-stage creative. Warm audiences, the people who\'ve engaged with content or visited your site, get retargeted with conversion-focused messaging. Hot audiences, past customers and highest-intent visitors, get upsell and re-engagement campaigns. You approve the full strategy before a dollar is spent.'
+      ]
+    },
+    {
+      id: 'creative',
+      label: 'Ad Creative Production',
+      heading: '2. Ad Creative Production',
+      paragraphs: [
+        'Creative is the single biggest variable in Facebook Ads performance — two campaigns with the same California audience and the same budget can produce a 10x swing in ROAS purely on creative quality.',
+        'Our team produces every asset in-house: static images built for scroll-stopping impact, carousel ads, video scripts and storyboards built around Meta\'s 3-second hook window, and Story and Reels formats built for vertical mobile placements. We produce 3–5 creative variants per ad set and rotate new ones in before the existing set fatigues.'
+      ]
+    },
+    {
+      id: 'audience',
+      label: 'Audience Building',
+      heading: '3. Audience Building',
+      paragraphs: [
+        'Campaign performance has a ceiling, and audience quality sets it. We build multi-layered California audiences from every available data source:'
+      ],
+      bullets: [
+        'Custom Audiences: Built from your email list, phone database, website visitors segmented by page and time on site, and page engagers',
+        'Lookalike Audiences: California-specific lookalikes built from your highest-value customers at 1%, 2%, and 5% and tested against each other',
+        'Interest & Behavior Audiences: Layered interest and demographic targeting for cold prospecting, always benchmarked against lookalike performance',
+        'Retargeting Audiences: Segmented by behavior, from add-to-cart abandonment to 75%-plus video views'
+      ]
+    },
+    {
+      id: 'leadgen',
+      label: 'Lead Generation',
+      heading: '4. Lead Generation Campaigns',
+      paragraphs: [
+        'For California service businesses, contractors, healthcare practices, real estate agents, and B2B companies, Meta\'s native Lead Gen objective is one of the most cost-effective tools available — users submit contact information without ever leaving the app, removing the friction of an external landing page.',
+        'We build custom instant forms that qualify leads before they hit your pipeline, connect them to your CRM (Salesforce, HubSpot, Zoho, or anything Zapier-compatible), and trigger automated email and SMS follow-up the moment a lead comes in, because speed-to-contact is the single biggest lever in California lead conversion.'
+      ]
+    },
+    {
+      id: 'remarketing',
+      label: 'Remarketing Campaigns',
+      heading: '5. Remarketing Campaigns',
+      paragraphs: [
+        'Remarketing is consistently the highest-ROAS layer in a well-structured Meta account.',
+        'We segment audiences by recency and behavior — someone who visited your pricing page yesterday sees different messaging than someone who visited the homepage three weeks ago and never came back — so every retargeting dollar goes to the highest-probability prospect with the most relevant message.'
+      ]
+    },
+    {
+      id: 'advantage',
+      label: 'Advantage+ Management',
+      heading: '6. Advantage+ Management',
+      paragraphs: [
+        'Meta\'s Advantage+ Shopping and Audience campaigns use machine learning to automate targeting and delivery at scale, and they can produce excellent results for California e-commerce and DTC brands when the creative, conversion events, and first-party data feeding them are set up correctly.',
+        'We run Advantage+ alongside manual campaigns, continuously rebalancing budget between automated and manual structures based on which is actually performing.'
+      ]
+    },
+    {
+      id: 'capi',
+      label: 'Conversions API & Pixel',
+      heading: '7. Conversions API & Pixel',
+      paragraphs: [
+        'Accurate tracking is the foundation everything else stands on.',
+        'Browser pixel data alone significantly undercounts conversions post-iOS, so we implement CAPI as a server-side layer that recovers much of that lost signal, alongside domain verification, aggregated event measurement, and event deduplication — a technical setup a surprising number of agencies skip entirely.'
+      ]
+    },
+    {
+      id: 'landing',
+      label: 'Landing Page Design',
+      heading: '8. Landing Page Design',
+      paragraphs: [
+        'Facebook traffic behaves differently than Google Search traffic — a Facebook user didn\'t go looking for you, your ad interrupted their scroll.',
+        'The landing page has to work harder: validate the ad\'s promise instantly, build trust fast, and create enough desire to convert someone who wasn\'t actively shopping. We build Facebook-specific pages with sub-2-second mobile load times, an above-the-fold hook that mirrors the ad headline, social proof, and one frictionless CTA.'
+      ]
+    }
+  ];
+
+  // Section 5: 3 Case Studies
+  const caseStudies = [
+    {
+      title: 'LA E-Commerce',
+      subtitle: '6.8x ROAS (LA Skincare Brand)',
+      challenge: 'A Los Angeles direct-to-consumer skincare brand came to us spending $4,000/month at a 1.4x ROAS — one Conversions campaign aimed at a broad "women 25–45 interested in beauty" audience, three static ads unchanged in four months, no remarketing, no Advantage+ Shopping test, and a misconfigured pixel tracking page views as purchases.',
+      solution: 'We rebuilt the account with a Broad Advantage+ Shopping campaign for prospecting, a manual campaign built on lookalikes from the brand\'s 3,200-customer email list, and remarketing segmented by product page visits, add-to-cart, and initiated checkout, backed by 12 new creative variants across static, carousel, and video.',
+      metrics: [
+        { value: '1.4x → 6.8x', label: 'ROAS Increase in 90 Days' },
+        { value: '$5.6k → $27.2k', label: 'Monthly Meta Ads Revenue' },
+        { value: '11.2x ROAS', label: 'Cart Remarketing ROAS' },
+        { value: '$4.20 CPL', label: 'Subscription Box Lead Cost' }
+      ]
+    },
+    {
+      title: 'San Diego Real Estate',
+      subtitle: '$96,000 Commission Revenue',
+      challenge: 'A San Diego luxury real estate agent was relying entirely on referrals, which had declined sharply over 18 months, with no digital lead generation system in place.',
+      solution: 'We built a Lead Gen campaign targeting San Diego homeowners with $150,000+ household income and property-upgrade interest signals, offering a free "2026 San Diego Luxury Home Value Report" through Meta\'s instant lead form, routed straight into Salesforce with same-day email and SMS follow-up, alongside a lookalike campaign built from the agent\'s 180 past clients.',
+      metrics: [
+        { value: '140 Leads', label: 'Qualified Leads in 90 Days' },
+        { value: '$31 CPL', label: 'Average Cost-Per-Lead' },
+        { value: '4 Listings', label: 'Listings Secured ($1.2M avg)' },
+        { value: '$96,000', label: 'Est. Commission ($4,340 spend)' }
+      ]
+    },
+    {
+      title: 'Sacramento Gym',
+      subtitle: '14.8x ROAS (3-Location Franchise)',
+      challenge: 'A three-location Sacramento gym was spending $1,200/month boosting Facebook Page posts — the least efficient form of Meta advertising — with no way to attribute memberships to the spend.',
+      solution: 'We migrated everything into Ads Manager, built a proper campaign structure, and ran a Lead Gen campaign offering a 14-day free trial to adults 22–55 within 8 miles of each location, paired with retargeting to website visitors and Reels viewers, using real member results and facility photography instead of stock images.',
+      metrics: [
+        { value: '67 Members', label: 'New Memberships in 60 Days' },
+        { value: '$54 Cost', label: 'Average Cost per Membership' },
+        { value: '14.8x ROAS', label: 'Lifetime Member Value ROAS' },
+        { value: '$1,200/mo', label: 'Same Budget as Boosted Posts' }
+      ]
+    }
+  ];
+
+  // Section 6: 8 Industries Grid
+  const industries = [
+    { name: 'E-Commerce & Direct-to-Consumer', desc: 'Advantage+ Shopping campaigns, dynamic product ads, abandoned cart retargeting, post-purchase upsell sequences, and subscription funnels — strongest ROI for California brands with margins above 40%.' },
+    { name: 'Real Estate', desc: 'Buyer and seller lead generation, listing-specific video ads, neighborhood-targeted prospecting, open house promotion, and CRM integration for automatic routing and follow-up.' },
+    { name: 'Healthcare & Medical Aesthetics', desc: 'HIPAA-compliant ad copy, procedure-specific campaigns, before/after creative for cosmetic services, and appointment-booking lead gen with proper consent management.' },
+    { name: 'Home Services', desc: 'Radius-targeted local awareness, seasonal promotion for HVAC and landscaping, instant-quote lead generation, and before/after project photography for roofing, remodeling, and pest control.' },
+    { name: 'Fitness & Wellness', desc: 'Membership acquisition with free trial offers, class enrollment ads, video content promotion, and local radius targeting across California metro areas.' },
+    { name: 'Restaurants & Hospitality', desc: 'Local awareness with menu highlights, event promotion, reservation integration, food photography-led creative, and lookalikes from loyalty databases.' },
+    { name: 'Education & Coaching', desc: 'Course enrollment lead generation, webinar registration, free resource funnels, and retargeting for audiences who engaged but haven\'t enrolled.' },
+    { name: 'Automotive', desc: 'Vehicle-specific dynamic ads, dealership local awareness, test drive lead gen, and service department promotion targeting existing owners.' }
+  ];
+
+  // Section 7: 6 Regional City Cards
+  const regionalCities = [
+    { city: 'Los Angeles', note: 'The largest California Meta Ads market — entertainment, fashion, beauty, food, fitness, luxury services. Neighborhood-level geo-targeting (Beverly Hills, Silver Lake, Culver City, Pasadena) with creative built around Southern California\'s consumer aesthetic.' },
+    { city: 'San Diego', note: 'Strong local services, real estate, healthcare, and military-community demographics, with geo-targeted campaigns across La Jolla, Mission Valley, Chula Vista, and North County.' },
+    { city: 'San Francisco & Bay Area', note: 'Tech professionals, high-income households, and B2B demographics — often paired with LinkedIn Ads in an integrated strategy.' },
+    { city: 'Sacramento', note: 'Government workers, healthcare professionals, family-oriented demographics, and a strong home services market, with seasonal creative for Central Valley climate and local community campaigns.' },
+    { city: 'Orange County', note: 'An affluent consumer market — premium brands, cosmetic services, real estate, luxury retail — where higher household income supports higher acquisition costs at strong LTV-to-CAC ratios.' },
+    { city: 'Fresno & Central Valley', note: 'Lower CPMs and CPCs than coastal markets, creating strong cost-per-lead efficiency for local service and retail businesses.' }
+  ];
+
+  // Section 9: 3 Testimonials
+  const testimonials = [
+    {
+      quote: "GrowLimo took our LA skincare brand from a stagnating 1.4x ROAS to a consistent 6.8x ROAS in less than three months. Their creative rotation strategy is incredible — our ads never get stale.",
+      author: "Sarah Jenkins",
+      role: "Founder",
+      company: "Aura Skincare",
+      location: "Los Angeles, CA"
+    },
+    {
+      quote: "The native lead forms we built with GrowLimo have completely changed our San Diego real estate business. We got 140 highly qualified seller leads in 90 days and closed 4 luxury listings.",
+      author: "Marcus Reynolds",
+      role: "Principal Agent",
+      company: "Reynolds Luxury Group",
+      location: "San Diego, CA"
+    },
+    {
+      quote: "We were wasting $1,200/month boosting posts with zero conversion tracking. GrowLimo built a proper membership funnel that doubled our monthly member sign-ups in Sacramento.",
+      author: "Dave Miller",
+      role: "Owner",
+      company: "Peak Fitness",
+      location: "Sacramento, CA"
+    }
+  ];
+
+  // Section 10: 6 Timeline Phases
+  const processPhases = [
+    { phase: 'Phase 1', timeline: 'Week 1', title: 'Free Facebook Ads Audit & Market Analysis', desc: 'A full review of your existing Meta Ads account — campaign structure, audience architecture, creative performance history, conversion tracking accuracy, Pixel/CAPI configuration — or, for new accounts, a competitive analysis of your California competitors\' strategies through Meta\'s Ad Library.' },
+    { phase: 'Phase 2', timeline: 'Week 1–2', title: 'Strategy, Audience Design & Creative Brief', desc: 'A complete campaign strategy: funnel architecture, audience segments, objectives by funnel stage, placement recommendations, and a detailed creative brief for every format required. You approve it before production or build begins.' },
+    { phase: 'Phase 3', timeline: 'Week 2–3', title: 'Creative Production', desc: 'Static images, carousel designs, video scripts, and copy variations — 3 to 5 variants per ad set for immediate A/B testing, reviewed against Meta\'s advertising policies before submission to avoid disapproval delays.' },
+    { phase: 'Phase 4', timeline: 'Week 3', title: 'Campaign Build, Pixel/CAPI Setup & Launch', desc: 'Every campaign, ad set, and ad built in Ads Manager per the approved architecture, with Pixel and CAPI verified, landing pages QA-checked for mobile performance and event firing, and a full pre-launch checklist before anything goes live.' },
+    { phase: 'Phase 5', timeline: 'Ongoing', title: 'Weekly Optimization & Creative Rotation', desc: 'Weekly reviews of performance data, underperforming ad sets paused, new creative rotated in before fatigue, audience targeting adjusted against real delivery data, new offers and CTAs tested, frequency monitored to prevent burnout, and budget rebalanced by ROAS.' },
+    { phase: 'Phase 6', timeline: 'Ongoing', title: 'Monthly Reporting & Quarterly Scaling Reviews', desc: 'Monthly reports covering reach, impressions, link clicks, CTR, CPC, leads or purchases, cost-per-result, and ROAS in plain English, plus quarterly reviews on scaling top performers, expanding to new California city audiences, or adding new campaign types.' }
+  ];
+
+  // Section 11: 7 FAQs
+  const faqs = [
+    {
+      question: 'How much does Facebook Ads management cost in California?',
+      answer: "Facebook Ads management fees in California typically range from $500 to $3,500/month depending on campaign complexity and the number of ad sets. GrowLimo's management starts at $497/month on top of your ad spend budget, with no long-term contracts required."
+    },
+    {
+      question: 'How quickly will Facebook Ads generate results for my California business?',
+      answer: "Campaigns typically enter Meta's learning phase within 24–48 hours of launch and can generate initial leads or sales within the first few days. Full optimization usually takes 4–6 weeks, as the algorithm exits the learning phase and delivery stabilizes."
+    },
+    {
+      question: 'What is the difference between Facebook Ads and Google Ads for California businesses?',
+      answer: 'Google Ads captures existing demand — people already searching for your product or service. Facebook Ads creates and captures demand, reaching people before they actively search, based on demographics, interests, behaviors, and life events. Both matter; the strongest California strategies use both together.'
+    },
+    {
+      question: 'Does GrowLimo manage Instagram Ads as well as Facebook?',
+      answer: 'Yes. Facebook and Instagram Ads run through the same Meta Ads platform. We manage campaigns across Facebook Feed, Instagram Feed, Stories, Reels, Facebook Marketplace, and the Audience Network within a single integrated strategy.'
+    },
+    {
+      question: 'What budget do I need to start Facebook Ads in California?',
+      answer: 'California businesses can run effective campaigns starting at $1,000–$1,500/month in ad spend. Highly competitive markets like Los Angeles, or industries with high acquisition costs, may need $2,500–$5,000/month to exit the learning phase quickly and generate meaningful optimization data.'
+    },
+    {
+      question: 'Does GrowLimo create the Facebook ad creative and copy?',
+      answer: 'Yes. We provide full creative production — ad copywriting, static image design, carousel design, and video scripting. Creative is the single biggest variable in Facebook Ads performance, and our team produces and A/B tests it continuously.'
+    },
+    {
+      question: 'What industries does GrowLimo run Facebook Ads for in California?',
+      answer: 'E-commerce, real estate, healthcare, dental, home services, automotive, restaurants, fitness, education, legal services, and B2B lead generation.'
     }
   ];
 
@@ -209,60 +286,71 @@ export default function ServiceContentSectionFBCA({ service, slug, onSelectPlan 
         schema={schema}
       />
 
-      {/* SECTION 1: HERO */}
-      <section className="bg-[#080D18] text-white pt-[100px] pb-[80px] relative overflow-hidden">
-        {/* Glowing background highlights */}
-        <div className="absolute top-[-20%] left-[-10%] w-[50%] h-[60%] rounded-full bg-[rgba(0,198,138,0.04)] blur-[120px] pointer-events-none" />
-        <div className="absolute bottom-[-10%] right-[-10%] w-[40%] h-[50%] rounded-full bg-[rgba(221,102,19,0.03)] blur-[120px] pointer-events-none" />
+      {/* ========================================================================= */}
+      {/* SECTION 1: HERO (Trust & Authority + Social Proof) */}
+      {/* ========================================================================= */}
+      <section className="bg-[#080D18] text-white pt-[90px] md:pt-[110px] pb-[70px] md:pb-[90px] relative overflow-hidden border-b border-[rgba(255,255,255,0.06)]">
+        <div className="absolute top-[-10%] left-[-10%] w-[50%] h-[60%] rounded-full bg-[rgba(0,198,138,0.04)] blur-[120px] pointer-events-none" />
+        <div className="absolute bottom-[-10%] right-[-10%] w-[40%] h-[50%] rounded-full bg-[rgba(24,119,242,0.04)] blur-[120px] pointer-events-none" />
 
-        <div className="container mx-auto px-4 md:px-10 max-w-[1100px] relative z-10">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        <div className="container mx-auto px-4 md:px-10 max-w-[1200px] relative z-10">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
 
-            {/* Left Side: Headline & Trust Info */}
-            <div className="lg:col-span-6 flex flex-col items-start text-left">
-              <span className="bg-[rgba(0,198,138,0.08)] border border-[rgba(0,198,138,0.20)] text-[#00C68A] text-[11px] font-extrabold uppercase tracking-[2.5px] rounded-full py-[6px] px-[16px] mb-6 inline-flex font-sans leading-none">
-                CALIFORNIA META ADS SPECIALISTS
-              </span>
+            {/* Left 7 Columns: Headline & 5 Stat Pills */}
+            <div className="lg:col-span-7 flex flex-col items-start text-left">
+              <div className="inline-flex items-center gap-2 bg-[rgba(24,119,242,0.12)] border border-[rgba(24,119,242,0.30)] text-[#1877F2] text-[11px] md:text-[12px] font-extrabold uppercase tracking-[2.5px] rounded-full py-[6px] px-[16px] mb-6 leading-none font-sans">
+                <span className="w-2 h-2 rounded-full bg-[#1877F2] animate-pulse" />
+                META BLUEPRINT CERTIFIED PAID SOCIAL AGENCY
+              </div>
 
-              <h1 className="text-[30px] md:text-[36px] lg:text-[40px] font-extrabold font-sora text-[#F0F4FF] leading-[1.12] mb-6 tracking-tight animate-fade-in">
+              <h1 className="text-[32px] sm:text-[40px] lg:text-[46px] font-extrabold font-sora text-[#F0F4FF] leading-[1.12] mb-6 tracking-tight">
                 {h1}
               </h1>
 
-              {/* First heroContent paragraph (max 3 lines) */}
-              <p className="font-sans text-[15px] text-[#8FA8C8] leading-[1.7] mb-8 max-w-[620px]">
+              <p className="font-sans text-[15px] sm:text-[16px] text-[#8FA8C8] leading-[1.75] mb-8">
                 {subheadline}
               </p>
 
-              {/* 3 Trust Pills */}
-              <div className="flex flex-wrap gap-3 mb-4 w-full">
-                {[
-                  { value: '80+ California', label: 'Clients' },
-                  { value: 'Meta Blueprint', label: 'Certified' },
-                  { value: '4.9★', label: 'Rating' }
-                ].map((pill, idx) => (
+              {/* 5 Stat Bar Pills */}
+              <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-2.5 w-full mb-6">
+                {statBar.map((stat, idx) => (
                   <div
                     key={idx}
-                    className="flex items-center gap-3 bg-[rgba(26,36,56,0.5)] border border-[rgba(255,255,255,0.05)] rounded-[12px] px-5 py-3 shadow-md hover:border-[#00C68A]/35 transition-all duration-200"
+                    className="flex flex-col bg-[#0C1220] border border-[rgba(255,255,255,0.08)] rounded-[12px] p-3 shadow-md hover:border-[#00C68A]/40 transition-all duration-200"
                   >
-                    <span className="text-[#00C68A] font-sora font-extrabold text-[16px]">{pill.value}</span>
-                    <span className="text-[#8FA8C8] font-sans text-[13px] font-medium border-l border-[rgba(255,255,255,0.1)] pl-3">{pill.label}</span>
+                    <span className="text-[#00C68A] font-sora font-extrabold text-[17px] mb-0.5 leading-none">
+                      {stat.value}
+                    </span>
+                    <span className="text-[#F0F4FF] font-sans text-[11px] font-medium leading-snug">
+                      {stat.label}
+                    </span>
                   </div>
                 ))}
               </div>
+
+              <Link
+                href="/contact/"
+                className="cursor-pointer inline-flex items-center justify-center gap-2 bg-[#00C68A] hover:bg-[#0FB786] text-[#080D18] font-sora font-extrabold text-[15px] px-7 py-3.5 rounded-xl transition-all duration-200 shadow-[0_4px_20px_rgba(0,198,138,0.3)] hover:-translate-y-0.5"
+              >
+                Get Your Free Facebook Ads Audit →
+              </Link>
             </div>
 
-            {/* Right Side: Form */}
-            <div className="lg:col-span-6 w-full">
-              <div className="bg-[#1A2438]/80 backdrop-blur-md border border-[rgba(255,255,255,0.08)] rounded-[20px] p-5 shadow-2xl relative">
-                <div className="absolute top-0 right-0 w-[80px] h-[80px] bg-[#00C68A]/5 rounded-bl-full pointer-events-none" />
-                <h3 className="font-sora font-bold text-[15px] text-[#F0F4FF] mb-3 text-left border-b border-[rgba(255,255,255,0.06)] pb-2">
-                  Get Your Free Facebook Ads Audit
+            {/* Right 5 Columns: Lead Form Card */}
+            <div className="lg:col-span-5 w-full">
+              <div className="bg-[#1A2438]/90 backdrop-blur-md border border-[rgba(255,255,255,0.08)] rounded-[20px] p-6 shadow-2xl relative text-left">
+                <div className="absolute top-0 right-0 w-[80px] h-[80px] bg-[#1877F2]/10 rounded-bl-full pointer-events-none" />
+                <h3 className="font-sora font-extrabold text-[16px] text-[#F0F4FF] mb-1">
+                  Get Your Free Meta Ads Audit
                 </h3>
+                <p className="text-[13px] text-[#8FA8C8] mb-4">
+                  Identify creative fatigue, audience leaks, & CAPI tracking issues.
+                </p>
                 <Form
                   slug={slug}
                   compact={true}
                   variant="contact"
-                  ctaButtonText="Get My Free Facebook Ads Audit →"
+                  ctaButtonText="Claim Your Free Meta Ads Audit →"
                 />
               </div>
             </div>
@@ -271,901 +359,499 @@ export default function ServiceContentSectionFBCA({ service, slug, onSelectPlan 
         </div>
       </section>
 
-      {/* SECTION 2: FULL-WIDTH IMAGE WITH STAT CARDS */}
-      <section className="relative w-full overflow-hidden">
-        <div className="relative w-full h-[480px]">
-          <img
-            src={heroImg}
-            alt="GrowLimo California Facebook Ads"
-            className="w-full h-full object-cover brightness-[0.3]"
-          />
-          {/* Deep dark gradient overlays */}
-          <div className="absolute inset-x-0 top-0 h-24 bg-gradient-to-b from-[#080D18] to-transparent" />
-          <div className="absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-[#FFFFFF] to-transparent" />
+      {/* ========================================================================= */}
+      {/* SECTION 2: WHY FACEBOOK ADS IS NON-NEGOTIABLE FOR CA BUSINESSES */}
+      {/* ========================================================================= */}
+      <section className="bg-[#0C1220] py-[80px] md:py-[100px] relative z-10 border-b border-[rgba(255,255,255,0.06)]">
+        <div className="container mx-auto px-4 md:px-10 max-w-[1000px] text-left">
 
-          {/* 3 Floating Stat Cards on Overlay */}
-          <div className="absolute inset-0 flex items-center justify-center z-20">
-            <div className="container mx-auto px-4 max-w-[1100px]">
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                {[
-                  { value: '80+ CA Clients', text: 'California Businesses Scaled with Meta Ads' },
-                  { value: '6.8x Avg ROAS', text: 'Proven Social Campaign Return Across Verticals' },
-                  { value: 'Full Creative Included', text: 'Thumb-Stopping Video & Copy Built In-House' }
-                ].map((card, idx) => (
-                  <div
-                    key={idx}
-                    className="bg-[#0C1220]/80 backdrop-blur-md border border-[rgba(255,255,255,0.08)] rounded-[18px] p-7 shadow-2xl flex flex-col items-center text-center transition-all duration-300 hover:translate-y-[-5px] hover:border-[#00C68A]/40"
-                  >
-                    <div className="text-[22px] md:text-[24px] font-extrabold font-sora text-[#00C68A] mb-2 leading-none">
-                      {card.value}
-                    </div>
-                    <p className="text-[#F0F4FF] text-[13px] leading-relaxed font-sans font-medium">
-                      {card.text}
-                    </p>
-                  </div>
-                ))}
-              </div>
-            </div>
+          <span className="text-[#00C68A] text-[11px] md:text-[12px] font-bold uppercase tracking-[2.5px] mb-3 block font-sans">
+            STRATEGIC IMPERATIVE
+          </span>
+
+          <h2 className="text-[28px] sm:text-[34px] lg:text-[38px] font-extrabold font-sora leading-tight text-[#F0F4FF] tracking-tight mb-8">
+            Why Facebook Ads Management Is Non-Negotiable for California Businesses
+          </h2>
+
+          <div className="space-y-6 text-[#8FA8C8] font-sans text-[15px] sm:text-[16px] leading-[1.85]">
+            <p className="bg-[#162035]/60 p-6 rounded-[16px] border border-[rgba(255,255,255,0.06)]">
+              With more than 39 million residents and some of the highest consumer spending per capita in the country, California is one of the most valuable advertising markets in the world — and Meta's platform lets you target the exact people most likely to buy, based on demographics, interests, behaviors, life events, and purchase history, rather than hoping the right person happens to be watching.
+            </p>
+
+            <p className="bg-[#162035]/60 p-6 rounded-[16px] border border-[rgba(255,255,255,0.06)]">
+              The real advantage of Facebook Ads is <strong className="text-[#00C68A]">demand creation</strong>, not demand capture. Google Ads reaches people who are already searching for what you sell — an essential channel, but a reactive one. Facebook Ads reaches people before they search, building the awareness and desire that eventually turns into direct search intent. The strongest California marketing strategies run both: Google Ads to capture existing demand, Facebook Ads to create new demand. Businesses running both consistently outperform businesses running either channel alone.
+            </p>
+
+            <p className="bg-[#162035]/60 p-6 rounded-[16px] border border-[rgba(255,255,255,0.06)]">
+              The landscape has also gotten more complicated. Apple's iOS privacy changes cut into Meta's tracking accuracy, the platform has pushed hard toward Advantage+ automation, and creative fatigue — the rapid decay in ad performance once an audience has seen the same creative too many times — is now a constant, not an occasional problem. Managing all of that well takes active, hands-on management. It's not something a boosted post or a stale ad set left running for weeks can do for you.
+            </p>
           </div>
+
         </div>
       </section>
 
-      {/* SECTION 3: WHY FACEBOOK ADS (white bg) */}
-      <section className="bg-[#FFFFFF] py-[96px] relative z-10 border-t border-[#E3EEF7]">
+      {/* ========================================================================= */}
+      {/* SECTION 3: WHY MOST FACEBOOK MARKETING SERVICES FALL SHORT (7 Alternating Pairs) */}
+      {/* ========================================================================= */}
+      <section className="bg-[#080D18] py-[80px] md:py-[100px] relative z-10 border-b border-[rgba(255,255,255,0.06)]">
         <div className="container mx-auto px-4 md:px-10 max-w-[1100px]">
 
-          <div className="text-left mb-12">
-            <span className="text-[#00C68A] text-[11px] font-bold uppercase tracking-[2.5px] mb-3 block font-sans">
-              DEMAND CREATION ENGINE
+          <div className="text-left max-w-[860px] mb-12">
+            <span className="text-[#00C68A] text-[11px] md:text-[12px] font-bold uppercase tracking-[2.5px] mb-3 block font-sans">
+              ACCOUNT AUDIT DIAGNOSTICS
             </span>
-            <h2 className="text-[26px] md:text-[34px] font-extrabold font-sora leading-tight text-[#0B1829] tracking-tight">
-              Why Facebook Ads Are Non-Negotiable for California Businesses
+            <h2 className="text-[28px] sm:text-[34px] lg:text-[38px] font-extrabold font-sora leading-tight text-[#F0F4FF] tracking-tight mb-4">
+              Why Most Facebook Marketing Services Fall Short
             </h2>
+            <p className="font-sans text-[15px] sm:text-[16px] text-[#8FA8C8]">
+              After auditing dozens of California Facebook Ads accounts across industries and spend levels, the same structural failures keep showing up. Here's what we find, and what we do about each one:
+            </p>
           </div>
 
-          <div className="text-left mb-12">
-            {
-              heroContent.map((para, idx) => (
-                <p key={idx} className="font-sans text-[15px] leading-[1.8] text-[#3D5A73] mt-3 mb-3">
-                  {para}
-                </p>
-              ))
-            }
-          </div>
-
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
-
-            {/* Left 60%: Text content */}
-            <div className="lg:col-span-7 space-y-6 text-left">
-              {whyFacebookSec.paragraphs && whyFacebookSec.paragraphs.map((para, idx) => (
-                <p key={idx} className="font-sans text-[15px] leading-[1.8] text-[#3D5A73]">
-                  {para}
-                </p>
-              ))}
-            </div>
-
-            {/* Right 40%: Trust highlights styled inside card */}
-            <div className="lg:col-span-5">
-              <div className="bg-[#F8FAFC] border border-[#E3EEF7] rounded-[20px] p-8 shadow-sm">
-                <h3 className="font-sora font-bold text-[18px] text-[#0B1829] mb-6 text-left border-b border-[#E3EEF7] pb-3">
-                  California Meta Insights
-                </h3>
-
-                <div className="space-y-6">
-                  <div className="flex gap-4 items-start text-left p-4 rounded-[12px] bg-[#00C68A]/5 border border-[#00C68A]/20">
-                    <div className="w-[26px] h-[26px] rounded-full bg-[#00C68A] flex items-center justify-center shrink-0 mt-0.5">
-                      <svg className="w-[12px] h-[12px] text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
-                      </svg>
-                    </div>
-                    <div className="flex-1">
-                      <h4 className="font-sans text-[14px] font-bold text-[#0B1829] leading-tight mb-1">
-                        Full-Funnel Demand
-                      </h4>
-                      <p className="font-sans text-[13px] leading-relaxed text-[#3D5A73]">
-                        {heroContent[1]}
-                      </p>
-                    </div>
-                  </div>
-
-                  <div className="flex gap-4 items-start text-left">
-                    <div className="w-[26px] h-[26px] rounded-full bg-[rgba(0,198,138,0.12)] border border-[rgba(0,198,138,0.20)] flex items-center justify-center shrink-0 mt-0.5">
-                      <svg className="w-[12px] h-[12px] text-[#00C68A]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
-                      </svg>
-                    </div>
-                    <div className="flex-1">
-                      <h4 className="font-sans text-[14px] font-bold text-[#0B1829] leading-tight mb-1">
-                        High Spending Geographies
-                      </h4>
-                      <p className="font-sans text-[13px] leading-relaxed text-[#3D5A73]">
-                        California metro zones possess highly lucrative consumer groups, capturing prime intent based on demographic and lifestyle signals.
-                      </p>
-                    </div>
-                  </div>
-
-                  <div className="flex gap-4 items-start text-left">
-                    <div className="w-[26px] h-[26px] rounded-full bg-[rgba(0,198,138,0.12)] border border-[rgba(0,198,138,0.20)] flex items-center justify-center shrink-0 mt-0.5">
-                      <svg className="w-[12px] h-[12px] text-[#00C68A]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
-                      </svg>
-                    </div>
-                    <div className="flex-1">
-                      <h4 className="font-sans text-[14px] font-bold text-[#0B1829] leading-tight mb-1">
-                        Algorithmic Edge
-                      </h4>
-                      <p className="font-sans text-[13px] leading-relaxed text-[#3D5A73]">
-                        Strategic integration of first-party customer lists to prompt machine learning optimizations that consistently convert.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-
-              </div>
-            </div>
-
-          </div>
-
-        </div>
-      </section >
-
-      {/* SECTION 4: PROBLEMS WE FIX (dark bg) */}
-      < section className="bg-[#0C1220] py-[96px] relative z-10 border-t border-[rgba(255,255,255,0.04)]" >
-        <div className="container mx-auto px-4 md:px-10 max-w-[1100px]">
-
-          <div className="text-left mb-10">
-            <span className="text-[#00C68A] text-[11px] font-bold uppercase tracking-[2.5px] mb-3 block font-sans">
-              COMMON BOTTLENECKS
-            </span>
-            <h2 className="text-[26px] md:text-[34px] font-extrabold font-sora leading-tight text-[#F0F4FF] tracking-tight">
-              Why Most Campaigns Underperform
-            </h2>
-            {problemsSec.paragraphs && problemsSec.paragraphs.map((para, idx) => (
-              <p key={idx} className="font-sans text-[15px] leading-[1.8] text-[#8FA8C8] mt-4 max-w-[800px]">
-                {para}
-              </p>
-            ))}
-          </div>
-
-          {/* Bullets as a 2-column grid of styled cards with custom icons */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
-            {problemsSec.bullets && problemsSec.bullets.map((bullet, idx) => {
-              const { title, desc } = parseSplitItem(bullet);
-
-              // Custom icon map
-              const getIcon = (i) => {
-                switch (i) {
-                  case 0: return '🎯'; // Broad
-                  case 1: return '♻️'; // Creative fatigue
-                  case 2: return '📊'; // Funnel
-                  case 3: return '💾'; // First-party
-                  case 4: return '✨'; // Weak creative
-                  case 5: return '🔌'; // Tracking
-                  case 6: return '📈'; // Landing page
-                  default: return '🛡️';
-                }
-              };
-
+          <div className="space-y-4">
+            {problemSolutionPairs.map((pair, idx) => {
+              const isOpen = openProblem === idx;
               return (
                 <div
                   key={idx}
-                  className="bg-[#1A2438] border border-[rgba(255,255,255,0.06)] rounded-[16px] p-6 shadow-md transition-all duration-300 hover:border-[#00C68A]/30 hover:translate-y-[-3px] flex gap-4 items-start text-left"
+                  className="bg-[#0C1220] border border-[rgba(255,255,255,0.08)] rounded-[18px] overflow-hidden transition-all duration-200"
                 >
-                  <div className="w-[38px] h-[38px] rounded-xl bg-[rgba(0,198,138,0.08)] border border-[rgba(0,198,138,0.15)] flex items-center justify-center shrink-0 text-[#00C68A] text-lg font-bold">
-                    {getIcon(idx)}
-                  </div>
-                  <div>
-                    <h3 className="font-sora font-bold text-[16px] text-[#F0F4FF] mb-2 leading-snug">
-                      {title}
-                    </h3>
-                    {desc && (
-                      <p className="font-sans text-[14px] leading-relaxed text-[#8FA8C8]">
-                        {desc}
+                  <button
+                    onClick={() => setOpenProblem(isOpen ? null : idx)}
+                    className="w-full p-6 text-left flex items-center justify-between gap-4 cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-[#00C68A]"
+                    aria-expanded={isOpen}
+                  >
+                    <div className="flex items-center gap-3">
+                      <span className="w-8 h-8 rounded-full bg-red-500/10 border border-red-500/20 text-red-400 font-sora font-extrabold text-[13px] flex items-center justify-center shrink-0">
+                        ✕
+                      </span>
+                      <h3 className="font-sora font-bold text-[16px] md:text-[18px] text-[#F0F4FF] leading-snug">
+                        Problem {idx + 1}: {pair.problem}
+                      </h3>
+                    </div>
+                    <span className={`w-8 h-8 rounded-full bg-[#162035] border border-[rgba(255,255,255,0.1)] flex items-center justify-center shrink-0 text-[#00C68A] transition-transform duration-200 ${isOpen ? 'rotate-180' : ''}`}>
+                      <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M19 9l-7 7-7-7" />
+                      </svg>
+                    </span>
+                  </button>
+
+                  {isOpen && (
+                    <div className="px-6 pb-6 pt-2 text-left border-t border-[rgba(255,255,255,0.05)] space-y-4">
+                      <p className="font-sans text-[14.5px] leading-[1.8] text-[#8FA8C8]">
+                        <strong className="text-red-400">What happens:</strong> {pair.desc}
                       </p>
-                    )}
-                  </div>
+                      <div className="p-4 rounded-xl bg-[#162035] border-l-4 border-[#00C68A] text-[#F0F4FF] font-sans text-[14.5px]">
+                        <strong className="text-[#00C68A]">GrowLimo's Fix:</strong> {pair.fix}
+                      </div>
+                    </div>
+                  )}
                 </div>
               );
             })}
           </div>
 
         </div>
-      </section >
+      </section>
 
-      {/* SECTION 5: TWO-COLUMN IMAGE + TEXT */}
-      < section className="bg-[#FFFFFF] py-[96px] relative z-10 border-t border-[#E3EEF7]" >
-        <div className="container mx-auto px-4 md:px-10 max-w-[1100px]">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+      {/* ========================================================================= */}
+      {/* SECTION 4: OUR SERVICES (8 Services Tabbed Interface) */}
+      {/* ========================================================================= */}
+      <section className="bg-[#0C1220] py-[80px] md:py-[100px] relative z-10 border-b border-[rgba(255,255,255,0.06)]">
+        <div className="container mx-auto px-4 md:px-10 max-w-[1200px]">
 
-            {/* Left 40%: Image */}
-            <div className="lg:col-span-5">
-              <div className="rounded-[20px] overflow-hidden shadow-xl border-4 border-white relative group">
-                <img
-                  src={strategyImg}
-                  alt="GrowLimo California Facebook Ads Strategy Planning"
-                  className="w-full h-auto object-cover transition-transform duration-500 group-hover:scale-105"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent pointer-events-none" />
-              </div>
-            </div>
+          <div className="text-left max-w-[860px] mb-12">
+            <span className="text-[#00C68A] text-[11px] md:text-[12px] font-bold uppercase tracking-[2.5px] mb-3 block font-sans">
+              END-TO-END PAID SOCIAL
+            </span>
+            <h2 className="text-[28px] sm:text-[34px] lg:text-[38px] font-extrabold font-sora leading-tight text-[#F0F4FF] tracking-tight mb-4">
+              Our Facebook Ads Management Services
+            </h2>
+            <p className="font-sans text-[15px] sm:text-[16px] text-[#8FA8C8]">
+              GrowLimo runs Facebook and Instagram Ads end to end — strategy, creative production, campaign build, ongoing optimization, and transparent reporting.
+            </p>
+          </div>
 
-            {/* Right 60%: Text intro for services */}
-            <div className="lg:col-span-7 text-left space-y-6">
-              <span className="text-[#00C68A] text-[11px] font-bold uppercase tracking-[2.5px] block font-sans">
-                GrowLimo META ADS SOLUTIONS
-              </span>
-              <h2 className="text-[26px] md:text-[34px] font-extrabold font-sora leading-tight text-[#0B1829] tracking-tight">
-                Our Facebook Ads Management Services
-              </h2>
-              {servicesIntroSec.paragraphs && servicesIntroSec.paragraphs.map((para, idx) => (
-                <p key={idx} className="font-sans text-[15px] leading-[1.8] text-[#3D5A73]">
-                  {para}
+          {/* Tab Controls */}
+          <div className="flex flex-wrap gap-2 mb-8 border-b border-[rgba(255,255,255,0.08)] pb-4">
+            {servicesTabs.map((tab, idx) => {
+              const isActive = activeTab === idx;
+              return (
+                <button
+                  key={tab.id}
+                  onClick={() => setActiveTab(idx)}
+                  className={`cursor-pointer px-4 py-2.5 rounded-xl font-sora font-semibold text-[13px] transition-all duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#00C68A] ${
+                    isActive
+                      ? 'bg-[#00C68A] text-[#080D18] shadow-[0_4px_16px_rgba(0,198,138,0.3)] font-bold'
+                      : 'bg-[#162035] text-[#8FA8C8] hover:text-[#F0F4FF] border border-[rgba(255,255,255,0.06)]'
+                  }`}
+                >
+                  {tab.label}
+                </button>
+              );
+            })}
+          </div>
+
+          {/* Active Tab Content */}
+          <div className="bg-[#162035] border border-[rgba(255,255,255,0.08)] rounded-[20px] p-8 md:p-10 text-left transition-all duration-300">
+            <h3 className="text-[22px] md:text-[28px] font-extrabold font-sora text-[#F0F4FF] leading-snug mb-4">
+              {servicesTabs[activeTab].heading}
+            </h3>
+
+            <div className="space-y-4 mb-6">
+              {servicesTabs[activeTab].paragraphs.map((p, pIdx) => (
+                <p key={pIdx} className="font-sans text-[15px] leading-[1.8] text-[#8FA8C8]">
+                  {p}
                 </p>
               ))}
             </div>
 
-          </div>
-        </div>
-      </section >
-
-      {/* SECTION 6-13: NUMBERED SERVICES (alternating bg) */}
-      {
-        numberedServices.map((serviceSec, sIdx) => {
-          const isWhiteBg = sIdx % 2 === 0;
-          const bgClass = isWhiteBg ? 'bg-[#FFFFFF] border-t border-[#E3EEF7]' : 'bg-[#0C1220] border-t border-[rgba(255,255,255,0.04)]';
-          const numBadge = `0${sIdx + 1}`;
-
-          // Strip "X. " prefix
-          const displayHeading = serviceSec.heading.replace(/^\d+\.\s*/, '');
-
-          return (
-            <div key={sIdx}>
-              <section className={`${bgClass} py-[96px] relative z-10`}>
-                <div className="container mx-auto px-4 md:px-10 max-w-[1100px]">
-                  <div className="max-w-[860px] mx-auto">
-
-                    <div className="flex items-center gap-3 mb-6">
-                      <span className="font-sora font-extrabold text-[14px] text-[#00C68A] bg-[#00C68A]/10 border border-[#00C68A]/20 px-3 py-1 rounded-[6px]">
-                        SERVICE {numBadge}
-                      </span>
-                    </div>
-
-                    <h2 className={`text-[24px] md:text-[30px] font-extrabold font-sora leading-tight tracking-tight mb-6 ${isWhiteBg ? 'text-[#0B1829]' : 'text-[#F0F4FF]'}`}>
-                      {displayHeading}
-                    </h2>
-
-                    {serviceSec.paragraphs && serviceSec.paragraphs.map((para, pIdx) => (
-                      <p
-                        key={pIdx}
-                        className={`font-sans text-[15px] leading-[1.8] mb-6 ${isWhiteBg ? 'text-[#3D5A73]' : 'text-[#8FA8C8]'}`}
-                      >
-                        {para}
-                      </p>
-                    ))}
-
-                    {/* Bullets (emerald checks) */}
-                    {serviceSec.bullets && serviceSec.bullets.length > 0 && (
-                      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-8">
-                        {serviceSec.bullets.map((bullet, bIdx) => {
-                          const parsed = parseSplitItem(bullet);
-                          return (
-                            <div
-                              key={bIdx}
-                              className={`flex gap-[12px] items-start p-4 rounded-[12px] border ${isWhiteBg
-                                ? 'bg-[#F8FAFC] border-[#E3EEF7] hover:border-[#00C68A]/30'
-                                : 'bg-[#1A2438] border-[rgba(255,255,255,0.05)] hover:border-[#00C68A]/20'
-                                } transition-all duration-200`}
-                            >
-                              <div className="w-[24px] h-[24px] rounded-full bg-[rgba(0,198,138,0.12)] border border-[rgba(0,198,138,0.20)] flex items-center justify-center shrink-0 mt-0.5">
-                                <svg className="w-[11px] h-[11px] text-[#00C68A]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
-                                </svg>
-                              </div>
-                              <div className="flex-1 text-left">
-                                {parsed.desc ? (
-                                  <>
-                                    <strong className={`font-sora font-semibold text-[14px] block mb-0.5 ${isWhiteBg ? 'text-[#0B1829]' : 'text-[#F0F4FF]'}`}>{parsed.title}</strong>
-                                    <span className={`font-sans text-[13px] leading-[1.6] ${isWhiteBg ? 'text-[#3D5A73]' : 'text-[#8FA8C8]'}`}>{parsed.desc}</span>
-                                  </>
-                                ) : (
-                                  <span className={`font-sans text-[14px] leading-[1.65] font-medium ${isWhiteBg ? 'text-[#3D5A73]' : 'text-[#8FA8C8]'}`}>{bullet}</span>
-                                )}
-                              </div>
-                            </div>
-                          );
-                        })}
-                      </div>
-                    )}
-
-                    {serviceSec.closingText && (
-                      <div className={`mt-8 p-6 rounded-[16px] border-l-4 border-[#00C68A] ${isWhiteBg ? 'bg-[#F8FAFC] border-[#E3EEF7]' : 'bg-[#1A2438]/60 border-[rgba(255,255,255,0.04)]'}`}>
-                        <p className={`font-sans text-[15px] leading-[1.8] font-bold italic ${isWhiteBg ? 'text-[#0B1829]' : 'text-[#F0F4FF]'}`}>
-                          "{serviceSec.closingText}"
-                        </p>
-                      </div>
-                    )}
-
+            {servicesTabs[activeTab].bullets && (
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
+                {servicesTabs[activeTab].bullets.map((b, bIdx) => (
+                  <div key={bIdx} className="flex gap-3 items-start bg-[#0C1220] p-4 rounded-xl border border-[rgba(255,255,255,0.05)]">
+                    <svg className="w-5 h-5 text-[#00C68A] shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
+                    </svg>
+                    <span className="font-sans text-[14px] text-[#F0F4FF] leading-relaxed font-medium">
+                      {b}
+                    </span>
                   </div>
-                </div>
-              </section>
-
-              {/* IMAGE PLACEMENTS */}
-              {sIdx === 1 && ( // After Service 2 (Creative Production)
-                <section className="relative w-full py-16 bg-[#080D18] flex justify-center">
-                  <div className="container max-w-[900px] px-4">
-                    <div className="rounded-[20px] overflow-hidden shadow-2xl border border-[rgba(255,255,255,0.06)] relative group">
-                      <img
-                        src={creativeImg}
-                        alt="California High-Converting Creative Production Studio"
-                        className="w-full h-auto max-h-[480px] object-cover transition-transform duration-500 group-hover:scale-[1.02]"
-                      />
-                      <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent pointer-events-none" />
-                      <div className="absolute bottom-5 left-6 right-6 text-left">
-                        <p className="text-[12px] text-[#00C68A] uppercase font-bold tracking-[2px] mb-1">CREATIVE STUDIO</p>
-                        <h4 className="text-[18px] md:text-[20px] text-white font-sora font-bold">Custom Carousel, Video Storyboarding & Graphic Ad Sets</h4>
-                      </div>
-                    </div>
-                  </div>
-                </section>
-              )}
-
-              {sIdx === 5 && ( // After Service 6 (Advantage+ Management)
-                <section className="relative w-full py-16 bg-[#080D18] flex justify-center">
-                  <div className="container max-w-[900px] px-4">
-                    <div className="rounded-[20px] overflow-hidden shadow-2xl border border-[rgba(255,255,255,0.06)] relative group">
-                      <img
-                        src={dashboardImg}
-                        alt="Meta Ads Advantage+ Reporting Dashboard"
-                        className="w-full h-auto max-h-[480px] object-cover transition-transform duration-500 group-hover:scale-[1.02]"
-                      />
-                      <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent pointer-events-none" />
-                      <div className="absolute bottom-5 left-6 right-6 text-left">
-                        <p className="text-[12px] text-[#00C68A] uppercase font-bold tracking-[2px] mb-1">CAMPAIGN CONTROLS</p>
-                        <h4 className="text-[18px] md:text-[20px] text-white font-sora font-bold">Scale Campaign Budgets with Machine Learning Guardrails</h4>
-                      </div>
-                    </div>
-                  </div>
-                </section>
-              )}
-            </div>
-          );
-        })
-      }
-
-      {/* SECTION 14: CASE STUDIES (dark bg) */}
-      <section className="bg-[#0C1220] py-[96px] relative z-10 border-t border-[rgba(255,255,255,0.04)]">
-        <div className="container mx-auto px-4 md:px-10 max-w-[1100px] text-center mb-16">
-          <span className="text-[#00C68A] text-[11px] font-bold uppercase tracking-[2.5px] mb-3 block font-sans">
-            CALIFORNIA EXPERTISE IN ACTION
-          </span>
-          <h2 className="text-[26px] md:text-[36px] font-extrabold font-sora leading-tight text-[#F0F4FF] tracking-tight">
-            Facebook Ads Case Studies
-          </h2>
-        </div>
-
-        {[caseStudy1Sec, caseStudy2Sec, caseStudy3Sec].map((cs, idx) => {
-          const displayHeading = cs.heading.replace(/^Case Study \d+:\s*/, '');
-          const badgeNumber = `CASE STUDY 0${idx + 1}`;
-          const segments = parseCaseStudySegments(cs.paragraphs, idx);
-          const meta = caseStudyMetadata[idx] || {};
-          const isEven = idx % 2 === 0;
-
-          return (
-            <div
-              key={idx}
-              className={`w-full py-20 border-t border-[rgba(255,255,255,0.03)] relative overflow-hidden ${isEven ? 'bg-[#0C1220]' : 'bg-[#090E1A]'
-                }`}
-            >
-              {/* Subtle background glow */}
-              <div className="absolute top-0 left-1/4 w-[500px] h-[500px] rounded-full bg-[rgba(0,198,138,0.02)] blur-[150px] pointer-events-none" />
-              <div className="absolute bottom-0 right-1/4 w-[400px] h-[400px] rounded-full bg-[rgba(143,168,200,0.015)] blur-[130px] pointer-events-none" />
-
-              <div className="container mx-auto px-4 md:px-10 max-w-[1100px]">
-                {/* 1. TOP LABEL & 2. LARGE HEADLINE */}
-                <div className="text-center max-w-[900px] mx-auto mb-10">
-                  <span className="text-[#00C68A] text-[12px] font-extrabold uppercase tracking-[4px] mb-4 block filter drop-shadow-[0_0_8px_rgba(0,198,138,0.3)] font-sans">
-                    {badgeNumber}
-                  </span>
-                  <h3 className="text-[22px] md:text-[36px] lg:text-[42px] font-extrabold font-sora text-[#F0F4FF] tracking-tight leading-[1.15]">
-                    {displayHeading}
-                  </h3>
-                </div>
-
-                {/* 3. FEATURED IMAGE */}
-                <div className="relative w-full h-[320px] md:h-[520px] lg:h-[580px] rounded-[24px] overflow-hidden shadow-[0_25px_60px_-15px_rgba(0,0,0,0.7)] border border-[rgba(255,255,255,0.06)] group mb-16">
-                  <img
-                    src={cs.image}
-                    alt={displayHeading}
-                    className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.03]"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#0C1220]/80 via-transparent to-transparent pointer-events-none" />
-                </div>
-
-                {/* 4. CONTENT RESTRUCTURING (THE PROBLEM, THE STRATEGY, THE EXECUTION) */}
-                <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 md:gap-12 mb-16 text-left">
-                  {/* Column 1: The Problem */}
-                  <div className="space-y-4">
-                    <div className="flex items-center gap-2">
-                      <span className="w-1.5 h-1.5 rounded-full bg-red-500 animate-pulse" />
-                      <h4 className="text-[11px] font-extrabold uppercase tracking-[2px] text-red-400 bg-red-500/10 border border-red-500/20 px-3 py-1 rounded-full font-sans">
-                        The Problem
-                      </h4>
-                    </div>
-                    <p className="font-sans text-[15px] leading-[1.8] text-[#8FA8C8]">
-                      {segments.problem}
-                    </p>
-                  </div>
-
-                  {/* Column 2: The Strategy */}
-                  <div className="space-y-4">
-                    <div className="flex items-center gap-2">
-                      <span className="w-1.5 h-1.5 rounded-full bg-[#00C68A] animate-pulse" />
-                      <h4 className="text-[11px] font-extrabold uppercase tracking-[2px] text-[#00C68A] bg-[#00C68A]/10 border border-[#00C68A]/20 px-3 py-1 rounded-full font-sans">
-                        The Strategy
-                      </h4>
-                    </div>
-                    <p className="font-sans text-[15px] leading-[1.8] text-[#8FA8C8]">
-                      {segments.strategy}
-                    </p>
-                  </div>
-
-                  {/* Column 3: The Execution */}
-                  <div className="space-y-4">
-                    <div className="flex items-center gap-2">
-                      <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
-                      <h4 className="text-[11px] font-extrabold uppercase tracking-[2px] text-emerald-400 bg-emerald-500/10 border border-emerald-500/20 px-3 py-1 rounded-full font-sans">
-                        The Execution
-                      </h4>
-                    </div>
-                    <p className="font-sans text-[15px] leading-[1.8] text-[#8FA8C8]">
-                      {segments.execution}
-                    </p>
-                  </div>
-                </div>
-
-                {/* 5. KPI / RESULTS SECTION */}
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6 mb-16 text-left">
-                  {cs.bullets && cs.bullets.map((bullet, bIdx) => {
-                    const parsed = parseBulletMetric(bullet);
-                    const isLongValue = parsed.value.length > 10;
-
-                    return (
-                      <div
-                        key={bIdx}
-                        className="bg-[#162035]/40 backdrop-blur-md border border-[rgba(0,198,138,0.15)] rounded-[20px] p-6 shadow-[0_15px_30px_-5px_rgba(0,0,0,0.3)] hover:shadow-[0_20px_40px_-5px_rgba(0,198,138,0.1)] hover:border-[#00C68A]/40 transition-all duration-300 group hover:translate-y-[-4px] flex flex-col justify-between"
-                      >
-                        <div>
-                          <div className="w-8 h-8 rounded-lg bg-[#00C68A]/10 border border-[#00C68A]/25 flex items-center justify-center text-[#00C68A] mb-4 group-hover:scale-110 transition-transform duration-300">
-                            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
-                            </svg>
-                          </div>
-                          <div className={`font-sora font-extrabold text-[#F0F4FF] tracking-tight group-hover:text-white transition-colors duration-300 leading-none mb-3 ${isLongValue ? 'text-[18px] md:text-[20px]' : 'text-[30px] md:text-[34px]'
-                            }`}>
-                            {parsed.value}
-                          </div>
-                        </div>
-                        <div className="font-sans text-[11.5px] font-bold leading-[1.5] text-[#8FA8C8] uppercase tracking-[0.5px]">
-                          {parsed.label}
-                        </div>
-                      </div>
-                    );
-                  })}
-                </div>
-
-                {/* 6. BUSINESS INFO STRIP */}
-                <div className="bg-[#162035]/25 backdrop-blur-md border border-[rgba(255,255,255,0.06)] rounded-[24px] p-6 md:p-8 flex flex-col md:flex-row md:items-center md:justify-between gap-6 text-left shadow-[0_10px_30px_rgba(0,0,0,0.2)]">
-                  <div className="flex items-center gap-4">
-                    <div className="w-10 h-10 rounded-full bg-[rgba(255,255,255,0.03)] border border-[rgba(255,255,255,0.08)] flex items-center justify-center text-[#8FA8C8]">
-                      <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
-                      </svg>
-                    </div>
-                    <div>
-                      <div className="text-[11px] uppercase tracking-[1.5px] text-[#8FA8C8]/60 font-bold mb-0.5 font-sans">Industry</div>
-                      <div className="font-sora font-semibold text-[#F0F4FF] text-[14px] md:text-[15px]">{meta.industry}</div>
-                    </div>
-                  </div>
-
-                  <div className="hidden md:block w-px h-8 bg-[rgba(255,255,255,0.08)]" />
-
-                  <div className="flex items-center gap-4">
-                    <div className="w-10 h-10 rounded-full bg-[rgba(255,255,255,0.03)] border border-[rgba(255,255,255,0.08)] flex items-center justify-center text-[#8FA8C8]">
-                      <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-                      </svg>
-                    </div>
-                    <div>
-                      <div className="text-[11px] uppercase tracking-[1.5px] text-[#8FA8C8]/60 font-bold mb-0.5 font-sans">Location</div>
-                      <div className="font-sora font-semibold text-[#F0F4FF] text-[14px] md:text-[15px]">{meta.location}</div>
-                    </div>
-                  </div>
-
-                  <div className="hidden md:block w-px h-8 bg-[rgba(255,255,255,0.08)]" />
-
-                  <div className="flex items-center gap-4">
-                    <div className="w-10 h-10 rounded-full bg-[rgba(255,255,255,0.03)] border border-[rgba(255,255,255,0.08)] flex items-center justify-center text-[#8FA8C8]">
-                      <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
-                      </svg>
-                    </div>
-                    <div>
-                      <div className="text-[11px] uppercase tracking-[1.5px] text-[#8FA8C8]/60 font-bold mb-0.5 font-sans">Campaign Type</div>
-                      <div className="font-sora font-semibold text-[#F0F4FF] text-[14px] md:text-[15px]">{meta.campaignType}</div>
-                    </div>
-                  </div>
-                </div>
-
+                ))}
               </div>
-            </div>
-          );
-        })}
+            )}
+          </div>
+
+        </div>
       </section>
 
-      {/* SECTION 15: TESTIMONIALS (white bg) */}
-      <section className="bg-[#FFFFFF] py-[96px] relative z-10 border-t border-[#E3EEF7]">
-        <div className="container mx-auto px-4 md:px-10 max-w-[1100px]">
+      {/* ========================================================================= */}
+      {/* SECTION 5: CASE STUDIES (3 Cards with Prominent Hard Numbers) */}
+      {/* ========================================================================= */}
+      <section className="bg-[#080D18] py-[80px] md:py-[100px] relative z-10 border-b border-[rgba(255,255,255,0.06)]">
+        <div className="container mx-auto px-4 md:px-10 max-w-[1200px]">
 
-          <div className="text-center mb-16">
-            <span className="text-[#00C68A] text-[11px] font-bold uppercase tracking-[2.5px] mb-3 block font-sans">
-              CLIENT TESTIMONIALS
+          <div className="text-left max-w-[860px] mb-14">
+            <span className="text-[#00C68A] text-[11px] md:text-[12px] font-bold uppercase tracking-[2.5px] mb-3 block font-sans">
+              REAL REVENUE METRICS
             </span>
-            <h2 className="text-[26px] md:text-[36px] font-extrabold font-sora leading-tight text-[#0B1829] tracking-tight">
-              What California Businesses Say
+            <h2 className="text-[28px] sm:text-[34px] lg:text-[38px] font-extrabold font-sora leading-tight text-[#F0F4FF] tracking-tight mb-4">
+              Facebook Ads Management Case Studies From California
             </h2>
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-            {testimonialsSection.bullets && testimonialsSection.bullets.map((bullet, idx) => {
-              const { quote, name, role, location } = parseTestimonial(bullet);
+            {caseStudies.map((cs, idx) => (
+              <div
+                key={idx}
+                className="bg-[#0C1220] border border-[rgba(255,255,255,0.08)] rounded-[24px] p-8 text-left flex flex-col justify-between transition-all duration-300 hover:border-[#00C68A]/40 hover:-translate-y-1 shadow-xl"
+              >
+                <div>
+                  <span className="text-[11px] font-extrabold uppercase tracking-[2px] text-[#00C68A] bg-[#00C68A]/10 border border-[#00C68A]/20 px-3 py-1 rounded-full inline-block mb-4">
+                    {cs.title}
+                  </span>
 
-              return (
-                <div
-                  key={idx}
-                  className="bg-[#F8FAFC] border border-[#E3EEF7] rounded-[20px] p-8 shadow-sm flex flex-col justify-between text-left transition-all duration-300 hover:border-[#00C68A]/35"
-                >
-                  <div className="space-y-4">
-                    <div className="text-[#00C68A]/20 text-[56px] leading-[0px] font-serif select-none">“</div>
-                    <p className="font-sans text-[15px] leading-[1.75] italic text-[#3D5A73] relative z-10">
-                      {quote}
-                    </p>
-                  </div>
+                  <h3 className="font-sora font-bold text-[20px] text-[#F0F4FF] leading-snug mb-6">
+                    {cs.subtitle}
+                  </h3>
 
-                  <div className="mt-8 pt-4 border-t border-[#E3EEF7]">
-                    <h4 className="font-sora font-bold text-[14.5px] text-[#0B1829]">{name}</h4>
-                    <p className="font-sans text-[12.5px] text-[#3D5A73] mt-1 font-medium">
-                      {[role, location].filter(Boolean).join(', ')}
-                    </p>
-                  </div>
-                </div>
-              );
-            })}
-          </div>
-
-        </div>
-      </section>
-
-      {/* SECTION 16: FULL-WIDTH IMAGE WITH OVERLAY */}
-      <section className="relative w-full overflow-hidden">
-        <div className="relative w-full h-[400px]">
-          <img
-            src={bannerImg}
-            alt="California Meta Ads Success Banner"
-            className="w-full h-full object-cover brightness-[0.3]"
-          />
-          <div className="absolute inset-0 bg-gradient-to-r from-black/50 to-transparent" />
-
-          <div className="absolute inset-0 flex items-center justify-center z-20">
-            <div className="container mx-auto px-4 max-w-[1100px] text-center">
-              <h2 className="text-[22px] md:text-[30px] lg:text-[34px] font-extrabold font-sora text-white leading-tight mb-4 tracking-tight max-w-[900px] mx-auto">
-                80+ California Businesses Scaling Revenue with Meta Ads
-              </h2>
-              <p className="text-[#00C68A] font-sans font-bold text-[14px] tracking-[2.5px] uppercase">
-                GROWLIMO GOLDEN STATE PERFORMANCE
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* SECTION 17: INDUSTRIES (dark bg) */}
-      <section className="bg-[#0C1220] py-[96px] relative z-10 border-t border-[rgba(255,255,255,0.04)]">
-        <div className="container mx-auto px-4 md:px-10 max-w-[1100px]">
-
-          <div className="text-center mb-16">
-            <span className="text-[#00C68A] text-[11px] font-bold uppercase tracking-[2.5px] mb-3 block font-sans">
-              SPECIALIZED SCALING
-            </span>
-            <h2 className="text-[26px] md:text-[34px] font-extrabold font-sora leading-tight text-[#F0F4FF] tracking-tight">
-              California Industries We Run Facebook Ads For
-            </h2>
-            {industriesSection.paragraphs && industriesSection.paragraphs.map((para, idx) => (
-              <p key={idx} className="font-sans text-[15px] leading-[1.8] text-[#8FA8C8] mt-4 max-w-[800px] mx-auto">
-                {para}
-              </p>
-            ))}
-          </div>
-
-          {/* Interactive accordion for Industries */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-[1000px] mx-auto text-left">
-            {industriesSection.bullets && industriesSection.bullets.map((bullet, idx) => {
-              const { title, desc } = parseSplitItem(bullet);
-              const isOpen = !!expandedIndustries[idx];
-
-              return (
-                <div
-                  key={idx}
-                  className="bg-[#1A2438] border border-[rgba(255,255,255,0.05)] rounded-[16px] overflow-hidden transition-all duration-300"
-                >
-                  <button
-                    onClick={() => toggleIndustry(idx)}
-                    className="w-full px-6 py-5 flex items-center justify-between text-left focus:outline-none"
-                  >
-                    <span className="font-sora font-bold text-[16px] text-[#F0F4FF]">
-                      {title}
-                    </span>
-                    <span className={`w-6 h-6 rounded-full bg-[rgba(255,255,255,0.04)] border border-[rgba(255,255,255,0.08)] flex items-center justify-center shrink-0 text-[#00C68A] transition-transform duration-200 ${isOpen ? 'rotate-180' : ''}`}>
-                      <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M19 9l-7 7-7-7" />
-                      </svg>
-                    </span>
-                  </button>
-
-                  <div
-                    className={`transition-all duration-300 ease-in-out overflow-hidden ${isOpen ? 'max-h-[300px] border-t border-[rgba(255,255,255,0.05)]' : 'max-h-0'}`}
-                  >
-                    <div className="p-6">
-                      <p className="font-sans text-[13.5px] leading-[1.7] text-[#8FA8C8]">
-                        {desc}
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              );
-            })}
-          </div>
-
-        </div>
-      </section>
-
-      {/* SECTION 18: CALIFORNIA CITIES (white bg) */}
-      <section className="bg-[#FFFFFF] py-[96px] relative z-10 border-t border-[#E3EEF7]">
-        <div className="container mx-auto px-4 md:px-10 max-w-[1100px]">
-
-          <div className="text-center mb-16">
-            <span className="text-[#00C68A] text-[11px] font-bold uppercase tracking-[2.5px] mb-3 block font-sans">
-              LOCALIZED GEOGRAPHIC PERFORMANCE
-            </span>
-            <h2 className="text-[26px] md:text-[34px] font-extrabold font-sora leading-tight text-[#0B1829] tracking-tight">
-              Facebook Ads Across California Cities
-            </h2>
-            {citiesSection.paragraphs && citiesSection.paragraphs.map((para, idx) => (
-              <p key={idx} className="font-sans text-[15px] leading-[1.8] text-[#3D5A73] mt-4 max-w-[800px] mx-auto">
-                {para}
-              </p>
-            ))}
-          </div>
-
-          {/* Interactive accordion for cities */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-[1000px] mx-auto text-left">
-            {citiesSection.bullets && citiesSection.bullets.map((bullet, idx) => {
-              const { title, desc } = parseSplitItem(bullet);
-              const isOpen = !!expandedCities[idx];
-
-              return (
-                <div
-                  key={idx}
-                  className="bg-[#F8FAFC] border border-[#E3EEF7] rounded-[16px] overflow-hidden transition-all duration-300"
-                >
-                  <button
-                    onClick={() => toggleCity(idx)}
-                    className="w-full px-6 py-5 flex items-center justify-between text-left focus:outline-none"
-                  >
-                    <span className="font-sora font-bold text-[16px] text-[#0B1829]">
-                      {title}
-                    </span>
-                    <span className={`w-6 h-6 rounded-full bg-[rgba(0,198,138,0.06)] border border-[rgba(0,198,138,0.15)] flex items-center justify-center shrink-0 text-[#00C68A] transition-transform duration-200 ${isOpen ? 'rotate-180' : ''}`}>
-                      <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M19 9l-7 7-7-7" />
-                      </svg>
-                    </span>
-                  </button>
-
-                  <div
-                    className={`transition-all duration-300 ease-in-out overflow-hidden ${isOpen ? 'max-h-[300px] border-t border-[#E3EEF7]' : 'max-h-0'}`}
-                  >
-                    <div className="p-6 bg-[#FFFFFF]">
-                      <p className="font-sans text-[13.5px] leading-[1.7] text-[#3D5A73]">
-                        {desc}
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              );
-            })}
-          </div>
-
-        </div>
-      </section>
-
-      {/* SECTION 19: EXPERTISE (dark bg) */}
-      <section className="bg-[#0C1220] py-[96px] relative z-10 border-t border-[rgba(255,255,255,0.04)]">
-        <div className="container mx-auto px-4 md:px-10 max-w-[1100px]">
-          <div className="max-w-[860px] mx-auto text-left">
-
-            <span className="text-[#00C68A] text-[11px] font-bold uppercase tracking-[2.5px] mb-3 block font-sans">
-              TRUST & CERTIFICATIONS
-            </span>
-            <h2 className="text-[26px] md:text-[34px] font-extrabold font-sora leading-tight text-[#F0F4FF] tracking-tight mb-8">
-              Managed by Meta Blueprint Certified Specialists
-            </h2>
-
-            <div className="space-y-6">
-              {expertiseSection.paragraphs && expertiseSection.paragraphs.map((para, idx) => (
-                <p key={idx} className="font-sans text-[15px] leading-[1.85] text-[#8FA8C8]">
-                  {para}
-                </p>
-              ))}
-            </div>
-
-          </div>
-        </div>
-      </section>
-
-      {/* SECTION 20: PROCESS TIMELINE (dark bg) */}
-      {
-        processSection.steps && (
-          <section className="bg-[#0C1220] py-[96px] relative z-10 border-t border-[rgba(255,255,255,0.04)]">
-            <div className="container mx-auto px-4 md:px-10 max-w-[1100px]">
-
-              <div className="text-center mb-16">
-                <span className="text-[#00C68A] text-[11px] font-bold uppercase tracking-[2.5px] mb-3 block font-sans">
-                  WORKFLOW PIPELINE
-                </span>
-                <h2 className="text-[26px] md:text-[36px] font-extrabold font-sora leading-tight text-[#F0F4FF] tracking-tight">
-                  {processSection.title || 'Our Scaling Process'}
-                </h2>
-                {processSection.intro && (
-                  <p className="font-sans text-[15px] leading-[1.8] text-[#8FA8C8] mt-4 max-w-[700px] mx-auto">
-                    {processSection.intro}
-                  </p>
-                )}
-              </div>
-
-              {/* Vertical timeline steps */}
-              <div className="relative max-w-[800px] mx-auto text-left">
-                {/* Vertical line through timeline */}
-                <div className="absolute left-[20px] md:left-1/2 transform md:translate-x-[-50%] top-2 bottom-2 w-[2px] bg-[rgba(0,198,138,0.15)] hidden sm:block" />
-
-                <div className="space-y-12">
-                  {processSection.steps.map((step, idx) => {
-                    const isEven = idx % 2 === 0;
-
-                    return (
-                      <div
-                        key={idx}
-                        className={`relative flex flex-col sm:flex-row items-start md:items-center justify-between gap-6 md:gap-12 w-full ${isEven ? 'md:flex-row-reverse' : ''}`}
-                      >
-                        {/* Timeline dot */}
-                        <div className="absolute left-[20px] md:left-1/2 transform translate-y-[8px] sm:translate-y-0 translate-x-[-50%] w-10 h-10 rounded-full bg-[#1A2438] border-2 border-[#00C68A] shadow-lg flex items-center justify-center z-20 shrink-0 font-sora font-bold text-[#00C68A] text-[14px]">
-                          {idx + 1}
-                        </div>
-
-                        {/* Content block representing timeline step */}
-                        <div className="w-full md:w-[45%] pl-12 sm:pl-0">
-                          <div className="bg-[#1A2438] border border-[rgba(255,255,255,0.06)] rounded-[18px] p-6 shadow-md hover:border-[#00C68A]/30 transition-all duration-200">
-                            <h4 className="font-sora font-bold text-[16.5px] text-[#F0F4FF] mb-3 leading-snug">
-                              {step.title}
-                            </h4>
-                            <p className="font-sans text-[13.5px] leading-relaxed text-[#8FA8C8]">
-                              {step.description}
-                            </p>
-                          </div>
-                        </div>
-
-                        {/* Empty spacer block to maintain symmetry on large screens */}
-                        <div className="w-[45%] hidden md:block" />
+                  {/* 4 Prominent Stat Callouts Grid */}
+                  <div className="grid grid-cols-2 gap-3 mb-6">
+                    {cs.metrics.map((m, mIdx) => (
+                      <div key={mIdx} className="bg-[#162035] p-3.5 rounded-xl border border-[rgba(255,255,255,0.05)]">
+                        <span className="font-sora font-extrabold text-[18px] text-[#00C68A] block leading-none mb-1">
+                          {m.value}
+                        </span>
+                        <span className="font-sans text-[11px] text-[#8FA8C8] leading-tight block">
+                          {m.label}
+                        </span>
                       </div>
-                    );
-                  })}
+                    ))}
+                  </div>
+
+                  <div className="space-y-3 font-sans text-[14px] leading-relaxed">
+                    <p className="text-[#8FA8C8]">
+                      <strong className="text-[#F0F4FF]">Before GrowLimo:</strong> {cs.challenge}
+                    </p>
+                    <p className="text-[#8FA8C8]">
+                      <strong className="text-[#00C68A]">What Changed:</strong> {cs.solution}
+                    </p>
+                  </div>
                 </div>
               </div>
-
-            </div>
-          </section>
-        )
-      }
-
-      {/* SECTION 21: CTA */}
-      <section className="bg-[#0C1220] py-[100px] border-t border-[rgba(255,255,255,0.04)] relative overflow-hidden">
-        {/* Background gradients */}
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_120%,rgba(0,198,138,0.04),transparent_50%)] pointer-events-none" />
-
-        <div className="container mx-auto px-4 md:px-10 max-w-[900px] relative z-10 text-center">
-          <div className="bg-gradient-to-r from-[#1A2438] to-[#121A2A] border border-[rgba(255,255,255,0.06)] rounded-[24px] p-8 md:p-12 shadow-2xl relative">
-            <div className="absolute top-0 left-0 w-24 h-24 bg-[#00C68A]/5 rounded-br-full pointer-events-none" />
-
-            <span className="text-[#00C68A] text-[11px] font-bold uppercase tracking-[3px] mb-4 block font-sans">
-              SCALE INBOUND VOLUME NOW
-            </span>
-
-            <h2 className="text-[22px] md:text-[30px] font-extrabold font-sora text-[#F0F4FF] leading-tight mb-6 max-w-[720px] mx-auto tracking-tight">
-              {ctaSection.heading || 'Ready to Scale Your California Business?'}
-            </h2>
-
-            {ctaSection.paragraphs && ctaSection.paragraphs.map((para, idx) => (
-              <p key={idx} className="font-sans text-[15px] leading-[1.8] text-[#8FA8C8] mb-6 max-w-[680px] mx-auto">
-                {para}
-              </p>
             ))}
-
-            <div className="flex flex-col sm:flex-row justify-center items-center gap-4 mt-8">
-              <Link
-                href="/contact/"
-                className="inline-flex justify-center items-center gap-2 py-4 px-8 bg-[#00C68A] hover:bg-[#00B07A] text-[#080D18] font-extrabold text-[15px] rounded-[10px] shadow-lg shadow-[#00C68A]/10 hover:shadow-[#00C68A]/20 transition-all duration-200 shrink-0 text-center w-full sm:w-auto"
-              >
-                {ctaButtonText}
-              </Link>
-              <a
-                href="tel:+16673474729"
-                className="inline-flex justify-center items-center gap-2 py-4 px-8 bg-[rgba(255,255,255,0.04)] border border-[rgba(255,255,255,0.1)] hover:bg-[rgba(255,255,255,0.08)] text-white font-extrabold text-[15px] rounded-[10px] transition-all duration-200 shrink-0 text-center w-full sm:w-auto"
-              >
-                <svg className="w-4 h-4 text-[#00C68A]" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M21.384 17.791c-1.046-.743-2.42-1.37-3.474-1.488-.506-.057-1.016.143-1.37.498l-1.486 1.486c-2.482-1.259-4.524-3.3-5.783-5.783l1.486-1.486c.355-.354.555-.864.498-1.37-.118-1.054-.745-2.428-1.488-3.474-.361-.505-.964-.851-1.634-.851H4.373c-.983 0-1.848.762-1.873 1.745C2.26 10.705 5.136 16.2 9.771 20.835c4.635 4.635 10.13 7.511 15.226 7.271.983-.025 1.745-.89 1.745-1.873v-3.76c0-.67-.346-1.273-.851-1.634l-.007-.048z" />
-                </svg>
-                Call (724) 750-6935
-              </a>
-            </div>
           </div>
+
         </div>
       </section>
 
-      {/* SECTION 22: FAQ ACCORDION (dark bg) */}
-      <section className="bg-[#0C1220] py-[96px] relative z-10 border-t border-[rgba(255,255,255,0.04)]">
-        <div className="container mx-auto px-4 md:px-10 max-w-[800px]">
+      {/* ========================================================================= */}
+      {/* SECTION 6: INDUSTRIES SERVED (8 Icon Grid) */}
+      {/* ========================================================================= */}
+      <section className="bg-[#0C1220] py-[80px] md:py-[100px] relative z-10 border-b border-[rgba(255,255,255,0.06)]">
+        <div className="container mx-auto px-4 md:px-10 max-w-[1200px]">
 
-          <div className="text-center mb-16">
-            <span className="text-[#00C68A] text-[11px] font-bold uppercase tracking-[2.5px] mb-3 block font-sans">
-              REPEATED ENQUIRIES
+          <div className="text-left max-w-[860px] mb-14">
+            <span className="text-[#00C68A] text-[11px] md:text-[12px] font-bold uppercase tracking-[2.5px] mb-3 block font-sans">
+              VERTICAL EXPERIENCE
             </span>
-            <h2 className="text-[26px] md:text-[34px] font-extrabold font-sora leading-tight text-[#F0F4FF] tracking-tight">
-              Facebook Ads California FAQs
+            <h2 className="text-[28px] sm:text-[34px] lg:text-[38px] font-extrabold font-sora leading-tight text-[#F0F4FF] tracking-tight mb-4">
+              Industries We Serve With Professional Facebook Marketing Services
+            </h2>
+            <p className="font-sans text-[15px] sm:text-[16px] text-[#8FA8C8]">
+              Facebook Ads strategy is highly industry-specific — what works for an LA e-commerce brand looks nothing like what works for a San Diego dental practice.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {industries.map((ind, idx) => (
+              <div
+                key={idx}
+                className="bg-[#162035] border border-[rgba(255,255,255,0.08)] rounded-[18px] p-6 text-left transition-all duration-300 hover:border-[#00C68A]/40 hover:-translate-y-1 flex flex-col justify-between"
+              >
+                <div>
+                  <div className="w-10 h-10 rounded-xl bg-[rgba(0,198,138,0.12)] border border-[rgba(0,198,138,0.25)] flex items-center justify-center text-[#00C68A] mb-4">
+                    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                    </svg>
+                  </div>
+                  <h3 className="font-sora font-bold text-[17px] text-[#F0F4FF] mb-2">
+                    {ind.name}
+                  </h3>
+                  <p className="font-sans text-[13.5px] leading-relaxed text-[#8FA8C8]">
+                    {ind.desc}
+                  </p>
+                </div>
+              </div>
+            ))}
+          </div>
+
+        </div>
+      </section>
+
+      {/* ========================================================================= */}
+      {/* SECTION 7: CALIFORNIA CITIES (6 Regional Cards) */}
+      {/* ========================================================================= */}
+      <section className="bg-[#080D18] py-[80px] md:py-[100px] relative z-10 border-b border-[rgba(255,255,255,0.06)]">
+        <div className="container mx-auto px-4 md:px-10 max-w-[1200px]">
+
+          <div className="text-left max-w-[860px] mb-14">
+            <span className="text-[#00C68A] text-[11px] md:text-[12px] font-bold uppercase tracking-[2.5px] mb-3 block font-sans">
+              GEO-TARGETED STRATEGIES
+            </span>
+            <h2 className="text-[28px] sm:text-[34px] lg:text-[38px] font-extrabold font-sora leading-tight text-[#F0F4FF] tracking-tight mb-4">
+              Facebook Ads Management Across California Cities
+            </h2>
+            <p className="font-sans text-[15px] sm:text-[16px] text-[#8FA8C8]">
+              California's regional diversity means a Los Angeles audience behaves nothing like a Sacramento or Fresno one. Our geo-targeting reflects that market by market:
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {regionalCities.map((reg, idx) => (
+              <div
+                key={idx}
+                className="bg-[#0C1220] border border-[rgba(255,255,255,0.08)] rounded-[20px] p-7 text-left transition-all duration-300 hover:border-[#00C68A]/40 hover:-translate-y-1"
+              >
+                <span className="text-[#00C68A] font-sora font-extrabold text-[18px] mb-3 block">
+                  📍 {reg.city}
+                </span>
+                <p className="font-sans text-[14px] leading-relaxed text-[#8FA8C8]">
+                  {reg.note}
+                </p>
+              </div>
+            ))}
+          </div>
+
+        </div>
+      </section>
+
+      {/* ========================================================================= */}
+      {/* SECTION 8: TEAM CREDIBILITY & EDITORIAL BLOCK */}
+      {/* ========================================================================= */}
+      <section className="bg-[#0C1220] py-[80px] md:py-[100px] relative z-10 border-b border-[rgba(255,255,255,0.06)]">
+        <div className="container mx-auto px-4 md:px-10 max-w-[1100px]">
+
+          <div className="bg-[#162035] border border-[rgba(255,255,255,0.08)] rounded-[20px] p-8 md:p-10 text-left">
+            <div className="inline-flex items-center gap-2 bg-[rgba(24,119,242,0.12)] border border-[rgba(24,119,242,0.30)] text-[#1877F2] text-[11px] font-extrabold uppercase tracking-[2.5px] rounded-full py-[4px] px-[14px] mb-4">
+              META BLUEPRINT CERTIFIED
+            </div>
+
+            <h2 className="text-[26px] sm:text-[32px] font-extrabold font-sora leading-tight text-[#F0F4FF] tracking-tight mb-4">
+              Meet GrowLimo's Meta Blueprint Certified Facebook Ads Specialists
+            </h2>
+
+            <p className="font-sans text-[15px] leading-[1.8] text-[#8FA8C8] mb-8">
+              Every campaign is built, managed, and optimized by Meta Blueprint certified specialists — the highest standard of validation Meta offers for Facebook and Instagram media buyers, covering advertising APIs, campaign design, audience building, catalog management, and conversion event tracking. We don't hand your budget to junior account managers or generalist social media posters. Your media spend is treated like a performance investment portfolio, tracked and optimized daily.
+            </p>
+
+            {/* Editorial Info Component */}
+            <div className="bg-[#0C1220] border border-[rgba(0,198,138,0.2)] rounded-[16px] p-6 space-y-3 font-sans text-[14px]">
+              <div className="flex flex-col sm:flex-row sm:items-center gap-1.5 text-[#F0F4FF]">
+                <strong className="text-[#00C68A] font-sora">Reviewed by:</strong>
+                <span>
+                  <a
+                    href="https://www.linkedin.com/in/usama-zulfiqar-3a301a242/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-[#00C68A] font-semibold underline hover:text-[#0FB786] transition-colors cursor-pointer"
+                  >
+                    Usama Zulfiqar
+                  </a>
+                  , Senior Meta Ads Strategist at GrowLimo — 7+ years managing California Facebook and Instagram campaigns, Meta Blueprint certified.
+                </span>
+              </div>
+              <div className="flex flex-col sm:flex-row sm:items-center gap-1.5 text-[#8FA8C8] border-t border-[rgba(255,255,255,0.06)] pt-3">
+                <strong className="text-[#00C68A] font-sora">Last updated:</strong>
+                <span>Q2 2026 — Updated with latest Advantage+ benchmarks & CAPI protocols.</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      {/* ========================================================================= */}
+      {/* SECTION 9: TESTIMONIALS (3-Column Card Layout) */}
+      {/* ========================================================================= */}
+      <section className="bg-[#080D18] py-[80px] md:py-[100px] relative z-10 border-b border-[rgba(255,255,255,0.06)]">
+        <div className="container mx-auto px-4 md:px-10 max-w-[1200px]">
+
+          <div className="text-left max-w-[860px] mb-14">
+            <span className="text-[#00C68A] text-[11px] md:text-[12px] font-bold uppercase tracking-[2.5px] mb-3 block font-sans">
+              CLIENT TESTIMONIALS
+            </span>
+            <h2 className="text-[28px] sm:text-[34px] lg:text-[38px] font-extrabold font-sora leading-tight text-[#F0F4FF] tracking-tight mb-4">
+              What California Businesses Say About Our Facebook Marketing Services
             </h2>
           </div>
 
-          <div className="space-y-4 text-left">
-            {faqs.map((faq, idx) => {
-              const isOpen = activeFaq === idx;
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            {testimonials.map((t, idx) => (
+              <div
+                key={idx}
+                className="bg-[#0C1220] border border-[rgba(255,255,255,0.08)] rounded-[20px] p-8 text-left flex flex-col justify-between transition-all duration-300 hover:border-[#00C68A]/40 hover:-translate-y-1 shadow-xl"
+              >
+                <div>
+                  <div className="flex gap-1 text-[#00C68A] mb-4">
+                    {[...Array(5)].map((_, i) => (
+                      <svg key={i} className="w-5 h-5 fill-current" viewBox="0 0 20 20">
+                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                      </svg>
+                    ))}
+                  </div>
 
+                  <p className="font-sans text-[15px] leading-[1.8] text-[#F0F4FF] italic mb-6">
+                    "{t.quote}"
+                  </p>
+                </div>
+
+                <div className="border-t border-[rgba(255,255,255,0.08)] pt-4">
+                  <span className="font-sora font-bold text-[16px] text-[#F0F4FF] block">
+                    {t.author}
+                  </span>
+                  <span className="font-sans text-[13px] text-[#8FA8C8] block">
+                    {t.role}, {t.company} — <strong className="text-[#00C68A] font-normal">{t.location}</strong>
+                  </span>
+                </div>
+              </div>
+            ))}
+          </div>
+
+        </div>
+      </section>
+
+      {/* ========================================================================= */}
+      {/* SECTION 10: OUR PROCESS (6 Phases Timeline) */}
+      {/* ========================================================================= */}
+      <section className="bg-[#0C1220] py-[80px] md:py-[100px] relative z-10 border-b border-[rgba(255,255,255,0.06)]">
+        <div className="container mx-auto px-4 md:px-10 max-w-[1200px]">
+
+          <div className="text-left max-w-[860px] mb-14">
+            <span className="text-[#00C68A] text-[11px] md:text-[12px] font-bold uppercase tracking-[2.5px] mb-3 block font-sans">
+              PHASED CAMPAIGN ROADMAP
+            </span>
+            <h2 className="text-[28px] sm:text-[34px] lg:text-[38px] font-extrabold font-sora leading-tight text-[#F0F4FF] tracking-tight mb-4">
+              Our Facebook Ads Management Process
+            </h2>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {processPhases.map((p, idx) => (
+              <div
+                key={idx}
+                className="bg-[#162035] border border-[rgba(255,255,255,0.08)] rounded-[20px] p-7 text-left flex flex-col justify-between transition-all duration-300 hover:border-[#00C68A]/40 hover:-translate-y-1"
+              >
+                <div>
+                  <div className="flex items-center justify-between mb-4">
+                    <span className="font-sora font-extrabold text-[15px] text-[#00C68A]">
+                      {p.phase}
+                    </span>
+                    <span className="text-[11px] font-bold uppercase tracking-[1.5px] bg-[#080D18] border border-[rgba(255,255,255,0.08)] text-[#8FA8C8] px-3 py-1 rounded-full">
+                      {p.timeline}
+                    </span>
+                  </div>
+
+                  <h3 className="font-sora font-bold text-[18px] text-[#F0F4FF] leading-snug mb-3">
+                    {p.title}
+                  </h3>
+
+                  <p className="font-sans text-[14px] leading-relaxed text-[#8FA8C8]">
+                    {p.desc}
+                  </p>
+                </div>
+              </div>
+            ))}
+          </div>
+
+        </div>
+      </section>
+
+      {/* ========================================================================= */}
+      {/* SECTION 11: FAQ ACCORDION */}
+      {/* ========================================================================= */}
+      <section className="bg-[#080D18] py-[80px] md:py-[100px] relative z-10 border-b border-[rgba(255,255,255,0.06)]">
+        <div className="container mx-auto px-4 md:px-10 max-w-[1000px]">
+
+          <div className="text-left max-w-[800px] mb-12">
+            <span className="text-[#00C68A] text-[11px] md:text-[12px] font-bold uppercase tracking-[2.5px] mb-3 block font-sans">
+              FREQUENTLY ASKED QUESTIONS
+            </span>
+            <h2 className="text-[28px] sm:text-[34px] lg:text-[38px] font-extrabold font-sora leading-tight text-[#F0F4FF] tracking-tight">
+              Facebook Ads Management FAQs for California Businesses
+            </h2>
+          </div>
+
+          <div className="space-y-4">
+            {faqs.map((faq, idx) => {
+              const isOpen = openFaq === idx;
               return (
                 <div
                   key={idx}
-                  className="bg-[#1A2438] border border-[rgba(255,255,255,0.06)] rounded-[16px] overflow-hidden transition-all duration-200"
+                  className="bg-[#0C1220] border border-[rgba(255,255,255,0.08)] rounded-[16px] overflow-hidden transition-all duration-200"
                 >
                   <button
-                    onClick={() => setActiveFaq(isOpen ? null : idx)}
-                    className="w-full px-6 py-5 flex items-center justify-between text-left focus:outline-none"
+                    onClick={() => setOpenFaq(isOpen ? null : idx)}
+                    className="w-full p-6 text-left flex items-center justify-between gap-4 cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-[#00C68A]"
+                    aria-expanded={isOpen}
                   >
-                    <span className="font-sora font-bold text-[15.5px] text-[#F0F4FF] pr-4">
+                    <span className="font-sora font-bold text-[16px] md:text-[17px] text-[#F0F4FF] leading-snug">
                       {faq.question}
                     </span>
-                    <span className={`w-6 h-6 rounded-full bg-[rgba(255,255,255,0.04)] border border-[rgba(255,255,255,0.08)] flex items-center justify-center shrink-0 text-[#00C68A] transition-transform duration-200 ${isOpen ? 'rotate-180' : ''}`}>
-                      <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M19 9l-7 7-7-7" />
+                    <span className={`w-8 h-8 rounded-full bg-[#162035] border border-[rgba(255,255,255,0.1)] flex items-center justify-center shrink-0 text-[#00C68A] transition-transform duration-200 ${isOpen ? 'rotate-180' : ''}`}>
+                      <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M19 9l-7 7-7-7" />
                       </svg>
                     </span>
                   </button>
 
-                  <div
-                    className={`transition-all duration-300 ease-in-out overflow-hidden ${isOpen ? 'max-h-[400px] border-t border-[rgba(255,255,255,0.05)]' : 'max-h-0'}`}
-                  >
-                    <div className="p-6 bg-[#1A2438]">
-                      <p className="font-sans text-[14px] leading-[1.75] text-[#8FA8C8]">
+                  {isOpen && (
+                    <div className="px-6 pb-6 pt-2 text-left border-t border-[rgba(255,255,255,0.05)]">
+                      <p className="font-sans text-[14.5px] leading-[1.8] text-[#8FA8C8]">
                         {faq.answer}
                       </p>
                     </div>
-                  </div>
+                  )}
                 </div>
               );
             })}
@@ -1174,30 +860,44 @@ export default function ServiceContentSectionFBCA({ service, slug, onSelectPlan 
         </div>
       </section>
 
-      {/* SECTION 23: INTERNAL LINKS (dark bg) */}
-      {
-        internalLinks.length > 0 && (
-          <section className="bg-[#080D18] py-[60px] border-t border-[rgba(255,255,255,0.04)] text-center relative z-10">
-            <div className="container mx-auto px-4 max-w-[900px]">
-              <h4 className="font-sora font-semibold text-[13px] text-[#F0F4FF] uppercase tracking-[2px] mb-6">
-                More Services Across California
-              </h4>
-              <div className="flex flex-wrap justify-center items-center gap-3">
-                {internalLinks.map((link, idx) => (
-                  <Link
-                    key={idx}
-                    href={link.to}
-                    className="font-sans font-bold text-[13.5px] text-[#00C68A] bg-[#00C68A]/5 hover:bg-[#00C68A]/10 border border-[#00C68A]/20 hover:border-[#00C68A]/35 py-[10px] px-5 rounded-full transition-all duration-200"
-                  >
-                    {link.anchor}
-                  </Link>
-                ))}
-              </div>
-            </div>
-          </section>
-        )
-      }
+      {/* ========================================================================= */}
+      {/* SECTION 12: FINAL CTA BANNER */}
+      {/* ========================================================================= */}
+      <section className="bg-[#0C1220] py-[90px] md:py-[110px] relative overflow-hidden z-10">
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[300px] bg-[#00C68A]/10 blur-[140px] pointer-events-none rounded-full" />
 
-    </div >
+        <div className="container mx-auto px-4 md:px-10 max-w-[960px] relative z-10 text-center">
+          <div className="bg-[#1A2438] border border-[rgba(0,198,138,0.25)] rounded-[24px] p-8 md:p-14 shadow-2xl relative overflow-hidden">
+            <div className="absolute top-0 right-0 w-32 h-32 bg-[#00C68A]/10 rounded-bl-full pointer-events-none" />
+
+            <span className="text-[#00C68A] text-[11px] md:text-[12px] font-extrabold uppercase tracking-[2.5px] mb-4 inline-block font-sans">
+              STOP BLEEDING AD BUDGET
+            </span>
+
+            <h2 className="text-[28px] sm:text-[36px] lg:text-[42px] font-extrabold font-sora text-[#F0F4FF] leading-tight mb-6 tracking-tight max-w-[800px] mx-auto">
+              Get Started With Professional Facebook Marketing Services in California
+            </h2>
+
+            <p className="font-sans text-[15px] sm:text-[16px] leading-[1.8] text-[#8FA8C8] max-w-[760px] mx-auto mb-6">
+              Stop wasting ad budget on set-and-forget boosted posts or broad interest targeting that doesn't convert. Get a free, comprehensive Meta Ads audit from our Blueprint-certified specialists — we'll review your account structure, creative performance, and pixel tracking, and show you exactly where you're losing budget and how to reach a 4x to 8x ROAS.
+            </p>
+
+            <p className="font-sans text-[13px] text-[#00C68A] font-semibold mb-8 max-w-[760px] mx-auto">
+              📍 Serving California Statewide | Meta Blueprint Certified | 80+ CA Clients | 6.8x Avg ROAS | Month-to-Month, No Lock-In
+            </p>
+
+            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+              <Link
+                href="/contact/"
+                className="cursor-pointer inline-flex items-center justify-center gap-2 bg-[#00C68A] hover:bg-[#0FB786] text-[#080D18] font-sora font-extrabold text-[15px] px-8 py-4 rounded-xl transition-all duration-200 shadow-[0_4px_20px_rgba(0,198,138,0.3)] hover:-translate-y-0.5"
+              >
+                Get Your Free Facebook Ads Audit →
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </div>
   );
 }

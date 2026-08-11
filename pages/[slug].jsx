@@ -21,22 +21,61 @@ import ServiceContentSectionDDMATX from '../components/ServiceDetail/ServiceCont
 import ServiceContentSectionDSCA from '../components/ServiceDetail/ServiceContentSectionDSCA';
 import ServiceContentSectionDMAC from '../components/ServiceDetail/ServiceContentSectionDMAC';
 import ServiceContentSectionGAMC from '../components/ServiceDetail/ServiceContentSectionGAMC';
+import ServiceContentSectionPPCCA from '../components/ServiceDetail/ServiceContentSectionPPCCA';
 import ServiceContentSectionHDMCA from '../components/ServiceDetail/ServiceContentSectionHDMCA';
 import ServiceContentSectionHSCA from '../components/ServiceDetail/ServiceContentSectionHSCA';
 import ServiceContentSectionMACA from '../components/ServiceDetail/ServiceContentSectionMACA';
-import ServiceContentSectionPPCCA from '../components/ServiceDetail/ServiceContentSectionPPCCA';
 import ServiceContentSectionDMTX from '../components/ServiceDetail/ServiceContentSectionDMTX';
 import ServiceContentSectionGAMT from '../components/ServiceDetail/ServiceContentSectionGAMT';
 import ServiceContentSectionPPCTX from '../components/ServiceDetail/ServiceContentSectionPPCTX';
 import ServiceContentSectionHSEOTX from '../components/ServiceDetail/ServiceContentSectionHSEOTX';
 import ServiceContentSectionHDMATX from '../components/ServiceDetail/ServiceContentSectionHDMATX';
 import ServiceContentSectionDSTX from '../components/ServiceDetail/ServiceContentSectionDSTX';
+import ServiceContentSectionWDCA from '../components/ServiceDetail/ServiceContentSectionWDCA';
+import ServiceContentSectionSSCA from '../components/ServiceDetail/ServiceContentSectionSSCA';
+import ServiceContentSectionDMCA from '../components/ServiceDetail/ServiceContentSectionDMCA';
 import FormModal from '../components/common/FormModal';
 
 
 
 export default function ServiceDetail({ service, slug }) {
   if (!service) return null;
+
+  if (slug === 'web-developer-california') {
+    return <ServiceContentSectionWDCA service={service} slug={slug} />;
+  }
+
+  if (slug === 'seo-services-california') {
+    return <ServiceContentSectionSSCA service={service} slug={slug} />;
+  }
+
+  if (slug === 'facebook-ads-management-california') {
+    return <ServiceContentSectionFBCA service={service} slug={slug} />;
+  }
+
+  if (slug === 'google-ads-management-california') {
+    return <ServiceContentSectionGAMC service={service} slug={slug} />;
+  }
+
+  if (slug === 'ppc-services-california') {
+    return <ServiceContentSectionPPCCA service={service} slug={slug} />;
+  }
+
+  if (slug === 'healthcare-seo-services-california') {
+    return <ServiceContentSectionHSCA service={service} slug={slug} />;
+  }
+
+  if (slug === 'meta-ads-agency-california') {
+    return <ServiceContentSectionDMAC service={service} slug={slug} />;
+  }
+
+  if (slug === 'digital-marketing-agency-california') {
+    return <ServiceContentSectionDMCA service={service} slug={slug} />;
+  }
+
+  if (slug === 'dentist-seo-services-california') {
+    return <ServiceContentSectionDSCA service={service} slug={slug} />;
+  }
 
   const [modalOpen, setModalOpen] = useState(false);
   const [selectedPlan, setSelectedPlan] = useState('');
@@ -49,26 +88,6 @@ export default function ServiceDetail({ service, slug }) {
   const hasPricing = !!service.pricing ||
     service.contentSections?.some(s =>
       s.heading?.includes('Pricing'));
-
-  if (slug === 'seo-services-california') {
-    return (
-      <>
-        <ServiceContentSectionEnhanced
-          service={service}
-          slug={slug}
-          onSelectPlan={handleSelectPlan}
-        />
-        {hasPricing && (
-          <FormModal
-            isOpen={modalOpen}
-            onClose={() => setModalOpen(false)}
-            planName={selectedPlan}
-            slug={slug}
-          />
-        )}
-      </>
-    );
-  }
 
   if (slug === 'seo-services-texas') {
     return (

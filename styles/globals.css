@@ -17,6 +17,31 @@
   .form-step-enter {
     animation: form-step-in 0.22s ease-out;
   }
+
+  /* Booking modal: backdrop fade + card lift (BookingModal.jsx) */
+  @keyframes booking-backdrop-in {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+
+  @keyframes booking-card-in {
+    from {
+      opacity: 0;
+      transform: translateY(12px) scale(0.985);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+    }
+  }
+
+  .booking-backdrop-enter {
+    animation: booking-backdrop-in 0.18s ease-out;
+  }
+
+  .booking-card-enter {
+    animation: booking-card-in 0.24s cubic-bezier(0.16, 1, 0.3, 1);
+  }
 }
 
 @layer base {

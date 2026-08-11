@@ -7,6 +7,8 @@ import FAQ from '../components/FAQ';
 import { getSEOConfig } from '../lib/config';
 import { useCountUp } from '../hooks/useCountUp';
 import { ENC, WA_MSG, handleCall } from '../lib/contactProtection';
+import BookingModal from '../components/common/BookingModal';
+import { CALENDLY_URL } from '../lib/calendly';
 
 /* ─── Stats Band Card ─── */
 function StatCard({ value, suffix, prefix, label }) {
@@ -53,6 +55,25 @@ function SpecialtyCard({ icon, title, description, link, ctaText }) {
   );
 }
 
+/* ─── Booking CTA ───
+ * Opens the Calendly modal. Falls back to the old /contact/ navigation when
+ * NEXT_PUBLIC_CALENDLY_URL is unset so the CTA is never a dead button. */
+function BookingCTA({ className, onOpen, children }) {
+  if (!CALENDLY_URL) {
+    return (
+      <Link href="/contact/" className={className}>
+        {children}
+      </Link>
+    );
+  }
+
+  return (
+    <button type="button" onClick={onOpen} className={`${className} cursor-pointer border-0`}>
+      {children}
+    </button>
+  );
+}
+
 /* ─── Process Step ─── */
 function ProcessStep({ number, title, description, isLast }) {
   return (
@@ -73,6 +94,7 @@ export default function Home() {
   const seo = getSEOConfig('/');
   const [emailInput, setEmailInput] = useState('');
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const [bookingOpen, setBookingOpen] = useState(false);
   const mountedAt = useRef(null);
   useEffect(() => { mountedAt.current = Date.now(); }, []);
 
@@ -283,12 +305,12 @@ export default function Home() {
               </div>
 
               {/* Book a Free Call CTA */}
-              <Link
-                href="/contact/"
+              <BookingCTA
+                onOpen={() => setBookingOpen(true)}
                 className="bg-[#DD6613] hover:bg-[#FB923C] text-white font-bold h-[52px] min-w-[180px] flex items-center justify-center rounded-xl transition-all duration-200 shadow-lg shadow-[#DD6613]/25 hover:shadow-xl hover:scale-[1.02] transform"
               >
                 Book a Free Call
-              </Link>
+              </BookingCTA>
             </div>
 
             {/* Right Image Column */}
@@ -429,12 +451,12 @@ export default function Home() {
                   }}
                 />
 
-                <Link
-                  href="/contact/"
+                <BookingCTA
+                  onOpen={() => setBookingOpen(true)}
                   className="relative z-10 bg-[#DD6613] hover:bg-[#FB923C] text-white font-bold text-[15px] py-4 px-[36px] rounded-[10px] transition-all duration-200 shadow-md hover:shadow-lg text-center"
                 >
                   Schedule a Free Consultation
-                </Link>
+                </BookingCTA>
               </div>
             </div>
 
@@ -473,6 +495,12 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <BookingModal
+        isOpen={bookingOpen}
+        onClose={() => setBookingOpen(false)}
+        source="homepage"
+      />
     </>
   );
 }

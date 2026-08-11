@@ -1,6 +1,7 @@
 import { useState, useCallback, useEffect, useRef } from 'react';
 import { useRouter } from 'next/router';
 import emailjs from '@emailjs/browser';
+import { readUtmParams } from '../lib/utm';
 
 /*
  * Multi-step flow definition. Order is CRO-driven:
@@ -96,15 +97,15 @@ export const useContactForm = (slug, variant = 'service') => {
       saved = null;
     }
 
-    const params = new URLSearchParams(window.location.search);
+    const utm = readUtmParams();
     setFormData((prev) => ({
       ...prev,
       ...(saved?.formData || {}),
       _hp: '', // never restore honeypot
       pageSource: slug || 'general',
-      utmSource: params.get('utm_source') || saved?.formData?.utmSource || prev.utmSource,
-      utmMedium: params.get('utm_medium') || saved?.formData?.utmMedium || prev.utmMedium,
-      utmCampaign: params.get('utm_campaign') || saved?.formData?.utmCampaign || prev.utmCampaign,
+      utmSource: utm.utmSource || saved?.formData?.utmSource || prev.utmSource,
+      utmMedium: utm.utmMedium || saved?.formData?.utmMedium || prev.utmMedium,
+      utmCampaign: utm.utmCampaign || saved?.formData?.utmCampaign || prev.utmCampaign,
     }));
     if (Number.isInteger(saved?.currentStep) && saved.currentStep > 0 && saved.currentStep < FORM_STEPS.length) {
       setCurrentStep(saved.currentStep);
