@@ -1,0 +1,133 @@
+{
+  "metaTitle": "SEO Agency San Francisco | SF SEO Company - GrowLimo",
+  "metaDescription": "SEO Agency San Francisco - GrowLimo is a San Francisco SEO agency for B2B SaaS, startups & enterprise tech. Technical SEO experts, Google Partner certified. Free audit.",
+  "h1": "SEO Agency San Francisco: B2B SEO for SaaS, Startups & Enterprise Tech",
+  "statBadge": [
+    "Google Partner Certified",
+    "210 → 5,400 Monthly Organic Visitors (SF SaaS Client)",
+    "B2B & Technical SEO Specialists"
+  ],
+  "whatIs": "A San Francisco SEO agency builds organic search visibility for B2B companies with long, research-heavy sales cycles — a fundamentally different discipline than local or eCommerce SEO. GrowLimo is a Google Partner–certified San Francisco SEO company specializing in B2B SaaS, venture-backed startups, and enterprise tech firms, with a documented case study taking one SF SaaS client from 210 to 5,400 monthly organic visitors through technical SEO and bottom-of-funnel content.",
+  "seoServicesIntro": [
+    "If you're searching \"SEO agency San Francisco\" or \"San Francisco SEO company,\" you're likely running a SaaS product, a venture-backed startup, or an enterprise tech firm — and you already know that generic local SEO tactics (citations, Google Business Profile, review generation) don't apply to your business model. GrowLimo builds B2B SEO agency San Francisco strategy specifically around demo-booking, trial sign-ups, and pipeline generation, not foot traffic.",
+    "Our approach combines deep technical SEO company San Francisco expertise — critical for JavaScript-heavy SaaS marketing sites — with content mapped to the full B2B buyer journey, from top-of-funnel education to bottom-of-funnel comparison and demo-intent content."
+  ],
+  "trackRecord": [
+    "5,400 monthly organic visitors achieved for an SF B2B SaaS client, up from 210 branded-only visits",
+    "47 bottom- and middle-of-funnel keywords targeted in a single 6-month content roadmap",
+    "24 SEO-optimized articles published for one client's content authority build-out",
+    "Google Partner Certified — Search, Display, Shopping & Video",
+    "Google Analytics 4 & SEMrush SEO Toolkit Certified technical team"
+  ],
+  "whyDifferent": {
+    "heading": "Why San Francisco & Bay Area SEO Is a Different Discipline",
+    "items": [
+      "Long sales cycles. B2B SaaS buyers research for weeks or months before converting — SEO content has to serve every stage, not just capture a quick local search.",
+      "Lower search volume, higher intent. Bay Area B2B keywords have far less volume than consumer terms, but every visitor is a qualified potential buyer — content strategy has to prioritize precision over volume.",
+      "Technical complexity. Modern SaaS marketing sites are frequently built on JavaScript frameworks that create crawlability and indexation problems most generalist SEO agencies miss entirely.",
+      "Founder-level scrutiny. Venture-backed companies need SEO tied directly to pipeline and CAC, not vanity traffic metrics — every GrowLimo report ties organic performance back to demo requests and revenue."
+    ]
+  },
+  "industries": [
+    { "title": "SaaS SEO Agency San Francisco", "desc": "Full-funnel content strategy mapped to your product's buyer journey, technical SEO for JavaScript-rendered marketing sites, and comparison/alternative-page content that captures high-intent bottom-of-funnel search demand." },
+    { "title": "Startup SEO Services Bay Area", "desc": "Lean, prioritized SEO roadmaps for early-stage and Series A/B startups that need organic pipeline without a large in-house marketing team — built to scale as your content and domain authority compound." },
+    { "title": "Enterprise SEO San Francisco", "desc": "Site architecture, internal linking, and content governance for larger SF tech organizations managing multiple product lines, subdomains, or international SEO requirements." },
+    { "title": "Technical SEO Company San Francisco", "desc": "Core Web Vitals optimization, JavaScript rendering audits, structured data implementation, and crawl budget management — the technical layer that most SaaS marketing sites get wrong." }
+  ],
+  "segmentation": {
+    "heading": "SEO Strategy by Company Stage",
+    "intro": "A pre-seed startup, a Series B scale-up, and an established enterprise SaaS company need fundamentally different SEO investments — we scope every San Francisco engagement around where you actually are:",
+    "items": [
+      { "term": "Pre-seed / Seed stage", "desc": "Focus on technical SEO foundations and a small number of high-intent, lower-competition keywords that can start generating pipeline before you have significant content volume or domain authority." },
+      { "term": "Series A / Series B", "desc": "Scale content production across the full funnel, build comparison and alternative pages against named competitors, and begin systematic link building to compound domain authority." },
+      { "term": "Growth / Enterprise", "desc": "Manage SEO across multiple product lines, international subdomains, and larger content teams, with governance to prevent keyword cannibalization as the site scales." }
+    ]
+  },
+  "regionsServed": null,
+  "mistakes": [
+    "Publishing generic \"thought leadership\" with no keyword strategy. Content that isn't mapped to real search demand and buyer intent rarely drives pipeline, no matter how well written.",
+    "Neglecting technical SEO on JavaScript-rendered sites. Many modern marketing sites built on React or Vue are only partially indexable by Google without proper rendering configuration — an issue that silently caps organic growth.",
+    "Optimizing only for branded terms. A site that only ranks for its own company name is not doing SEO — it's just showing up for people who already know the brand.",
+    "Treating SEO and paid search as separate budgets. The best-performing SF companies use paid search data to validate which organic keywords are worth prioritizing, and vice versa."
+  ],
+  "caseStudies": [
+    {
+      "title": "Bay Area SaaS Startup — 210 to 5,400 Monthly Organic Visitors",
+      "challenge": "A B2B SaaS company in San Francisco had a strong product and zero organic presence. Their website received just 210 organic visits per month, all branded — meaning only people who already knew the brand were finding them on Google. They had no blog, no resource content, and no keyword strategy, while competitors dominated every high-intent search term their ideal buyers were using.",
+      "whatWeDid": "GrowLimo built a 6-month content roadmap targeting 47 bottom-of-funnel and middle-of-funnel keywords mapped to the buyer journey. We published 24 SEO-optimized articles, created a resource hub with downloadable templates (which built backlinks passively), implemented a strategic internal linking architecture connecting blog content to service pages, and added author bios with LinkedIn profiles to every article for E-E-A-T compliance.",
+      "result": "Organic traffic grew from 210 branded-only visits to 5,400 monthly organic visitors, with content now driving qualified pipeline instead of relying entirely on paid acquisition.",
+      "quote": "GrowLimo built out our entire SEO and content strategy from scratch. Six months later we're ranking on page 1 for our most competitive keywords and our organic traffic has completely transformed our pipeline. The team is transparent, responsive, and actually understands our industry — not just marketing in general.",
+      "attribution": "CEO, B2B SaaS Company, San Francisco, CA"
+    }
+  ],
+  "extraTestimonial": null,
+  "caseStudiesNote": "We've also driven a 17x return on ad spend for a San Francisco physiotherapy clinic's Google Ads campaign — proof our Bay Area team executes across both organic and paid channels.",
+  "process": [
+    { "label": "Free Technical & Content Audit", "desc": "Crawlability, Core Web Vitals, existing rankings, and content gap analysis specific to your product and ICP." },
+    { "label": "Custom B2B SEO Strategy", "desc": "A 90-day roadmap mapped to your buyer journey and sales funnel stages." },
+    { "label": "Technical Foundation", "desc": "Resolving JavaScript rendering, indexation, and site speed issues." },
+    { "label": "Content Build-Out", "desc": "Bottom- and middle-of-funnel articles, comparison pages, and resource hubs." },
+    { "label": "Link Building & Digital PR", "desc": "Earning backlinks from tech publications and industry sources." },
+    { "label": "Monthly Reporting", "desc": "Organic traffic, keyword rankings, and pipeline contribution reviewed monthly." }
+  ],
+  "comparisonTable": [
+    { "factor": "SEO specialization", "typical": "General digital marketing, SEO is secondary", "growlimo": "Dedicated SEO team with B2B focus" },
+    { "factor": "Funnel coverage", "typical": "Top-of-funnel content only", "growlimo": "Full-funnel: awareness to demo-intent" },
+    { "factor": "Technical SEO depth", "typical": "Basic on-page checklist", "growlimo": "JavaScript rendering & Core Web Vitals audits" },
+    { "factor": "Reporting focus", "typical": "Traffic & impressions", "growlimo": "Pipeline & demo-request attribution" },
+    { "factor": "Contract terms", "typical": "Often 6-12 month lock-in", "growlimo": "Month-to-month" },
+    { "factor": "Certifications", "typical": "Varies", "growlimo": "Google Partner, GA4, SEMrush" }
+  ],
+  "pricing": [
+    { "name": "Local SEO Starter", "price": "$799", "audience": "For early-stage single-product startups.", "popular": false },
+    { "name": "Growth SEO", "price": "$1,499", "audience": "Includes monthly content creation and link building.", "popular": false },
+    { "name": "Enterprise SEO", "price": "$2,999", "audience": "Includes a dedicated strategist and 10+ content pages/month — the tier most venture-backed SaaS companies select.", "popular": true }
+  ],
+  "faqs": [
+    { "question": "What makes a good SaaS SEO agency in San Francisco?", "answer": "A good SaaS SEO agency in San Francisco understands long B2B sales cycles and builds content mapped to every funnel stage, not just top-of-funnel blog posts. GrowLimo grew one San Francisco B2B SaaS client from 210 branded-only monthly visits to 5,400 monthly organic visitors by targeting 47 bottom- and middle-of-funnel keywords across 24 published articles." },
+    { "question": "How much does B2B SEO cost in San Francisco?", "answer": "GrowLimo's San Francisco SEO packages start at $799/month for early-stage startups, $1,499/month for Growth SEO, and $2,999/month for Enterprise SEO — the tier most venture-backed and multi-product SaaS companies choose." },
+    { "question": "How long does SEO take to show results for a Bay Area startup?", "answer": "B2B SaaS SEO in San Francisco typically shows initial keyword movement within 60–90 days, with meaningful organic pipeline contribution by month 4–6, since B2B buyers research extensively before converting." },
+    { "question": "Do you offer technical SEO audits for SF tech companies?", "answer": "Yes. GrowLimo performs comprehensive technical SEO audits covering Core Web Vitals, crawlability, JavaScript rendering issues common on modern SaaS marketing sites, structured data, and site architecture." },
+    { "question": "Is GrowLimo based in San Francisco?", "answer": "GrowLimo is a national digital marketing agency headquartered in Albuquerque, New Mexico, with a dedicated strategist team focused on Bay Area B2B and SaaS companies. Engagements run over video call, Slack, and email." },
+    { "question": "How does SEO strategy change by startup funding stage?", "answer": "Pre-seed and seed-stage companies benefit most from technical SEO foundations and a small set of high-intent keywords. Series A and B companies typically scale full-funnel content and begin systematic link building. Growth-stage and enterprise SaaS companies need governance across multiple product lines and subdomains to prevent keyword cannibalization." },
+    { "question": "Can SEO work alongside our paid search and demand gen strategy?", "answer": "Yes. GrowLimo often uses paid search data to validate which organic keywords are worth prioritizing, and vice versa, so SEO and paid demand generation reinforce each other rather than operating as separate, disconnected budgets." }
+  ],
+  "ctaHeading": "Ready to Turn SEO Into Pipeline?",
+  "ctaParagraph": "Get a free technical and content audit that shows exactly where your San Francisco company's organic search strategy is leaking opportunity.",
+  "ctaLinkText": "Get My Free San Francisco SEO Audit →",
+  "crossLinks": [
+    { "href": "/seo-services-california/", "label": "California SEO Services (Statewide)" },
+    { "href": "/seo-agency-san-jose/", "label": "SEO Agency San Jose", "note": "Silicon Valley hardware & B2B IT" },
+    { "href": "/seo-agency-los-angeles/", "label": "SEO Agency Los Angeles", "note": "eCommerce, entertainment & legal" },
+    { "href": "/seo-agency-san-diego/", "label": "SEO Agency San Diego", "note": "healthcare & professional services" },
+    { "href": "/seo-agency-sacramento/", "label": "SEO Agency Sacramento", "note": "government & regional commercial" }
+  ],
+  "relatedLinks": [
+    { "href": "/digital-marketing-agency-california/", "label": "Digital Marketing Agency California" },
+    { "href": "/google-ads-management-california/", "label": "Google Ads Management California" },
+    { "href": "/case-studies/", "label": "Case Studies" }
+  ],
+  "schema": [
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "GrowLimo – SEO Agency San Francisco",
+      "url": "https://growlimo.com/seo-agency-san-francisco/",
+      "description": "SEO Agency San Francisco - GrowLimo is a San Francisco SEO agency for B2B SaaS, startups & enterprise tech. Technical SEO experts, Google Partner certified. Free audit.",
+      "areaServed": ["San Francisco", "Bay Area", "California"],
+      "serviceType": "SEO Agency",
+      "telephone": "+1-667-347-4729",
+      "address": { "@type": "PostalAddress", "addressState": "CA", "addressCountry": "US" },
+      "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.9", "reviewCount": "31" }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        { "@type": "Question", "name": "What makes a good SaaS SEO agency in San Francisco?", "acceptedAnswer": { "@type": "Answer", "text": "A good SaaS SEO agency in San Francisco understands long B2B sales cycles and builds content mapped to every funnel stage, not just top-of-funnel blog posts. GrowLimo grew one San Francisco B2B SaaS client from 210 branded-only monthly visits to 5,400 monthly organic visitors by targeting 47 bottom- and middle-of-funnel keywords across 24 published articles." } },
+        { "@type": "Question", "name": "How much does B2B SEO cost in San Francisco?", "acceptedAnswer": { "@type": "Answer", "text": "GrowLimo's San Francisco SEO packages start at $799/month for early-stage startups, $1,499/month for Growth SEO, and $2,999/month for Enterprise SEO — the tier most venture-backed and multi-product SaaS companies choose." } },
+        { "@type": "Question", "name": "How long does SEO take to show results for a Bay Area startup?", "acceptedAnswer": { "@type": "Answer", "text": "B2B SaaS SEO in San Francisco typically shows initial keyword movement within 60–90 days, with meaningful organic pipeline contribution by month 4–6, since B2B buyers research extensively before converting." } }
+      ]
+    }
+  ]
+}

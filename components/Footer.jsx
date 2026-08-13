@@ -92,6 +92,13 @@ export default function Footer() {
               <li><Link href="/web-developer-california/" className="text-[#8FA8C8] hover:text-[#00C68A] transition text-sm">Web Developer California</Link></li>
               <li><Link href="/web-design-services-california/" className="text-[#8FA8C8] hover:text-[#00C68A] transition text-sm">Web Design Services California</Link></li>
               <li><Link href="/email-marketing-services-california/" className="text-[#8FA8C8] hover:text-[#00C68A] transition text-sm">Email Marketing Services California</Link></li>
+
+              <li className="text-[10px] text-[#4A6080] font-bold uppercase tracking-widest pt-3 font-sans">SEO Agency by City</li>
+              <li><Link href="/seo-agency-los-angeles/" className="text-[#8FA8C8] hover:text-[#00C68A] transition text-sm">SEO Agency Los Angeles</Link></li>
+              <li><Link href="/seo-agency-san-diego/" className="text-[#8FA8C8] hover:text-[#00C68A] transition text-sm">SEO Agency San Diego</Link></li>
+              <li><Link href="/seo-agency-san-francisco/" className="text-[#8FA8C8] hover:text-[#00C68A] transition text-sm">SEO Agency San Francisco</Link></li>
+              <li><Link href="/seo-agency-san-jose/" className="text-[#8FA8C8] hover:text-[#00C68A] transition text-sm">SEO Agency San Jose</Link></li>
+              <li><Link href="/seo-agency-sacramento/" className="text-[#8FA8C8] hover:text-[#00C68A] transition text-sm">SEO Agency Sacramento</Link></li>
             </ul>
           </div>
 

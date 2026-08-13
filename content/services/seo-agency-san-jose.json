@@ -1,0 +1,134 @@
+{
+  "metaTitle": "SEO Agency San Jose | Silicon Valley SEO Company | GrowLimo",
+  "metaDescription": "SEO Agency San Jose - GrowLimo is a San Jose SEO agency for Silicon Valley tech, hardware, software & B2B IT companies. Google Partner certified. Free technical SEO audit.",
+  "h1": "SEO Agency San Jose: Silicon Valley SEO for Hardware, Software & B2B IT",
+  "statBadge": [
+    "Google Partner Certified",
+    "Technical SEO Specialists",
+    "Silicon Valley B2B & IT Focus"
+  ],
+  "whatIs": "A San Jose SEO agency builds organic search visibility for Silicon Valley's technology-driven economy — hardware and software companies, B2B IT services firms, and commercial B2B platforms with technical products and long enterprise sales cycles. GrowLimo is a Google Partner–certified Silicon Valley SEO agency that pairs deep technical SEO audits with B2B content strategy built for complex buying committees, not quick-conversion consumer traffic.",
+  "seoServicesIntro": [
+    "If you're searching \"SEO agency San Jose,\" \"San Jose SEO company,\" or \"Silicon Valley SEO agency,\" you're almost certainly evaluating vendors for a hardware manufacturer, an enterprise software platform, an IT services firm, or a commercial B2B product — not a local storefront. GrowLimo builds B2B SEO company San Jose businesses trust around one core reality: your buyers are technical, your sales cycle is long, and your website's crawlability and content depth both need to hold up to scrutiny from both search engines and sophisticated procurement teams.",
+    "South Bay technology companies frequently inherit technical SEO debt from complex product sites, documentation portals, and multiple subdomains — which is why every San Jose engagement starts with a full technical SEO audit San Jose teams can act on immediately."
+  ],
+  "trackRecord": [
+    "5,400 monthly organic visitors achieved for a Bay Area B2B SaaS client using this exact technical-plus-content methodology",
+    "Google Partner Certified — Search, Display, Shopping & Video",
+    "Google Analytics 4 & SEMrush SEO Toolkit Certified technical SEO team",
+    "10+ years of combined SEO and B2B content experience",
+    "No long-term contracts — month-to-month, performance-based engagements"
+  ],
+  "whyDifferent": {
+    "heading": "Why San Jose & Silicon Valley SEO Is a Technical Discipline First",
+    "items": [
+      "Complex site architecture. Hardware and software companies often run product catalogs, documentation hubs, and marketing sites on different platforms — creating crawl and indexation gaps most agencies never catch.",
+      "JavaScript-heavy front ends. Modern React/Vue-based marketing and product sites can render invisible to search engines without proper server-side rendering or hydration strategy.",
+      "Long, multi-stakeholder sales cycles. Enterprise IT and hardware purchases involve multiple decision-makers researching over weeks or months — content has to serve technical evaluators and business buyers differently.",
+      "Global competition for narrow keyword sets. B2B tech keywords have limited volume but are contested by well-funded competitors worldwide, requiring precision targeting over broad content volume."
+    ]
+  },
+  "industries": [
+    { "title": "Tech Company SEO Silicon Valley", "desc": "Technical SEO audits built for complex product and documentation sites, structured data for software and hardware products, and content strategy mapped to technical buyer personas." },
+    { "title": "IT Services SEO Agency San Jose", "desc": "Service-page optimization for managed IT, cybersecurity, and infrastructure providers, plus authority content that builds trust with enterprise procurement teams evaluating vendors." },
+    { "title": "B2B SEO Company San Jose", "desc": "Full-funnel keyword strategy from technical evaluation content through demo-request and RFP-stage landing pages, built for platforms selling into other businesses." },
+    { "title": "Commercial B2B Platform SEO", "desc": "Site architecture and internal linking built to scale across multiple product lines and use-case pages without cannibalizing rankings between related offerings." }
+  ],
+  "segmentation": {
+    "heading": "SEO for Different Silicon Valley Business Models",
+    "items": [
+      { "term": "Hardware manufacturers", "desc": "Product specification content, distributor and reseller-facing pages, and technical documentation SEO built to capture engineers and procurement teams researching specs before RFP stage." },
+      { "term": "Enterprise software platforms", "desc": "Comparison and integration-focused content, structured data for software products, and content governance across feature pages that often number in the hundreds." },
+      { "term": "B2B IT services firms", "desc": "Service-area and capability pages built around specific compliance frameworks and industries served, paired with case-study-driven authority content." }
+    ]
+  },
+  "regionsServed": null,
+  "mistakes": [
+    "Blocking crawlers unintentionally. Staging environments, robots.txt misconfigurations, and overly aggressive JavaScript frameworks routinely block Google from indexing key pages on B2B tech sites.",
+    "Duplicate content across product and documentation subdomains. Multiple subdomains serving similar content without proper canonical tags dilute ranking potential.",
+    "No content for evaluation-stage buyers. Many tech companies write only top-of-funnel thought leadership and skip the comparison, alternative, and \"vs.\" content that actually drives demo requests.",
+    "Underestimating how long enterprise SEO takes to compound. Complex B2B keywords with high competition from well-funded companies require sustained investment, not a quick campaign."
+  ],
+  "caseStudies": [
+    {
+      "title": "Silicon Valley Results: Bay Area B2B SaaS Case Study",
+      "paragraph": "While this case study was executed for a San Francisco-based client, the same technical-plus-content methodology applies directly to San Jose's hardware, software, and B2B IT companies. GrowLimo took a Bay Area B2B SaaS company from 210 branded-only monthly visits to 5,400 monthly organic visitors, targeting 47 bottom- and middle-of-funnel keywords across 24 published articles, a resource hub, and an E-E-A-T-compliant internal linking architecture.",
+      "linkHref": "/seo-agency-san-francisco/",
+      "linkText": "Read the full Bay Area SaaS SEO case study →"
+    }
+  ],
+  "extraTestimonial": null,
+  "caseStudiesNote": {
+    "text": "See our complete portfolio, including additional California technical SEO results, on the",
+    "linkHref": "/case-studies/",
+    "linkText": "GrowLimo case studies page"
+  },
+  "process": [
+    { "label": "Free Technical SEO Audit", "desc": "Crawlability, JavaScript rendering, Core Web Vitals, and indexation health across your full site architecture." },
+    { "label": "Custom B2B Strategy", "desc": "A 90-day roadmap mapped to your product lines and buyer personas." },
+    { "label": "Technical Remediation", "desc": "Resolving rendering, speed, and structured data issues." },
+    { "label": "Content Build-Out", "desc": "Technical evaluation content, comparison pages, and demo-intent landing pages." },
+    { "label": "Link Building", "desc": "Backlinks from tech publications and industry-relevant sources." },
+    { "label": "Monthly Reporting", "desc": "Rankings, organic traffic, and demo/lead attribution reviewed monthly." }
+  ],
+  "comparisonTable": [
+    { "factor": "Technical depth", "typical": "Basic on-page checklist", "growlimo": "JavaScript rendering & crawl-budget audits" },
+    { "factor": "B2B content expertise", "typical": "Generic blog content", "growlimo": "Evaluation-stage & comparison content" },
+    { "factor": "Site architecture at scale", "typical": "Rarely addressed", "growlimo": "Multi-product governance & internal linking" },
+    { "factor": "Reporting focus", "typical": "Traffic & impressions", "growlimo": "Demo requests & pipeline attribution" },
+    { "factor": "Contract terms", "typical": "Often 6-12 month lock-in", "growlimo": "Month-to-month" },
+    { "factor": "Certifications", "typical": "Varies", "growlimo": "Google Partner, GA4, SEMrush" }
+  ],
+  "pricing": [
+    { "name": "Local SEO Starter", "price": "$799", "audience": "For early-stage or single-product companies.", "popular": false },
+    { "name": "Growth SEO", "price": "$1,499", "audience": "Includes monthly content creation and link building.", "popular": false },
+    { "name": "Enterprise SEO", "price": "$2,999", "audience": "Includes a dedicated strategist — the typical fit for established hardware, software, and IT services firms.", "popular": true }
+  ],
+  "faqs": [
+    { "question": "What does a Silicon Valley SEO agency specialize in?", "answer": "A Silicon Valley SEO agency specializes in technical SEO for complex, often JavaScript-heavy product and marketing sites, combined with B2B content strategy for long enterprise sales cycles. GrowLimo's San Jose-focused work covers hardware and software tech companies, B2B IT services firms, and commercial B2B platforms." },
+    { "question": "How much does SEO cost in San Jose?", "answer": "GrowLimo's San Jose SEO packages start at $799/month for early-stage companies, $1,499/month for Growth SEO, and $2,999/month for Enterprise SEO — typically the right fit for established hardware, software, and IT services firms." },
+    { "question": "Do you offer technical SEO audits for San Jose tech companies?", "answer": "Yes. A technical SEO audit is the starting point for every San Jose engagement — covering Core Web Vitals, crawlability, JavaScript rendering, structured data, and site architecture." },
+    { "question": "How long does B2B tech SEO take in San Jose?", "answer": "Most San Jose B2B tech companies see initial ranking movement within 60–90 days, with meaningful organic lead or demo-request contribution by month 4–6." },
+    { "question": "Is GrowLimo located in San Jose or Silicon Valley?", "answer": "GrowLimo is a national digital marketing agency headquartered in Albuquerque, New Mexico, with a dedicated strategist team focused on Silicon Valley and South Bay B2B technology companies, working remotely by video call, email, and shared reporting dashboards." },
+    { "question": "Do you write SEO content for hardware manufacturers as well as software companies?", "answer": "Yes. GrowLimo builds product specification content, distributor and reseller-facing pages, and technical documentation SEO for hardware manufacturers, alongside comparison and integration content for enterprise software platforms." },
+    { "question": "What's the most common technical SEO issue on B2B tech websites?", "answer": "The most common issue is unintentional crawler blocking or incomplete indexation caused by JavaScript rendering problems, staging environment leaks, or duplicate content across product and documentation subdomains without proper canonical tags." }
+  ],
+  "ctaHeading": "Ready for a Technical SEO Audit Built for Silicon Valley?",
+  "ctaParagraph": "Get a free technical and content audit that shows exactly what's blocking your San Jose company's organic rankings.",
+  "ctaLinkText": "Get My Free San Jose SEO Audit →",
+  "crossLinks": [
+    { "href": "/seo-services-california/", "label": "California SEO Services (Statewide)" },
+    { "href": "/seo-agency-san-francisco/", "label": "SEO Agency San Francisco", "note": "B2B SaaS & startups" },
+    { "href": "/seo-agency-los-angeles/", "label": "SEO Agency Los Angeles", "note": "eCommerce, entertainment & legal" },
+    { "href": "/seo-agency-san-diego/", "label": "SEO Agency San Diego", "note": "healthcare & professional services" },
+    { "href": "/seo-agency-sacramento/", "label": "SEO Agency Sacramento", "note": "government & regional commercial" }
+  ],
+  "relatedLinks": [
+    { "href": "/digital-marketing-agency-california/", "label": "Digital Marketing Agency California" },
+    { "href": "/google-ads-management-california/", "label": "Google Ads Management California" },
+    { "href": "/case-studies/", "label": "Case Studies" }
+  ],
+  "schema": [
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "GrowLimo – SEO Agency San Jose",
+      "url": "https://growlimo.com/seo-agency-san-jose/",
+      "description": "SEO Agency San Jose - GrowLimo is a San Jose SEO agency for Silicon Valley tech, hardware, software & B2B IT companies. Google Partner certified. Free technical SEO audit.",
+      "areaServed": ["San Jose", "Silicon Valley", "South Bay", "California"],
+      "serviceType": "SEO Agency",
+      "telephone": "+1-667-347-4729",
+      "address": { "@type": "PostalAddress", "addressState": "CA", "addressCountry": "US" },
+      "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.9", "reviewCount": "27" }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        { "@type": "Question", "name": "What does a Silicon Valley SEO agency specialize in?", "acceptedAnswer": { "@type": "Answer", "text": "A Silicon Valley SEO agency specializes in technical SEO for complex, often JavaScript-heavy product and marketing sites, combined with B2B content strategy for long enterprise sales cycles. GrowLimo's San Jose-focused work covers hardware and software tech companies, B2B IT services firms, and commercial B2B platforms." } },
+        { "@type": "Question", "name": "How much does SEO cost in San Jose?", "acceptedAnswer": { "@type": "Answer", "text": "GrowLimo's San Jose SEO packages start at $799/month for early-stage companies, $1,499/month for Growth SEO, and $2,999/month for Enterprise SEO — typically the right fit for established hardware, software, and IT services firms." } },
+        { "@type": "Question", "name": "How long does B2B tech SEO take in San Jose?", "acceptedAnswer": { "@type": "Answer", "text": "Most San Jose B2B tech companies see initial ranking movement within 60–90 days, with meaningful organic lead or demo-request contribution by month 4–6." } }
+      ]
+    }
+  ]
+}

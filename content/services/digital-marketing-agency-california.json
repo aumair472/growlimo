@@ -1,290 +1,123 @@
 {
-  "metaTitle": "Digital Marketing Agency & Services California | GrowLimo",
+  "metaTitle": "Digital Marketing Agency & Services California - GrowLimo",
   "metaDescription": "Digital Marketing Agency California - GrowLimo is a full-service digital marketing agency delivering SEO, PPC, content, email & social digital marketing services in California. Free audit.",
   "canonical": "https://growlimo.com/digital-marketing-agency-california/",
   "h1": "Digital Marketing Agency in California",
-  "subheadline": "GrowLimo is a full-service digital marketing agency delivering digital marketing services to California businesses that are done paying for marketing that doesn't convert. As a California digital marketing agency, we combine SEO, Google Ads, content, email, and social media into one revenue-tracked system — not a bundle of disconnected tactics or vanity-metric reports.",
-  "heroContent": [
-    "GrowLimo is a full-service digital marketing agency delivering digital marketing services to California businesses .",
-    "$2.3M+ Tracked Revenue Generated | 100+ California Clients | 4.9/5 Google Rating | Google Partner Certified Agency"
+  "subheadline": "GrowLimo is a full-service digital marketing agency delivering digital marketing services to California businesses that are done paying for marketing that doesn't convert. As a digital marketing company California business owners trust for measurable growth, and the digital marketing firm California teams call when generic marketing stops working, we combine SEO, Google Ads, content, email, and social media into one revenue-tracked system rather than a bundle of disconnected tactics.",
+  "internalLinks": [
+    { "to": "/seo-services-california/", "anchor": "search engine optimization" },
+    { "to": "/google-ads-management-california/", "anchor": "Google Ads and PPC management" },
+    { "to": "/content-marketing-california/", "anchor": "content marketing and SEO copywriting" },
+    { "to": "/email-marketing-services-california/", "anchor": "email marketing and automation" },
+    { "to": "/social-media-marketing-services-california/", "anchor": "social media and paid social" },
+    { "to": "/web-developer-california/", "anchor": "web design and conversion optimization" },
+    { "to": "/meta-ads-agency-california/", "anchor": "Meta Ads management" },
+    { "to": "/healthcare-digital-marketing-agency-california/", "anchor": "healthcare digital marketing" },
+    { "to": "/dentist-digital-marketing-agency-california/", "anchor": "dentist digital marketing" },
+    { "to": "/case-studies/", "anchor": "case studies page" },
+    { "to": "/about/", "anchor": "About page" },
+    { "to": "/contact/", "anchor": "Contact GrowLimo Team" }
   ],
-  "trustBar": "⭐ 4.9/5 Google Rating  |  100+ California Clients  |  $2.3M+ Revenue Generated  |  Google Partner Certified Agency  |  No Lock-In Contracts",
-  "contentSections": [
+  "schema": [
     {
-      "heading": "What Is a Digital Marketing Agency, and What Digital Marketing Services Does It Include?",
-      "paragraphs": [
-        "A digital marketing agency is a company that manages a business's online growth channels under one coordinated strategy, rather than as disconnected, one-off tactics. In California's saturated market, the businesses that win online are the ones treating digital marketing as a system, not a checklist.",
-        "The core digital marketing services a full-service agency like GrowLimo provides in California include:"
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "GrowLimo Digital Marketing Agency California",
+      "url": "https://growlimo.com/digital-marketing-agency-california/",
+      "description": "Digital Marketing Agency California - GrowLimo is a full-service digital marketing agency delivering SEO, PPC, content, email & social digital marketing services in California. Free audit.",
+      "areaServed": [
+        "Los Angeles",
+        "San Diego",
+        "San Francisco",
+        "Sacramento",
+        "Orange County",
+        "San Jose",
+        "Fresno",
+        "Long Beach",
+        "California"
       ],
-      "bullets": [
-        "Search Engine Optimization (SEO) — earning organic rankings that compound over time",
-        "Google Ads & PPC management — paid visibility with immediate, trackable lead flow",
-        "Content marketing & SEO copywriting — building topical authority and answering buyer questions",
-        "Email marketing & automation — converting existing leads and customers into repeat revenue",
-        "Social media marketing — discovery and brand trust on Instagram, Facebook, LinkedIn, and TikTok",
-        "Web design & conversion rate optimization — the site every other channel sends traffic to"
-      ],
-      "closingText": "Most California businesses don't need every service on day one — they need the right combination for their stage, budget, and competitive market. That's why every GrowLimo engagement starts with a free audit, not a fixed package."
+      "serviceType": "Digital Marketing Agency",
+      "telephone": "+1-667-347-4729",
+      "address": {
+        "@type": "PostalAddress",
+        "addressState": "CA",
+        "addressCountry": "US"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": "103"
+      }
     },
     {
-      "heading": "Why Digital Marketing Is Non-Negotiable for California Businesses in 2026",
-      "paragraphs": [
-        "California is the fifth-largest economy in the world, with over 39 million residents, 4 million registered businesses, and some of the highest average consumer spending in the US. Over 93% of California consumer purchase decisions begin with an online search, and 76% of mobile users who search for a local business visit that business within 24 hours. Yet most California small and mid-sized businesses either have no consistent digital marketing strategy or are running campaigns with structural problems preventing them from ranking, converting, or scaling.",
-        "The competitive density raises the stakes further. Los Angeles alone has more than 244,000 registered businesses; the Bay Area tech corridor has thousands of companies competing for the same B2B search terms. Since our founding, GrowLimo has worked with 100+ California businesses across home services, healthcare, legal, e-commerce, real estate, and B2B, generating over $2.3 million in tracked revenue through SEO, Google Ads, content marketing, email automation, and conversion-focused web design."
-      ]
-    },
-    {
-      "heading": "Why California Businesses Choose GrowLimo",
-      "bullets": [
-        "Full-service digital marketing agency — six channels under one revenue-tracked strategy",
-        "California city-level expertise across Los Angeles, San Diego, San Francisco, Sacramento, Orange County, and San Jose",
-        "Google Partner-certified team (Search, Display, Shopping, and Video)",
-        "Revenue tracked as the primary success metric, not impressions or followers",
-        "No long-term lock-in contracts — month-to-month across all services",
-        "Monthly reporting in plain English, with a strategy call every cycle"
-      ]
-    },
-    {
-      "heading": "Our Full-Service Digital Marketing Solutions for California Businesses",
-      "paragraphs": [
-        "Every California business has a different competitive position, audience, and growth stage. These digital marketing services are deployed independently or combined, depending on what your specific market and goals require."
-      ]
-    },
-    {
-      "heading": "1. Search Engine Optimization (SEO) for California Businesses",
-      "paragraphs": [
-        "SEO is the compounding asset of digital marketing — done right, it delivers traffic and leads for years without paying per click. GrowLimo builds SEO across three pillars: technical SEO, on-page content optimization, and off-page authority building, starting with a deep technical audit of crawlability, Core Web Vitals, mobile performance, internal link architecture, and indexation health, then layering in keyword research calibrated to California market intent and city-level search behavior."
-      ]
-    },
-    {
-      "heading": "2. Google Ads & PPC Management in California",
-      "paragraphs": [
-        "California has some of the highest cost-per-click rates in the US — in industries like personal injury law in Los Angeles or cosmetic surgery in Orange County, a single click can cost $40–$100. GrowLimo's Google Partner-certified PPC team manages campaigns with tight ad group architecture, aggressive negative keyword lists, and conversion-optimized landing pages that turn expensive clicks into paying customers."
-      ]
-    },
-    {
-      "heading": "3. Content Marketing & SEO Copywriting",
-      "paragraphs": [
-        "Content is how California businesses build topical authority on Google, educate their buyers, and differentiate in crowded markets. GrowLimo produces service pages, blog articles, resource guides, case studies, and location landing pages grounded in keyword research, competitor content-gap analysis, and the E-E-A-T principles Google's quality rater guidelines demand in 2026."
-      ]
-    },
-    {
-      "heading": "4. Email Marketing Services & Automation",
-      "paragraphs": [
-        "Email marketing consistently delivers the highest ROI of any digital channel — an average of $36–$42 returned for every $1 spent. GrowLimo designs and manages complete email programs: welcome sequences, abandoned cart flows, post-purchase nurture, re-engagement campaigns, and regular newsletters."
-      ]
-    },
-    {
-      "heading": "5. Social Media Marketing for California Businesses",
-      "paragraphs": [
-        "California's consumer culture is deeply social — Instagram, Facebook, LinkedIn, and TikTok are primary discovery platforms across almost every industry. GrowLimo builds audience targeting frameworks, content calendars anchored to California market seasonality, and paid social campaigns that drive measurable traffic and lead volume."
-      ]
-    },
-    {
-      "heading": "6. Web Design & Conversion Rate Optimization",
-      "paragraphs": [
-        "Your website is the hub every other channel feeds into — if it's slow or fails to build trust within the first five seconds, every dollar spent on SEO and ads is partially wasted. GrowLimo builds fast, mobile-first, SEO-structured websites that pass Google's Core Web Vitals thresholds and use semantic HTML for crawler readability."
-      ]
-    },
-    {
-      "heading": "Digital Marketing Results We've Delivered for California Businesses",
-      "paragraphs": [
-        "The most powerful evidence of a digital marketing agency's capability isn't their pitch deck — it's their client outcomes. Here are three verified case studies from GrowLimo's California portfolio:"
-      ],
-      "bullets": [
-        "Case Study 1: Los Angeles HVAC Company — SEO Drives 323% Lead Growth: Challenge: an 11-year-old family-owned LA HVAC company ranked on page 4 for core terms with fewer than 20 organic visits/month and relied entirely on paid referrals. GrowLimo performed a full technical SEO audit identifying critical issues: a slow-loading site (7.2 second load time), missing title tags on 14 pages, duplicate content across service pages, and zero local citations. We rebuilt the site's technical foundation, created individual SEO-optimized pages for every service and every Los Angeles neighborhood they served, and built a local citation profile across 40+ California business directories.",
-        "Case Study 2: San Diego Medical Spa — Google Ads ROAS of 7.1x: Challenge: a $5,000/month Google Ads account from a previous agency generated only a 1.6x ROAS, with no audience layering, a single catch-all ad group, and landing pages with six competing CTAs. GrowLimo rebuilt the campaign with individual ad groups for each high-margin treatment, wrote ad copy anchored in the spa's specific social proof (4.9★ rating, 500+ treatments performed), designed service-specific landing pages with a single CTA, added a remarketing layer targeting previous site visitors with a time-sensitive consultation offer, and implemented call tracking to capture phone leads previously invisible to the campaign attribution model.",
-        "Case Study 3: Bay Area SaaS Startup — Content Marketing Builds 5,400 Monthly Visitors: Challenge: a San Francisco B2B SaaS company had 210 organic visits/month, all branded, no blog, and no keyword strategy. GrowLimo built a 6-month content roadmap targeting 47 bottom-of-funnel and middle-of-funnel keywords mapped to their buyer journey. We published 24 SEO-optimized articles, created a resource hub with downloadable templates (which built backlinks passively), implemented a strategic internal linking architecture connecting blog content to service pages, and added author bios with LinkedIn profiles to all content for EEAT compliance."
-      ]
-    },
-    {
-      "heading": "What California Businesses Say About Working With GrowLimo",
-      "bullets": [
-        "\"Before GrowLimo, we were spending $3,000/month on Google Ads and getting maybe 15 leads. Within 60 days of them taking over, we were getting 70+ leads on the same budget.\" — Plumbing Company Owner, San Diego, CA",
-        "\"GrowLimo built out our entire SEO and content strategy from scratch. Six months later we're ranking on page 1 for our most competitive keywords.\" — CEO, B2B SaaS Company, San Francisco, CA",
-        "\"Six months later, our email program alone is generating 28% of our total store revenue.\" — E-Commerce Founder, Los Angeles, CA"
-      ]
-    },
-    {
-      "heading": "Why GrowLimo Has the Expertise to Grow California Businesses Online",
-      "paragraphs": [
-        "GrowLimo was built from the ground up as a performance digital marketing agency — every team member is a specialist in their channel, and every recommendation is backed by GrowLimo's own California client results or verified industry benchmarks. Our core team holds the following certifications:"
-      ],
-      "bullets": [
-        "Google Partner Agency (Search, Display, Shopping, and Video certified)",
-        "HubSpot Content Marketing Certification",
-        "HubSpot Email Marketing Certification",
-        "Klaviyo Product Certification",
-        "Google Analytics 4 Certification",
-        "SEMrush SEO Toolkit Certification",
-        "Meta Blueprint Certification (Facebook & Instagram Ads)"
-      ],
-      "closingText": "Our team has personally managed campaigns in over 20 California cities, across 12 distinct industries, with client budgets ranging from $1,000 to $50,000/month. Reviewed by Senior Digital Strategist at GrowLimo — 7+ years in digital marketing. Last updated: Q2 2026."
-    }
-  ],
-  "processSection": {
-    "title": "How GrowLimo Approaches Digital Marketing Differently in California",
-    "intro": "Most digital marketing agencies in California sell packages. GrowLimo builds systems — where SEO content feeds the email list, the email list builds retargeting audiences for paid ads, and Google Ads data informs which organic keywords deserve more content investment.",
-    "steps": [
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
       {
-        "title": "Data before decisions",
-        "description": "Every new client relationship starts with a comprehensive audit: website technical health, existing rankings, competitor positioning, paid account history, and conversion funnel mapping."
+        "@type": "Question",
+        "name": "What is a digital marketing agency?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A digital marketing agency is a company that manages a business's online growth channels, such as SEO, paid ads, content, email, and social media, under one coordinated strategy rather than as separate, disconnected tactics."
+        }
       },
       {
-        "title": "Revenue as the north star",
-        "description": "Impressions, clicks, and followers are intermediate metrics. Every GrowLimo campaign is set up with revenue tracking as the primary success benchmark from day one."
+        "@type": "Question",
+        "name": "What digital marketing services does GrowLimo offer in California?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "SEO, Google Ads and PPC management, content marketing, email marketing and automation, social media and paid social, and web design and conversion rate optimization, deployed independently or combined based on your goals."
+        }
       },
       {
-        "title": "California market specialization",
-        "description": "We don't manage campaigns the same way in San Diego as in Los Angeles or the Bay Area — these are distinct markets with different search intent, competitive density, and demographic profiles."
+        "@type": "Question",
+        "name": "What's the difference between a digital marketing agency, company, and firm?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "In practice, very little. Google treats these terms as close variants of the same search intent. What actually differs between providers is scope of service, team structure, and how directly you work with the person doing the strategy."
+        }
       },
       {
-        "title": "Transparency without exception",
-        "description": "Every campaign metric, every dollar spent, and every result is visible in plain-English monthly reports accompanied by a strategy call."
+        "@type": "Question",
+        "name": "How much does a digital marketing agency in California cost?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Budgets across our California clients typically range from $1,000 to $50,000 per month depending on channel mix, competition, and business size. A free audit gives you a specific recommendation rather than a generic estimate."
+        }
       },
       {
-        "title": "No lock-in contracts",
-        "description": "We operate month-to-month across all services and use results, not contracts, to retain clients."
+        "@type": "Question",
+        "name": "How long before I see results from digital marketing in California?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Paid channels like Google Ads can produce leads within days of launch. SEO and content typically show initial movement in 60 to 90 days, with compounding results building over 6 to 12 months."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do I need every service, or can I start with one?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "You can start with one. Most engagements begin with an audit that identifies which one or two channels will move the needle fastest for your specific business before expanding into a full-funnel strategy."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is there a long-term contract required?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. GrowLimo operates month-to-month across every service line. Clients stay because campaigns are performing, not because they're contractually locked in."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can digital marketing help my California business appear in AI search results like ChatGPT and Google AI Overviews?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Content structured around direct answers, current data, and clear E-E-A-T signals is more likely to be cited inside AI Overviews, ChatGPT, and Perplexity responses, in addition to ranking in standard organic results."
+        }
       }
     ]
-  },
-  "ctaSection": {
-    "heading": "Ready to Build a Digital Marketing Engine That Grows Your California Business?",
-    "paragraphs": [
-      "Whether you're starting from zero or scaling an existing campaign, GrowLimo has the certified specialists, California market expertise, and proven frameworks to take you to the next level. Start with a free, no-obligation marketing audit.",
-      "📍 Serving All of California — Los Angeles, San Diego, San Francisco, Sacramento, Orange County, San Jose & Beyond  |  Google Partner Certified  |  Month-to-Month, No Lock-In"
-    ]
-  },
-  "ctaButtonText": "Book Your Free California Marketing Audit →",
-  "faqs": [
-    {
-      "question": "What is a digital marketing agency?",
-      "answer": "A digital marketing agency is a company that manages a business's online growth channels — typically SEO, paid advertising, content, email, social media, and web design — under one coordinated strategy rather than as disconnected tactics."
-    },
-    {
-      "question": "What digital marketing services does GrowLimo offer in California?",
-      "answer": "GrowLimo offers SEO, Google Ads and PPC management, content marketing and SEO copywriting, email marketing automation, social media marketing, and conversion-focused web design for California businesses, deployed independently or as an integrated system."
-    },
-    {
-      "question": "How much does a digital marketing agency in California cost?",
-      "answer": "Most California businesses invest 3–5% of annual revenue in digital marketing, rising to 8–10% during growth phases. A comprehensive program combining SEO and PPC with GrowLimo typically starts between $2,500 and $5,000 per month, with an exact quote after a free audit."
-    },
-    {
-      "question": "How long before I see results from digital marketing in California?",
-      "answer": "Paid channels like Google Ads and social ads can generate leads within days of launch. SEO and content marketing typically show measurable ranking movement within 60–90 days, with substantial compounding growth by 6–12 months."
-    },
-    {
-      "question": "What makes GrowLimo different from other California marketing agencies?",
-      "answer": "GrowLimo builds interconnected marketing systems rather than isolated service packages, tracks revenue as the primary success metric instead of impressions or clicks, and assigns certified specialists with California city-level expertise to every account."
-    },
-    {
-      "question": "Does GrowLimo work with small businesses in California?",
-      "answer": "Yes. GrowLimo has managed California campaigns with monthly budgets ranging from $1,000 to $50,000, and engagements scale with the business rather than requiring a large budget to start."
-    },
-    {
-      "question": "Do I need all digital marketing services, or can I start with one?",
-      "answer": "You can start with a single channel, such as SEO or Google Ads, and expand into content, email, or social media as that channel proves ROI. Most clients add channels once the first is generating consistent leads."
-    },
-    {
-      "question": "Do you offer a free marketing consultation for California businesses?",
-      "answer": "Yes. GrowLimo provides a free, no-obligation marketing audit that reviews your organic search positions, paid media accounts, and competitors before recommending a strategy."
-    },
-    {
-      "question": "Is there a long-term contract required?",
-      "answer": "No. GrowLimo operates month-to-month across all services and does not use contracts to retain clients."
-    },
-    {
-      "question": "Can digital marketing help my California business appear in AI search results like ChatGPT and Google AI Overviews?",
-      "answer": "Yes. Content structured around direct answers, backed by schema markup and original data, increases the likelihood of being cited in AI-generated results from Google AI Overviews, ChatGPT, and Perplexity, in addition to ranking in traditional search."
     }
-  ],
-  "internalLinks": [
-    {
-      "to": "/seo-services-california/",
-      "anchor": "California SEO Services"
-    },
-    {
-      "to": "/ppc-services-california/",
-      "anchor": "California Google Ads Management"
-    },
-    {
-      "to": "/content-marketing-california/",
-      "anchor": "California Content Marketing"
-    },
-    {
-      "to": "/email-marketing-services-california/",
-      "anchor": "California Email Marketing Services"
-    },
-    {
-      "to": "/social-media-marketing-services-california/",
-      "anchor": "California Social Media Marketing"
-    },
-    {
-      "to": "/web-design-services-california/",
-      "anchor": "California Web Design Services"
-    },
-    {
-      "to": "/contact/",
-      "anchor": "Contact GrowLimo Team"
-    }
-  ],
-  "images": [
-    "/images/services/hero-digital-marketing-agency-california.webp",
-    "/images/services/digital-marketing-agency-california-strategy.webp",
-    "/images/services/digital-marketing-agency-california-results-1.webp",
-    "/images/services/digital-marketing-agency-california-results-2.webp",
-    "/images/services/digital-marketing-agency-california-banner.webp"
-  ],
-  "schema": {
-    "@context": "https://schema.org",
-    "@type": "ProfessionalService",
-    "name": "GrowLimo Digital Marketing Agency California",
-    "url": "https://growlimo.com/digital-marketing-agency-california/",
-    "description": "Digital Marketing Agency California - GrowLimo is a full-service digital marketing agency delivering SEO, PPC, content, email & social digital marketing services in California. Free audit.",
-    "areaServed": [
-      "Los Angeles",
-      "San Diego",
-      "San Francisco",
-      "Sacramento",
-      "Orange County",
-      "San Jose",
-      "Fresno",
-      "Long Beach",
-      "California"
-    ],
-    "serviceType": "Digital Marketing Agency",
-    "telephone": "+1-667-347-4729",
-    "address": {
-      "@type": "PostalAddress",
-      "addressState": "CA",
-      "addressCountry": "US"
-    },
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "4.9",
-      "reviewCount": "103"
-    }
-  },
-  "industriesSection": {
-    "heading": "California Industries We Specialize In",
-    "intro": "Digital marketing strategy is not universal — every industry has distinct keyword intent patterns, regulatory considerations, competitive dynamics, and buyer journey structures. GrowLimo has built deep expertise across California's most competitive verticals:",
-    "list": [
-      "Home Services (HVAC, plumbing, roofing, electrical, landscaping, pest control) — Emergency keyword bidding, hyper-local SEO, Google Business Profile optimization, review generation, and call tracking for high-volume lead campaigns.",
-      "Healthcare & Medical (dentists, med spas, chiropractors, urgent care, plastic surgeons) — HIPAA-aware ad copy, appointment booking conversion tracking, review-driven local SEO, and content built to meet Google's YMYL (Your Money Your Life) quality standards.",
-      "Legal Services (personal injury, immigration, family law, criminal defense) — High-CPC Google Ads management with tight Quality Score optimization, intake form conversion tracking, and authoritative content that builds E-E-A-T signals for Google's quality reviewers.",
-      "Real Estate (agents, brokers, property managers, developers) — Neighborhood-level SEO content, Google Ads lead forms, email drip campaigns for long-cycle buyer nurturing, and landing pages optimized for property inquiry conversions.",
-      "E-Commerce (fashion, beauty, health products, home goods, supplements) — Google Shopping campaign management, Klaviyo email automation, abandoned cart recovery, SEO product page optimization, and social ad integration.",
-      "B2B SaaS & Technology (Bay Area and statewide) — Bottom-of-funnel SEO content strategy, LinkedIn ad integration, HubSpot email nurture sequences, and demo-booking conversion optimization.",
-      "Restaurants & Hospitality — Google Business Profile management, local SEO for high-foot-traffic searches, social media content and paid campaigns targeting California dining audiences.",
-      "Automotive (dealerships, detailing, repair shops) — Vehicle-specific Google Ads, local citation building, and review generation strategies calibrated for California's high-intent automotive search market.",
-      "Los Angeles — California's largest and most competitive market. We specialize in making LA advertising budgets work harder through Quality Score optimization, neighborhood-level SEO targeting (Beverly Hills, Culver City, Silver Lake, etc.), and conversion-focused landing pages built for LA's high-intent, high-competition landscape.",
-      "San Diego — A strong local services and healthcare market with military-adjacent consumer demographics. We use geo-targeted Google Ads, community-specific SEO content, and local citation strategies across neighborhoods from La Jolla to Chula Vista.",
-      "San Francisco & Bay Area — Dominant B2B and SaaS sector — high-intent, lower-volume keywords requiring deep funnel content and precise audience targeting. We combine SEO content with LinkedIn and email nurture strategies calibrated for Bay Area B2B buyers.",
-      "Sacramento — A growing market for home services, healthcare, and government-adjacent businesses. Seasonal HVAC and pest control search patterns demand specific dayparting and emergency keyword strategies unique to the Central Valley climate.",
-      "Orange County — Premium consumer market — cosmetic procedures, high-end real estate, luxury automotive, and wellness brands. Higher average spend per customer justifies higher CPCs with strong landing page conversion optimization.",
-      "San Jose — Tech-adjacent services, enterprise software, and professional services dominate. B2B SEO and PPC campaigns require technical precision and bottom-of-funnel keyword focus.",
-      "Fresno & Central Valley — Lower CPCs, strong local service demand, and agricultural business services. Excellent ROI opportunity for businesses with modest budgets willing to dominate a less saturated market.",
-      "Long Beach & Inland Empire — Rapidly growing retail and logistics markets with strong local consumer demand and under-served SEO landscapes — significant ranking opportunities for businesses that invest early."
-    ]
-  }
+  ]
 }

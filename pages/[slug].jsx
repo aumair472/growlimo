@@ -34,7 +34,17 @@ import ServiceContentSectionDSTX from '../components/ServiceDetail/ServiceConten
 import ServiceContentSectionWDCA from '../components/ServiceDetail/ServiceContentSectionWDCA';
 import ServiceContentSectionSSCA from '../components/ServiceDetail/ServiceContentSectionSSCA';
 import ServiceContentSectionDMCA from '../components/ServiceDetail/ServiceContentSectionDMCA';
+import ServiceContentSectionWDSCA from '../components/ServiceDetail/ServiceContentSectionWDSCA';
+import ServiceContentSectionSEOCity from '../components/ServiceDetail/ServiceContentSectionSEOCity';
 import FormModal from '../components/common/FormModal';
+
+const SEO_CITY_SLUGS = [
+  'seo-agency-los-angeles',
+  'seo-agency-san-diego',
+  'seo-agency-san-francisco',
+  'seo-agency-san-jose',
+  'seo-agency-sacramento'
+];
 
 
 
@@ -75,6 +85,14 @@ export default function ServiceDetail({ service, slug }) {
 
   if (slug === 'dentist-seo-services-california') {
     return <ServiceContentSectionDSCA service={service} slug={slug} />;
+  }
+
+  if (slug === 'web-design-services-california') {
+    return <ServiceContentSectionWDSCA service={service} slug={slug} />;
+  }
+
+  if (SEO_CITY_SLUGS.includes(slug)) {
+    return <ServiceContentSectionSEOCity service={service} slug={slug} />;
   }
 
   const [modalOpen, setModalOpen] = useState(false);

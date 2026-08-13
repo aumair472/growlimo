@@ -1,125 +1,21 @@
 {
-  "metaTitle": "Web Design Services & Agency California | GrowLimo",
+  "metaTitle": "Web Design Services & Agency California - GrowLimo",
   "metaDescription": "Web Design Services California - GrowLimo is a web design agency offering website design services in California. Expert website designer team, sub-2-second load times. Free audit today.",
+  "canonical": "https://growlimo.com/web-design-services-california/",
   "h1": "Web Design Services in California",
-  "subheadline": "Your website is the first impression most California customers will ever have of your business, and a slow, generic one loses that impression before a single word gets read. GrowLimo is a web design agency built for California businesses that need more than a template with their logo pasted on it — a website designer team that builds custom, conversion-focused sites for companies across Los Angeles, San Diego, and San Francisco. Whether you need website design services in California from scratch or a redesign of a site that's quietly bleeding leads, this is the standard a website designer should be held to.",
-  "heroBullets": [
-    "✅ 100+ California Clients",
-    "✅ 4.9-star Google Rating & Trust Markers",
-    "✅ Transparent Flat-Rate Plans & No Lock-In Contracts"
-  ],
-  "whyChooseUs": [
-    {
-      "title": "Conversion-Rate Optimized Layouts and UX",
-      "description": "We don't build generic template sites that look like every other competitor on the web. We design custom, high-converting platforms built specifically to turn cold visitors into paying customers — trust signals, certifications, local reviews, and booking actions placed prominently above the fold to maximize inquiries across the California market. This structural planning means traffic from every paid and organic source converts at a higher rate, multiplying the return on whatever you're already spending to get people there. Comprehensive user testing and journey reviews eliminate the friction points that make prospects leave before completing an action."
-    },
-    {
-      "title": "Sub-2-Second Mobile Load Times",
-      "description": "Over 70% of local search traffic is mobile. We optimize page architecture, compress visual assets, use modern formats like WebP, and write clean code so your site passes Google's Core Web Vitals — protecting your ad budget and preventing the mobile bounce that comes from a slow first impression. Fast loading keeps mobile searchers engaged instead of bouncing back to search results, which is itself a ranking signal that lowers paid click costs. Server-side rendering, optimized response times, and edge caching deliver content instantly, not eventually."
-    },
-    {
-      "title": "SEO-First Technical Architecture",
-      "description": "We design with clean crawl paths, organized URL hierarchies, optimized internal links, and integrated schema markup from the start, so search engines can index every page without a fight. Building search optimization into the core design instead of bolting it on afterward is what establishes rankings that hold up over time rather than a quick bump that fades."
-    }
-  ],
-  "servicesBreakdown": [
-    {
-      "title": "Custom Responsive Design",
-      "description": "Beautiful, modern layouts that scale across every device — your brand looking premium, clean, and professional on desktop, tablet, and phone alike, with a consistent experience that builds authority and trust with local searchers from the first scroll. Modular UI components are visually striking and customized to reflect your business's actual local brand personality, not a generic one borrowed from a theme library."
-    },
-    {
-      "title": "Core Web Vitals Speed Tuning",
-      "description": "Optimized source code, minified scripts, compressed media, and CDN deployment to guarantee fast page loads, pass core speed benchmarks, and improve Google Quality Scores — which lowers your average cost-per-click. Scripts load asynchronously so nothing blocks the thread or shifts the layout mid-load."
-    },
-    {
-      "title": "Frictionless Booking & Form Setup",
-      "description": "Online booking, interactive contact forms, and automated CRM routing that make requesting service simple for local customers, reducing abandonment and getting leads into your pipeline instead of lost in an inbox. Custom APIs route data securely to platforms like Salesforce or HubSpot, notifying your team of new leads within seconds."
-    },
-    {
-      "title": "Accessibility & Policy Compliance",
-      "description": "Websites designed to support ADA compliance, with privacy policies configured to protect your brand from legal risk, cookie regulations, and compliance audits — a secure, inclusive experience aligned with current privacy legislation and data collection standards."
-    }
-  ],
-  "process": [
-    {
-      "title": "1. Strategy & UX Mapping",
-      "description": "We analyze your current site's performance, define the target user flow, map page structures, and design wireframes around your business goals and customer journey."
-    },
-    {
-      "title": "2. Custom UI Design Mockups",
-      "description": "High-fidelity layouts with typography, color, and trust elements selected deliberately to establish a premium brand look that builds real community trust."
-    },
-    {
-      "title": "3. Development & API Integration",
-      "description": "The site gets built in clean, fast code, with CRM databases integrated, calls-to-action configured, tracking events set up, and mobile display verified before anything ships."
-    },
-    {
-      "title": "4. Launch & Speed Optimization",
-      "description": "Cross-browser testing, speed optimization tools, SSL deployment, hosting configuration, and a domain launch with zero downtime."
-    }
-  ],
-  "benefits": [
-    "Dramatically improve your visitor-to-customer conversion rate across all marketing channels in California.",
-    "Improve search rankings and lower paid click costs with sub-2-second mobile load speeds.",
-    "Establish a modern brand presence that builds trust and sets your business apart."
-  ],
-  "industries": "Medical practices, local services, professional firms, and multi-location businesses — each with a different customer journey, and each requiring a website designer who understands the difference rather than reusing the same template across industries.",
-  "additionalContent": [
-    {
-      "heading": "Conversion-Rate Optimization & Trust Layouts",
-      "paragraphs": [
-        "Getting traffic to a website is only half the job. A site that's confusing to navigate or missing clear trust signals leaks leads no matter how good the traffic is. We apply proven conversion heuristics to structure layouts for maximum acquisition, studying click data and heatmaps to remove obstacles and organizing booking paths so scheduling is genuinely simple.",
-        "Trust markers and professional credentials go above the fold, copy is written to engage rather than fill space, testimonials get embedded where they matter, and contact forms are built to be frictionless. Phone numbers are click-to-call on mobile headers, scheduling widgets are easy to find, and before-and-after galleries carry structured schema markup. Content hierarchy leads the eye directly to key value propositions and calls-to-action, with security badges, industry memberships, and ratings reinforcing confidence at every stage of the journey — prominent CTAs, social proof on primary landing pages, reduced-friction forms, visible credentials, and visual galleries with structured schema tags throughout."
-      ]
-    },
-    {
-      "heading": "Hyper-Localized Custom SEO Architecture Across California",
-      "paragraphs": [
-        "A website should be structured to support the SEO campaigns running on top of it. We build organized URL structures and schema markup that help search engines index your pages and rank your services for local queries, targeting the high-intent keywords that align with how local buyers actually search.",
-        "In Los Angeles, that means neighborhood-level location pages for areas like Beverly Hills and Pasadena. In San Diego, it means coastal-market promotions. In San Francisco, it means mobile-first, tech-forward strategy. Detailed city pages target local search terms without tipping into thin-content territory, with copy customized to regional terms, landmark references, and local reviews, and LocalBusiness and AggregateRating schema installed to surface rich results directly in search. Internal link paths distribute page authority naturally across local service pages, and redirects are configured cleanly to avoid duplicate-content issues."
-      ]
-    },
-    {
-      "heading": "Frictionless Booking, CRM & PMS Integrations",
-      "paragraphs": [
-        "A website should integrate with the software you already run the business on. We connect contact forms and scheduling links directly to your CRM or practice management system — Dentrix, Eaglesoft, HubSpot, Salesforce — automating lead routing so inquiries reach your scheduling team within seconds instead of sitting in an inbox until someone checks it.",
-        "That faster response time is what turns more visitors into scheduled clients. Database connections are built secure to protect user privacy, and integration scripts load asynchronously so they never slow the page down. Secure API endpoints move data without latency or loss while tracking attribution at the same time, keeping the front desk schedule current automatically, with error notifications flagging any sync interruption immediately."
-      ]
-    },
-    {
-      "heading": "Accessibility, ADA Compliance & Legal Security",
-      "paragraphs": [
-        "Website accessibility isn't optional — it's a legal exposure point for businesses whose sites aren't usable by people with disabilities. We build to ADA and WCAG guidelines: proper color contrast, keyboard navigation, clean alt tags, and clearly labeled forms, along with SSL certificates, privacy policy pages, and cookie consent configured for regulations like CCPA.",
-        "Automated accessibility checks run before launch across every page, screen-reader labels get verified, and readability gets tested across browsers to confirm consistent performance. Structuring code to meet ADA guidelines isn't just legal protection — it's a better experience for every visitor, disabled or not."
-      ]
-    },
-    {
-      "heading": "Comprehensive Analytics & Transparent Growth Tracking",
-      "paragraphs": [
-        "We don't hide behind vanity metrics. Success gets measured in new inquiries, booked consultations, cost per acquisition, and total ROI, with dashboards linking site conversions directly back to the marketing channel that drove them. Google Analytics 4 is configured with data filters to track conversions, and a live dashboard maps lead events, call records, and form submissions in real time.",
-        "Conversion funnel tracking shows exactly where users drop off, which drives targeted design changes rather than guesses — scroll depth, form interaction time, and button clicks all feed into ongoing optimization instead of sitting unused in a report nobody reads."
-      ]
-    },
-    {
-      "heading": "What Makes a Website Designer Worth Hiring in California",
-      "paragraphs": [
-        "Not every website designer is solving the same problem. A freelancer working from a template can produce something that looks acceptable in a portfolio; it's a different skill entirely to design a page that survives contact with a real California market — competitive search rankings, high mobile bounce thresholds, and customers who compare several options before ever picking up the phone. A website designer worth hiring should be able to explain, specifically, how a layout decision affects conversion rate, how a design choice affects Core Web Vitals, and how the page will hold up against three or four direct competitors in your city, not just how it looks in isolation.",
-        "That's the standard our designers work to: every layout decision gets tied back to a business outcome — an inquiry, a booking, a call — not just a visual preference, because a beautiful site that doesn't convert is still a business problem wearing good typography."
-      ]
-    }
-  ],
+  "subheadline": "Your website is the first impression most California customers will ever have of your business, and a slow, generic one loses that impression before a single word gets read. GrowLimo is a web design agency built for California businesses that need more than a template with their logo pasted on it, a website designer team that builds custom, conversion-focused sites for companies across Los Angeles, San Diego, and San Francisco. Whether you need website design services in California from scratch or a redesign of a site that's quietly bleeding leads, this is the standard a website designer should be held to.",
   "faqs": [
     {
       "question": "How long does it take to design and launch a website?",
       "answer": "A typical custom web design project takes 4 to 8 weeks, depending on the number of pages, custom features, and integration requirements."
     },
     {
-      "question": "Will the website be optimized for mobile search traffic?",
-      "answer": "Yes. Every site is built mobile-first, so it loads quickly and displays properly on every smartphone and tablet."
+      "question": "What's the difference between web design services and web development services?",
+      "answer": "DEV_LINK"
     },
     {
-      "question": "Can you integrate our existing scheduling software?",
-      "answer": "Yes. We integrate leading scheduling and booking systems directly into your site, letting customers book appointments online."
+      "question": "Will the website be optimized for mobile search traffic?",
+      "answer": "Yes. Every site is built mobile-first, so it loads quickly and displays properly on every smartphone and tablet."
     },
     {
       "question": "Do we need to write the website copy?",
@@ -130,14 +26,6 @@
       "answer": "Yes. Sites are built on easy-to-use content management systems, with training so your team can make updates without calling us for every change."
     },
     {
-      "question": "How do you ensure the website loads quickly?",
-      "answer": "We optimize code, compress media files, set up page caching, and use fast servers so your site passes Google's Core Web Vitals."
-    },
-    {
-      "question": "Do you handle website hosting and security updates?",
-      "answer": "Yes. Our hosting and maintenance packages include security monitoring, SSL certificates, backups, and regular software updates."
-    },
-    {
       "question": "Will the website be ADA compliant?",
       "answer": "Yes. We design and build to ADA and WCAG guidelines, reducing legal compliance risk."
     },
@@ -146,41 +34,16 @@
       "answer": "Yes. We handle migration of your content, images, and reviews, and configure redirects to preserve your existing search rankings."
     },
     {
-      "question": "What's the difference between a web design agency and a freelance website designer?",
-      "answer": "A web design agency brings a full team — design, development, copywriting, SEO, and CRO — working from one strategy, with accountability that doesn't disappear if one person gets busy. A freelance website designer can be a good fit for a simple site, but rarely covers the same range of specialized skills a growth-focused business needs under one roof."
-    },
-    {
       "question": "Do you require a long-term contract for design services?",
-      "answer": "No. Design projects run on a flat-rate project fee structure. Once the site launches, you own the code and assets completely."
+      "answer": "No. Design projects run on a flat-rate project fee, not a recurring contract."
     }
   ],
-  "ctaHeadline": "Get Started With California's Trusted Web Design Agency",
-  "ctaButtonText": "Claim Your Free Strategic Review",
   "internalLinks": [
-    {
-      "to": "/web-developer-california/",
-      "anchor": "California Web Services"
-    },
-    {
-      "to": "/seo-services-california/",
-      "anchor": "California SEO Solutions"
-    },
-    {
-      "to": "/ppc-services-california/",
-      "anchor": "California Paid Search PPC"
-    },
-    {
-      "to": "/email-marketing-services-california/",
-      "anchor": "California Email Automations"
-    },
-    {
-      "to": "/social-media-marketing-services-california/",
-      "anchor": "California Social Media Management"
-    },
-    {
-      "to": "/contact/",
-      "anchor": "Contact GrowLimo Team"
-    }
+    { "to": "/seo-services-california/", "anchor": "SEO services in California" },
+    { "to": "/web-developer-california/", "anchor": "web developer services in California" },
+    { "to": "/about/", "anchor": "About page" },
+    { "to": "/case-studies/", "anchor": "case studies page" },
+    { "to": "/contact/", "anchor": "Claim your free strategic review" }
   ],
   "schema": {
     "@context": "https://schema.org",

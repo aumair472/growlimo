@@ -4,16 +4,15 @@ import SEO from '../SEO';
 import Form from '../common/Form';
 
 export default function ServiceContentSectionWDCA({ service, slug }) {
-  const [activeTab, setActiveTab] = useState(0);
   const [openFaq, setOpenFaq] = useState(null);
 
   if (!service) return null;
 
   const {
-    metaTitle = 'Web Developer California | Best Web Developers | GrowLimo',
+    metaTitle = 'Web Developer California | Best Web Developers - GrowLimo',
     metaDescription = 'Web Developer California - Looking for the best web developers in California? GrowLimo is a web developer & UI/UX developer offering custom website building services. Free audit.',
     h1 = 'Web Developer in California',
-    subheadline = 'A slow, generic website costs you customers before they ever see what you sell. GrowLimo is a web developer in California built for businesses that have outgrown templates and bloated plugins — a team of engineers and UI/UX developers who build custom web applications, not cookie-cutter sites, for companies across Los Angeles, San Diego, and San Francisco. Whether you need website building services from the ground up, a UI/UX developer to redesign how customers experience your product, or a technical partner to fix a slow site someone else built, this is where California businesses come when the current site is holding the business back.',
+    subheadline = "A slow, generic website costs you customers before they ever see what you sell. GrowLimo is a web developer California businesses turn to when a template site starts holding the business back. As a web development agency California companies hire for custom engineering instead of theme-based builds, and the web development company California teams trust with CRM and API integrations, we build custom web applications with React, Next.js, and Node.js for companies across Los Angeles, San Diego, and San Francisco, rather than reselling plugins and pre-made themes.",
     schema
   } = service;
 
@@ -28,19 +27,27 @@ export default function ServiceContentSectionWDCA({ service, slug }) {
   const whyGrowLimoPillars = [
     {
       title: 'Custom Web Application Engineering',
-      desc: "We don't rely on bloated plugins, pre-made themes, or cookie-cutter templates that slow performance down. We engineer custom web applications using modern, fast frameworks — React, Next.js, and Node.js — for lightning-fast load times, clean code structures, and platform performance built around your exact business requirements in the California market. Custom architecture prevents the security leaks that come bundled with generic plugin stacks and scales smoothly as your user base grows. We follow modular development principles, separating concerns so features can be added and updated without breaking what's already running.",
+      desc: "We engineer custom web applications using React, Next.js, and Node.js for fast load times and clean, modular code structures that scale as your user base grows, rather than the bloated plugin stacks that create both slow pages and security gaps.",
       badge: 'React / Next.js / Node.js'
     },
     {
       title: 'EHR/CRM & API System Integrations',
-      desc: 'A website that doesn\'t talk to your business systems is only doing half the job. We connect your web systems directly to your databases, CRM, and e-commerce platforms — billing tools, CRM lead flows, custom API endpoints — through secure, encrypted connections that automate workflows and eliminate sync errors. We write automated test scripts to verify endpoints stay active, monitor API latency daily, and configure error-handling pipelines, retry queues, and diagnostic logging so integrations stay reliable, not just functional on launch day.',
+      desc: "A website that doesn't talk to your business systems is only doing half the job. We connect web systems directly to databases, CRM platforms, and e-commerce tools through secure, encrypted API connections that automate workflows and eliminate sync errors, backed by automated test scripts, daily latency monitoring, and error-handling pipelines so integrations stay reliable long after launch day.",
       badge: 'Automated Workflows & Endpoints'
     },
     {
       title: 'Advanced Code Performance & Security Standards',
-      desc: "Every build meets strict speed, performance, and compliance standards: secure database access, SSL certificates, configured firewalls, and code optimized to pass Google's Core Web Vitals, with minimal Time to First Byte and genuinely responsive pages. We follow industry best practices to protect customer data and deploy automated unit tests, continuous integration checks, and security updates so the platform stays clear of vulnerabilities long after launch.",
+      desc: "Every build is held to strict performance and security standards, including SSL, configured firewalls, and code optimized to pass Google's Core Web Vitals, with automated unit tests and security updates keeping the platform clear of vulnerabilities over time.",
       badge: 'Core Web Vitals & OWASP Security'
     }
+  ];
+
+  // "Developer vs Agency vs Company" Search Intent Paragraphs
+  const devVsAgencyVsCompanyParagraphs = [
+    'Search phrasing here ranges from broad to specific, but the underlying want rarely changes. Some business owners search web developer CA or web developer in CA from a phone, comparing options quickly before a longer read. Others search more formally for a web development agency in California with a documented process, or shorten it to web development agency CA or web development agency in CA.',
+    "Businesses that want a vetted, accountable business behind the build search for a web development company in California with real client references, or the shorthand web development company CA. Businesses further along in scoping a project search web development services California or web development services in California, wanting a clear menu of what's included, from custom e-commerce engineering to API integrations to technical site speed audits, before ever getting on a call.",
+    'Some searches combine the disciplines directly. A web design and development company California business owners hire wants one team responsible for both how the site looks and how it performs, not a design studio handing code off to a separate developer. A web designer and developer California search reflects the same want from the other direction. At GrowLimo, design and engineering sit on the same team, so a UI/UX decision never gets lost in translation on the way to production code.',
+    "Businesses earlier in the process, comparing DIY platforms against a real build, search website builder services California, or website building services California and website building services in California when narrowing by location. A drag-and-drop builder can get a page online quickly, but it can't pass Core Web Vitals cleanly, integrate with a CRM, or scale past a few hundred products, which is usually the point a business searching those terms is about to hit."
   ];
 
   // UI/UX Visual Steps (6 steps)
@@ -80,194 +87,99 @@ export default function ServiceContentSectionWDCA({ service, slug }) {
   // Website Building Services Cards (4 cards)
   const websiteBuildingServices = [
     {
-      title: 'Next.js & React Development',
-      desc: 'High-performance static and server-rendered applications built for fast load speeds, smooth navigation, and strong SEO rankings. We use incremental static regeneration to compile database-driven pages dynamically, combining speed with up-to-date content, and optimize webpack bundles, code-splitting, and lazy-loading to keep download sizes lean.',
+      title: 'Next.js and React Development',
+      desc: 'High-performance static and server-rendered applications built for fast load speeds, smooth navigation, and strong SEO rankings. We use incremental static regeneration to compile database-driven pages dynamically, combining speed with up-to-date content, and optimize bundling, code-splitting, and lazy-loading to keep download sizes lean.',
       icon: 'M13 10V3L4 14h7v7l9-11h-7z'
     },
     {
-      title: 'API & Systems Integrations',
-      desc: 'Connecting websites to CRM, billing, inventory, and practice management databases through secure API pipelines that automate processes, eliminate manual data entry errors, and route leads in under five seconds. We write secure serverless endpoints and authorization protocols that verify credentials before any file or customer data transfers.',
+      title: 'API and Systems Integrations',
+      desc: 'Connecting websites to CRM, billing, inventory, and practice management databases through secure API pipelines that automate processes, eliminate manual data entry errors, and route leads in under five seconds, backed by authorization protocols that verify credentials before any data transfers.',
       icon: 'M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z'
     },
     {
       title: 'Custom E-Commerce Engineering',
-      desc: 'Custom e-commerce systems with secure payment checkouts, dynamic inventory syncing, automated discount rules, shopping cart recovery automation, and structured customer notifications built to drive repeat purchases — connected to leading payment processors with encryption and compliance standards built in.',
+      desc: 'Custom e-commerce systems with secure payment checkouts, dynamic inventory syncing, automated discount rules, shopping cart recovery automation, and structured customer notifications, connected to leading payment processors with encryption and compliance standards built in.',
       icon: 'M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z'
     },
     {
       title: 'Technical Site Speed Audits',
-      desc: 'Debugging slow database queries, minifying bloated scripts, optimizing asset loading, and tuning server response times to improve Core Web Vitals and organic rankings — tracing script execution blockages, auditing database indexes, and compiling assets to keep the site functional under heavy traffic.',
-      icon: 'M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z'
+      desc: 'Debugging slow database queries, minifying bloated scripts, optimizing asset loading, and tuning server response times to improve Core Web Vitals and organic rankings, tracing script execution blockages and auditing database indexes to keep the site functional under heavy traffic. Businesses combining a rebuild with an organic growth strategy can pair this work with our SEO services in California.',
+      icon: 'M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z',
+      link: { text: 'SEO services in California', href: '/seo-services-california/' }
     }
   ];
 
-  // Technical Deep-Dive Tabs (6 tabs)
-  const deepDiveTabs = [
-    {
-      id: 'headless',
-      shortLabel: 'Headless Architecture',
-      heading: 'Modern Web Engineering: Headless Architecture & Performance',
-      paragraphs: [
-        'Bloated websites take too long to load, especially on mobile connections — standard content management systems often ship excessive scripts and styles that slow everything down. We build on modern headless architecture instead, separating backend data from frontend rendering so visual rendering never has to wait on a heavy database query.',
-        'Separating the interface from the backend lets us compile static pages that load in milliseconds. Next.js and React let us deploy server-rendered pages that pass Core Web Vitals cleanly, giving both users and search engines the fast experience each one rewards, with fluid page transitions that feel closer to a native app than a website. We optimize bundling, code-splitting, and asset prefetching so navigation carries zero friction, clean up external dependencies to prevent mobile lag, and build in TypeScript for type safety and fewer runtime errors.'
-      ],
-      bullets: [
-        'Next.js Framework: Server-side rendering and static page generation for fast mobile speeds.',
-        'React UI Components: Flexible, reusable user interface elements built for mobile screens.',
-        'Tailored Code Base: Writing only the code your site needs, avoiding bloated third-party scripts.',
-        'Global CDN Deployment: Deploying pages to edge networks so they load fast from any city.',
-        'Modular Code Standards: Writing structured code components that enable easy feature additions.',
-        'Pre-fetching Technology: Loading linked page resources in the background for instant navigation.',
-        'TypeScript Integration: Verifying type constraints at compile time to eliminate runtime crashes.'
-      ]
-    },
-    {
-      id: 'integrations',
-      shortLabel: 'CRM/EHR & API Integrations',
-      heading: 'Secure CRM, EHR & API Database Integrations',
-      paragraphs: [
-        "A website shouldn't operate in isolation. To actually improve business efficiency, your site has to sync with billing, scheduling, inventory, and database systems — so we build secure API connections that automate data transfer and eliminate manual entry work for your staff. We connect contact forms and scheduling links directly to databases like Dentrix, Eaglesoft, Salesforce, or custom SQL systems, routing data securely while keeping customer information protected and compliance standards met, with redaction filters for sensitive parameters before anything is saved.",
-        'That keeps the backend clean and customer records synced without manual entry errors — fail-safes and sync queues prevent data loss during hosting interruptions, automated unit tests verify API connections continuously, and webhook listeners process real-time status updates as they happen.'
-      ],
-      bullets: [
-        'Secure Data Encryption: Encrypting all data in transit via SSL and modern protocols.',
-        'Real-Time Syncing: Booking calendars and user entries synced to databases instantly.',
-        'Retry Protocols: Designing retry pipelines so no form entry is lost to network hiccups.',
-        'Custom API Endpoints: Building tailored endpoints to support unique database integrations.',
-        'Database Optimization: Structuring data queries to maintain fast server response times.',
-        'Third-Party Syncing: Secure pipelines to systems like Stripe, Zapier, or custom EHRs.'
-      ]
-    },
-    {
-      id: 'seo',
-      shortLabel: 'Local Technical SEO',
-      heading: 'Hyper-Localized Technical SEO Architecture Across California',
-      paragraphs: [
-        'Search engines evaluate code quality directly. Clean crawl paths, structured URL hierarchies, and schema markup tell search engines exactly what you offer and where you serve customers — flawed technical architecture makes even great content struggle to rank. We build directory frameworks that search bots index cleanly, with site structures configured to target neighborhood queries in Beverly Hills and Pasadena for Los Angeles clients, database routing tuned for San Diego, and mobile booking integrations built for San Francisco\'s tech-forward audience.',
-        'We customize page routing, schema markup, and geographic data to match the exact California markets you serve, verify that page metadata renders server-side so crawlers can parse local information without delay, and build dynamic XML sitemaps so new pages get indexed quickly. Structuring code to follow search engine guidelines is what turns technical architecture into organic local search volume.'
-      ],
-      closingText: 'Optimizing site code for local markets helps you rank for the exact terms your California customers search.'
-    },
-    {
-      id: 'speed',
-      shortLabel: 'Speed & Core Web Vitals',
-      heading: 'Site Speed Auditing & Core Web Vitals Remediation',
-      paragraphs: [
-        'A slow website is a business actively losing customers. Our technical audits inspect database queries, analyze image file sizes, and review server response times, using profiling tools to isolate slow-loading assets and script blockers and debugging database indexing issues on both read and write events.',
-        'We resolve code-blocking issues, minify JavaScript, set up caching, and optimize image assets so your site passes Core Web Vitals — lowering ad click costs and lifting organic rankings — while optimizing font loading and script parsing order so pages stay functional from the first millisecond. Server configurations get tuned, performance traces run server-side, and routing paths get optimized so content loads instantly for every visitor.'
-      ],
-      bullets: [
-        'Database Query Tuning: Optimizing slow database calls to speed up page generation.',
-        'Script Minification: Compressing JavaScript and CSS files to reduce data transfer.',
-        'Image Asset Optimization: Compressing and converting media to WebP formats.',
-        'Cache Configuration: Deploying server caching to load returning pages instantly.',
-        'Server Response Optimization: Tuning server parameters to minimize TTFB (Time to First Byte).',
-        'Asset Preloading: Scheduling critical fonts and scripts to load first to optimize LCP.'
-      ],
-      closingText: 'Improving Core Web Vitals scores protects your ad budget and helps you rank higher on search engines.'
-    },
-    {
-      id: 'accessibility',
-      shortLabel: 'Accessibility & Security',
-      heading: 'Accessibility, WCAG Compliance & Security Standards',
-      paragraphs: [
-        'We build to WCAG and accessibility standards so sites work for people using screen readers, keyboard navigation, and assistive technology — clean header structures, properly contrasted elements, and clearly labeled forms — which also protects your business from ADA-related legal exposure.',
-        'We secure applications against the OWASP Top 10, configure SSL encryption, and implement secure user authentication to protect customer data, with automated dependency updates keeping software packages free of known vulnerabilities and secure API authorization tokens preventing data scraping. Compliance audits eliminate security risk before it becomes a legal one, with session expiration testing and automated vulnerability scanning built into the process, not bolted on after the fact.'
-      ]
-    },
-    {
-      id: 'analytics',
-      shortLabel: 'Analytics & Attribution',
-      heading: 'Web Analytics & Event Attribution',
-      paragraphs: [
-        'We configure Google Analytics 4 with custom tracking codes to measure conversions and build live dashboards tracking visitors, conversion rates, API performance, and database write metrics, giving full visibility into both technical performance and campaign success. Event tracking on form submissions, script interactions, and link clicks maps the actual conversion path, API response times get traced to catch technical bottlenecks early, and custom tracking scripts log interactions cleanly without capturing anything they shouldn\'t.'
-      ]
-    }
-  ];
+  // Modern Web Engineering and Architecture (single prose paragraph)
+  const modernEngineeringParagraph = "Bloated websites take too long to load, especially on mobile connections, because standard content management systems often ship excessive scripts and styles. We build on headless architecture instead, separating backend data from frontend rendering so visual rendering never has to wait on a heavy database query. Next.js and React let us deploy server-rendered pages that pass Core Web Vitals cleanly, with fluid page transitions closer to a native app than a typical website. Every build uses global CDN deployment so pages load fast from any California city, modular code standards for easy feature additions, pre-fetching for instant navigation, and TypeScript for type safety and fewer runtime errors.";
 
   // 4 Development Process Steps
   const processSteps = [
     {
       step: '01',
       title: 'Technical Specifications Planning',
-      desc: 'We analyze your business requirements, design the database architecture, map user stories, and select the technology stack for a scalable, secure setup from day one.'
+      desc: 'Analyzing business requirements, designing database architecture, mapping user stories, and selecting the technology stack for a scalable, secure setup from day one.'
     },
     {
       step: '02',
-      title: 'Database & API Architecture',
-      desc: 'Our team builds database schemas, designs custom API endpoints, and sets up authentication protocols to protect your data and enable secure syncing across systems.'
+      title: 'Database and API Architecture',
+      desc: 'Building schemas, custom endpoints, and authentication protocols to protect data and enable secure syncing.'
     },
     {
       step: '03',
-      title: 'Frontend & Backend Development',
-      desc: 'We write clean code for the application, connect the interface to backend databases, test API responses, and run integration tests to verify every data pipeline.'
+      title: 'Frontend and Backend Development',
+      desc: 'Writing clean code, connecting the interface to backend databases, and running integration tests on every data pipeline.'
     },
     {
       step: '04',
-      title: 'Deployment & QA Testing',
-      desc: 'Security checks, site speed optimization, deployment to hosting environments like Vercel or AWS, domain configuration, and log monitoring to prevent downtime after launch.'
+      title: 'Deployment and QA Testing',
+      desc: 'Including security checks, site speed optimization, deployment to hosting environments, and log monitoring to prevent downtime after launch.'
     }
   ];
 
   // Industries Served Data
   const industriesList = [
-    { name: 'Technology Startups', desc: 'SaaS platforms & complex React/Next.js dynamic web apps' },
-    { name: 'Multi-Location Groups', desc: 'Centralized API database routing & geo-targeted local landing pages' },
-    { name: 'E-Commerce Brands', desc: 'Custom checkouts, inventory syncing & high-conversion storefronts' },
-    { name: 'Healthcare Practices', desc: 'EHR/HIPAA compliant booking flows & practice management integrations' },
-    { name: 'Legal Firms', desc: 'High-trust portal design & fast lead intake pipelines' },
-    { name: 'Professional Services', desc: 'Custom portal tools, client portals & automated scheduling' }
+    { name: 'Technology Startups', desc: 'Need SaaS platforms and complex React and Next.js applications.' },
+    { name: 'Multi-Location Groups', desc: 'Need centralized API database routing and geo-targeted local landing pages.' },
+    { name: 'E-Commerce Brands', desc: 'Need custom checkouts and inventory syncing.' },
+    { name: 'Healthcare Practices', desc: 'Need EHR and HIPAA-compliant booking flows.' },
+    { name: 'Legal Firms', desc: 'Need high-trust portal design and fast lead intake pipelines.' },
+    { name: 'Professional Services', desc: 'Need custom client portals and automated scheduling.' }
   ];
 
-  // FAQs List (12 items)
+  // "Why 100-Plus California Businesses Trust GrowLimo" paragraph (pre-links, mid-text, post-links)
+  const trustParagraphPre = 'GrowLimo has built custom web applications for more than 100 California clients and maintains a 4.9-star Google rating, with no long-term contracts locking clients in. Rather than a single generalist wearing every hat, builds are handled by engineers and UI/UX developers working from the same technical specification, so design decisions and engineering constraints are resolved together instead of in separate handoffs. You can review verified client outcomes across our broader marketing and development work on our ';
+  const trustParagraphMid = ' and learn more about the team on our ';
+  const trustParagraphPost = '.';
+
+  // FAQs List (7 items)
   const faqs = service.faqs || [
     {
       question: 'Which programming languages and frameworks do you use?',
-      answer: 'We build websites and applications using React, Next.js, Node.js, and standard web technologies, selecting the stack based on your specific project requirements.'
+      answer: 'Primarily React, Next.js, Node.js, and TypeScript, chosen for performance, type safety, and long-term maintainability over legacy CMS plugin stacks.'
     },
     {
-      question: 'Will the custom application pass Google\'s Core Web Vitals?',
-      answer: 'Yes. Every application is built to meet strict performance standards, with code execution and media assets optimized to pass Google\'s speed tests.'
+      question: "Will the custom application pass Google's Core Web Vitals?",
+      answer: 'Yes. Every build is engineered against Core Web Vitals thresholds from the start, using headless architecture, code-splitting, and CDN deployment rather than optimizing after the fact.'
     },
     {
       question: 'Can you integrate our custom CRM or database system?',
-      answer: 'Yes. We write secure API integrations connecting your website to e-commerce, CRM, or database systems to automate your data workflows.'
-    },
-    {
-      question: 'How do you handle website security and data protection?',
-      answer: 'We follow secure coding guidelines, encrypt data in transit using SSL, configure secure database access, and set up user authentication protocols to protect user data.'
-    },
-    {
-      question: 'Will we own the custom source code after launch?',
-      answer: 'Yes. Once the project is complete, you own the custom code, databases, and application assets. We deploy the site to your hosting accounts.'
+      answer: 'Yes. We build secure API connections to CRM, billing, inventory, and practice management systems, with automated testing and error-handling pipelines to keep integrations reliable after launch.'
     },
     {
       question: 'Can you fix a slow website built by another developer?',
-      answer: 'Yes. We run technical speed audits to identify bottlenecks in your code and databases, then implement the fixes needed to resolve them.'
+      answer: 'Yes. Technical site speed audits identify slow database queries, bloated scripts, and unoptimized assets, with a clear remediation plan before any rebuild decision is made.'
     },
     {
       question: 'Do you offer UI/UX design services as part of a build?',
-      answer: 'Yes. Our UI/UX developer process covers user research, wireframing, interaction and visual design, prototyping, usability testing, and accessibility-first design — handled by the same team that builds the final product, not handed off between separate agencies.'
+      answer: 'Yes. Design and engineering are handled by the same team through one process, from user research and wireframing through prototyping and accessibility-first design.'
     },
     {
-      question: 'What\'s included in your website building services?',
-      answer: 'Strategy and UX planning, custom Next.js/React development, API and CRM integrations, e-commerce engineering where needed, technical SEO architecture, site speed optimization, accessibility and security compliance, and analytics setup — as one connected build, not separate line items from separate vendors.'
-    },
-    {
-      question: 'Do you provide ongoing technical support after launch?',
-      answer: 'Yes. We offer technical support packages that include code updates, database backups, security monitoring, and server performance checks.'
-    },
-    {
-      question: 'Can you build multilingual web applications?',
-      answer: 'Yes. We develop applications that support multiple languages, setting up database tables and routing configurations for international users.'
-    },
-    {
-      question: 'How long does a custom web application take to develop?',
-      answer: 'Timelines vary by project size. Small applications typically take 6 to 10 weeks; larger custom platforms can take several months.'
+      question: 'Will we own the custom source code after launch?',
+      answer: 'Yes. Clients retain ownership of the custom source code built for their project.'
     },
     {
       question: 'Do you require a long-term contract?',
-      answer: 'No. We build custom applications on a flat-rate project fee structure. Once launched, you own the source code and assets completely.'
+      answer: 'No. GrowLimo operates without long-term lock-in contracts on web development engagements.'
     }
   ];
 
@@ -362,7 +274,7 @@ export default function ServiceContentSectionWDCA({ service, slug }) {
               Why GrowLimo Is Among the Best Web Developers in California
             </h2>
             <p className="font-sans text-[15px] sm:text-[16px] leading-[1.8] text-[#8FA8C8]">
-              Three things separate the best web developers in California from the agencies that just resell a theme: custom engineering instead of pre-made templates, real system integrations instead of duct-taped plugins, and code held to a performance and security standard most shops don't bother meeting.
+              Three things separate the best web developers in California from agencies that just resell a theme: custom engineering instead of pre-made templates, real system integrations instead of duct-taped plugins, and code held to a performance and security standard most shops don't bother meeting.
             </p>
           </div>
 
@@ -398,6 +310,32 @@ export default function ServiceContentSectionWDCA({ service, slug }) {
       </section>
 
       {/* ========================================================================= */}
+      {/* SECTION 2B: DEVELOPER VS AGENCY VS COMPANY (Search Intent Prose) */}
+      {/* ========================================================================= */}
+      <section className="bg-[#080D18] py-[80px] md:py-[100px] relative z-10 border-b border-[rgba(255,255,255,0.06)]">
+        <div className="container mx-auto px-4 md:px-10 max-w-[1200px]">
+
+          <div className="text-left max-w-[840px] mb-10">
+            <span className="text-[#00C68A] text-[11px] md:text-[12px] font-bold uppercase tracking-[2.5px] mb-3 block font-sans">
+              HOW BUSINESSES SEARCH
+            </span>
+            <h2 className="text-[28px] sm:text-[34px] lg:text-[38px] font-extrabold font-sora leading-tight text-[#F0F4FF] tracking-tight">
+              Web Developer vs. Web Development Agency vs. Web Development Company in California
+            </h2>
+          </div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-10 gap-y-6 max-w-[1200px]">
+            {devVsAgencyVsCompanyParagraphs.map((p, idx) => (
+              <p key={idx} className="font-sans text-[15px] sm:text-[16px] leading-[1.8] text-[#8FA8C8]">
+                {p}
+              </p>
+            ))}
+          </div>
+
+        </div>
+      </section>
+
+      {/* ========================================================================= */}
       {/* SECTION 3: UI/UX DEVELOPER SERVICES (6 Visual Steps) */}
       {/* ========================================================================= */}
       <section className="bg-[#080D18] py-[80px] md:py-[100px] relative z-10 border-b border-[rgba(255,255,255,0.06)]">
@@ -411,7 +349,7 @@ export default function ServiceContentSectionWDCA({ service, slug }) {
               UI/UX Developer Services — Designing Interfaces That Convert
             </h2>
             <p className="font-sans text-[15px] sm:text-[16px] leading-[1.8] text-[#8FA8C8]">
-              Code that runs fast still fails if the interface confuses the person using it. As a UI/UX developer team embedded inside the same build process as our engineers, we design the experience and build it in the same breath — no handoff gap between what a designer imagines and what actually ships. Our UI/UX developer process covers:
+              Code that runs fast still fails if the interface confuses the person using it. As a UI/UX developer team embedded inside the same build process as our engineers, we design the experience and build it in the same breath, with no handoff gap between what a designer imagines and what actually ships. The process covers user research and journey mapping, wireframing and information architecture, interaction and visual design, prototyping and usability testing, reusable design systems, and accessibility-first design built to WCAG standards from the first wireframe rather than retrofitted after launch.
             </p>
           </div>
 
@@ -482,7 +420,17 @@ export default function ServiceContentSectionWDCA({ service, slug }) {
                     {srv.title}
                   </h3>
                   <p className="font-sans text-[14.5px] leading-[1.8] text-[#8FA8C8]">
-                    {srv.desc}
+                    {srv.link ? (
+                      <>
+                        {srv.desc.split(srv.link.text)[0]}
+                        <Link href={srv.link.href} className="text-[#00C68A] font-semibold hover:underline">
+                          {srv.link.text}
+                        </Link>
+                        {srv.desc.split(srv.link.text)[1]}
+                      </>
+                    ) : (
+                      srv.desc
+                    )}
                   </p>
                 </div>
               </div>
@@ -493,82 +441,21 @@ export default function ServiceContentSectionWDCA({ service, slug }) {
       </section>
 
       {/* ========================================================================= */}
-      {/* SECTION 5: TECHNICAL DEEP-DIVE (Interactive 6-Tab Container) */}
+      {/* SECTION 5: MODERN WEB ENGINEERING AND ARCHITECTURE */}
       {/* ========================================================================= */}
       <section className="bg-[#080D18] py-[80px] md:py-[100px] relative z-10 border-b border-[rgba(255,255,255,0.06)]">
-        <div className="container mx-auto px-4 md:px-10 max-w-[1200px]">
+        <div className="container mx-auto px-4 md:px-10 max-w-[1000px] text-left">
 
-          <div className="text-left max-w-[840px] mb-12">
-            <span className="text-[#00C68A] text-[11px] md:text-[12px] font-bold uppercase tracking-[2.5px] mb-3 block font-sans">
-              TECHNICAL SPECIFICATIONS
-            </span>
-            <h2 className="text-[28px] sm:text-[34px] lg:text-[38px] font-extrabold font-sora leading-tight text-[#F0F4FF] tracking-tight mb-4">
-              Modern Web Engineering & Architecture Deep-Dive
-            </h2>
-            <p className="font-sans text-[15px] sm:text-[16px] text-[#8FA8C8]">
-              Explore our technical breakdown across architecture, CRM/EHR integrations, localized SEO, speed remediation, security standards, and web analytics.
-            </p>
-          </div>
+          <span className="text-[#00C68A] text-[11px] md:text-[12px] font-bold uppercase tracking-[2.5px] mb-3 block font-sans">
+            TECHNICAL SPECIFICATIONS
+          </span>
+          <h2 className="text-[28px] sm:text-[34px] lg:text-[38px] font-extrabold font-sora leading-tight text-[#F0F4FF] tracking-tight mb-8">
+            Modern Web Engineering and Architecture
+          </h2>
 
-          {/* Tab Navigation Buttons */}
-          <div className="flex flex-wrap gap-2 mb-8 border-b border-[rgba(255,255,255,0.08)] pb-4">
-            {deepDiveTabs.map((tab, idx) => {
-              const isActive = activeTab === idx;
-              return (
-                <button
-                  key={tab.id}
-                  onClick={() => setActiveTab(idx)}
-                  className={`cursor-pointer px-5 py-3 rounded-xl font-sora font-semibold text-[13px] md:text-[14px] transition-all duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#00C68A] ${
-                    isActive
-                      ? 'bg-[#00C68A] text-[#080D18] shadow-[0_4px_16px_rgba(0,198,138,0.3)] font-bold'
-                      : 'bg-[#0C1220] text-[#8FA8C8] hover:text-[#F0F4FF] hover:bg-[#162035] border border-[rgba(255,255,255,0.06)]'
-                  }`}
-                >
-                  {tab.shortLabel}
-                </button>
-              );
-            })}
-          </div>
-
-          {/* Tab Content Box */}
-          <div className="bg-[#0C1220] border border-[rgba(255,255,255,0.08)] rounded-[20px] p-8 md:p-10 text-left transition-all duration-300">
-            <h3 className="text-[22px] md:text-[28px] font-extrabold font-sora text-[#F0F4FF] leading-snug mb-6">
-              {deepDiveTabs[activeTab].heading}
-            </h3>
-
-            <div className="space-y-4 mb-8">
-              {deepDiveTabs[activeTab].paragraphs.map((p, pIdx) => (
-                <p key={pIdx} className="font-sans text-[15px] leading-[1.8] text-[#8FA8C8]">
-                  {p}
-                </p>
-              ))}
-            </div>
-
-            {/* Bullets if present */}
-            {deepDiveTabs[activeTab].bullets && (
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
-                {deepDiveTabs[activeTab].bullets.map((b, bIdx) => (
-                  <div key={bIdx} className="flex gap-3 items-start bg-[#162035] p-4 rounded-xl border border-[rgba(255,255,255,0.05)]">
-                    <svg className="w-5 h-5 text-[#00C68A] shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
-                    </svg>
-                    <span className="font-sans text-[14px] text-[#F0F4FF] leading-relaxed font-medium">
-                      {b}
-                    </span>
-                  </div>
-                ))}
-              </div>
-            )}
-
-            {/* Closing text highlight */}
-            {deepDiveTabs[activeTab].closingText && (
-              <div className="mt-6 border-l-4 border-[#00C68A] pl-4 py-2 bg-[#00C68A]/5 rounded-r-lg">
-                <p className="font-sans text-[14.5px] font-semibold text-[#00C68A]">
-                  {deepDiveTabs[activeTab].closingText}
-                </p>
-              </div>
-            )}
-          </div>
+          <p className="font-sans text-[15px] sm:text-[16px] leading-[1.85] text-[#8FA8C8] bg-[#162035]/60 p-6 rounded-[16px] border border-[rgba(255,255,255,0.06)]">
+            {modernEngineeringParagraph}
+          </p>
 
         </div>
       </section>
@@ -629,7 +516,7 @@ export default function ServiceContentSectionWDCA({ service, slug }) {
               Industries We Serve as a California Web Developer
             </h2>
             <p className="font-sans text-[15px] sm:text-[16px] leading-[1.8] text-[#8FA8C8]">
-              Technology startups, multi-location groups, e-commerce brands, healthcare practices, legal firms, and service providers — each with different database, integration, and performance requirements, and each requiring a different approach from a web developer who understands the difference.
+              Each industry requires a different approach from a developer who understands the difference, not a single template stretched across every use case.
             </p>
           </div>
 
@@ -660,9 +547,54 @@ export default function ServiceContentSectionWDCA({ service, slug }) {
       </section>
 
       {/* ========================================================================= */}
+      {/* SECTION 7B: WHY 100-PLUS CALIFORNIA BUSINESSES TRUST GROWLIMO */}
+      {/* ========================================================================= */}
+      <section className="bg-[#0C1220] py-[70px] md:py-[90px] relative z-10 border-b border-[rgba(255,255,255,0.06)]">
+        <div className="container mx-auto px-4 md:px-10 max-w-[1200px]">
+
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 w-full mb-10 max-w-[700px]">
+            {trustPills.map((pill, idx) => (
+              <div
+                key={idx}
+                className="flex items-center gap-2.5 bg-[#162035] border border-[rgba(255,255,255,0.08)] rounded-[12px] px-4 py-3 shadow-md hover:border-[#00C68A]/40 transition-all duration-200"
+              >
+                <svg className="w-5 h-5 text-[#00C68A] shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d={pill.icon} />
+                </svg>
+                <span className="text-[#F0F4FF] font-sans text-[13px] font-semibold leading-snug">
+                  {pill.label}
+                </span>
+              </div>
+            ))}
+          </div>
+
+          <div className="text-left max-w-[840px] mb-4">
+            <span className="text-[#00C68A] text-[11px] md:text-[12px] font-bold uppercase tracking-[2.5px] mb-3 block font-sans">
+              TRACK RECORD
+            </span>
+            <h2 className="text-[28px] sm:text-[34px] lg:text-[38px] font-extrabold font-sora leading-tight text-[#F0F4FF] tracking-tight mb-4">
+              Why 100-Plus California Businesses Trust GrowLimo
+            </h2>
+            <p className="font-sans text-[15px] sm:text-[16px] leading-[1.8] text-[#8FA8C8]">
+              {trustParagraphPre}
+              <Link href="/case-studies/" className="text-[#00C68A] font-semibold hover:underline">
+                case studies page
+              </Link>
+              {trustParagraphMid}
+              <Link href="/about/" className="text-[#00C68A] font-semibold hover:underline">
+                About page
+              </Link>
+              {trustParagraphPost}
+            </p>
+          </div>
+
+        </div>
+      </section>
+
+      {/* ========================================================================= */}
       {/* SECTION 8: FAQ ACCORDION */}
       {/* ========================================================================= */}
-      <section className="bg-[#0C1220] py-[80px] md:py-[100px] relative z-10 border-b border-[rgba(255,255,255,0.06)]">
+      <section className="bg-[#080D18] py-[80px] md:py-[100px] relative z-10 border-b border-[rgba(255,255,255,0.06)]">
         <div className="container mx-auto px-4 md:px-10 max-w-[1000px]">
 
           <div className="text-left max-w-[800px] mb-12">
@@ -731,7 +663,7 @@ export default function ServiceContentSectionWDCA({ service, slug }) {
             </h2>
 
             <p className="font-sans text-[15px] sm:text-[16px] leading-[1.8] text-[#8FA8C8] max-w-[720px] mx-auto mb-8">
-              Stop fighting a slow, bloated template site. Request your free California technical review to see exactly where your current site is losing you customers — database response times, code structure, API performance, and a clear plan to fix what's broken.
+              Stop fighting a slow, bloated template site. Request your free California technical review to see exactly where your current site is losing you customers, and what a custom-engineered rebuild would fix first.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
@@ -739,7 +671,7 @@ export default function ServiceContentSectionWDCA({ service, slug }) {
                 href="/contact/"
                 className="cursor-pointer inline-flex items-center justify-center gap-2 bg-[#00C68A] hover:bg-[#0FB786] text-[#080D18] font-sora font-extrabold text-[15px] px-8 py-4 rounded-xl transition-all duration-200 shadow-[0_4px_20px_rgba(0,198,138,0.3)] hover:-translate-y-0.5 active:scale-[0.98]"
               >
-                Claim Your Free Strategic Review
+                Request your free California technical review
                 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M14 5l7 7m0 0l-7 7m7-7H3" />
                 </svg>
